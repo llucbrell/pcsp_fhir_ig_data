@@ -1,0 +1,174 @@
+Title: Cancer Staging System Value Set - PanCareSurPass Project HL7 FHIR Implementation Guide v0.2.0
+
+Description: 
+
+Table 1:
+                                                                                                                                                                                                                                                                                           0                                                                                                                                                                                                                                                                                            1                                                                                                                                                                                                                                                                                            2                                                                                                                                                                                                                                                                                            3                                                                                                                                                                                                                                                                                            4
+                                                                                                                                                                                                            Official URL: http://hl7.eu/fhir/ig/pcsp/ValueSet/mcode-cancer-staging-system-vs                                                                                                                                                                                                             Official URL: http://hl7.eu/fhir/ig/pcsp/ValueSet/mcode-cancer-staging-system-vs                                                                                                                                                                                                             Official URL: http://hl7.eu/fhir/ig/pcsp/ValueSet/mcode-cancer-staging-system-vs                                                                                                                                                                                                             Official URL: http://hl7.eu/fhir/ig/pcsp/ValueSet/mcode-cancer-staging-system-vs                                                                                                                                                                                                                                                                              Version:  0.2.0
+                                                                                                                                                                                                                                                                     Draft  as of 2024-05-27                                                                                                                                                                                                                                                                      Draft  as of 2024-05-27                                                                                                                                                                                                                                                                      Draft  as of 2024-05-27                                                                                                                                                                                                                                                                      Draft  as of 2024-05-27                                                                                                                                                                                                                                                       Computable Name: CancerStagingSystemVS
+Copyright/Legal: This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement Copyright/Legal: This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement Copyright/Legal: This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement Copyright/Legal: This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement Copyright/Legal: This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement
+
+Table 2:
+         0                      1                                                                                                               2
+      Code                 System                                                                                                         Display
+ 254292007 http://snomed.info/sct                                                                                                   Tumor staging
+  13808002 http://snomed.info/sct                                                                                                      WR stage 3
+  15972002 http://snomed.info/sct                                                                                                      WR stage 2
+  42114005 http://snomed.info/sct                                                                                                      WR stage 1
+  66470009 http://snomed.info/sct                                                                                                      WR stage 5
+  74542008 http://snomed.info/sct                                                                                                      WR stage 4
+  83200007 http://snomed.info/sct                                                                                                      WR stage 6
+ 106242004 http://snomed.info/sct                                                                         Walter Reed staging of prostatic cancer
+ 106244003 http://snomed.info/sct                                                                           FIGO staging of endometrial carcinoma
+ 106245002 http://snomed.info/sct                                                                                FIGO staging of vulvar carcinoma
+ 106246001 http://snomed.info/sct                                                                                 FIGO staging of vulvar melanoma
+ 106247005 http://snomed.info/sct                                                                      FIGO staging for epithelial tumor of ovary
+ 106250008 http://snomed.info/sct                                                                              FIGO staging of cervical carcinoma
+ 106252000 http://snomed.info/sct                                                                             Staging classification for lymphoma
+ 110375007 http://snomed.info/sct                                                                                               Overlapping tumor
+ 254360008 http://snomed.info/sct                                                                                            Dukes staging system
+ 254361007 http://snomed.info/sct                                                                                    Astler-Coller staging system
+ 254362000 http://snomed.info/sct                                                                           Modified Astler-Coller staging system
+ 254363005 http://snomed.info/sct                                                                      International neuroblastoma staging system
+ 254364004 http://snomed.info/sct                                                              NWTS - National Wilms' tumour study staging system
+ 254365003 http://snomed.info/sct                                                                                     Siopel liver staging system
+ 254366002 http://snomed.info/sct                                                                      Stannard staging system for retinoblastoma
+ 254368001 http://snomed.info/sct                        United Kingdom children's cancer study group central nervous system tumor staging system
+ 254370005 http://snomed.info/sct                                                         St Jude's malignant histiocytosis tumour staging system
+ 254371009 http://snomed.info/sct                                                                 St Jude's non-Hodgkin's lymphoma staging system
+ 254372002 http://snomed.info/sct                                                                               Ann Arbor lymphoma staging system
+ 254373007 http://snomed.info/sct                                                                Ann Arbor Hodgkin's disease tumor staging system
+ 254374001 http://snomed.info/sct                                                          Ann Arbor non-Hodgkin's lymphoma tumour staging system
+ 254375000 http://snomed.info/sct                                                                Cotswolds Hodgkin's disease tumor staging system
+ 254376004 http://snomed.info/sct                                                                               Testicular tumour staging systems
+ 254378003 http://snomed.info/sct                                                                     Walter Reed testicular tumor staging system
+ 254379006 http://snomed.info/sct                                                             Indiana University testicular tumour staging system
+ 254380009 http://snomed.info/sct                                 Marshall Modification of Jewett-Strong staging system for urinary bladder tumor
+ 254381008 http://snomed.info/sct                                              American Urological Association staging system for prostate cancer
+ 254382001 http://snomed.info/sct                                                                         Trophoblastic malignancy staging system
+ 254383006 http://snomed.info/sct                  Federation internationale de gynecologie et d'obstetrique staging of gynaecological malignancy
+ 254384000 http://snomed.info/sct                                                                                      FIGO Vaginal tumor staging
+ 254385004 http://snomed.info/sct                    Federation internationale de gynecologie et d'obstetrique staging of corpus uteri malignancy
+ 254386003 http://snomed.info/sct                         Federation Internationale de gynecologie et d'obstetrique staging of ovarian malignancy
+ 258233007 http://snomed.info/sct                                                                Generic tumor staging descriptor (tumor staging)
+ 258234001 http://snomed.info/sct                                                                               TNM tumor staging classifications
+ 258244004 http://snomed.info/sct                                                                                                        G status
+ 258246002 http://snomed.info/sct                                                                         Lymphatic tumour invasion status stages
+ 258247006 http://snomed.info/sct                                                                                                        V status
+ 258257007 http://snomed.info/sct                                                             Additional tumor staging descriptor (tumor staging)
+ 258258002 http://snomed.info/sct                                                                                                             (f)
+ 258259005 http://snomed.info/sct                                                                                                              is
+ 258260000 http://snomed.info/sct                                                                                                             (d)
+ 258267002 http://snomed.info/sct                                                                               Generic tumour risk status stages
+ 258268007 http://snomed.info/sct                                                                                                  Low risk tumor
+ 258269004 http://snomed.info/sct                                                                                              Medium risk tumour
+ 258270003 http://snomed.info/sct                                                                                                 High risk tumor
+ 258271004 http://snomed.info/sct                                                               Specific tumor staging descriptor (tumor staging)
+ 258272006 http://snomed.info/sct                                                                  Liver tumor staging descriptor (tumor staging)
+ 258273001 http://snomed.info/sct                                                                                          Liver tumor size index
+ 258276009 http://snomed.info/sct                                                                                  Timing of liver tumour staging
+ 258279002 http://snomed.info/sct                                                                          Lymphoma staging symptom status values
+ 258280004 http://snomed.info/sct                                                               Lymphomatous extranodal involvement status values
+ 258281000 http://snomed.info/sct                                                                                                      S+ minimal
+ 258282007 http://snomed.info/sct                                                                                                    S+ extensive
+ 258283002 http://snomed.info/sct                                                                                  Lymphomatous nodal involvement
+ 258284008 http://snomed.info/sct                                                                                 Stannards retinoblastoma stages
+ 258285009 http://snomed.info/sct                                                    Optic nerve tumour invasion status in retinoblastoma staging
+ 258286005 http://snomed.info/sct                                                       Choroidal tumor invasion status in retinoblastoma staging
+ 258292004 http://snomed.info/sct                                                    Lymph nodal tumour invasion status in retinoblastoma staging
+ 258293009 http://snomed.info/sct                                                           Brain tumor invasion status in retinoblastoma staging
+ 258301001 http://snomed.info/sct                                                             Langerhans cell histiocytosis stage (tumor staging)
+ 258302008 http://snomed.info/sct                                             Number of organ systems involved with Langerhans cell histiocytosis
+ 258303003 http://snomed.info/sct                                                                                       Single system involvement
+ 258304009 http://snomed.info/sct                                                                                         Multisystem involvement
+ 258305005 http://snomed.info/sct                                                              Organ failure due to Langerhans cell histiocytosis
+ 258306006 http://snomed.info/sct                                                                                             Vital organ failure
+ 258307002 http://snomed.info/sct                                                                                         Non-vital organ failure
+ 258309004 http://snomed.info/sct                                                  Generic lymph node tumor invasion status stage (tumor staging)
+ 258310009 http://snomed.info/sct                                                                                     Neck node tumor involvement
+ 258311008 http://snomed.info/sct                                                                       Mediastinal lymph node tumour involvement
+ 258312001 http://snomed.info/sct                                                                                       Axillary lymph node level
+ 258313006 http://snomed.info/sct                                                                                                         Level I
+ 258314000 http://snomed.info/sct                                                                                                       Midaxilla
+ 258315004 http://snomed.info/sct                                                                                                       Level III
+ 258316003 http://snomed.info/sct                                                                Retroperitoneal lymph node tumor invasion status
+ 258318002 http://snomed.info/sct                                                                   Generic anatomical site tumor invasion status
+ 258319005 http://snomed.info/sct                                                                                         Lung involvement stages
+ 258320004 http://snomed.info/sct                                                                                                   Lung stage L2
+ 258321000 http://snomed.info/sct                                                                                                   Lung stage L3
+ 258322007 http://snomed.info/sct                                                                                                              H+
+ 258323002 http://snomed.info/sct                                                                                                   Liver sectors
+ 258324008 http://snomed.info/sct                                                                                                  Liver sector 1
+ 258325009 http://snomed.info/sct                                                                                                  Liver sector 2
+ 258326005 http://snomed.info/sct                                                                                                  Liver sector 3
+ 258327001 http://snomed.info/sct                                                                                                  Liver sector 4
+ 258328006 http://snomed.info/sct                                                                                Markers for liver tumour staging
+ 261731003 http://snomed.info/sct                                                                                                  CNS metastases
+ 261789009 http://snomed.info/sct                                                                                            Extra CNS metastases
+ 261985008 http://snomed.info/sct                                                                                                   No metastases
+ 277318003 http://snomed.info/sct                                                                                                             (m)
+ 277645005 http://snomed.info/sct                                                                                      Additional TNM descriptors
+ 278241006 http://snomed.info/sct                                                                                                   Node stage G1
+ 278242004 http://snomed.info/sct                                                                                                   Node stage G2
+ 278247005 http://snomed.info/sct                                                                                                   Lung stage L1
+ 282402005 http://snomed.info/sct                                                                                         V - Hepatic vein marker
+ 282403000 http://snomed.info/sct                                                                                          P - Portal vein marker
+ 282404006 http://snomed.info/sct                                                                                         E - Extrahepatic marker
+ 282405007 http://snomed.info/sct                                                                                           M - Metastatic marker
+ 282436004 http://snomed.info/sct                                                                     E - Extralymphatic organ involvement marker
+ 282437008 http://snomed.info/sct                                                                                  S - Splenic involvement marker
+ 385345007 http://snomed.info/sct                                                               Clark system for melanoma staging (tumor staging)
+ 385346008 http://snomed.info/sct                                                             Breslow system for melanoma staging (tumor staging)
+ 385359000 http://snomed.info/sct                                                                   Modified Dukes staging system (tumor staging)
+ 417957003 http://snomed.info/sct                                                                                Uveal metastasis (tumor staging)
+ 420417005 http://snomed.info/sct                                                           Liver tumor size index more than 0.05 (tumor staging)
+ 420483003 http://snomed.info/sct                                                    Abdominal lymph node tumor invasion status A (tumor staging)
+ 420533005 http://snomed.info/sct                                                   Choroidal invasion stage C1 in retinoblastoma (tumor staging)
+ 420728008 http://snomed.info/sct                                                      Timing of liver tumor staging at diagnosis (tumor staging)
+ 420841002 http://snomed.info/sct                                                   Choroidal invasion stage C0 in retinoblastoma (tumor staging)
+ 420889006 http://snomed.info/sct                                                           Liver tumor size index less than 0.05 (tumor staging)
+ 420969009 http://snomed.info/sct                                                               Lymphoma staging symptom status A (tumor staging)
+ 421074006 http://snomed.info/sct                                               Central nervous system stage B3 in retinoblastoma (tumor staging)
+ 421174009 http://snomed.info/sct                                                   Choroidal invasion stage C2 in retinoblastoma (tumor staging)
+ 421188008 http://snomed.info/sct                                                                      Tumor staging descriptor r (tumor staging)
+ 421211000 http://snomed.info/sct                                                               Lymphoma staging symptom status B (tumor staging)
+ 421294007 http://snomed.info/sct                                                       Timing of liver tumor staging pre-surgery (tumor staging)
+ 421426001 http://snomed.info/sct                                                                      Tumor staging descriptor a (tumor staging)
+ 421432006 http://snomed.info/sct                                                   Choroidal invasion stage C3 in retinoblastoma (tumor staging)
+ 421655002 http://snomed.info/sct                                                 Optic nerve invasion stage N1 in retinoblastoma (tumor staging)
+ 421683000 http://snomed.info/sct                                                 Optic nerve invasion stage N0 in retinoblastoma (tumor staging)
+ 421745006 http://snomed.info/sct                                                   Choroidal invasion stage C4 in retinoblastoma (tumor staging)
+ 421755005 http://snomed.info/sct                                                                      Tumor staging descriptor y (tumor staging)
+ 421824005 http://snomed.info/sct                                                                      Tumor staging descriptor p (tumor staging)
+ 421838003 http://snomed.info/sct                                                 Optic nerve invasion stage N3 in retinoblastoma (tumor staging)
+ 421923000 http://snomed.info/sct                                               Central nervous system stage B2 in retinoblastoma (tumor staging)
+ 422196000 http://snomed.info/sct                                                                      Tumor staging descriptor D (tumor staging)
+ 422203007 http://snomed.info/sct                                               Central nervous system stage B1 in retinoblastoma (tumor staging)
+ 443830009 http://snomed.info/sct American Joint Commission on Cancer, Cancer Staging Manual, 7th edition neoplasm staging system (tumor staging)
+ 444256004 http://snomed.info/sct American Joint Commission on Cancer, Cancer Staging Manual, 6th edition neoplasm staging system (tumor staging)
+ 897275008 http://snomed.info/sct                    American Joint Commission on Cancer, Cancer Staging Manual, 8th edition tumor staging system
+1149099005 http://snomed.info/sct                                                  Binet staging classification for chronic lymphocytic leukaemia
+1149131009 http://snomed.info/sct                                                            Rai staging system for chronic lymphocytic leukaemia
+1149164009 http://snomed.info/sct                                     ACPS (Australian Clinico-pathological Staging) System for colorectal cancer
+1149295006 http://snomed.info/sct                                                                                        Malignant tumour staging
+1269566009 http://snomed.info/sct                 American Joint Commission on Cancer, Cancer Staging Manual, 9th version neoplasm staging system
+1287643004 http://snomed.info/sct                                                    INRG (International Neuroblastoma Risk Group) staging system
+1287646007 http://snomed.info/sct                                                International Germ Cell Consensus Classification (tumor staging)
+1287647003 http://snomed.info/sct                                             Toronto Childhood Cancer Stage Guidelines Version 2 (tumor staging)
+1287648008 http://snomed.info/sct                                       Masaoka-Koga stage classification for thymic malignancies (tumor staging)
+1287844008 http://snomed.info/sct                                                            COG (Children's Oncology Group) renal staging system
+1287845009 http://snomed.info/sct                                                  Children's Oncology Group liver staging system (tumor staging)
+1287958009 http://snomed.info/sct                                                   French-American-British classification system (tumor staging)
+1297085001 http://snomed.info/sct                                                                    Lugano classification adult Hodgkin lymphoma
+1297091004 http://snomed.info/sct                                                                Lugano classification childhood Hodgkin lymphoma
+1297092006 http://snomed.info/sct                                           Lugano classification advanced stage Hodgkin lymphoma (tumor staging)
+
+Table 3:
+         0                                                                                                                                                                                           1
+     Level A few code lists that FHIR defines are hierarchical - each code is assigned a level.  In this scheme, some codes are under other codes, and imply that the code they are under also applies
+    System                                                                                              The source of the definition of the code (when the value set draws in codes defined elsewhere)
+      Code                                                                                                                                        The code (used as the code in the resource instance)
+   Display                  The display (used in the display element of a Coding). If there is no display, implementers should not simply display the code, but map the concept into their application
+Definition                                                                                                                                                An explanation of the meaning of the concept
+  Comments                                                                                                                                                  Additional notes about how to use the code
+

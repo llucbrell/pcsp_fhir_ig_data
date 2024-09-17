@@ -1,0 +1,1353 @@
+PanCareSurPass FHIR IG - Home Page
+Official URL: http://hl7.eu/fhir/ig/pcsp/ImplementationGuide/hl7.eu.fhir.pcsp
+Version: 0.2.0
+Draft as of 2024-09-11 	Computable Name: PCSPImplementationGuide
+
+    Scope
+    The PancareSurPass Project
+    Dependencies
+    Cross Version Analysis
+    Global Profiles
+    IP statements
+    Authors and Contributors
+
+Scope
+
+Specify HL7 FHIR logical models and profiles to be used within the European project PanCareSurPass. This project studies the scale-up and implementation of the digital Survivorship Passport to improve people-centred care for childhood cancer survivors.
+The PancareSurPass Project
+Overview
+
+PanCareSurPass is a EU funded Research and Innovation action aiming to study the scale-up and implementation of the digital Survivorship Passport to improve people-centred care for childhood cancer survivors.
+
+PanCareSurPass will conduct a robust assessment of the implementation of the Survivorship Passport by first conducting a pre-implementation study in six countries (Austria, Belgium, Germany, Italy, Lithuania, Spain) representing three infrastructural scenarios in Europe. The Survivorship Passport is an innovative, digital tool, developed in previous EU-funded projects, that can be used to overcome well-known knowledge gaps to improve people-centred long-term survivorship care.
+Objectives
+
+The overall aim of PanCareSurPass is to leverage the digital transformation of healthcare to improve people-centred survivorship care by scaling up and implementing an interoperable SurPass v2.0 across Europe.
+Preparation for Implementation
+
+    design and conduct a multi-country pre-implementation study to assess the barriers and facilitators for scaling up use of the SurPass v2.0
+
+    develop a practical Implementation Strategy informed by the findings of the pre-implementation activities and IT technical specifications for SurPass v2.0 ensuring interoperability and cybersecurity.
+
+    develop, test and launch SurPass v2.0 using the IT specifications developed use in the multi-country implementation study.
+
+Implementation and evaluation
+
+    conduct a multi-country implementation study of SurPass v2.0 for people-centred care with >5-year CCS and to assess implementation in terms of people-centred care (e.g. activation, empowerment, satisfaction, increase in knowledge), feasibility and cost effectiveness.
+
+    conduct a parallel observational qualitative study using SurPass v2.0 for delivering people-centred survivorship care to <5-year CCS and >5-year CCS (but with limited treatment data available).
+
+European Future Implementation & Achieving Impact
+
+    develop a Prediction Model using data from the pre-implementation activities and multi-country implementation study to enable healthcare decision-makers to assess the suitability and costs of SurPass v2.0.
+
+    host an Implementation Toolkit for further European implementation of the SurPass for people-centred care in various healthcare settings across Europe.
+
+    disseminate and communicate the importance of people-centred survivorship care and results of PanCareSurPass to key stakeholders to promote future implementation of SurPass v2.0 to improve people-centred survivorship care in Europe.
+
+Dependencies
+IG	Package	FHIR	Comment
+.. PanCareSurPass Project HL7 FHIR Implementation Guide	hl7.eu.fhir.pcsp#0.2.0	R4	
+... HL7 Terminology (THO)	hl7.terminology.r4#6.0.2	R4	Automatically added as a dependency - all IGs depend on HL7 Terminology
+... FHIR Extensions Pack	hl7.fhir.uv.extensions.r4#5.1.0	R4	Automatically added as a dependency - all IGs depend on the HL7 Extension Pack
+... International Patient Summary Implementation Guide	hl7.fhir.uv.ips#2.0.0-ballot	R4	
+... minimal Common Oncology Data Elements (mCODE) Implementation Guide	hl7.fhir.us.mcode#4.0.0-ballot	R4	
+.... HL7 Terminology (THO)	hl7.terminology.r4#5.3.0	R4	
+.... US Core Implementation Guide	hl7.fhir.us.core#5.0.1	R4	
+..... HL7 Terminology (THO)	hl7.terminology.r4#3.1.0	R4	
+..... Bulk Data Access IG	hl7.fhir.uv.bulkdata#2.0.0	R4	
+..... SMART App Launch	hl7.fhir.uv.smart-app-launch#2.0.0	R4	
+..... 	us.nlm.vsac#0.7.0	R4	
+..... Structured Data Capture	hl7.fhir.uv.sdc#3.0.0	R4	
+...... FHIR R4 package : Examples	hl7.fhir.r4.examples#4.0.1	R4	
+.... Genomics Reporting Implementation Guide	hl7.fhir.uv.genomics-reporting#2.0.0	R4	
+​.... FHIR Extensions Pack	hl7.fhir.uv.extensions#5.1.0-cibuild	R5	
+..... HL7 Terminology (THO)	hl7.terminology.r5#5.3.0	R5	
+
+Package hl7.fhir.uv.extensions.r4#5.1.0
+
+This IG defines the global extensions - the ones defined for everyone. These extensions are always in scope wherever FHIR is being used (built Sat, Apr 27, 2024 18:39+1000+10:00)
+
+Package hl7.fhir.uv.bulkdata#2.0.0
+
+FHIR based approach for exporting large data sets from a FHIR server to a client application (built Fri, Nov 26, 2021 05:56+1100+11:00)
+
+Package hl7.fhir.r4.examples#4.0.1
+
+Example resources in the R4 version of the FHIR standard
+
+Package hl7.fhir.uv.sdc#3.0.0
+
+The SDC specification provides an infrastructure to standardize the capture and expanded use of patient-level data collected within an EHR.
+This includes two components:
+* Support more sophisticated questionnaire/form use-cases such as those needed for research, oncology, pathology and other clinical domains.
+*Support pre-population and auto-population of EHR data into forms/questionnaires for uses outside direct clinical care (patient safety, adverse event reporting, public health reporting, etc.). (built Tue, Mar 8, 2022 18:32+0000+00:00)
+
+Package hl7.fhir.us.core#5.0.1
+
+The US Core Implementation Guide is based on FHIR Version R4 and defines the minimum conformance requirements for accessing patient data. The Argonaut pilot implementations, ONC 2015 Edition Common Clinical Data Set (CCDS), and ONC U.S. Core Data for Interoperability (USCDI) v1 provided the requirements for this guide. The prior Argonaut search and vocabulary requirements, based on FHIR DSTU2, are updated in this guide to support FHIR Version R4. This guide was used as the basis for further testing and guidance by the Argonaut Project Team to provide additional content and guidance specific to Data Query Access for purpose of ONC Certification testing. These profiles are the foundation for future US Realm FHIR implementation guides. In addition to Argonaut, they are used by DAF-Research, QI-Core, and CIMI. Under the guidance of HL7 and the HL7 US Realm Steering Committee, the content will expand in future versions to meet the needs specific to the US Realm. These requirements were originally developed, balloted, and published in FHIR DSTU2 as part of the Office of the National Coordinator for Health Information Technology (ONC) sponsored Data Access Framework (DAF) project. For more information on how DAF became US Core see the US Core change notes. (built Wed, Jun 22, 2022 19:44+0000+00:00)
+
+Package hl7.fhir.uv.genomics-reporting#2.0.0
+
+Guidelines for reporting of clinical genomics results using HL7 FHIR. (built Mon, May 9, 2022 16:52+0000+00:00)
+
+Package hl7.fhir.uv.extensions#5.1.0-cibuild
+
+This IG defines the global extensions - the ones defined for everyone. These extensions are always in scope wherever FHIR is being used (built Tue, Mar 12, 2024 13:29+1100+11:00)
+
+Package hl7.fhir.us.mcode#4.0.0-ballot
+
+mCODE™ (short for Minimal Common Oncology Data Elements) is an initiative intended to assemble a core set of structured data elements for oncology electronic health records. (built Tue, Apr 9, 2024 21:16+0000+00:00)
+Cross Version Analysis
+
+​This is an R4 IG. None of the features it uses are changed in R4B, so it can be used as is with R4B systems. Packages for both R4 (hl7.eu.fhir.pcsp.r4) and R4B (hl7.eu.fhir.pcsp.r4b) are available.
+Global Profiles
+
+There are no Global profiles defined
+IP statements
+
+This publication includes IP covered under the following statements.
+
+    The UCUM codes, UCUM table (regardless of format), and UCUM Specification are copyright 1999-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. https://ucum.org/trac/wiki/TermsOfUse
+    Show Usage
+    These codes are excerpted from Digital Imaging and Communications in Medicine (DICOM) Standard, Part 16: Content Mapping Resource, Copyright © 2011 by the National Electrical Manufacturers Association.
+    Show Usage
+    This material contains content from LOINC. LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc.
+    Show Usage
+    This material contains content that is copyright of SNOMED International. Implementers of these specifications must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/get-snomed or info@snomed.org.
+    Show Usage
+    This material derives from the HL7 Terminology (THO). THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license
+    Show Usage
+    This material derives from the HL7 Terminology (THO). THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license.html
+    Show Usage
+    This material derives from the HL7 Terminology THO. THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license.html
+    Show Usage
+
+Authors and Contributors
+Roles 	Name 	Organization 	Contact
+Autore 	Giorgio Cangioli 	HL7 Europe 	giorgio.cangioli_at_gmail.com
+
+
+PCSP Maturity Model
+
+    Overview
+    The model
+
+Overview
+
+Each model logical model and profile included in this has a PCSP Maturity Level associated to help PanCareSurPass implementers to distinguish in the CI build the artefacts that are still under development from those that are ready to be tested or used. This maturity level should not be confused for the current FMM (FHIR maturity model) defined for FHIR resources nor with the under specification HL7 FHIR artefacts maturity model.
+The model
+
+The model used is described in the following table; it constitutes of 5 levels and its interpretation should be slightly adapted based on the type of artefacts is applied to (see next sub-sections).
+Level 	Label
+0 	Draft
+1 	Complete draft
+2 	Ready for review
+3 	Under testing
+4 	Trial Use
+5 	Final
+Logical Model
+Level 	Label 	Description
+0 	Draft 	The logical model is under development.
+1 	Profiles in progress 	
+
+A first complete logical model is available.
+
+Associated resource profiles are under definition.
+2 	Ready for review 	
+
+A first complete logical model is available.
+
+Most of the associated resource profiles have been defined.
+
+The model and the associated resource profiles are ready to be reviewed, some initial implementations are ongoing.
+3 	Under testing 	Most of the PCSP piloting systems have implemented the associated resource profiles for testing purposes.
+4 	Trial Use 	
+
+The model and all the needed associated resource profiles are candidate to be released.
+
+PCSP piloting systems have implemented the associated resource profiles for trial use.
+5 	Final 	
+
+Models and all the needed associated resource profiles are consolidated.
+
+PCSP piloting systems have implemented the associated resource profiles for production.
+Resource Profiles
+Level 	Label 	Description
+0 	Draft 	This resource profile is under development.
+1 	Complete draft 	A first specification of this resource profile is available.
+2 	Ready for review 	Most of the PCSP piloting systems have implemented this resource profile for testing purposes.
+3 	Under testing 	Test implementations of this resource profile is available by most of the piloting systems.
+4 	Trial Use 	
+
+This resource profile is candidate to be released.
+
+PCSP piloting systems have implemented this resource profile for trial use.
+5 	Final 	
+
+This resource profile is consolidated.
+
+PCSP piloting systems have implemented this resource profile for production.
+
+
+Logical Models
+
+    SurPass Overview
+    HL7 FHIR Models
+
+SurPass Overview
+
+The Survivorship Passport (SurPass) is a digital tool based on international clinical guidelines that provides childhood cancer survivors (CCS) and health care professionals (HCPs) with the information needed for long-term follow-up survivorship care, better health promotion, improved late effects management and secondary cancer prevention. The SurPass provides an overview of all relevant personal health data related to the cancer treatment of CCS (e.g. demographics, cancer diagnosis, therapeutic management etc.) in a Treatment Summary together with a personalized Survivorship Care Plan.
+SurPass Overview
+HL7 FHIR Models
+
+The following table summarizes the logical models used by this guide.
+Name 	Title 	Description
+Chemotherapy	Chemotherapy	Chemotherapy Maturity Level: 2 - Ready for Review
+Diagnosis	Diagnosis	Diagnosis Maturity Level: 2 - Ready for Review
+DocMetadataFSE	Metadata FSE Italy	Metadata FSE Italy. Maturity Level: 0
+FrontLineTreatment	Front Line Treatment	Front Line Treatment. The first treatment given for a disease. It is often part of a standard set of treatments, such as surgery followed by chemotherapy and radiation. When used by itself, first-line therapy is the one accepted as the best treatment. If it does not cure the disease or it causes severe side effects, other treatment may be added or used instead. Also called induction therapy, primary therapy, and primary treatment. Maturity Level: 2 - Ready for Review
+MajorSurgery	Major Surgery	Major Surgery. Maturity Level: 2 - Ready for Review
+OtherInfos	Other info and relevant events	Other info and relevant events Maturity Level: 2 - Ready for Review
+PlanOfCare	Care Plan	Care Plan Maturity Level: 0 - Draft
+Radiotherapy	Radiotherapy	Radiotherapy Maturity Level: 2 - Ready for Review
+RelapseAfterFLT	Progression-Relapse after FLT	Progression-Relapse after FLT Maturity Level: 2 - Ready for Review
+RelapseDuringFLT	Progression-Relapse during FLT	Progression-Relapse during FLT Maturity Level: 2 - Ready for Review
+StemCellTransplantation	Stem Cell Transplantation	Stem Cell Transplantation. Maturity Level: 2 - Ready for Review
+Subject	Subject of care	Subject of care Maturity Level: 2 - Ready for Review
+SurPass	SurPass V2.0	Survivorship Passport V2.0 Maturity Level: 2 - Ready for Review
+TreatmentSummary	Treatment Summary	Treatment Summary data model Maturity Level: 2 - Ready for Review
+
+
+
+Sequence diagrams
+
+Contents:
+
+    Overview
+    Actors
+    Objects
+
+Overview
+
+The following diagrams provide a high level description of the interactions between external local systems (here described as local system A and B, in most cases cohincident) and the SurPass v2.0 Platform.
+
+The first describes the case of generation of a PCSP Passport
+
+ClinicianClinicianLocal System ALocal System ASurPass v2.0 PlatformSurPass v2.0 PlatformLocal System BLocal System BTreatment SummaryoptComplete and validatedraft SCPoptComplete and validateHL7 FHIR SurPass(draft) SurPassPDF SurPass (via HL7 FHIR API)SurPassOnly HL7 FHIR SCP
+
+(draft) SCP
+
+The second of the generation of a PCSP Care Plan
+
+Local System ALocal System ASurPass v2.0 PlatformSurPass v2.0 PlatformLocal System BLocal System BTreatment Summary (minimal data)
+
+draft SCP
+Actors
+Local System A
+
+Any system or system of systems providing to the SurPass v2.0 Platform
+
+    Treatment Summary
+
+SurPass v2.0 Platform
+
+The Pancare SurPass platform:
+
+    receives from the Local System A :
+
+        Treatment Summary
+
+    offers a web GUI enabling Clinicians to complete and validate the Treatment Summary
+
+    processes the Treatment Summary to generate the draft SCP (Survivor Care Plan)
+
+    offers a web GUI enabling Clinicians to complete and validate the draft SCP (Survivor Care Plan)
+
+    makes available toLocal System B
+        A HL7 FHIR SurPass(draft or final); and/or
+        A PDF SurPass(draft or final) via HL7 FHIR API; and/or
+        A HL7 FHIR draft SCP (Survivor Care Plan).
+
+Local System B
+
+Any system or system of systems receiving from the SurPass v2.0 Platform
+
+    A HL7 FHIR SurPass(draft or final); and/or
+    A PDF SurPass(draft or final) via HL7 FHIR API; and/or
+    A HL7 FHIR draft SCP (Survivor Care Plan).
+
+It may be the same system realizing the Local System A
+Objects
+Treatment Summary
+
+Logical model of the Treatment Summary
+Survivor Care Plan
+
+Logical model of the SCP Care Plan
+SurPass with the SCP (draft or final)
+
+Logical model of the SurPass V2.0	
+
+
+Collaboration diagrams
+
+    Overview
+    Case 1: Austria
+    Case 2: Italy
+    Case 3: Germany
+    Case 4: Belgium
+    Case 5: Lithuania
+    Case 6: Spain
+
+Overview
+
+This page summarizes the mechanisms that have been identified so far by the PanCareSurPass project to allow the collaboration among the actors involved in the Survivorship Passport generation and management process.
+
+The collaboration described are:
+
+    Case 1: Austria
+
+    Case 2: Italy
+
+    Case 3: Germany
+
+    Case 4: Belgium
+
+    Case 5: Lithuania
+
+    Case 6: Spain
+
+
+Profiles
+
+Profiles
+
+This page lists all the profiles that have been specificed for the purpose of this project
+BiologicallyDerivedProduct: Stem Cell
+
+This profile defines how to represent Stem Cell in FHIR for describing a Stem Cell Transplantation data required by the PanCareSurPass algorithm to generate the care plan.
+Bundle: Survivor Passport
+
+This profile represents the constraints applied to the Bundle resource by the PCSP FHIR Implementation Guide.
+CarePlan: PCSP-generated plan
+
+This profile defines how to represent the Care Plan proposed by the PCSP platoform in HL7 FHIR. This profile can be used for both the version generated by the platoform and that curated and validated by Clinicians.
+Composition: Survivor Passport
+
+This profile defines how to represent a PCSP Survivor Passport by using a HL7 FHIR Composition for the purpose of the PanCareSurPass project.
+Condition: GvHD
+
+This profile defines how to represent Graft versus host disease (GvHD) in HL7 FHIR for the purpose of the PanCareSurPass project.
+Condition: Metastatic Cancer
+
+This profile defines how to represent metastatic cancer in FHIR for the purpose of the PanCareSurPass project. This profile is inspired from the mCode IG. Records the history of secondary neoplasms, including location(s) and the date of onset of metastases. A secondary cancer results from the spread (metastasization) of cancer from its original site (Definition from: NCI Dictionary of Cancer Terms).
+Condition: Others
+
+This profile defines how to describe the presence of some other conditions (e.g. Hypogonadism, Growth hormone deficiency, Hydrocephalus in HL7 FHIR for the purpose of the PanCareSurPass project.
+Condition: Primary Cancer
+
+This profile defines how to represent Primary Cancer Condition in HL7 FHIR for the purpose of the PanCareSurPass project. This profile is inspired from the mCode IG. A primary cancer condition, the original or first tumor in the body (Definition from: NCI Dictionary of Cancer Terms). Cancers that are not clearly secondary (i.e., of uncertain origin or behavior) should be documented as primary. This profile should be also used for documenting primary cancer relapses during or after FLT.
+Condition: Severe Toxicity
+
+This profile defines how to describe a Severe Toxicity event in HL7 FHIR for the purpose of the PanCareSurPass project.
+DocumentReference: PCSP
+
+This profile defines how to embed a PDF PCSP Survivor Passport in FHIR for the purpose of the PanCareSurPass project. This profile can be aslo used for send attachments (e.g Raditherapy reports or HDR) to the platform
+Encounter: Treatment Center
+
+This profile defines how to represent data of arrival to the center and Center information in FHIR for the purpose of the PanCareSurPass project.
+Location: PCSP
+
+This profile defines how to represent FHIR Location for the purpose of the PanCareSurPass project.
+MedicationAdministration: Chemotherapy
+
+This profile defines how to represent MedicationAdministration in HL7 FHIR for describing Chemotherapy data for the purpose of the PanCareSurPass project.
+MedicationStatement: Chemotherapy
+
+This profile defines how to represent MedicationStatement in FHIR for describing minimal information about provided medications for the purpose of the PanCareSurPass project.
+Observation: Blood type/RH
+
+This profile defines how to represent Blood type/RH before or after the SCT in HL7 FHIR for the purpose of the PanCareSurPass project.
+Observation: Cancer Stage Group
+
+The extent of the cancer in the body, according to a given cancer staging classification system, based on evidence such as physical examination, imaging, and/or biopsy or based on pathologic analysis of a specimen.
+Observation: Chemotherapy Cumulative Dose
+
+This profile defines how to represent Chemotherapy Cumulative Dose in FHIR for the purpose of the PanCareSurPass project.
+Observation: Diagnosis details
+
+This profile defines how to represent diagnosis details (when the diagnosis was made; who made it;...) in FHIR for the purpose of the PanCareSurPass project.
+Observation: Hereditary Predisposition
+
+This profile defines how to represent Hereditary Predispositions in HL7 FHIR for the purpose of the PanCareSurPass project.
+Observation: Radiotherapy Total Dose PCSP
+
+This profile defines how to represent Radiotherapy Total Dose in FHIR for the purpose of the PanCareSurPass project.
+Observation: Risk Factor
+
+This profile defines how to represent a Risk Factor in HL7 FHIR as determined by the PCSP platoform.
+Observation: TNM Distant Metastases Category
+
+Category describing the extent of a tumor metastasis in remote anatomical locations, based on evidence such as physical examination, imaging, and/or biopsy.
+Observation: TNM Primary Tumor Category
+
+Category of the primary tumor, based on its size and extent, based on evidence such as physical examination, imaging, and/or biopsy.
+Observation: TNM Regional Nodes Category
+
+Category of the presence or absence of metastases in regional lymph nodes, based on evidence such as physical examination, imaging, and/or biopsy.
+Organization: Primary Treatment Center / Center of diagnosis
+
+This profile defines how to represent the Primary Treatment Center or the Center of diagnosis in FHIR for the purpose of the PanCareSurPass project.
+Patient: PCSP
+
+This profile defines how to represent Patient in FHIR for the purpose of the PanCareSurPass project.
+PlanDefinition: Front Line Treatment
+
+This profile defines how to provide Front Line Treatment protocol infos in FHIR for the scope of the PanCareSurPass project.
+Procedure: Catheter
+
+This profile defines how to describe the Catheterization of vein Procedure in HL7 FHIR for the purpose of the PanCareSurPass project.
+Procedure: Cryopreservation
+
+This profile defines how to describe the cryopreservation of sperms or oocyte for cancer patient in HL7 FHIR for the purpose of the PanCareSurPass project.
+Procedure: Front Line Treatment
+
+This profile defines how to provide Front Line Treatment data in FHIR for the scope of the PanCareSurPass project.
+Procedure: Other Treatments
+
+This profile defines how to convey textual information about other oncological treatments in HL7 FHIR for the purpose of the PanCareSurPass project.
+Procedure: Radiotherapy
+
+This profile defines how to represent Procedures in FHIR for describing a set of Radiotherapy data required by the PanCareSurPass algorithm to generate the care plan.
+Procedure: Radiotherapy Boost
+
+This profile defines how to represent Procedures in FHIR for describing a set of data required by PanCareSurPass for Radiotherapy Boosts
+Procedure: Radiotherapy Shielding
+
+This profile defines how to represent Shielding Procedures in FHIR for describing a set of Radiotherapy data required by the PanCareSurPass algorithm to generate the care plan.
+Procedure: SCT Prophylaxis
+
+This profile defines how to represent GVHD prophylaxis, conditioning regimen Procedures in FHIR for supporting Stem Cell Transplantation data, as required by the PanCareSurPass algorithm to generate the care plan.
+Procedure: Stem Cell Transplantation
+
+This profile defines how to represent Procedures in FHIR for describing a set of Stem Cell Transplantation data required by the PanCareSurPass algorithm to generate the care plan.
+Procedure: Surgery
+
+This profile defines how to represent Procedures in FHIR for describing a set of Surgery data required by the PanCareSurPass algorithm to generate the care plan. It is used also to provide inforamtion about shunt, amputation, and other procedures
+Procedure: Transfusion other infos
+
+This profile defines how to describe the Transfusion Procedure in HL7 FHIR for the purpose of the PanCareSurPass project.
+
+
+
+
+Terminology
+
+    Code Systems
+    Value Sets
+    Concept Maps
+
+Code Systems
+
+These code systems have been defined for this implementation guide:
+
+    PCSP Code System
+    Radiotherapy sites
+    PCSP Recommendations
+    PCSP Conditions at risk
+    Risk Factors
+
+Value Sets
+
+These value sets have been defined for this implementation guide:
+
+    Chemotherapy cumulative dose units
+    Active or resolved Condition
+    Annotation type
+    Conditions: follow up
+    Antineoplastic and immunostimulating agents
+    Grade: follow up
+    Laterality Qualifier Value Set
+    Body Location Qualifier Value Set
+    Stage Group Value Set
+    Cancer Staging System Value Set
+    Observation Codes for Distant Metastases Category
+    Observation Codes for Primary Tumor Category
+    Observation Codes for Regional Node Category
+    Observation Codes for Stage Group Category
+    TNM Distant Metastases Category Value Set
+    TNM Primary Tumor Category Value Set
+    TNM Regional Nodes Category Value Set
+    Morphologically abnormal structure
+    Other Infors Condition
+    Relapse type (Local/Distant/Combined)
+    Toxicity Severity
+    Acute Gvhd Grade
+    Chronic Gvhd condition
+    Gvhd condition
+    Prosthesis Type
+    Prosthetic Surgical Procedure Type
+    Surgical Actions
+    Affected Organs (surgery)
+    Amputation Surgical Procedure Type
+    Brachytherapy Type
+    Calculated|Estimated
+    Colostomy Surgical Procedure Type
+    Document Type
+    FLT Plan Type
+    Body Location Qualifier Value Set
+    Gastrostomy Surgical Procedure Type
+    Hereditary Predispositions or Disease
+    ICCC-3
+    Hereditary Predispositions (ICD10)
+    ICD-O-3 Morphology
+    ICD-O-3 Topography
+    Radiotherapy Isotopes
+    Not Applicable|Unknown
+    Not Performed|Unknown
+    Hereditary Predispositions (Orphacode)
+    Other/Unknown/Text
+    Radiotherapy sites
+    Radiotherapy Device Type
+    Radiotherapy Dose Type
+    Radiotherapy dose units
+    Radiotherapy Type
+    Recommendations
+    Conditions at risk
+    Risk Factors
+    Route of administration
+    Sacrified Organs (surgery)
+    Stem Cell Donor type
+    SCT Prophylaxis Cathegory
+    SCT Prophylaxis Type
+    Stem Cell Source type
+    Before/after procedure
+    Stem Cell Transplantation type
+    Shunt Procedure Type
+    Surgical Procedure Type
+    Unknown|Other
+
+Concept Maps
+
+These concept maps have been defined for this implementation guide:
+
+
+Extensions
+
+Annotation Type
+
+This extension is used to indicate the kind of note captured
+Previous Status
+
+This extension provides a mean to indicate the previous clinicalStatus of a condition. It might be used for example to indicate if a relapse is now in remission.
+Relapse Type
+
+This extension is used to indicate if a relapse/progression is local, remote or combined.
+Act Location
+
+This extension provides a means to indicate where an act was, is or it is intended to take place.
+Body Location Qualifier
+
+Qualifier to refine an body location. These include qualifiers for relative location, directionality, number, and plane, and exclude qualifiers for laterality.
+Condition related to resource
+
+The resource has an unspecified relationship with a Condition.
+Laterality Qualifier
+
+Qualifier to specify laterality.
+Randomization arm for trial
+
+This extension is used to provide a textual description of the randomization arm for trials (FLT).
+Not affected Organ
+
+This extension is used to explicitly indicate the Organ (body site) that has not been affected by this procedure.
+Performed Timing
+
+This extension allows to indicate when the procedure was performed as Timing.
+Procedure Used Reference
+
+Extend the usedReference element to BiologicallyDerivedProduct
+Radiotherapy Energy or Isotope
+
+The radiation energy used for radiotherapy. The energy spectrum is characterized by the maximum energy, the maximum accelaration voltage, or the used isotope. This extension is based on the CodeX™ Radiation Therapy RadiotherapyEnergyOrIsotope extension
+Resource related information
+
+This extension provides a means to link the source resource to any target related information. This extension shall not be used when other more specific elements or standard extensions apply. E.g. Observation.hasMember.
+Stem Cell Donor Type
+
+Specify the type of donor for the cell used in a transplantation
+Stem Cell Source Type
+
+Specify the type of source for the cell used in a transplantation
+Sacrified organ
+
+Organs are 'sacrified' either to allow a radical excision of the tumor or on purpose (spleen) for staging procedures
+
+Examples
+
+    BiologicallyDerivedProduct
+    Bundle
+    CarePlan
+    Composition
+    Condition
+    DocumentReference
+    Encounter
+    Location
+    MedicationAdministration
+    MedicationStatement
+    Observation
+    Organization
+    Patient
+    PlanDefinition
+    Procedure
+
+BiologicallyDerivedProduct
+
+    BiologicallyDerivedProduct/BiologicallyDerivedProduct-SCT1
+
+Bundle
+
+    Bundle/46bee55b-5cd0-4727-86a5-3f9317a5d7d9
+
+CarePlan
+
+    CarePlan/CarePlanExample-1
+
+Composition
+
+    Bundle/46bee55b-5cd0-4727-86a5-3f9317a5d7d9
+
+Condition
+
+    Condition/ConditionPrimCancerMainzFischer
+    Condition/ConditionPrimCancerMainzZeisig
+    Condition/ConditionSecCancerMainzZeisig
+    Condition/PrimaryCancerHulafe-1
+    Condition/21982
+    Condition/21983
+    Condition/21984
+    Condition/21985
+    Condition/21986
+    Condition/21988
+    Condition/3980
+    Condition/3982
+    Condition/3986
+    Condition/4953
+    Condition/5008
+    Condition/5062
+
+DocumentReference
+
+    DocumentReference/DocumentReferenceExample-1
+
+Encounter
+
+    Encounter/EncHulafe-1
+    Encounter/EncounterPrimCancerMainzFischer
+    Encounter/EncounterPrimCancerMainzZeisig
+
+Location
+
+    Hospital la Fe
+    Universitätsklinikum Schleswig-Holstein - Campus Lübeck
+
+MedicationAdministration
+
+    MedicationAdministration/ChemoHulafe-1-Ciclofosfamide
+    MedicationAdministration/ChemoHulafe-1-Citarabina
+    MedicationAdministration/ChemoHulafe-1-Metotrexato
+    MedicationAdministration/ChemoHulafe-1-Vincristina
+
+MedicationStatement
+
+    MedicationStatement/ChemoHulafe-1-corticosteroids
+
+Observation
+
+    Observation/ChemoHulafe-1-Ciclofosfamide-dose
+    Observation/ChemoHulafe-1-Citarabina-dose
+    Observation/ChemoHulafe-1-Metotrexato-dose
+    Observation/ChemoHulafe-1-Vincristina-dose
+    Observation/ObservationCBloodSCT-1-1
+    Observation/ObservationPrimCancerMainzZeisig
+    Observation/ObservationRadTotalDose-1
+    Observation/ObservationRiskFactor-1
+    Observation/ObservationRiskFactor-2
+    Observation/ObservationRiskFactor-3
+    Observation/ObservationRiskFactor-4
+    Observation/3974
+
+Organization
+
+    Hospital Universitari i Politècnic La Fe
+
+Patient
+
+    Patient/PatientCineca
+    Patient/PatientHulafe-1
+    Patient/PatientHulafe
+    Patient/PatientMainzFischer
+    Patient/PatientMainzZeisig
+    Patient/PatientVulsk
+
+PlanDefinition
+
+    PlanDefinition[https://psp-sp-fhir.dev.sanit.cineca.it/fhir/PlanDefinition/3976|0.2.0]
+
+Procedure
+
+    Procedure/ProcedureRadio-1
+    Procedure/ProcedureSTC-1
+    Procedure/ProcedureTransfusion-1
+    Procedure/21987
+    Procedure/21992
+    Procedure/3975
+    Procedure/3978
+    Procedure/3985
+    Procedure/3992
+    Procedure/3993
+    Procedure/3996
+    Procedure/3998
+    Procedure/4952
+    Procedure/4955
+
+Examples: all the examples that are used in this Implementation Guide available for download:
+
+Useful Downloads
+
+    Full IG
+    NPM Package and Definitions
+    Examples
+
+Full IG
+
+Download the entire implementation guide here.
+NPM Package and Definitions
+
+The following file contains all the value sets, profiles, extensions, list of pages and urls in the IG, etc. defined as part of this Implementation Guide:
+
+    NPM Package
+
+In addition there are format specific definition files:
+
+    XML
+    JSON
+    TTL
+
+These files should be the first choice whenever generating any implementation artifacts since they contain all of the rules about what makes these profiles valid. Implementers will still need to be familiar with the content of the specification and profiles that apply in order to make a conformant implementation. See the overview on validating FHIR profiles and resources.
+
+There are also specific packages for the R4 and R4B FHIR specifications:
+R4-specific NPM Package and Definitions
+
+    ​R4 NPM Package
+
+R4B-specific NPM Package and Definitions
+
+    ​R4B NPM Package
+
+Examples
+
+All of the examples that are used in this Implementation Guide are available for download:
+
+    XML
+    JSON
+    TTL
+
+
+Artifacts Summary
+
+Contents:
+
+    SurPass Logical model
+    SurPass Bundle profile
+    Structures: Logical Models
+    Structures: Resource Profiles
+    Structures: Extension Definitions
+    Terminology: Value Sets
+    Terminology: Code Systems
+    Example: Example Instances
+    Other
+
+This page provides a list of the FHIR artifacts defined as part of this implementation guide.
+SurPass Logical model
+
+Logical data models as HL7 FHIR resources
+SurPass V2.0 	
+
+Survivorship Passport V2.0 Maturity Level: 2 - Ready for Review
+SurPass Bundle profile
+
+HL7 FHIR profile for the SurPass document bundle
+Bundle: Survivor Passport 	
+
+This profile represents the constraints applied to the Bundle resource by the PCSP FHIR Implementation Guide.
+Structures: Logical Models
+
+These define data models that represent the domain covered by this implementation guide in more business-friendly terms than the underlying FHIR resources.
+Care Plan 	
+
+Care Plan Maturity Level: 0 - Draft
+Chemotherapy 	
+
+Chemotherapy Maturity Level: 2 - Ready for Review
+Diagnosis 	
+
+Diagnosis Maturity Level: 2 - Ready for Review
+Front Line Treatment 	
+
+Front Line Treatment. The first treatment given for a disease. It is often part of a standard set of treatments, such as surgery followed by chemotherapy and radiation. When used by itself, first-line therapy is the one accepted as the best treatment. If it does not cure the disease or it causes severe side effects, other treatment may be added or used instead. Also called induction therapy, primary therapy, and primary treatment. Maturity Level: 2 - Ready for Review
+Major Surgery 	
+
+Major Surgery. Maturity Level: 2 - Ready for Review
+Metadata FSE Italy 	
+
+Metadata FSE Italy. Maturity Level: 0
+Other info and relevant events 	
+
+Other info and relevant events Maturity Level: 2 - Ready for Review
+Progression-Relapse after FLT 	
+
+Progression-Relapse after FLT Maturity Level: 2 - Ready for Review
+Progression-Relapse during FLT 	
+
+Progression-Relapse during FLT Maturity Level: 2 - Ready for Review
+Radiotherapy 	
+
+Radiotherapy Maturity Level: 2 - Ready for Review
+Stem Cell Transplantation 	
+
+Stem Cell Transplantation. Maturity Level: 2 - Ready for Review
+Subject of care 	
+
+Subject of care Maturity Level: 2 - Ready for Review
+Treatment Summary 	
+
+Treatment Summary data model Maturity Level: 2 - Ready for Review
+Structures: Resource Profiles
+
+These define constraints on FHIR resources for systems conforming to this implementation guide.
+BiologicallyDerivedProduct: Stem Cell 	
+
+This profile defines how to represent Stem Cell in FHIR for describing a Stem Cell Transplantation data required by the PanCareSurPass algorithm to generate the care plan.
+CarePlan: PCSP-generated plan 	
+
+This profile defines how to represent the Care Plan proposed by the PCSP platoform in HL7 FHIR. This profile can be used for both the version generated by the platoform and that curated and validated by Clinicians.
+Composition: Survivor Passport 	
+
+This profile defines how to represent a PCSP Survivor Passport by using a HL7 FHIR Composition for the purpose of the PanCareSurPass project.
+Condition: GvHD 	
+
+This profile defines how to represent Graft versus host disease (GvHD) in HL7 FHIR for the purpose of the PanCareSurPass project.
+Condition: Metastatic Cancer 	
+
+This profile defines how to represent metastatic cancer in FHIR for the purpose of the PanCareSurPass project. This profile is inspired from the mCode IG. Records the history of secondary neoplasms, including location(s) and the date of onset of metastases. A secondary cancer results from the spread (metastasization) of cancer from its original site (Definition from: NCI Dictionary of Cancer Terms).
+Condition: Others 	
+
+This profile defines how to describe the presence of some other conditions (e.g. Hypogonadism, Growth hormone deficiency, Hydrocephalus in HL7 FHIR for the purpose of the PanCareSurPass project.
+Condition: Primary Cancer 	
+
+This profile defines how to represent Primary Cancer Condition in HL7 FHIR for the purpose of the PanCareSurPass project. This profile is inspired from the mCode IG. A primary cancer condition, the original or first tumor in the body (Definition from: NCI Dictionary of Cancer Terms). Cancers that are not clearly secondary (i.e., of uncertain origin or behavior) should be documented as primary. This profile should be also used for documenting primary cancer relapses during or after FLT.
+Condition: Severe Toxicity 	
+
+This profile defines how to describe a Severe Toxicity event in HL7 FHIR for the purpose of the PanCareSurPass project.
+DocumentReference: PCSP 	
+
+This profile defines how to embed a PDF PCSP Survivor Passport in FHIR for the purpose of the PanCareSurPass project. This profile can be aslo used for send attachments (e.g Raditherapy reports or HDR) to the platform
+Encounter: Treatment Center 	
+
+This profile defines how to represent data of arrival to the center and Center information in FHIR for the purpose of the PanCareSurPass project.
+Location: PCSP 	
+
+This profile defines how to represent FHIR Location for the purpose of the PanCareSurPass project.
+MedicationAdministration: Chemotherapy 	
+
+This profile defines how to represent MedicationAdministration in HL7 FHIR for describing Chemotherapy data for the purpose of the PanCareSurPass project.
+MedicationStatement: Chemotherapy 	
+
+This profile defines how to represent MedicationStatement in FHIR for describing minimal information about provided medications for the purpose of the PanCareSurPass project.
+Observation: Blood type/RH 	
+
+This profile defines how to represent Blood type/RH before or after the SCT in HL7 FHIR for the purpose of the PanCareSurPass project.
+Observation: Cancer Stage Group 	
+
+The extent of the cancer in the body, according to a given cancer staging classification system, based on evidence such as physical examination, imaging, and/or biopsy or based on pathologic analysis of a specimen.
+Observation: Chemotherapy Cumulative Dose 	
+
+This profile defines how to represent Chemotherapy Cumulative Dose in FHIR for the purpose of the PanCareSurPass project.
+Observation: Diagnosis details 	
+
+This profile defines how to represent diagnosis details (when the diagnosis was made; who made it;…) in FHIR for the purpose of the PanCareSurPass project.
+Observation: Hereditary Predisposition 	
+
+This profile defines how to represent Hereditary Predispositions in HL7 FHIR for the purpose of the PanCareSurPass project.
+Observation: Radiotherapy Total Dose PCSP 	
+
+This profile defines how to represent Radiotherapy Total Dose in FHIR for the purpose of the PanCareSurPass project.
+Observation: Risk Factor 	
+
+This profile defines how to represent a Risk Factor in HL7 FHIR as determined by the PCSP platoform.
+Observation: TNM Distant Metastases Category 	
+
+Category describing the extent of a tumor metastasis in remote anatomical locations, based on evidence such as physical examination, imaging, and/or biopsy.
+Observation: TNM Primary Tumor Category 	
+
+Category of the primary tumor, based on its size and extent, based on evidence such as physical examination, imaging, and/or biopsy.
+Observation: TNM Regional Nodes Category 	
+
+Category of the presence or absence of metastases in regional lymph nodes, based on evidence such as physical examination, imaging, and/or biopsy.
+Organization: Primary Treatment Center / Center of diagnosis 	
+
+This profile defines how to represent the Primary Treatment Center or the Center of diagnosis in FHIR for the purpose of the PanCareSurPass project.
+Patient: PCSP 	
+
+This profile defines how to represent Patient in FHIR for the purpose of the PanCareSurPass project.
+PlanDefinition: Front Line Treatment 	
+
+This profile defines how to provide Front Line Treatment protocol infos in FHIR for the scope of the PanCareSurPass project.
+Procedure: Catheter 	
+
+This profile defines how to describe the Catheterization of vein Procedure in HL7 FHIR for the purpose of the PanCareSurPass project.
+Procedure: Cryopreservation 	
+
+This profile defines how to describe the cryopreservation of sperms or oocyte for cancer patient in HL7 FHIR for the purpose of the PanCareSurPass project.
+Procedure: Front Line Treatment 	
+
+This profile defines how to provide Front Line Treatment data in FHIR for the scope of the PanCareSurPass project.
+Procedure: Other Treatments 	
+
+This profile defines how to convey textual information about other oncological treatments in HL7 FHIR for the purpose of the PanCareSurPass project.
+Procedure: Radiotherapy 	
+
+This profile defines how to represent Procedures in FHIR for describing a set of Radiotherapy data required by the PanCareSurPass algorithm to generate the care plan.
+Procedure: Radiotherapy Boost 	
+
+This profile defines how to represent Procedures in FHIR for describing a set of data required by PanCareSurPass for Radiotherapy Boosts
+Procedure: Radiotherapy Shielding 	
+
+This profile defines how to represent Shielding Procedures in FHIR for describing a set of Radiotherapy data required by the PanCareSurPass algorithm to generate the care plan.
+Procedure: SCT Prophylaxis 	
+
+This profile defines how to represent GVHD prophylaxis, conditioning regimen Procedures in FHIR for supporting Stem Cell Transplantation data, as required by the PanCareSurPass algorithm to generate the care plan.
+Procedure: Stem Cell Transplantation 	
+
+This profile defines how to represent Procedures in FHIR for describing a set of Stem Cell Transplantation data required by the PanCareSurPass algorithm to generate the care plan.
+Procedure: Surgery 	
+
+This profile defines how to represent Procedures in FHIR for describing a set of Surgery data required by the PanCareSurPass algorithm to generate the care plan. It is used also to provide inforamtion about shunt, amputation, and other procedures
+Procedure: Transfusion other infos 	
+
+This profile defines how to describe the Transfusion Procedure in HL7 FHIR for the purpose of the PanCareSurPass project.
+Structures: Extension Definitions
+
+These define constraints on FHIR data types for systems conforming to this implementation guide.
+Act Location 	
+
+This extension provides a means to indicate where an act was, is or it is intended to take place.
+Annotation Type 	
+
+This extension is used to indicate the kind of note captured
+Body Location Qualifier 	
+
+Qualifier to refine an body location. These include qualifiers for relative location, directionality, number, and plane, and exclude qualifiers for laterality.
+Condition related to resource 	
+
+The resource has an unspecified relationship with a Condition.
+Laterality Qualifier 	
+
+Qualifier to specify laterality.
+Not affected Organ 	
+
+This extension is used to explicitly indicate the Organ (body site) that has not been affected by this procedure.
+Performed Timing 	
+
+This extension allows to indicate when the procedure was performed as Timing.
+Previous Status 	
+
+This extension provides a mean to indicate the previous clinicalStatus of a condition. It might be used for example to indicate if a relapse is now in remission.
+Procedure Used Reference 	
+
+Extend the usedReference element to BiologicallyDerivedProduct
+Radiotherapy Energy or Isotope 	
+
+The radiation energy used for radiotherapy. The energy spectrum is characterized by the maximum energy, the maximum accelaration voltage, or the used isotope. This extension is based on the CodeX™ Radiation Therapy RadiotherapyEnergyOrIsotope extension
+Randomization arm for trial 	
+
+This extension is used to provide a textual description of the randomization arm for trials (FLT).
+Relapse Type 	
+
+This extension is used to indicate if a relapse/progression is local, remote or combined.
+Resource related information 	
+
+This extension provides a means to link the source resource to any target related information. This extension shall not be used when other more specific elements or standard extensions apply. E.g. Observation.hasMember.
+Sacrified organ 	
+
+Organs are ‘sacrified’ either to allow a radical excision of the tumor or on purpose (spleen) for staging procedures
+Stem Cell Donor Type 	
+
+Specify the type of donor for the cell used in a transplantation
+Stem Cell Source Type 	
+
+Specify the type of source for the cell used in a transplantation
+Terminology: Value Sets
+
+These define sets of codes used by systems conforming to this implementation guide.
+Active or resolved Condition 	
+
+Active or resolved Condition
+Acute Gvhd Grade 	
+
+Acute Gvhd Grade
+Affected Organs (surgery) 	
+
+Affected Organs (surgery)
+Amputation Surgical Procedure Type 	
+
+Types of amputation procedure this resource is referring to
+Annotation type 	
+
+Annotation type
+Antineoplastic and immunostimulating agents 	
+
+List of WHO ATC codes for antineoplastic and immunostimulating agents.
+Before/after procedure 	
+
+SCT Timing events: Before/after procedure
+Body Location Qualifier Value Set 	
+
+Qualifiers to refine a body structure or location including qualifiers for relative location, directionality, number, and plane, and excluding qualifiers for laterality.
+Body Location Qualifier Value Set 	
+
+Types of documents exchanged with the PCSP platform
+Brachytherapy Type 	
+
+Types of Brachytherapy this procedure is referring to
+Calculated|Estimated 	
+Calculated 	Estimated Value Set
+Cancer Staging System Value Set 	
+
+System used for staging.
+Chemotherapy cumulative dose units 	
+
+Chemotherapy cumulative dose units
+Chronic Gvhd condition 	
+
+Acute Gvhd Grade
+Colostomy Surgical Procedure Type 	
+
+Types of colostomy procedure this resource is referring to
+Conditions at risk 	
+
+Condition at risk proposed by the PCSP algorithm
+Document Type 	
+
+Types of documents exchanged with the PCSP platform
+FLT Plan Type 	
+
+FLT Plan Type
+Gastrostomy Surgical Procedure Type 	
+
+Types of Gastrostomy procedure this resource is referring to
+Gvhd condition 	
+
+Gvhd condition
+Hereditary Predispositions (ICD10) 	
+
+Hereditary Predispositions (ICD10)
+Hereditary Predispositions (Orphacode) 	
+
+Hereditary Predispositions (Orphacode)
+Hereditary Predispositions or Disease 	
+
+Hereditary Predispositions or Disease
+ICCC-3 	
+
+International Classification of Childhood Cancer, third edition + exceptional values
+ICD-O-3 Morphology 	
+
+ICD-O-3 Morphology
+ICD-O-3 Topography 	
+
+ICD-O-3 Topography
+Laterality Qualifier Value Set 	
+
+Qualifiers to specify laterality.
+Morphologically abnormal structure 	
+
+Morphologically abnormal structure.
+Not Applicable|Unknown 	
+
+Not Applicable/Unknown Value Set
+Not Performed|Unknown 	
+
+Not Performed/Unknown Value Set
+Observation Codes for Distant Metastases Category 	
+
+Identifying codes based on the timing of classification for distant metastases (M) staging observations.
+Observation Codes for Primary Tumor Category 	
+
+Identifying codes based on the timing of classification for primary tumor (T) staging observations.
+Observation Codes for Regional Node Category 	
+
+Identifying codes based on the timing of classification for regional node (N) staging observations.
+Observation Codes for Stage Group Category 	
+
+Identifying codes based on the timing of classification for stage group observations.
+Other Infors Condition 	
+
+Other Infors Condition
+Other/Unknown/Text 	
+
+Other/Unknown/Text Value Set
+Prosthesis Type 	
+
+Types of Prosthesis this procedure is referring to
+Prosthetic Surgical Procedure Type 	
+
+Types of Prosthetic procedure this resource is referring to
+Radiotherapy Device Type 	
+
+Radiotherapy device type this procedure is referring to
+Radiotherapy Dose Type 	
+
+Types of radiotherapy cumulative dose this procedure is referring to
+Radiotherapy Isotopes 	
+
+Radiotherapy Isotopes
+Radiotherapy Type 	
+
+Types of radiotherapy this procedure is referring to
+Radiotherapy dose units 	
+
+Radiotherapy dose units
+Radiotherapy sites 	
+
+PancareSurPass radiotherapy sites Value Set
+Recommendations 	
+
+Recommendations proposed by the PCSP algorithm
+Relapse type (Local/Distant/Combined) 	
+
+Relapse type (Local/Distant/Combined)
+Risk Factors 	
+
+Risk Factors used by the PCSP algorithm
+Route of administration 	
+
+Route of administration
+SCT Prophylaxis Cathegory 	
+
+SCT Prophylaxis Cathegory
+SCT Prophylaxis Type 	
+
+SCT Prophylaxis Type
+Sacrified Organs (surgery) 	
+
+Sacrified Organs (surgery). Organs are ‘sacrified’ either to allow a radical excision of the tumor or on purpose (spleen) for staging procedures
+Shunt Procedure Type 	
+
+Types of shunt surgical procedure this resource is referring to
+Stage Group Value Set 	
+
+This value set is intended to contain allowable values for Stage Group, according to TNM staging rules. AJCC codes (preferably, version 8 for current cancers) SHOULD be used.
+Stem Cell Donor type 	
+
+Stem Cell Donor type
+Stem Cell Source type 	
+
+Stem Cell Source type
+Stem Cell Transplantation type 	
+
+Stem Cell Transplantation type
+Surgical Actions 	
+
+Surgical Actions
+Surgical Procedure Type 	
+
+Types of surgical procedure this resource is referring to
+TNM Distant Metastases Category Value Set 	
+
+This value set is intended to contain allowable values for the M category, according to TNM staging rules. AJCC codes (preferably, version 8 for current cancers) SHOULD be used.
+TNM Primary Tumor Category Value Set 	
+
+This value set is intended to contain allowable values for the T category, according to TNM staging rules. AJCC codes (preferably, version 8 for current cancers) SHOULD be used.
+TNM Regional Nodes Category Value Set 	
+
+This value set is intended to contain allowable values for the N category, according to TNM staging rules. AJCC codes (preferably, version 8 for current cancers) SHOULD be used.
+Toxicity Severity 	
+
+Toxicity Severity
+Unknown|Other 	
+
+Unknown or Other
+Terminology: Code Systems
+
+These define new code systems used by systems conforming to this implementation guide.
+PCSP Code System 	
+
+Coded concepts specified by the PancareSurPass Project
+PCSP Conditions at risk 	
+
+Condition at risk proposed by the PCSP algorithm
+PCSP Recommendations 	
+
+Recommendations proposed by the PCSP algorithm
+Radiotherapy sites 	
+
+PancareSurPass radiotherapy sites Code System
+Risk Factors 	
+
+Risk Factors used by the PCSP algorithm
+Example: Example Instances
+
+These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.
+21982 	
+21983 	
+21984 	
+21985 	
+21986 	
+21987 	
+21988 	
+21992 	
+3974 	
+3975 	
+3976 	
+
+TRIAL
+3978 	
+3980 	
+3982 	
+3985 	
+3986 	
+3992 	
+3993 	
+3996 	
+3998 	
+46bee55b-5cd0-4727-86a5-3f9317a5d7d9 	
+4952 	
+4953 	
+4955 	
+5008 	
+5062 	
+BiologicallyDerivedProduct: Stem Cell Transplantation 	
+
+Biologically Derived Product: Stem Cell Transplantation example
+CarePlan: Automatically Generated Example 	
+
+Sample of Care Plan generated by the platform
+Composition: SurPass 	
+
+Example of SurPass Composition
+Condition: Primary Diagnosis Hulafe 	
+
+Sample of Primary Diagnosis based on information provided by Hulafe (Condition)
+Condition: Sample from Mainz 	
+
+Sample of Primary Cancer Condition based on information available by Mainz
+Condition: complete Primary Cancer Condition example (TBC) 	
+
+Sample of Primary Cancer Condition based on information available by Mainz
+Condition: complete metastatic site Condition example (TBC) 	
+
+Sample of metastatic site Condition based on information available by Mainz
+DocumentReference: Preliminary SurPass 	
+
+Sample of DocumentReference used to refer a preliminary SurPass
+Encounter: Primary Diagnosis Hulafe (Encounter) 	
+
+Sample of Primary Diagnosis based on information provided by Hulafe (Encounter)
+Encounter: Sample from Mainz 	
+
+Sample of Encounter associated to the Primary Cancer Condition Mainz sample
+Encounter: Sample from Mainz (Zeisig) 	
+
+Sample of Encounter associated to the Primary Cancer Condition Mainz sample
+Location: Chemotherapy Hulafe 	
+
+Sample of Chemotherapy based on information provided by Hulafe (Location)
+Location: Stem Cell Transplantation 	
+
+Location: Stem Cell Transplantation example
+MedicationAdministration: Chemotherapy Hulafe Ciclofosfamide 	
+
+Sample of Chemotherapy based on information provided by Hulafe (Ciclofosfamide)
+MedicationAdministration: Chemotherapy Hulafe Citarabina 	
+
+Sample of Chemotherapy based on information provided by Hulafe (Citarabina)
+MedicationAdministration: Chemotherapy Hulafe Metotrexato 	
+
+Sample of Chemotherapy based on information provided by Hulafe (Metotrexato)
+MedicationAdministration: Chemotherapy Hulafe Vincristina 	
+
+Sample of Chemotherapy based on information provided by Hulafe (Vincristina)
+MedicationStatement: Chemotherapy Hulafe Corticosteroids 	
+
+Sample of Chemotherapy based on information provided by Hulafe (Corticosteroids not used for at least 4 weeks continuously)
+Observation: Blood type/RH before the SCT 	
+
+Observation: Blood type/RH before the SCT example
+Observation: Chemotherapy Hulafe Ciclofosfamide Cumulative Dose 	
+
+Sample of Chemotherapy based on information provided by Hulafe (Ciclofosfamide Cumulative Dose)
+Observation: Chemotherapy Hulafe Citarabina Cumulative Dose 	
+
+Sample of Chemotherapy based on information provided by Hulafe (Citarabina Cumulative Dose)
+Observation: Chemotherapy Hulafe Metotrexato Cumulative Dose 	
+
+Sample of Chemotherapy based on information provided by Hulafe (Metotrexato Cumulative Dose)
+Observation: Chemotherapy Hulafe Vincristina Cumulative Dose 	
+
+Sample of Chemotherapy based on information provided by Hulafe (Vincristina Cumulative Dose)
+Observation: Radiotherapy Total Dose 	
+
+Observation: Radiotherapy Total Dose example
+Observation: Risk Factor 	
+
+Sample of Risk Factor: RT to thyroid gland
+Observation: Risk Factor 	
+
+Sample of Risk Factor: RT >= 10 Gy to breasts
+Observation: Risk Factor 	
+
+Sample of Risk Factor: RT >= 35 Gy to heart
+Observation: Risk Factor 	
+
+Sample of Risk Factor: Anthracyclines >= 250 mg/m1
+Observation: Sample from Mainz (Zeisig) 	
+
+Sample of Observation associated to the Primary Cancer Condition Mainz sample to provide details about the diagnosis
+Organization: Primary Diagnosis Hulafe (Organization) 	
+
+Sample of Primary Diagnosis based on information provided by Hulafe (Organization)
+Patient: Hulafe 	
+
+Sample of Patient demographics data based on information provided by Hulafe
+Patient: Sample created on Mainz data (Fischer) 	
+
+Sample of Patient created based on information provided by Mainz
+Patient: Sample created on Mainz data (Zeisig) 	
+
+Sample of Patient created based on information provided by Mainz
+Patient: Sample created on Vulsk data 	
+
+Sample of Patient created based on information provided by Vulsk
+Patient: Sample from Cineca 	
+
+Sample of Patient created based on information available in the PCSP platform
+Patient: Sample from Hulafe 	
+
+Sample of Patient created based on information provided by Hulafe
+Procedure: Radiotherapy 	
+
+Procedure: Radiotherapy example
+Procedure: Stem Cell Transplantation 	
+
+Procedure: Stem Cell Transplantation example
+Procedure: Transfusion 	
+
+Procedure: Transfusion
+Other
+
+These are resources that are used within this implementation guide that do not fit into one of the other categories.
+Childhood Cancer Survivor Passport
+			

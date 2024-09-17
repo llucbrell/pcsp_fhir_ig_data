@@ -1,0 +1,58 @@
+Title: Progression-Relapse during FLT - PanCareSurPass Project HL7 FHIR Implementation Guide v0.2.0
+
+Header Table:
+- 0 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/RelapseDuringFLT
+- 1 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/RelapseDuringFLT
+- 2 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/RelapseDuringFLT
+- 3 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/RelapseDuringFLT
+- 4 : Version:  0.2.0
+- 0 : Draft  as of 2024-05-27
+- 1 : Draft  as of 2024-05-27
+- 2 : Draft  as of 2024-05-27
+- 3 : Draft  as of 2024-05-27
+- 4 : Computable Name: RelapseDuringFLT
+
+
+Third Paragraph:
+Progression-Relapse during FLT
+Maturity Level: 2 - Ready for Review
+
+Dict Table:
+                                   0                                                                                                                                           1
+                 0. RelapseDuringFLT                                                                                                                         0. RelapseDuringFLT
+                          Definition                                                                         Progression-Relapse during FLT Maturity Level: 2 - Ready for Review
+                               Short                                                                                                              Progression-Relapse during FLT
+                       Logical Model                                                              Instances of this logical model are not marked to be the target of a Reference
+      2. RelapseDuringFLT.identifier                                                                                                              2. RelapseDuringFLT.identifier
+                          Definition                                                                                                   Progression-Relapse during FLT identifier
+                               Short                                                                                                   Progression-Relapse during FLT identifier
+                                Note                                                                   This is a business identifier, not a resource identifier (see discussion)
+                             Control                                                                                                                                        0..1
+                                Type                                                                                                                                  Identifier
+4. RelapseDuringFLT.relatedDiagnosis                                                                                                        4. RelapseDuringFLT.relatedDiagnosis
+                          Definition                                                                                                                Related diagnosis identifier
+                               Short                                                                                                                Related diagnosis identifier
+                             Control                                                                                                                                        0..1
+                                Type                                                                                                                                  Identifier
+            6. RelapseDuringFLT.date                                                                                                                    6. RelapseDuringFLT.date
+                          Definition Report the date of the event in DD/MM/YYYY format. If the date is unkown or partially missed insert the year at the best of your knowledge.
+                               Short                                                                                                                                        Date
+                             Control                                                                                                                                        0..1
+                                Type                                                                                                                                    dateTime
+                     Primitive Value                                                               This primitive element may be present, or absent, or replaced by an extension
+            8. RelapseDuringFLT.type                                                                                                                    8. RelapseDuringFLT.type
+                          Definition                                                                The type of event should be reported 1 => Relapse 2 => Progression -9922= NK
+                               Short                                                                                                                       relapse | progression
+                             Control                                                                                                                                        0..1
+                                Type                                                                                                                             CodeableConcept
+      10. RelapseDuringFLT.qualifier                                                                                                              10. RelapseDuringFLT.qualifier
+                          Definition                                                              Please state if the relapse or progression was local, distant, combined or unk
+                               Short                                                                                                                  local | distant | combined
+                             Control                                                                                                                                        0..1
+                                Type                                                                                                                             CodeableConcept
+           12. RelapseDuringFLT.site                                                                                                                   12. RelapseDuringFLT.site
+                          Definition                                                                                                If distant or comobined, specify site (text)
+                               Short                                                                                                              If distant, site of metastases
+                             Control                                                                                                                                        0..1
+                                Type                                                                                                                                      string
+                     Primitive Value                                                               This primitive element may be present, or absent, or replaced by an extension

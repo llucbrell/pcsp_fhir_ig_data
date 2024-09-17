@@ -1,0 +1,5 @@
+Title: AIT – PanCareSurPass
+
+Univ.-Doz. DI Dr. Günter Schreier is Senior Scientist and Thematic Coordinator of the Predictive Healthcare Information Systems research program of the AIT. His areas of expertise and research interests are: Biomedical Informatics, the Internet of Things for Personalised Health and Predictive Analytics in Healthcare.
+Dr. Dieter Hayn is Senior Scientist at the AIT. His research interests include European IT research infrastructures, data sciences, predictive modelling in health and care, risk prediction algorithms, and disease management programs. He is head of the working group for Biomedical Data Analytics at the Austrian Society of Biomedical Engineering.
+Günter and and Dieter will participate in the Implementation Strategy development and development of the SurPass v2.0, providing insight into the national Electronic Health Record system in Austria and the EUropean Patient IDentity (EUPID) Services.

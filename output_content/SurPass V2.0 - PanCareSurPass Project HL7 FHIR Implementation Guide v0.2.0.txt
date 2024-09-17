@@ -1,0 +1,35 @@
+Title: SurPass V2.0 - PanCareSurPass Project HL7 FHIR Implementation Guide v0.2.0
+
+Header Table:
+- 0 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/SurPass
+- 1 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/SurPass
+- 2 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/SurPass
+- 3 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/SurPass
+- 4 : Version:  0.2.0
+- 0 : Draft  as of 2024-05-27
+- 1 : Draft  as of 2024-05-27
+- 2 : Draft  as of 2024-05-27
+- 3 : Draft  as of 2024-05-27
+- 4 : Computable Name: SurPass
+
+
+Third Paragraph:
+Survivorship Passport V2.0
+Maturity Level: 2 - Ready for Review
+
+Dict Table:
+                          0                                                                              1
+                 0. SurPass                                                                     0. SurPass
+                 Definition                Survivorship Passport V2.0 Maturity Level: 2 - Ready for Review
+                      Short                                                                   SurPass V2.0
+              Logical Model Instances of this logical model are not marked to be the target of a Reference
+2. SurPass.treatmentSummary                                                    2. SurPass.treatmentSummary
+                 Definition                                                              Treatment Summary
+                      Short                                                              Treatment Summary
+                    Control                                                                           1..1
+                       Type                http://hl7.eu/fhir/ig/pcsp/StructureDefinition/TreatmentSummary
+        4. SurPass.carePlan                                                            4. SurPass.carePlan
+                 Definition                                                   Reccomandation for follow up
+                      Short                                                                      Care plan
+                    Control                                                                           0..*
+                       Type                      http://hl7.eu/fhir/ig/pcsp/StructureDefinition/PlanOfCare

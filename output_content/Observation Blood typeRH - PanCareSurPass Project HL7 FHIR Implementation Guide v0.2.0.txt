@@ -1,0 +1,74 @@
+Title: Observation: Blood type/RH - PanCareSurPass Project HL7 FHIR Implementation Guide v0.2.0
+
+Header Table:
+- 0 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Observation-bld-abo-rh-eu-pcsp
+- 1 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Observation-bld-abo-rh-eu-pcsp
+- 2 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Observation-bld-abo-rh-eu-pcsp
+- 3 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Observation-bld-abo-rh-eu-pcsp
+- 4 : Version:  0.2.0
+- 0 : Draft  as of 2024-05-27
+- 1 : Draft  as of 2024-05-27
+- 2 : Draft  as of 2024-05-27
+- 3 : Draft  as of 2024-05-27
+- 4 : Computable Name: ObservationBloodAboRh
+
+
+Third Paragraph:
+This profile defines how to represent Blood type/RH  before or after the SCT in HL7 FHIR for the purpose of the PanCareSurPass project.
+
+Dict Table:
+                                                          0                                                                                                                                                                                      1
+                                             0. Observation                                                                                                                                                                         0. Observation
+                                      2. Observation.partOf                                                                                                                                                                  2. Observation.partOf
+                                                    Control                                                                                                                                                                                   1..?
+                                                       Type                                                                                                                                        Reference(Procedure: Stem Cell Transplantation)
+                                        4. Observation.code                                                                                                                                                                    4. Observation.code
+                                              Pattern Value                                                              {  "coding" : [{  "system" : "http://loinc.org",  "code" : "34530-6",  "display" : "ABO and Rh group panel - Blood"  }] }
+                                     6. Observation.subject                                                                                                                                                                 6. Observation.subject
+                                                    Control                                                                                                                                                                                   1..?
+                                                       Type                                                                                                                                                               Reference(Patient: PCSP)
+                                8. Observation.effective[x]                                                                                                                                                            8. Observation.effective[x]
+                                                    Control                                                                                                                                                                                   1..?
+                                                   [x] Note                                                                                                                    SeeChoice of Data Typesfor further information about how to use [x]
+                                                    Slicing       This element introduces a set of slices on Observation.effective[x]. The slices areUnordered and Open, and can be differentiated using the following discriminators:type @ $this
+               10. Observation.effective[x]:effectiveTiming                                                                                                                                           10. Observation.effective[x]:effectiveTiming
+                                                 Slice Name                                                                                                                                                                        effectiveTiming
+                                                    Control                                                                                                                                                                                   1..1
+                                                       Type                                                                                                                                                                                 Timing
+                                                   [x] Note                                                                                                                    SeeChoice of Data Typesfor further information about how to use [x]
+          12. Observation.effective[x]:effectiveTiming.code                                                                                                                                      12. Observation.effective[x]:effectiveTiming.code
+                                                    Control                                                                                                                                                                                   1..?
+                                                    Binding                                                           The codes SHALL be taken from Before/after procedure (required to http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-sct-timing-eu-pcsp)
+                                   14. Observation.value[x]                                                                                                                                                               14. Observation.value[x]
+                                                    Control                                                                                                                                                                                   0..0
+                                  16. Observation.component                                                                                                                                                              16. Observation.component
+                                                    Control                                                                                                                                                                                   2..2
+                                                    Slicing        This element introduces a set of slices on Observation.component. The slices areUnordered and Closed, and can be differentiated using the following discriminators:value @ code
+                              18. Observation.component:abo                                                                                                                                                          18. Observation.component:abo
+                                                 Slice Name                                                                                                                                                                                    abo
+                                                    Control                                                                                                                                                                                   0..1
+                         20. Observation.component:abo.code                                                                                                                                                     20. Observation.component:abo.code
+                                              Pattern Value                                                                     {  "coding" : [{  "system" : "http://loinc.org",  "code" : "883-9",  "display" : "ABO group [Type] in Blood"  }] }
+                     22. Observation.component:abo.value[x]                                                                                                                                                 22. Observation.component:abo.value[x]
+                                                   [x] Note                                                                                                                    SeeChoice of Data Typesfor further information about how to use [x]
+                                                    Slicing This element introduces a set of slices on Observation.component.value[x]. The slices areUnordered and Open, and can be differentiated using the following discriminators:type @ $this
+24. Observation.component:abo.value[x]:valueCodeableConcept                                                                                                                            24. Observation.component:abo.value[x]:valueCodeableConcept
+                                                 Slice Name                                                                                                                                                                   valueCodeableConcept
+                                                    Control                                                                                                                                                                                   0..1
+                                                    Binding                                                                                    The codes SHALL be taken from LOINC Answer List LL2419-1 (required to http://loinc.org/vs/LL2419-1)
+                                                       Type                                                                                                                                                                        CodeableConcept
+                                                   [x] Note                                                                                                                    SeeChoice of Data Typesfor further information about how to use [x]
+                               26. Observation.component:rh                                                                                                                                                           26. Observation.component:rh
+                                                 Slice Name                                                                                                                                                                                     rh
+                                                    Control                                                                                                                                                                                   0..1
+                          28. Observation.component:rh.code                                                                                                                                                      28. Observation.component:rh.code
+                                              Pattern Value                                                                          {  "coding" : [{  "system" : "http://loinc.org",  "code" : "10331-7",  "display" : "Rh [Type] in Blood"  }] }
+                      30. Observation.component:rh.value[x]                                                                                                                                                  30. Observation.component:rh.value[x]
+                                                   [x] Note                                                                                                                    SeeChoice of Data Typesfor further information about how to use [x]
+                                                    Slicing This element introduces a set of slices on Observation.component.value[x]. The slices areUnordered and Open, and can be differentiated using the following discriminators:type @ $this
+ 32. Observation.component:rh.value[x]:valueCodeableConcept                                                                                                                             32. Observation.component:rh.value[x]:valueCodeableConcept
+                                                 Slice Name                                                                                                                                                                   valueCodeableConcept
+                                                    Control                                                                                                                                                                                   0..1
+                                                    Binding                                                                                      The codes SHALL be taken from LOINC Answer List LL360-9 (required to http://loinc.org/vs/LL360-9)
+                                                       Type                                                                                                                                                                        CodeableConcept
+                                                   [x] Note                                                                                                                    SeeChoice of Data Typesfor further information about how to use [x]

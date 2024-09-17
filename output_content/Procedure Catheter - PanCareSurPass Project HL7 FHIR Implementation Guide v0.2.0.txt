@@ -1,0 +1,37 @@
+Title: Procedure: Catheter - PanCareSurPass Project HL7 FHIR Implementation Guide v0.2.0
+
+Header Table:
+- 0 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-cvc-otherinfos-eu-pcsp
+- 1 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-cvc-otherinfos-eu-pcsp
+- 2 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-cvc-otherinfos-eu-pcsp
+- 3 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-cvc-otherinfos-eu-pcsp
+- 4 : Version:  0.2.0
+- 0 : Draft  as of 2024-05-27
+- 1 : Draft  as of 2024-05-27
+- 2 : Draft  as of 2024-05-27
+- 3 : Draft  as of 2024-05-27
+- 4 : Computable Name: ProcedureCVCOtherInfosPcsp
+
+
+Third Paragraph:
+This profile defines how to describe the  Catheterization of vein Procedure in HL7 FHIR for the purpose of the PanCareSurPass project.
+
+Dict Table:
+                                            0                                                                                                                                           1
+                                 0. Procedure                                                                                                                                0. Procedure
+                            2. Procedure.code                                                                                                                           2. Procedure.code
+                                Pattern Value                  {  "coding" : [{  "system" : "http://snomed.info/sct",  "code" : "392230005",  "display" : "Catheterization of vein"  }] }
+                         4. Procedure.subject                                                                                                                        4. Procedure.subject
+                                         Type                                                                                                                    Reference(Patient: PCSP)
+                 6. Procedure.reasonReference                                                                                                                6. Procedure.reasonReference
+                                      Control                                                                                                                                        1..?
+                                         Type                                                                                                        Reference(Condition: Primary Cancer)
+                        8. Procedure.bodySite                                                                                                                       8. Procedure.bodySite
+                                        Short                                                                                                        In which vein the CVC was positioned
+                    10. Procedure.focalDevice                                                                                                                   10. Procedure.focalDevice
+                                        Short                                                                                                               Implanted or removed Catheter
+             12. Procedure.focalDevice.action                                                                                                            12. Procedure.focalDevice.action
+                                      Binding Unless not suitable, these codes SHALL be taken from Surgical Actions (extensible to http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-action-eu-pcsp)
+        14. Procedure.focalDevice.manipulated                                                                                                       14. Procedure.focalDevice.manipulated
+16. Procedure.focalDevice.manipulated.display                                                                                               16. Procedure.focalDevice.manipulated.display
+                                        Short                                                                                                                                    Catheter

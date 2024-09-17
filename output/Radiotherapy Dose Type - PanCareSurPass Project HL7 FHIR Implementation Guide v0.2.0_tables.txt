@@ -1,0 +1,29 @@
+Title: Radiotherapy Dose Type - PanCareSurPass Project HL7 FHIR Implementation Guide v0.2.0
+
+                                                                                0                                                                                 1                                                                                 2                                                                                 3                                       4
+Official URL: http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-radiotherapyDoseType-eu-pcsp Official URL: http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-radiotherapyDoseType-eu-pcsp Official URL: http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-radiotherapyDoseType-eu-pcsp Official URL: http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-radiotherapyDoseType-eu-pcsp                         Version:  0.2.0
+                                                          Draft  as of 2024-05-27                                                           Draft  as of 2024-05-27                                                           Draft  as of 2024-05-27                                                           Draft  as of 2024-05-27 Computable Name: RadiotherapyDoseTypeVs
+
+     0               1                                                                                   2
+  Code         Display                                                                          Definition
+113725 Dose (RP) Total Total Dose related to Reference Point (RP). (in the scope of the including report).
+
+        0                                    1
+     Code                              Display
+445565002 Total boost radiation dose delivered
+445461008       Total radiation dose delivered
+
+        0                                            1                                                        2                                                                                   3
+     Code                                       System                                                  Display                                                                          Definition
+   113725 http://dicom.nema.org/resources/ontology/DCM                                          Dose (RP) Total Total Dose related to Reference Point (RP). (in the scope of the including report).
+445565002                       http://snomed.info/sct Total boost radiation dose delivered (observable entity)                                                                                 NaN
+445461008                       http://snomed.info/sct       Total radiation dose delivered (observable entity)                                                                                 NaN
+
+         0                                                                                                                                                                                           1
+     Level A few code lists that FHIR defines are hierarchical - each code is assigned a level.  In this scheme, some codes are under other codes, and imply that the code they are under also applies
+    System                                                                                              The source of the definition of the code (when the value set draws in codes defined elsewhere)
+      Code                                                                                                                                        The code (used as the code in the resource instance)
+   Display                  The display (used in the display element of a Coding). If there is no display, implementers should not simply display the code, but map the concept into their application
+Definition                                                                                                                                                An explanation of the meaning of the concept
+  Comments                                                                                                                                                  Additional notes about how to use the code
+

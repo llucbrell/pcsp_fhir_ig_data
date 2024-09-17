@@ -1,0 +1,62 @@
+Title: Observation: Diagnosis details - PanCareSurPass Project HL7 FHIR Implementation Guide v0.2.0
+
+Header Table:
+- 0 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Observation-diagnosis-eu-pcsp
+- 1 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Observation-diagnosis-eu-pcsp
+- 2 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Observation-diagnosis-eu-pcsp
+- 3 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Observation-diagnosis-eu-pcsp
+- 4 : Version:  0.2.0
+- 0 : Draft  as of 2024-05-27
+- 1 : Draft  as of 2024-05-27
+- 2 : Draft  as of 2024-05-27
+- 3 : Draft  as of 2024-05-27
+- 4 : Computable Name: ObservationDiagnosisPcsp
+
+
+Third Paragraph:
+This profile defines how to represent diagnosis details (when the diagnosis was made; who made it;…) in FHIR for the purpose of the PanCareSurPass project.
+
+Dict Table:
+                                                 0                                                                                                                                                                                       1
+                                    0. Observation                                                                                                                                                                          0. Observation
+                               2. Observation.code                                                                                                                                                                     2. Observation.code
+                                     Pattern Value                                                                                    {  "coding" : [{  "system" : "http://loinc.org",  "code" : "29308-4",  "display" : "Diagnosis"  }] }
+                            4. Observation.subject                                                                                                                                                                  4. Observation.subject
+                                           Control                                                                                                                                                                                    1..?
+                                              Type                                                                                                                                                                Reference(Patient: PCSP)
+                       6. Observation.effective[x]                                                                                                                                                             6. Observation.effective[x]
+                                           Control                                                                                                                                                                                    1..?
+                                          [x] Note                                                                                                                     SeeChoice of Data Typesfor further information about how to use [x]
+                                           Slicing        This element introduces a set of slices on Observation.effective[x]. The slices areUnordered and Open, and can be differentiated using the following discriminators:type @ $this
+     8. Observation.effective[x]:effectiveDateTime                                                                                                                                           8. Observation.effective[x]:effectiveDateTime
+                                        Slice Name                                                                                                                                                                       effectiveDateTime
+                                           Control                                                                                                                                                                                    1..1
+                                              Type                                                                                                                                                                                dateTime
+                                          [x] Note                                                                                                                     SeeChoice of Data Typesfor further information about how to use [x]
+                                   Primitive Value                                                                                                           This primitive element may be present, or absent, or replaced by an extension
+                                      Must Support                                                                                                                                                                                    true
+                         10. Observation.performer                                                                                                                                                               10. Observation.performer
+                                           Slicing This element introduces a set of slices on Observation.performer. The slices areUnordered and Open, and can be differentiated using the following discriminators:type @ $this.resolve()
+           12. Observation.performer:primaryCenter                                                                                                                                                 12. Observation.performer:primaryCenter
+                                        Slice Name                                                                                                                                                                           primaryCenter
+                                        Definition                                                                                                                                            Institution in which the diagnosis was made.
+                                             Short                                                                                                                                                                     Center of diagnosis
+                                           Control                                                                                                                                                                                    0..1
+                                              Type                                                                                                                 Reference(Organization: Primary Treatment Center / Center of diagnosis)
+                                      Must Support                                                                                                                                                                                    true
+14. Observation.performer:primaryCenter.identifier                                                                                                                                      14. Observation.performer:primaryCenter.identifier
+                                             Short                                                                                                                                          Business identifier of the Center of diagnosis
+                                              Note                                                                                                               This is a business identifier, not a resource identifier (see discussion)
+   16. Observation.performer:primaryCenter.display                                                                                                                                         16. Observation.performer:primaryCenter.display
+                                             Short                                                                                                                                    Short textual description of the Center of diagnosis
+                          18. Observation.value[x]                                                                                                                                                                18. Observation.value[x]
+                                           Control                                                                                                                                                                                    1..?
+                                          [x] Note                                                                                                                     SeeChoice of Data Typesfor further information about how to use [x]
+                                           Slicing            This element introduces a set of slices on Observation.value[x]. The slices areUnordered and Open, and can be differentiated using the following discriminators:type @ $this
+     20. Observation.value[x]:valueCodeableConcept                                                                                                                                           20. Observation.value[x]:valueCodeableConcept
+                                        Slice Name                                                                                                                                                                    valueCodeableConcept
+                                           Control                                                                                                                                                                                    1..1
+                                              Type                                                                                                                                                                         CodeableConcept
+                                          [x] Note                                                                                                                     SeeChoice of Data Typesfor further information about how to use [x]
+                         22. Observation.component                                                                                                                                                               22. Observation.component
+                                           Control                                                                                                                                                                                    0..0

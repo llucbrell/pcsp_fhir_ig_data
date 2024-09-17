@@ -1,0 +1,6 @@
+Title: HL7 Europe – PanCareSurPass
+
+Catherine Chronaki is Secretary General at the HL7 Europe Foundation and the EFMI Vice President for Working Groups (2018-2020). Catherine has engaged in eHealth projects since the early 1990’s when she joined FORTH-ICS to engage in the design, implementation, and evaluation of a system for the retrieval of medical images by content. Since then she has played a key role within National and European eHealth projects, addressing the wider scope of eHealth: health Information Infrastructures employing interoperability standards for integrated Electronic Health Records (EHRs).
+Catherine leads the development of SurPass v2.0 in close collaboration with CINECA, focusing on standardisation and interoperability.
+Giorgio Cangioli is a Senior Consultant of ICT in Health and Social Care. He provides coaching and learning services about modelling, methodologies, and standards applied to the Health and Social Care. Giorgio has been responsible of the Clinical and Semantic Experts Group in epSOS and been a work package leader in several eHealth EU projects.
+Giorgio participates in the development of SurPass v2.0.

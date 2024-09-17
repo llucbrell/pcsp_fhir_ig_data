@@ -1,0 +1,30 @@
+Title: Active or resolved Condition - PanCareSurPass Project HL7 FHIR Implementation Guide v0.2.0
+
+Description: 
+
+Table 1:
+                                                                            0                                                                             1                                                                             2                                                                             3                                          4
+Official URL: http://hl7.eu/fhir/ig/pcsp/ValueSet/activeResolved-condition-vs Official URL: http://hl7.eu/fhir/ig/pcsp/ValueSet/activeResolved-condition-vs Official URL: http://hl7.eu/fhir/ig/pcsp/ValueSet/activeResolved-condition-vs Official URL: http://hl7.eu/fhir/ig/pcsp/ValueSet/activeResolved-condition-vs                            Version:  0.2.0
+                                                      Draft  as of 2024-05-27                                                       Draft  as of 2024-05-27                                                       Draft  as of 2024-05-27                                                       Draft  as of 2024-05-27 Computable Name: ActiveResolvedConditionVS
+
+Table 2:
+       0        1                                                                                                                                                          2
+    Code  Display                                                                                                                                                 Definition
+  active   Active The subject is currently experiencing the condition or situation, there is evidence of the condition or situation, or considered to be a significant risk.
+resolved Resolved     The subject is not presently experiencing the condition or situation and there is a negligible perceived risk of the condition or situation returning.
+
+Table 3:
+       0                                                        1        2                                                                                                                                                          3
+    Code                                                   System  Display                                                                                                                                                 Definition
+  active http://terminology.hl7.org/CodeSystem/condition-clinical   Active The subject is currently experiencing the condition or situation, there is evidence of the condition or situation, or considered to be a significant risk.
+resolved http://terminology.hl7.org/CodeSystem/condition-clinical Resolved     The subject is not presently experiencing the condition or situation and there is a negligible perceived risk of the condition or situation returning.
+
+Table 4:
+         0                                                                                                                                                                                           1
+     Level A few code lists that FHIR defines are hierarchical - each code is assigned a level.  In this scheme, some codes are under other codes, and imply that the code they are under also applies
+    System                                                                                              The source of the definition of the code (when the value set draws in codes defined elsewhere)
+      Code                                                                                                                                        The code (used as the code in the resource instance)
+   Display                  The display (used in the display element of a Coding). If there is no display, implementers should not simply display the code, but map the concept into their application
+Definition                                                                                                                                                An explanation of the meaning of the concept
+  Comments                                                                                                                                                  Additional notes about how to use the code
+

@@ -1,0 +1,40 @@
+Title: Acute Gvhd Grade - PanCareSurPass Project HL7 FHIR Implementation Guide v0.2.0
+
+Description: 
+
+Table 1:
+                                                                            0                                                                             1                                                                             2                                                                             3                                  4
+Official URL: http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-Gvhd-acute-grade-eu-pcsp Official URL: http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-Gvhd-acute-grade-eu-pcsp Official URL: http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-Gvhd-acute-grade-eu-pcsp Official URL: http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-Gvhd-acute-grade-eu-pcsp                    Version:  0.2.0
+                                                      Draft  as of 2024-05-27                                                       Draft  as of 2024-05-27                                                       Draft  as of 2024-05-27                                                       Draft  as of 2024-05-27 Computable Name: SctAcuteGvhdGrade
+
+Table 2:
+           0       1                   2
+        Code Display          Definition
+Gvhd-acute-1 Grade 1 Acute Gvhd: grade 1
+Gvhd-acute-2 Grade 2 Acute Gvhd: grade 2
+Gvhd-acute-3 Grade 3 Acute Gvhd: grade 3
+Gvhd-acute-4 Grade 4 Acute Gvhd: grade 4
+
+Table 3:
+      0       1                                                2
+   Code Display                                       Definition
+unknown Unknown The value is expected to exist but is not known.
+
+Table 4:
+           0                                                        1       2                                                3
+        Code                                                   System Display                                       Definition
+Gvhd-acute-1 http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp Grade 1                              Acute Gvhd: grade 1
+Gvhd-acute-2 http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp Grade 2                              Acute Gvhd: grade 2
+Gvhd-acute-3 http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp Grade 3                              Acute Gvhd: grade 3
+Gvhd-acute-4 http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp Grade 4                              Acute Gvhd: grade 4
+     unknown http://terminology.hl7.org/CodeSystem/data-absent-reason Unknown The value is expected to exist but is not known.
+
+Table 5:
+         0                                                                                                                                                                                           1
+     Level A few code lists that FHIR defines are hierarchical - each code is assigned a level.  In this scheme, some codes are under other codes, and imply that the code they are under also applies
+    System                                                                                              The source of the definition of the code (when the value set draws in codes defined elsewhere)
+      Code                                                                                                                                        The code (used as the code in the resource instance)
+   Display                  The display (used in the display element of a Coding). If there is no display, implementers should not simply display the code, but map the concept into their application
+Definition                                                                                                                                                An explanation of the meaning of the concept
+  Comments                                                                                                                                                  Additional notes about how to use the code
+

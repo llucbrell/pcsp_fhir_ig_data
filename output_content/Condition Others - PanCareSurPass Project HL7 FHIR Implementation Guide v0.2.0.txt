@@ -1,0 +1,56 @@
+Title: Condition: Others - PanCareSurPass Project HL7 FHIR Implementation Guide v0.2.0
+
+Header Table:
+- 0 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Condition-otherinfos-eu-pcsp
+- 1 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Condition-otherinfos-eu-pcsp
+- 2 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Condition-otherinfos-eu-pcsp
+- 3 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Condition-otherinfos-eu-pcsp
+- 4 : Version:  0.2.0
+- 0 : Draft  as of 2024-05-27
+- 1 : Draft  as of 2024-05-27
+- 2 : Draft  as of 2024-05-27
+- 3 : Draft  as of 2024-05-27
+- 4 : Computable Name: ConditionOtherInfosPcsp
+
+
+Third Paragraph:
+This profile defines how to describe the presence of some other conditions (e.g. Hypogonadism, Growth hormone deficiency, Hydrocephalus in HL7 FHIR for the purpose of the PanCareSurPass project.
+
+Dict Table:
+                                                                   0                                                                                                                                                                                    1
+                                                        0. Condition                                                                                                                                                                         0. Condition
+                                              2. Condition.extension                                                                                                                                                               2. Condition.extension
+                                                             Control                                                                                                                                                                                 1..?
+                                                             Slicing           This element introduces a set of slices on Condition.extension. The slices areUnordered and Open, and can be differentiated using the following discriminators:value @ url
+                4. Condition.extension:relatedPrimaryCancerCondition                                                                                                                                 4. Condition.extension:relatedPrimaryCancerCondition
+                                                          Slice Name                                                                                                                                                        relatedPrimaryCancerCondition
+                                                          Definition                                                                                                         A reference to the cancer condition that provides context for this resource.
+                                                               Short                                                                                                                                                             Related Cancer Condition
+                                                             Control                                                                                                                                                                                 1..1
+                                                                Type                                                                                                                  Extension(Condition Related) (Extension Type: Reference(Condition))
+       6. Condition.extension:relatedPrimaryCancerCondition.value[x]                                                                                                                        6. Condition.extension:relatedPrimaryCancerCondition.value[x]
+                                                                Type                                                                                                                                                 Reference(Condition: Primary Cancer)
+                                                            [x] Note                                                                                                                  SeeChoice of Data Typesfor further information about how to use [x]
+                               8. Condition.extension:conditionDueTo                                                                                                                                                8. Condition.extension:conditionDueTo
+                                                          Slice Name                                                                                                                                                                       conditionDueTo
+                                                          Definition                                                                                                     A reference to the procedure that caused this condition. Required for Thrombosis
+                                                               Short                                                                                                                       CVC procedure causing this Thrombosis, required for Thrombosis
+                                                             Control                                                                                                                                                                                 0..1
+                                                                Type               Extension(Condition Due To) (Extension Type: Choice of: CodeableConcept, Reference(Condition, Procedure, MedicationAdministration, Immunization, MedicationStatement))
+                     10. Condition.extension:conditionDueTo.value[x]                                                                                                                                      10. Condition.extension:conditionDueTo.value[x]
+                                                            [x] Note                                                                                                                  SeeChoice of Data Typesfor further information about how to use [x]
+                                                             Slicing This element introduces a set of slices on Condition.extension.value[x]. The slices areUnordered and Open, and can be differentiated using the following discriminators:type @ $this
+      12. Condition.extension:conditionDueTo.value[x]:valueReference                                                                                                                       12. Condition.extension:conditionDueTo.value[x]:valueReference
+                                                          Slice Name                                                                                                                                                                       valueReference
+                                                             Control                                                                                                                                                                                 0..1
+                                                                Type                                                                                                                                                       Reference(Procedure: Catheter)
+                                                            [x] Note                                                                                                                  SeeChoice of Data Typesfor further information about how to use [x]
+14. Condition.extension:conditionDueTo.value[x]:valueCodeableConcept                                                                                                                 14. Condition.extension:conditionDueTo.value[x]:valueCodeableConcept
+                                                          Slice Name                                                                                                                                                                 valueCodeableConcept
+                                                             Control                                                                                                                                                                                 0..0
+                                                                Type                                                                                                                                                                      CodeableConcept
+                                                  16. Condition.code                                                                                                                                                                   16. Condition.code
+                                                             Control                                                                                                                                                                                 1..?
+                                                             Binding                                                       The codes SHALL be taken from Other Infors Condition (required to http://hl7.eu/fhir/ig/pcsp/ValueSet/otherInfos-condition-vs)
+                                               18. Condition.subject                                                                                                                                                                18. Condition.subject
+                                                                Type                                                                                                                                                             Reference(Patient: PCSP)

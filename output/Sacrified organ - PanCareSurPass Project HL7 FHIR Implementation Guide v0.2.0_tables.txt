@@ -1,0 +1,40 @@
+Title: Sacrified organ - PanCareSurPass Project HL7 FHIR Implementation Guide v0.2.0
+
+                                                                                  0                                                                                   1                                                                                   2                                                                                   3                               4
+Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/surgery-sacrifiedOrgan Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/surgery-sacrifiedOrgan Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/surgery-sacrifiedOrgan Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/surgery-sacrifiedOrgan                 Version:  0.2.0
+                                                            Draft  as of 2024-05-27                                                             Draft  as of 2024-05-27                                                             Draft  as of 2024-05-27                                                             Draft  as of 2024-05-27 Computable Name: SacrifiedOrgan
+
+                         Name                         Flags                         Card.                          Type                                               Description & Constraints
+                    Extension                           NaN                          0..*                     Extension                                                         Sacrified organ
+                    extension                           NaN                          0..0                           NaN                                                                     NaN
+                          url                           NaN                          1..1                           uri "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/surgery-sacrifiedOrgan"
+                     value[x]                           NaN                          0..1               CodeableConcept     Value of extension Binding: Sacrified Organs (surgery) (extensible)
+Documentation for this format Documentation for this format Documentation for this format Documentation for this format                                           Documentation for this format
+
+                         Name                         Flags                         Card.                          Type                                               Description & Constraints
+                    Extension                           NaN                          0..*                     Extension                                                         Sacrified organ
+                           id                           NaN                          0..1                        string                                 Unique id for inter-element referencing
+                    extension                           NaN                          0..0                           NaN                                                                     NaN
+                          url                           NaN                          1..1                           uri "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/surgery-sacrifiedOrgan"
+                     value[x]                           NaN                          0..1               CodeableConcept     Value of extension Binding: Sacrified Organs (surgery) (extensible)
+Documentation for this format Documentation for this format Documentation for this format Documentation for this format                                           Documentation for this format
+
+                         Name                         Flags                         Card.                          Type                                               Description & Constraints
+                    Extension                           NaN                          0..*                     Extension                                                         Sacrified organ
+                    extension                           NaN                          0..0                           NaN                                                                     NaN
+                          url                           NaN                          1..1                           uri "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/surgery-sacrifiedOrgan"
+                     value[x]                           NaN                          0..1               CodeableConcept     Value of extension Binding: Sacrified Organs (surgery) (extensible)
+Documentation for this format Documentation for this format Documentation for this format Documentation for this format                                           Documentation for this format
+
+                         Name                         Flags                         Card.                          Type                                               Description & Constraints
+                    Extension                           NaN                          0..*                     Extension                                                         Sacrified organ
+                           id                           NaN                          0..1                        string                                 Unique id for inter-element referencing
+                    extension                           NaN                          0..0                           NaN                                                                     NaN
+                          url                           NaN                          1..1                           uri "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/surgery-sacrifiedOrgan"
+                     value[x]                           NaN                          0..1               CodeableConcept     Value of extension Binding: Sacrified Organs (surgery) (extensible)
+Documentation for this format Documentation for this format Documentation for this format Documentation for this format                                           Documentation for this format
+
+                 0           1                                                                                         2   3
+              Path Conformance                                                                                  ValueSet URI
+Extension.value[x]  extensible SacrifiedOrganVshttp://hl7.eu/fhir/ig/pcsp/ValueSet/vs-sacrifiedOrgan-eu-pcspfrom this IG NaN
+

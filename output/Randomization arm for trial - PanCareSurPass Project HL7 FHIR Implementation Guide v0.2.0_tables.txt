@@ -1,0 +1,36 @@
+Title: Randomization arm for trial - PanCareSurPass Project HL7 FHIR Implementation Guide v0.2.0
+
+                                                                            0                                                                             1                                                                             2                                                                             3                       4
+Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/procedure-fltArm Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/procedure-fltArm Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/procedure-fltArm Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/procedure-fltArm         Version:  0.2.0
+                                                      Draft  as of 2024-05-27                                                       Draft  as of 2024-05-27                                                       Draft  as of 2024-05-27                                                       Draft  as of 2024-05-27 Computable Name: FltArm
+
+                         Name                         Flags                         Card.                          Type                                         Description & Constraints
+                    Extension                           NaN                          0..*                     Extension                                       Randomization arm for trial
+                    extension                           NaN                          0..0                           NaN                                                               NaN
+                          url                           NaN                          1..1                           uri "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/procedure-fltArm"
+                     value[x]                           NaN                          0..1                        string                                                Value of extension
+Documentation for this format Documentation for this format Documentation for this format Documentation for this format                                     Documentation for this format
+
+                         Name                         Flags                         Card.                          Type                                         Description & Constraints
+                    Extension                           NaN                          0..*                     Extension                                       Randomization arm for trial
+                           id                           NaN                          0..1                        string                           Unique id for inter-element referencing
+                    extension                           NaN                          0..0                           NaN                                                               NaN
+                          url                           NaN                          1..1                           uri "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/procedure-fltArm"
+                     value[x]                           NaN                          0..1                        string                                                Value of extension
+Documentation for this format Documentation for this format Documentation for this format Documentation for this format                                     Documentation for this format
+
+                         Name                         Flags                         Card.                          Type                                         Description & Constraints
+                    Extension                           NaN                          0..*                     Extension                                       Randomization arm for trial
+                    extension                           NaN                          0..0                           NaN                                                               NaN
+                          url                           NaN                          1..1                           uri "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/procedure-fltArm"
+                     value[x]                           NaN                          0..1                        string                                                Value of extension
+Documentation for this format Documentation for this format Documentation for this format Documentation for this format                                     Documentation for this format
+
+                         Name                         Flags                         Card.                          Type                                         Description & Constraints
+                    Extension                           NaN                          0..*                     Extension                                       Randomization arm for trial
+                           id                           NaN                          0..1                        string                           Unique id for inter-element referencing
+                    extension                           NaN                          0..0                           NaN                                                               NaN
+                          url                           NaN                          1..1                           uri "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/procedure-fltArm"
+                     value[x]                           NaN                          0..1                        string                                                Value of extension
+Documentation for this format Documentation for this format Documentation for this format Documentation for this format                                     Documentation for this format
+

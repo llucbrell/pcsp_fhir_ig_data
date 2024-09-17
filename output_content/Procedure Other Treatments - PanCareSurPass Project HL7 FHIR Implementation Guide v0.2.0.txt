@@ -1,0 +1,31 @@
+Title: Procedure: Other Treatments - PanCareSurPass Project HL7 FHIR Implementation Guide v0.2.0
+
+Header Table:
+- 0 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-treatment-otherinfos-eu-pcsp
+- 1 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-treatment-otherinfos-eu-pcsp
+- 2 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-treatment-otherinfos-eu-pcsp
+- 3 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-treatment-otherinfos-eu-pcsp
+- 4 : Version:  0.2.0
+- 0 : Draft  as of 2024-05-27
+- 1 : Draft  as of 2024-05-27
+- 2 : Draft  as of 2024-05-27
+- 3 : Draft  as of 2024-05-27
+- 4 : Computable Name: ProcedureOtherTreatmentPcsp
+
+
+Third Paragraph:
+This profile defines how to convey textual information about other oncological treatments in HL7 FHIR for the purpose of the PanCareSurPass project.
+
+Dict Table:
+                           0                                                                                                                                                                       1
+                0. Procedure                                                                                                                                                            0. Procedure
+           2. Procedure.text                                                                                                                                                       2. Procedure.text
+                       Short                                                                                Any other treatment (not included in the chemotherapy, surgery or radiotherapy sections)
+                     Control                                                                                                                                                                    1..?
+           4. Procedure.code                                                                                                                                                       4. Procedure.code
+               Pattern Value {  "coding" : [{  "system" : "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp",  "code" : "other-treatment",  "display" : "Other oncological treatments"  }] }
+        6. Procedure.subject                                                                                                                                                    6. Procedure.subject
+                        Type                                                                                                                                                Reference(Patient: PCSP)
+8. Procedure.reasonReference                                                                                                                                            8. Procedure.reasonReference
+                     Control                                                                                                                                                                    1..?
+                        Type                                                                                                                                    Reference(Condition: Primary Cancer)

@@ -1,0 +1,33 @@
+Title: ICD-O-3 Morphology - PanCareSurPass Project HL7 FHIR Implementation Guide v0.2.0
+
+                                                                            0                                                                             1                                                                             2                                                                             3                                  4
+Official URL: http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-icdo3-morphology-eu-pcsp Official URL: http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-icdo3-morphology-eu-pcsp Official URL: http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-icdo3-morphology-eu-pcsp Official URL: http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-icdo3-morphology-eu-pcsp                    Version:  0.2.0
+                                                      Draft  as of 2024-05-27                                                       Draft  as of 2024-05-27                                                       Draft  as of 2024-05-27                                                       Draft  as of 2024-05-27 Computable Name: ICDO3MorphologyVs
+
+    0                 1                                                        2                                3                                                                                                   4
+Level              Code                                                   System                          Display                                                                                          Definition
+    1            8500/3            http://terminology.hl7.org/CodeSystem/icd-o-3 Infiltrating duct carcinoma, NOS                                                                                                 NaN
+    1           unknown http://terminology.hl7.org/CodeSystem/data-absent-reason                          Unknown                                                    The value is expected to exist but is not known.
+    2     asked-unknown http://terminology.hl7.org/CodeSystem/data-absent-reason                Asked But Unknown                                                   The source was asked but does not know the value.
+    2      temp-unknown http://terminology.hl7.org/CodeSystem/data-absent-reason              Temporarily Unknown                      There is reason to expect (from the workflow) that the value may become known.
+    2         not-asked http://terminology.hl7.org/CodeSystem/data-absent-reason                        Not Asked                                                 The workflow didn't lead to this value being known.
+    2    asked-declined http://terminology.hl7.org/CodeSystem/data-absent-reason               Asked But Declined                                                        The source was asked but declined to answer.
+    1            masked http://terminology.hl7.org/CodeSystem/data-absent-reason                           Masked                       The information is not available due to security, privacy or related reasons.
+    1    not-applicable http://terminology.hl7.org/CodeSystem/data-absent-reason                   Not Applicable                  There is no proper value for this element (e.g. last menstrual period for a male).
+    1       unsupported http://terminology.hl7.org/CodeSystem/data-absent-reason                      Unsupported                                        The source system wasn't capable of supporting this element.
+    1           as-text http://terminology.hl7.org/CodeSystem/data-absent-reason                          As Text                                   The content of the data is represented in the resource narrative.
+    1             error http://terminology.hl7.org/CodeSystem/data-absent-reason                            Error                  Some system or workflow process error means that the information is not available.
+    2      not-a-number http://terminology.hl7.org/CodeSystem/data-absent-reason               Not a Number (NaN)         The numeric value is undefined or unrepresentable due to a floating point processing error.
+    2 negative-infinity http://terminology.hl7.org/CodeSystem/data-absent-reason         Negative Infinity (NINF)  The numeric value is excessively low and unrepresentable due to a floating point processing error.
+    2 positive-infinity http://terminology.hl7.org/CodeSystem/data-absent-reason         Positive Infinity (PINF) The numeric value is excessively high and unrepresentable due to a floating point processing error.
+    1     not-performed http://terminology.hl7.org/CodeSystem/data-absent-reason                    Not Performed        The value is not available because the observation procedure (test, etc.) was not performed.
+    1     not-permitted http://terminology.hl7.org/CodeSystem/data-absent-reason                    Not Permitted          The value is not permitted in this context (e.g. due to profiles, or the base data types).
+
+         0                                                                                                                                                                                           1
+     Level A few code lists that FHIR defines are hierarchical - each code is assigned a level.  In this scheme, some codes are under other codes, and imply that the code they are under also applies
+    System                                                                                              The source of the definition of the code (when the value set draws in codes defined elsewhere)
+      Code                                                                                                                                        The code (used as the code in the resource instance)
+   Display                  The display (used in the display element of a Coding). If there is no display, implementers should not simply display the code, but map the concept into their application
+Definition                                                                                                                                                An explanation of the meaning of the concept
+  Comments                                                                                                                                                  Additional notes about how to use the code
+

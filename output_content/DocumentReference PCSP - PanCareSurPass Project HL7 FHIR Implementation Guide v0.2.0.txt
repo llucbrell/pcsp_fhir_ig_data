@@ -1,0 +1,52 @@
+Title: DocumentReference: PCSP - PanCareSurPass Project HL7 FHIR Implementation Guide v0.2.0
+
+Header Table:
+- 0 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/DocumentReference-eu-pcsp
+- 1 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/DocumentReference-eu-pcsp
+- 2 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/DocumentReference-eu-pcsp
+- 3 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/DocumentReference-eu-pcsp
+- 4 : Version:  0.2.0
+- 0 : Draft  as of 2024-05-27
+- 1 : Draft  as of 2024-05-27
+- 2 : Draft  as of 2024-05-27
+- 3 : Draft  as of 2024-05-27
+- 4 : Computable Name: DocumentReferencePcsp
+
+
+Third Paragraph:
+This profile defines how to embed a PDF PCSP Survivor Passport in FHIR for the purpose of the PanCareSurPass project. This profile can be aslo used for send attachments (e.g Raditherapy reports or HDR) to the platform
+
+Dict Table:
+                                                   0                                                                                                                                                                                          1
+                                0. DocumentReference                                                                                                                                                                       0. DocumentReference
+                         2. DocumentReference.status                                                                                                                                                                2. DocumentReference.status
+                                               Short                                                                                                                                                               The status of this reference
+                      4. DocumentReference.docStatus                                                                                                                                                             4. DocumentReference.docStatus
+                                               Short                                                                                                                                                                 The status of the document
+                           6. DocumentReference.type                                                                                                                                                                  6. DocumentReference.type
+                                             Control                                                                                                                                                                                       1..?
+                                             Binding                                           Unless not suitable, these codes SHALL be taken from Document Type (extensible to http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-docref-doctype-eu-pcsp)
+                                             Example <br/><b>Passport</b>:{  "coding" : [{  "system" : "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp",  "code" : "surpass",  "display" : "Childhood Cancer Survivor Passport"  }] }
+                        8. DocumentReference.subject                                                                                                                                                               8. DocumentReference.subject
+                                             Control                                                                                                                                                                                       1..?
+                                                Type                                                                                                                                                                   Reference(Patient: PCSP)
+                          10. DocumentReference.date                                                                                                                                                                 10. DocumentReference.date
+                                               Short                                                                                                                                                            When this reference was created
+                     12. DocumentReference.relatesTo                                                                                                                                                            12. DocumentReference.relatesTo
+                                               Short                                                                                                                                                          Relationships to other documents.
+                       14. DocumentReference.content                                                                                                                                                              14. DocumentReference.content
+            16. DocumentReference.content.attachment                                                                                                                                                   16. DocumentReference.content.attachment
+18. DocumentReference.content.attachment.contentType                                                                                                                                       18. DocumentReference.content.attachment.contentType
+                                             Example                                                                                                                                                            <br/><b>PDF</b>:application/pdf
+   20. DocumentReference.content.attachment.language                                                                                                                                          20. DocumentReference.content.attachment.language
+                                             Control                                                                                                                                                                                       1..?
+       22. DocumentReference.content.attachment.data                                                                                                                                              22. DocumentReference.content.attachment.data
+                                             Control                                                                                                                                                                                       1..?
+      24. DocumentReference.content.attachment.title                                                                                                                                             24. DocumentReference.content.attachment.title
+                                               Short                                                                                                                                                                             Document title
+   26. DocumentReference.content.attachment.creation                                                                                                                                          26. DocumentReference.content.attachment.creation
+                                             Control                                                                                                                                                                                       1..?
+                       28. DocumentReference.context                                                                                                                                                              28. DocumentReference.context
+               30. DocumentReference.context.related                                                                                                                                                      30. DocumentReference.context.related
+                                               Short                                                                                                                                                      required for documents to be uploaded
+                                                Type                                                                                                                              Reference(Condition: Primary Cancer, Procedure: Radiotherapy)

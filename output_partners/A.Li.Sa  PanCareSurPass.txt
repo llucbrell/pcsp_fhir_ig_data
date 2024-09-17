@@ -1,0 +1,5 @@
+Title: A.Li.Sa – PanCareSurPass
+
+Dr. Domenico Gallo is A.Li.Sa.’s Director of the Health Information System, and manages IT projects related to the regional health system, with the goal to maximize service effectiveness and minimize costs in the regional public health.
+Dr. Igor Zamberlan is an IT analyst at Liguria Digitale S.p.A working on the implementation and development of the regional Fascicolo Sanitario Elettronico (FSE). In this role, he has been participating in national working groups on the FSE.
+A.Li.Sa will work towards the incorporation of a dedicated SurPass document into the electronic health folder of every childhood cancer survivor of the Liguria Region in Italy.

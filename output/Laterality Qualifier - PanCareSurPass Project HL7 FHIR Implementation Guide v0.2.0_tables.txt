@@ -1,0 +1,36 @@
+Title: Laterality Qualifier - PanCareSurPass Project HL7 FHIR Implementation Guide v0.2.0
+
+                                                                                      0                                                                                       1                                                                                       2                                                                                       3                                    4
+Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/mcode-laterality-qualifier Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/mcode-laterality-qualifier Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/mcode-laterality-qualifier Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/mcode-laterality-qualifier                      Version:  0.2.0
+                                                                Draft  as of 2024-05-27                                                                 Draft  as of 2024-05-27                                                                 Draft  as of 2024-05-27                                                                 Draft  as of 2024-05-27 Computable Name: LateralityQualifier
+
+                         Name                         Flags                         Card.                          Type                                                   Description & Constraints
+                    Extension                           NaN                          0..*                     Extension                                                        Laterality Qualifier
+                    extension                           NaN                          0..0                           NaN                                                                         NaN
+                          url                           NaN                          1..1                           uri "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/mcode-laterality-qualifier"
+                     value[x]                           NaN                          1..1               CodeableConcept                                                          Value of extension
+Documentation for this format Documentation for this format Documentation for this format Documentation for this format                                               Documentation for this format
+
+                         Name                         Flags                         Card.                          Type                                                   Description & Constraints
+                    Extension                           NaN                          0..*                     Extension                                                        Laterality Qualifier
+                           id                           NaN                          0..1                        string                                     Unique id for inter-element referencing
+                    extension                           NaN                          0..0                           NaN                                                                         NaN
+                          url                           NaN                          1..1                           uri "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/mcode-laterality-qualifier"
+                     value[x]                           NaN                          1..1               CodeableConcept                                                          Value of extension
+Documentation for this format Documentation for this format Documentation for this format Documentation for this format                                               Documentation for this format
+
+                         Name                         Flags                         Card.                          Type                                                   Description & Constraints
+                    Extension                           NaN                          0..*                     Extension                                                        Laterality Qualifier
+                    extension                           NaN                          0..0                           NaN                                                                         NaN
+                          url                           NaN                          1..1                           uri "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/mcode-laterality-qualifier"
+                     value[x]                           NaN                          1..1               CodeableConcept                                                          Value of extension
+Documentation for this format Documentation for this format Documentation for this format Documentation for this format                                               Documentation for this format
+
+                         Name                         Flags                         Card.                          Type                                                   Description & Constraints
+                    Extension                           NaN                          0..*                     Extension                                                        Laterality Qualifier
+                           id                           NaN                          0..1                        string                                     Unique id for inter-element referencing
+                    extension                           NaN                          0..0                           NaN                                                                         NaN
+                          url                           NaN                          1..1                           uri "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/mcode-laterality-qualifier"
+                     value[x]                           NaN                          1..1               CodeableConcept                                                          Value of extension
+Documentation for this format Documentation for this format Documentation for this format Documentation for this format                                               Documentation for this format
+

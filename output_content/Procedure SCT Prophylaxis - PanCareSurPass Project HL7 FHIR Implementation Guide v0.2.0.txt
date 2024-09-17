@@ -1,0 +1,47 @@
+Title: Procedure: SCT Prophylaxis - PanCareSurPass Project HL7 FHIR Implementation Guide v0.2.0
+
+Header Table:
+- 0 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-sct-prophylaxis-eu-pcsp
+- 1 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-sct-prophylaxis-eu-pcsp
+- 2 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-sct-prophylaxis-eu-pcsp
+- 3 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-sct-prophylaxis-eu-pcsp
+- 4 : Version:  0.2.0
+- 0 : Draft  as of 2024-05-27
+- 1 : Draft  as of 2024-05-27
+- 2 : Draft  as of 2024-05-27
+- 3 : Draft  as of 2024-05-27
+- 4 : Computable Name: ProcedureSctProphylaxisPcsp
+
+
+Third Paragraph:
+This profile defines how to represent GVHD prophylaxis, conditioning regimen Procedures in FHIR for supporting Stem Cell Transplantation data, as required by the PanCareSurPass algorithm to generate the care plan.
+
+Dict Table:
+                                         0                                                                                                                                                                              1
+                              0. Procedure                                                                                                                                                                   0. Procedure
+                   2. Procedure.identifier                                                                                                                                                        2. Procedure.identifier
+                                     Short                                                                                                                            External Identifiers for this SCT-related procedure
+                                      Note                                                                                                      This is a business identifier, not a resource identifier (see discussion)
+                       4. Procedure.status                                                                                                                                                            4. Procedure.status
+                              Must Support                                                                                                                                                                           true
+                     6. Procedure.category                                                                                                                                                          6. Procedure.category
+                                   Control                                                                                                                                                                           1..?
+                                   Binding                                 The codes SHALL be taken from SCT Prophylaxis Cathegory (required to http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-sct-prophylaxis-cathegory-eu-pcsp)
+                         8. Procedure.code                                                                                                                                                              8. Procedure.code
+                                   Binding                  Unless not suitable, these codes SHALL be taken from SCT Prophylaxis Type (extensible to http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-sct-prophylaxis-type-eu-pcsp)
+                     10. Procedure.subject                                                                                                                                                          10. Procedure.subject
+                                      Type                                                                                                                                                       Reference(Patient: PCSP)
+                12. Procedure.performed[x]                                                                                                                                                     12. Procedure.performed[x]
+                                  [x] Note                                                                                                            SeeChoice of Data Typesfor further information about how to use [x]
+                                   Slicing This element introduces a set of slices on Procedure.performed[x]. The slices areUnordered and Open, and can be differentiated using the following discriminators:type @ $this
+14. Procedure.performed[x]:performedPeriod                                                                                                                                     14. Procedure.performed[x]:performedPeriod
+                                Slice Name                                                                                                                                                                performedPeriod
+                                   Control                                                                                                                                                                           0..1
+                                      Type                                                                                                                                                                         Period
+                                  [x] Note                                                                                                            SeeChoice of Data Typesfor further information about how to use [x]
+                              Must Support                                                                                                                                                                           true
+             16. Procedure.reasonReference                                                                                                                                                  16. Procedure.reasonReference
+                                   Control                                                                                                                                                                           2..?
+                                      Type                                                                                                     Reference(Condition: Primary Cancer, Procedure: Stem Cell Transplantation)
+                              Must Support                                                                                                                                                                           true
+                        Must Support Types                                                                                                                       No must-support rules about the choice of types/profiles

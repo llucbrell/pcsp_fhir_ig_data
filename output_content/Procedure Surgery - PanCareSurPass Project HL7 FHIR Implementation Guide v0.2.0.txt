@@ -1,0 +1,85 @@
+Title: Procedure: Surgery - PanCareSurPass Project HL7 FHIR Implementation Guide v0.2.0
+
+Header Table:
+- 0 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-surgery-eu-pcsp
+- 1 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-surgery-eu-pcsp
+- 2 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-surgery-eu-pcsp
+- 3 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-surgery-eu-pcsp
+- 4 : Version:  0.2.0
+- 0 : Draft  as of 2024-05-27
+- 1 : Draft  as of 2024-05-27
+- 2 : Draft  as of 2024-05-27
+- 3 : Draft  as of 2024-05-27
+- 4 : Computable Name: ProcedureSurgeryPcsp
+
+
+Third Paragraph:
+This profile defines how to represent Procedures in FHIR for describing a set of Surgery data required by the PanCareSurPass algorithm to generate the care plan. It is used also to provide inforamtion about shunt, amputation, and other procedures
+
+Dict Table:
+                                                   0                                                                                                                                                                              1
+                                        0. Procedure                                                                                                                                                                   0. Procedure
+                                   2. Procedure.text                                                                                                                                                              2. Procedure.text
+                                               Short                                                                                                                                  Textual description of the surgical procedure
+                              4. Procedure.extension                                                                                                                                                         4. Procedure.extension
+                                             Slicing     This element introduces a set of slices on Procedure.extension. The slices areUnordered and Open, and can be differentiated using the following discriminators:value @ url
+               6. Procedure.extension:sacrifiedOrgan                                                                                                                                          6. Procedure.extension:sacrifiedOrgan
+                                          Slice Name                                                                                                                                                                 sacrifiedOrgan
+                                             Control                                                                                                                                                                           0..*
+                                                Type                                                                                                                   Extension(Sacrified organ) (Extension Type: CodeableConcept)
+             8. Procedure.extension:notAffectedOrgan                                                                                                                                        8. Procedure.extension:notAffectedOrgan
+                                          Slice Name                                                                                                                                                               notAffectedOrgan
+                                             Control                                                                                                                                                                           0..*
+                                                Type                                                                                                                Extension(Not affected Organ) (Extension Type: CodeableConcept)
+                            10. Procedure.identifier                                                                                                                                                       10. Procedure.identifier
+                                               Short                                                                                                                               External Identifiers for this surgical procedure
+                                                Note                                                                                                      This is a business identifier, not a resource identifier (see discussion)
+                                12. Procedure.partOf                                                                                                                                                           12. Procedure.partOf
+                                               Short                                                                                                                                      Reference to the parent surgery procedure
+                                                Type                                                                                                                                                  Reference(Procedure: Surgery)
+                                14. Procedure.status                                                                                                                                                           14. Procedure.status
+                                        Must Support                                                                                                                                                                           true
+                              16. Procedure.category                                                                                                                                                         16. Procedure.category
+                                             Control                                                                                                                                                                           1..?
+                                       Pattern Value                                                                                             {  "coding" : [{  "system" : "http://snomed.info/sct",  "code" : "387713003"  }] }
+                                             Example                           <br/><b>Surgical procedure</b>:{  "coding" : [{  "system" : "http://snomed.info/sct",  "code" : "387713003",  "display" : "Surgical procedure"  }] }
+                                  18. Procedure.code                                                                                                                                                             18. Procedure.code
+                                               Short                                                                                                                                               Identification of the procedure.
+                                             Binding              Unless not suitable, these codes SHALL be taken from Surgical Procedure Type (extensible to http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-surgicalProcedureType-eu-pcsp)
+                               20. Procedure.subject                                                                                                                                                          20. Procedure.subject
+                                                Type                                                                                                                                                       Reference(Patient: PCSP)
+                                        Must Support                                                                                                                                                                           true
+                          22. Procedure.performed[x]                                                                                                                                                     22. Procedure.performed[x]
+                                             Control                                                                                                                                                                           1..?
+                                            [x] Note                                                                                                            SeeChoice of Data Typesfor further information about how to use [x]
+                                             Slicing This element introduces a set of slices on Procedure.performed[x]. The slices areUnordered and Open, and can be differentiated using the following discriminators:type @ $this
+        24. Procedure.performed[x]:performedDateTime                                                                                                                                   24. Procedure.performed[x]:performedDateTime
+                                          Slice Name                                                                                                                                                              performedDateTime
+                                               Short                                                                                                                                                 Date of the surgical procedure
+                                             Control                                                                                                                                                                           1..1
+                                                Type                                                                                                                                                                       dateTime
+                                            [x] Note                                                                                                            SeeChoice of Data Typesfor further information about how to use [x]
+                                     Primitive Value                                                                                                  This primitive element may be present, or absent, or replaced by an extension
+                              26. Procedure.location                                                                                                                                                         26. Procedure.location
+                                                Type                                                                                                                                                      Reference(Location: PCSP)
+                       28. Procedure.reasonReference                                                                                                                                                  28. Procedure.reasonReference
+                                             Control                                                                                                                                                                           1..?
+                                                Type                                                                                                                                           Reference(Condition: Primary Cancer)
+                                        Must Support                                                                                                                                                                           true
+                              30. Procedure.bodySite                                                                                                                                                         30. Procedure.bodySite
+                                             Binding                    Unless not suitable, these codes SHALL be taken from Affected Organs (surgery) (extensible to http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-affectedOrgan-eu-pcsp)
+         32. Procedure.bodySite.extension:laterality                                                                                                                                    32. Procedure.bodySite.extension:laterality
+                                          Slice Name                                                                                                                                                                     laterality
+                                             Control                                                                                                                                                                           0..1
+                                                Type                                                                                                              Extension(Laterality Qualifier) (Extension Type: CodeableConcept)
+34. Procedure.bodySite.extension:laterality.value[x]                                                                                                                           34. Procedure.bodySite.extension:laterality.value[x]
+                                             Binding                                 The codes SHALL be taken from Laterality Qualifier Value Set (required to http://hl7.org/fhir/us/mcode/ValueSet/mcode-laterality-qualifier-vs)
+                                            [x] Note                                                                                                            SeeChoice of Data Typesfor further information about how to use [x]
+                           36. Procedure.focalDevice                                                                                                                                                      36. Procedure.focalDevice
+                                               Short                                                                                                                                                    Implanted or removed device
+                    38. Procedure.focalDevice.action                                                                                                                                               38. Procedure.focalDevice.action
+                                             Binding                                    Unless not suitable, these codes SHALL be taken from Surgical Actions (extensible to http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-action-eu-pcsp)
+               40. Procedure.focalDevice.manipulated                                                                                                                                          40. Procedure.focalDevice.manipulated
+                                               Short                                                                                                                                                             Device manipulated
+                              42. Procedure.usedCode                                                                                                                                                         42. Procedure.usedCode
+                                             Binding                             Unless not suitable, these codes SHALL be taken from Prosthesis Type (extensible to http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-ProsthesisType-eu-pcsp)

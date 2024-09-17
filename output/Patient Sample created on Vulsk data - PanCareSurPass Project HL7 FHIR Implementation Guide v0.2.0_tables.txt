@@ -1,0 +1,5 @@
+Title: Patient: Sample created on Vulsk data - PanCareSurPass Project HL7 FHIR Implementation Guide v0.2.0
+
+         0                      1                      2                      3
+Alt. Name: Marija Asta Petraitytė Marija Asta Petraitytė Marija Asta Petraitytė
+

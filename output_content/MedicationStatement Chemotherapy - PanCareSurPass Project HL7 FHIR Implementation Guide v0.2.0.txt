@@ -1,0 +1,53 @@
+Title: MedicationStatement: Chemotherapy - PanCareSurPass Project HL7 FHIR Implementation Guide v0.2.0
+
+Header Table:
+- 0 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/MedicationStatement-eu-pcsp
+- 1 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/MedicationStatement-eu-pcsp
+- 2 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/MedicationStatement-eu-pcsp
+- 3 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/MedicationStatement-eu-pcsp
+- 4 : Version:  0.2.0
+- 0 : Draft  as of 2024-05-27
+- 1 : Draft  as of 2024-05-27
+- 2 : Draft  as of 2024-05-27
+- 3 : Draft  as of 2024-05-27
+- 4 : Computable Name: MedicationStatementPcsp
+
+
+Third Paragraph:
+This profile defines how to represent MedicationStatement in FHIR for describing minimal information about provided medications for the purpose of the PanCareSurPass project.
+
+Dict Table:
+                                                                    0                                                                                                                                                                                                          1
+                                               0. MedicationStatement                                                                                                                                                                                     0. MedicationStatement
+                                        2. MedicationStatement.status                                                                                                                                                                              2. MedicationStatement.status
+                                                                Short                                                                                                                  active | completed | entered-in-error | intended | stopped | on-hold | unknown |not-taken
+                                                              Example                                                                                                                                                                              <br/><b>general</b>:completed
+                                 4. MedicationStatement.medication[x]                                                                                                                                                                       4. MedicationStatement.medication[x]
+                                                             [x] Note                                                                                                                                        SeeChoice of Data Typesfor further information about how to use [x]
+                                                              Slicing                  This element introduces a set of slices on MedicationStatement.medication[x]. The slices areUnordered and Open, and can be differentiated using the following discriminators:type @ $this
+       6. MedicationStatement.medication[x]:medicationCodeableConcept                                                                                                                                             6. MedicationStatement.medication[x]:medicationCodeableConcept
+                                                           Slice Name                                                                                                                                                                                  medicationCodeableConcept
+                                                              Control                                                                                                                                                                                                       0..1
+                                                                 Type                                                                                                                                                                                            CodeableConcept
+                                                             [x] Note                                                                                                                                        SeeChoice of Data Typesfor further information about how to use [x]
+                                                              Example                                                         <br/><b>general</b>:{  "coding" : [{  "system" : "http://www.whocc.no/atc",  "code" : "H02",  "display" : "CORTICOSTEROIDS FOR SYSTEMIC USE"  }] }
+                               8. MedicationStatement.reasonReference                                                                                                                                                                     8. MedicationStatement.reasonReference
+                                                                Short                                                                                                                                                             Required if related to chemotherapy treatments
+                                                                 Type                                                                                                                                                                       Reference(Condition: Primary Cancer)
+                                                         Must Support                                                                                                                                                                                                       true
+                                       10. MedicationStatement.dosage                                                                                                                                                                             10. MedicationStatement.dosage
+                                12. MedicationStatement.dosage.timing                                                                                                                                                                      12. MedicationStatement.dosage.timing
+                         14. MedicationStatement.dosage.timing.repeat                                                                                                                                                               14. MedicationStatement.dosage.timing.repeat
+               16. MedicationStatement.dosage.timing.repeat.bounds[x]                                                                                                                                                     16. MedicationStatement.dosage.timing.repeat.bounds[x]
+                                                             [x] Note                                                                                                                                        SeeChoice of Data Typesfor further information about how to use [x]
+                                                              Slicing This element introduces a set of slices on MedicationStatement.dosage.timing.repeat.bounds[x]. The slices areUnordered and Open, and can be differentiated using the following discriminators:type @ $this
+18. MedicationStatement.dosage.timing.repeat.bounds[x]:boundsDuration                                                                                                                                      18. MedicationStatement.dosage.timing.repeat.bounds[x]:boundsDuration
+                                                           Slice Name                                                                                                                                                                                             boundsDuration
+                                                                Short                                                                                                                                                     Length/Range of lengths, or (Start and/or end) limits.
+                                                              Control                                                                                                                                                                                                       0..1
+                                                                 Type                                                                                                                                                                                                   Duration
+                                                             [x] Note                                                                                                                                        SeeChoice of Data Typesfor further information about how to use [x]
+                   20. MedicationStatement.dosage.timing.repeat.count                                                                                                                                                         20. MedicationStatement.dosage.timing.repeat.count
+                                                                Short                                                                                                                                                                                   Number of administration
+                                 22. MedicationStatement.dosage.route                                                                                                                                                                       22. MedicationStatement.dosage.route
+                                                              Example                                                               <br/><b>general</b>:{  "coding" : [{  "system" : "https://standardterms.edqm.eu",  "code" : "20042000",  "display" : "Intrathecal use"  }] }

@@ -1,0 +1,49 @@
+Title: Procedure: Radiotherapy Shielding - PanCareSurPass Project HL7 FHIR Implementation Guide v0.2.0
+
+Header Table:
+- 0 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-radiotheraphyShield-eu-pcsp
+- 1 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-radiotheraphyShield-eu-pcsp
+- 2 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-radiotheraphyShield-eu-pcsp
+- 3 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-radiotheraphyShield-eu-pcsp
+- 4 : Version:  0.2.0
+- 0 : Draft  as of 2024-05-27
+- 1 : Draft  as of 2024-05-27
+- 2 : Draft  as of 2024-05-27
+- 3 : Draft  as of 2024-05-27
+- 4 : Computable Name: ProcedureRadiotherapyShieldingPcsp
+
+
+Third Paragraph:
+This profile defines how to represent Shielding Procedures in FHIR for describing a set of Radiotherapy data required by the PanCareSurPass algorithm to generate the care plan.
+
+Dict Table:
+                                                          0                                                                                                                                                    1
+                                               0. Procedure                                                                                                                                         0. Procedure
+                                        2. Procedure.partOf                                                                                                                                  2. Procedure.partOf
+                                                    Control                                                                                                                                                 1..1
+                                                       Type                                                                                                                   Reference(Procedure: Radiotherapy)
+                                      4. Procedure.category                                                                                                                                4. Procedure.category
+                                              Pattern Value                                      {  "coding" : [{  "system" : "http://snomed.info/sct",  "code" : "108290001",  "display" : "Radiotherapy"  }] }
+                                          6. Procedure.code                                                                                                                                    6. Procedure.code
+                                              Pattern Value        {  "coding" : [{  "system" : "http://snomed.info/sct",  "code" : "228720004",  "display" : "Making of shielding block for radiotherapy"  }] }
+                                       8. Procedure.subject                                                                                                                                 8. Procedure.subject
+                                                       Type                                                                                                                             Reference(Patient: PCSP)
+                              10. Procedure.reasonReference                                                                                                                        10. Procedure.reasonReference
+                                                    Control                                                                                                                                                 1..?
+                                                       Type                                                                                                                 Reference(Condition: Primary Cancer)
+                                     12. Procedure.bodySite                                                                                                                               12. Procedure.bodySite
+                                                    Control                                                                                                                                                 1..?
+                                                    Binding                              The codes SHALL be taken from Radiotherapy sites (required to http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-radiotherapy-pcsp)
+         14. Procedure.bodySite.extension:locationQualifier                                                                                                   14. Procedure.bodySite.extension:locationQualifier
+                                                 Slice Name                                                                                                                                    locationQualifier
+                                                    Control                                                                                                                                                 0..*
+                                                       Type                                                                                 Extension(Body Location Qualifier) (Extension Type: CodeableConcept)
+16. Procedure.bodySite.extension:locationQualifier.value[x]                                                                                          16. Procedure.bodySite.extension:locationQualifier.value[x]
+                                                    Binding The codes SHALL be taken from Body Location Qualifier Value Set (required to http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-fromToPosteriorAnterior-eu-pcsp)
+                                                   [x] Note                                                                                  SeeChoice of Data Typesfor further information about how to use [x]
+       18. Procedure.bodySite.extension:lateralityQualifier                                                                                                 18. Procedure.bodySite.extension:lateralityQualifier
+                                                 Slice Name                                                                                                                                  lateralityQualifier
+                                                    Control                                                                                                                                                 0..1
+                                                       Type                                                                                    Extension(Laterality Qualifier) (Extension Type: CodeableConcept)
+                                         20. Procedure.note                                                                                                                                   20. Procedure.note
+                                                      Short                                                                                                        Additional information about the Radiotherapy

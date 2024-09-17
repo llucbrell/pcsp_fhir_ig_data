@@ -1,0 +1,55 @@
+Title: Observation: TNM Distant Metastases Category - PanCareSurPass Project HL7 FHIR Implementation Guide v0.2.0
+
+Header Table:
+- 0 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/mcode-tnm-distant-metastases-category
+- 1 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/mcode-tnm-distant-metastases-category
+- 2 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/mcode-tnm-distant-metastases-category
+- 3 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/mcode-tnm-distant-metastases-category
+- 4 : Version:  0.2.0
+- 0 : Draft  as of 2024-05-27
+- 1 : Draft  as of 2024-05-27
+- 2 : Draft  as of 2024-05-27
+- 3 : Draft  as of 2024-05-27
+- 4 : Computable Name: TNMDistantMetastasesCategory
+
+
+Third Paragraph:
+Category describing the extent of a tumor metastasis in remote anatomical locations, based on evidence such as physical examination, imaging, and/or biopsy.
+
+Dict Table:
+                             0                                                                                                                                                                               1
+                0. Observation                                                                                                                                                                  0. Observation
+         2. Observation.status                                                                                                                                                           2. Observation.status
+                  Must Support                                                                                                                                                                            true
+           4. Observation.code                                                                                                                                                             4. Observation.code
+                       Binding The codes SHALL be taken from Observation Codes for Distant Metastases Category (required to http://hl7.eu/fhir/ig/pcsp/ValueSet/mcode-observation-codes-distant-metastases-vs)
+                  Must Support                                                                                                                                                                            true
+        6. Observation.subject                                                                                                                                                          6. Observation.subject
+                          Type                                                                                                                                                        Reference(Patient: PCSP)
+                  Must Support                                                                                                                                                                            true
+          8. Observation.focus                                                                                                                                                            8. Observation.focus
+                          Type                                                                                                                                            Reference(Condition: Primary Cancer)
+                  Must Support                                                                                                                                                                            true
+  10. Observation.effective[x]                                                                                                                                                    10. Observation.effective[x]
+                      [x] Note                                                                                                             SeeChoice of Data Typesfor further information about how to use [x]
+                  Must Support                                                                                                                                                                            true
+      12. Observation.value[x]                                                                                                                                                        12. Observation.value[x]
+                       Binding            The codes SHOULD be taken from TNM Distant Metastases Category Value Set (preferred to http://hl7.eu/fhir/ig/pcsp/ValueSet/mcode-tnm-distant-metastases-category-vs)
+                          Type                                                                          CodeableConcept, dateTime, boolean, string, SampledData, Quantity, Period, Ratio, integer, time, Range
+                      [x] Note                                                                                                             SeeChoice of Data Typesfor further information about how to use [x]
+                  Must Support                                                                                                                                                                            true
+        14. Observation.method                                                                                                                                                          14. Observation.method
+                       Binding         Unless not suitable, these codes SHALL be taken from Cancer Staging System Value Set (extensible to http://hl7.eu/fhir/ig/pcsp/ValueSet/mcode-cancer-staging-system-vs)
+                  Must Support                                                                                                                                                                            true
+        16. Observation.device                                                                                                                                                          16. Observation.device
+                    Definition                                                                                                                                                        Not used in this profile
+                         Short                                                                                                                                                        Not used in this profile
+18. Observation.referenceRange                                                                                                                                                  18. Observation.referenceRange
+                    Definition                                                                                                                                                        Not used in this profile
+                         Short                                                                                                                                                        Not used in this profile
+     20. Observation.hasMember                                                                                                                                                       20. Observation.hasMember
+                    Definition                                                                                                                                                        Not used in this profile
+                         Short                                                                                                                                                        Not used in this profile
+     22. Observation.component                                                                                                                                                       22. Observation.component
+                    Definition                                                                                                                                                        Not used in this profile
+                         Short                                                                                                                                                        Not used in this profile

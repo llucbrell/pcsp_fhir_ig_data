@@ -1,0 +1,1023 @@
+Title: Morphologically abnormal structure - PanCareSurPass Project HL7 FHIR Implementation Guide v0.2.0
+
+Description: 
+
+Table 1:
+                                                                                                                                                                                                                                                                                           0                                                                                                                                                                                                                                                                                            1                                                                                                                                                                                                                                                                                            2                                                                                                                                                                                                                                                                                            3                                                                                                                                                                                                                                                                                            4
+                                                                                                                                                                                                              Official URL: http://hl7.eu/fhir/ig/pcsp/ValueSet/morphologicAbnormality-eu-vs                                                                                                                                                                                                               Official URL: http://hl7.eu/fhir/ig/pcsp/ValueSet/morphologicAbnormality-eu-vs                                                                                                                                                                                                               Official URL: http://hl7.eu/fhir/ig/pcsp/ValueSet/morphologicAbnormality-eu-vs                                                                                                                                                                                                               Official URL: http://hl7.eu/fhir/ig/pcsp/ValueSet/morphologicAbnormality-eu-vs                                                                                                                                                                                                                                                                              Version:  0.2.0
+                                                                                                                                                                                                                                                                     Draft  as of 2024-05-27                                                                                                                                                                                                                                                                      Draft  as of 2024-05-27                                                                                                                                                                                                                                                                      Draft  as of 2024-05-27                                                                                                                                                                                                                                                                      Draft  as of 2024-05-27                                                                                                                                                                                                                                                    Computable Name: MorphologicAbnormalityVS
+Copyright/Legal: This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement Copyright/Legal: This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement Copyright/Legal: This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement Copyright/Legal: This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement Copyright/Legal: This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement
+
+Table 2:
+       0                      1                                                                                         2
+    Code                 System                                                                                   Display
+49755003 http://snomed.info/sct                                                                Abnormal tissue appearance
+  145009 http://snomed.info/sct                                                                            Colloid milium
+  161006 http://snomed.info/sct                                                                            Thermal injury
+  182000 http://snomed.info/sct                                                                              Canalization
+  232001 http://snomed.info/sct                                                                           Congenital fold
+  255003 http://snomed.info/sct                                                                          Calcified nodule
+  259009 http://snomed.info/sct                                                                              Fibrous body
+  328005 http://snomed.info/sct                                                                         Follicular papule
+  339008 http://snomed.info/sct                                                                                   Blister
+  354002 http://snomed.info/sct                                                                   Triton tumor, malignant
+  367004 http://snomed.info/sct                                                                                  Clubbing
+  394000 http://snomed.info/sct                                                                    Abnormal trabeculation
+  419008 http://snomed.info/sct                                                                     Functional dilatation
+  420002 http://snomed.info/sct                                                                 Anastomosis, heterocladic
+  487002 http://snomed.info/sct                                                                       Coil/whorled fibers
+  511008 http://snomed.info/sct                                                                        Fibrous meningioma
+  575006 http://snomed.info/sct                                                                             Cholesteatoma
+  605004 http://snomed.info/sct                                                                Severe inflammatory atypia
+  738003 http://snomed.info/sct                                                                    Ball valve obstruction
+  803009 http://snomed.info/sct                                                                             Paraganglioma
+  810003 http://snomed.info/sct                                                                        Spindle cell nevus
+  835009 http://snomed.info/sct Peripheral T-cell lymphoma, AILD (Angioimmunoblastic Lymphadenopathy with Dysproteinemia)
+  856006 http://snomed.info/sct                                                                         Actinic keratosis
+  900006 http://snomed.info/sct                                                            Mucin-producing adenocarcinoma
+  915007 http://snomed.info/sct                                                    Malignant melanoma in junctional nevus
+  985004 http://snomed.info/sct                                                                              Neurilemmoma
+  988002 http://snomed.info/sct                                                                              Wet gangrene
+  999000 http://snomed.info/sct                                              Mixed islet cell and exocrine adenocarcinoma
+ 1040005 http://snomed.info/sct                                                                 Anterior open dislocation
+ 1129000 http://snomed.info/sct                                                                          Acidophilic body
+ 1138003 http://snomed.info/sct                                                             Moderate squamous cell atypia
+ 1188006 http://snomed.info/sct                                                                 Superior open dislocation
+ 1338007 http://snomed.info/sct                                                                      Basal cell carcinoma
+ 1443001 http://snomed.info/sct                                                                     Chromophobe carcinoma
+ 1454006 http://snomed.info/sct                                                            Chronic fibrinous inflammation
+ 1513001 http://snomed.info/sct                                                           Melanotic neuroectodermal tumor
+ 1522000 http://snomed.info/sct                                                                                    Plaque
+ 1561008 http://snomed.info/sct                                                            Swollen sarcoplasmic reticulum
+ 1586004 http://snomed.info/sct                                                       Subependymal giant cell astrocytoma
+ 1623000 http://snomed.info/sct                                                                  Myxopapillary ependymoma
+ 1736008 http://snomed.info/sct                                                                               Anteversion
+ 1752006 http://snomed.info/sct                                                                        Clear cell adenoma
+ 1791001 http://snomed.info/sct                                                            Radiation injury with fibrosis
+ 1806006 http://snomed.info/sct                                                                                  Eruption
+ 1996000 http://snomed.info/sct                                                                           Numeric atrophy
+ 2014001 http://snomed.info/sct                                                                          Microlymphoblast
+ 2019006 http://snomed.info/sct                                                                       Sarcoplasmic bodies
+ 2026006 http://snomed.info/sct                                                                       Serous adenofibroma
+ 2052000 http://snomed.info/sct                                                                            Acute necrosis
+ 2097009 http://snomed.info/sct                                                                              Dyskeratosis
+ 2122006 http://snomed.info/sct                                                                          Pressure atrophy
+ 2142002 http://snomed.info/sct                                                                          Nodular melanoma
+ 2218006 http://snomed.info/sct                                                                  Endothelial degeneration
+ 2221008 http://snomed.info/sct                                                                   Mesonephroma, malignant
+ 2227007 http://snomed.info/sct                                                                Adrenal cortical carcinoma
+ 2289007 http://snomed.info/sct                                                                      Dicentric chromosome
+ 2348006 http://snomed.info/sct                                                                         Adenomatoid tumor
+ 2412005 http://snomed.info/sct                                                                              Maculopapule
+ 2464004 http://snomed.info/sct                                                                 Moderate cytologic atypia
+ 2483006 http://snomed.info/sct                                                                                    Cavity
+ 2557004 http://snomed.info/sct                                                Chronic leukemia (morphologic abnormality)
+ 2559001 http://snomed.info/sct                                                                     Claw-shaped deformity
+ 2570008 http://snomed.info/sct                                                                     Traction diverticulum
+ 2710003 http://snomed.info/sct                                                                               Fibrolipoma
+ 2735009 http://snomed.info/sct                                                              Papillary cystadenocarcinoma
+ 2763006 http://snomed.info/sct                                                                                    Comedo
+ 2881000 http://snomed.info/sct                                                                             Anisokaryosis
+ 2952002 http://snomed.info/sct                                                                Proliferative inflammation
+ 2953007 http://snomed.info/sct                                                                Microglandular hyperplasia
+ 2985005 http://snomed.info/sct                                                                  Paget's disease, mammary
+ 3102004 http://snomed.info/sct                                                             Oligodendroglioma, anaplastic
+ 3139003 http://snomed.info/sct                                                                   Ballooning degeneration
+ 3313007 http://snomed.info/sct                                                                 Chronic superficial ulcer
+ 3380003 http://snomed.info/sct                                                                        Superficial injury
+ 3404009 http://snomed.info/sct                                                                                      Bite
+ 3416003 http://snomed.info/sct                                                                  Lengthening of short arm
+ 3645005 http://snomed.info/sct                                                                         Pregnancy luteoma
+ 3679006 http://snomed.info/sct                                                                         Polycystic change
+ 3821009 http://snomed.info/sct                                                                              Blunt injury
+ 3839000 http://snomed.info/sct                                                                      Lipid-rich carcinoma
+ 3875003 http://snomed.info/sct                                                                                    Tophus
+ 3898006 http://snomed.info/sct                                                                          Neoplasm, benign
+ 4000000 http://snomed.info/sct                                                           Severe transitional cell atypia
+ 4079000 http://snomed.info/sct                                                                  Mucoepidermoid carcinoma
+ 4125007 http://snomed.info/sct                                                                               Bursal cyst
+ 4147007 http://snomed.info/sct                                                                                      Mass
+ 4196002 http://snomed.info/sct                                                                                  Eversion
+ 4205002 http://snomed.info/sct                                                                                 Türk cell
+ 4230004 http://snomed.info/sct                                                                            Pacinian tumor
+ 4305004 http://snomed.info/sct                                                     Metastatic signet ring cell carcinoma
+ 4392007 http://snomed.info/sct                                              Malignant mixed tumor, osteosarcomatous type
+ 4476003 http://snomed.info/sct                                        Atypical glandular cells of uncertain significance
+ 4484004 http://snomed.info/sct                                                                      Nucleolar alteration
+ 4532008 http://snomed.info/sct                                                                        Acute inflammation
+ 4538007 http://snomed.info/sct                                                                      Papulovesicular rash
+ 4553004 http://snomed.info/sct                                                                       Subependymal glioma
+ 4584002 http://snomed.info/sct                                                                  Scirrhous adenocarcinoma
+ 4590003 http://snomed.info/sct                                                                Adenocarcinoma, metastatic
+ 4618001 http://snomed.info/sct                                                                 Congenital dextrorotation
+ 4631006 http://snomed.info/sct                                                                    Tubular adenocarcinoma
+ 4684005 http://snomed.info/sct                                                              Mesonephric duct hyperplasia
+ 4686007 http://snomed.info/sct                                                Blister due to degeneration of basal cells
+ 4720007 http://snomed.info/sct                                                                                 Dystrophy
+ 4797003 http://snomed.info/sct                                                                  Papillary adenocarcinoma
+ 4830009 http://snomed.info/sct                                                                         Hyperpigmentation
+ 4857006 http://snomed.info/sct                                                                                Sequestrum
+ 4876008 http://snomed.info/sct                                                                         Acute obstruction
+ 4916000 http://snomed.info/sct                                                                              Pleomorphism
+ 4935000 http://snomed.info/sct                                                 Adenocarcinoma in situ in villous adenoma
+ 4947006 http://snomed.info/sct                                                                         Contraction bands
+ 4950009 http://snomed.info/sct                                                                          Sezary's disease
+ 4977000 http://snomed.info/sct                                                                       Eccrine spiradenoma
+ 5008001 http://snomed.info/sct                                                                             Pitting edema
+ 5014008 http://snomed.info/sct                                                                 Leydig cell tumor, benign
+ 5052009 http://snomed.info/sct                                                                     Merkel cell carcinoma
+ 5178002 http://snomed.info/sct                                                                         Synovioma, benign
+ 5183005 http://snomed.info/sct                                                               Inferior closed dislocation
+ 5188001 http://snomed.info/sct                                                                            Round calculus
+ 5237007 http://snomed.info/sct                                                                     Pautrier microabscess
+ 5242004 http://snomed.info/sct                                                                                  Synechia
+ 5244003 http://snomed.info/sct                                                                     Intraductal papilloma
+ 5257006 http://snomed.info/sct                                                                 Follicular adenocarcinoma
+ 5314004 http://snomed.info/sct                                                                          Acute dilatation
+ 5356000 http://snomed.info/sct                                                                        Bowenoid papulosis
+ 5399005 http://snomed.info/sct                                                                     Dissecting hemorrhage
+ 5468008 http://snomed.info/sct                                                                        Fracture, multiple
+ 5480000 http://snomed.info/sct                                                                        Canalized thrombus
+ 5600009 http://snomed.info/sct                                                                    Schneiderian carcinoma
+ 5640003 http://snomed.info/sct                                                                          Granular atrophy
+ 5658009 http://snomed.info/sct                                                   Adenocarcinoma in tubulovillous adenoma
+ 5688000 http://snomed.info/sct                        Squamous cell carcinoma in situ with questionable stromal invasion
+ 5734001 http://snomed.info/sct                                                                           Pressure groove
+ 5755004 http://snomed.info/sct                                                                        Cystic hyperplasia
+ 5770003 http://snomed.info/sct                                                                      Decompression injury
+ 5804003 http://snomed.info/sct                                                           Congenital growth disproportion
+ 5843004 http://snomed.info/sct                                                                        Basaloid carcinoma
+ 5849000 http://snomed.info/sct                                                                       Glial cell reaction
+ 5862001 http://snomed.info/sct                                                                  Mucous membrane eruption
+ 5909007 http://snomed.info/sct                                               Glandular-stromal asynchrony of endometrium
+ 5960008 http://snomed.info/sct                                                                       Depressed structure
+ 5974001 http://snomed.info/sct                                                                             Pressure cone
+ 5978003 http://snomed.info/sct                                                              Fracture, open, longitudinal
+ 6078006 http://snomed.info/sct                                                                           Mucus retention
+ 6081001 http://snomed.info/sct                                                                                 Deformity
+ 6120000 http://snomed.info/sct                                                                      Oncocytic metaplasia
+ 6151007 http://snomed.info/sct                                                                Amphophilic stain reaction
+ 6219000 http://snomed.info/sct                              Neoplasm, malignant, uncertain whether primary or metastatic
+ 6223008 http://snomed.info/sct                                                                  Mild koilocytotic atypia
+ 6266001 http://snomed.info/sct                                                                Granulomatous inflammation
+ 6320008 http://snomed.info/sct                                                                            Collagenolysis
+ 6379007 http://snomed.info/sct                                                               Multiple adenomatous polyps
+ 6381009 http://snomed.info/sct                                                                 Alpha heavy chain disease
+ 6406002 http://snomed.info/sct                                                                   Membranous inflammation
+ 6437002 http://snomed.info/sct                                                                                 Dentinoma
+ 6492006 http://snomed.info/sct                                                                          Klatskin's tumor
+ 6574001 http://snomed.info/sct                                                                                  Necrosis
+ 6579006 http://snomed.info/sct                                                                           Sebum retention
+ 6582001 http://snomed.info/sct                                                                     Intrinsic obstruction
+ 6609001 http://snomed.info/sct                                                                                Spongiosis
+ 6641007 http://snomed.info/sct                                                                     Metatypical carcinoma
+ 6660000 http://snomed.info/sct                                                          Atypical intraductal hyperplasia
+ 6780007 http://snomed.info/sct                                                                           Hemoglobin cast
+ 6842002 http://snomed.info/sct                                                                      Desmoplastic fibroma
+ 6855001 http://snomed.info/sct                                                                              Macronucleus
+ 7003006 http://snomed.info/sct                                                                        Chronic hemorrhage
+ 7010000 http://snomed.info/sct                                                                            Carcinomatosis
+ 7055007 http://snomed.info/sct                                                                  Lupus erythematosus cell
+ 7078001 http://snomed.info/sct                                                                  Hemosiderin pigmentation
+ 7094008 http://snomed.info/sct                                                                     Dilated pore of Winer
+ 7244004 http://snomed.info/sct                                                                             Decidual cast
+ 7300000 http://snomed.info/sct                                                                Lymphoepithelial carcinoma
+ 7313006 http://snomed.info/sct                                                              Open dislocation, incomplete
+ 7372009 http://snomed.info/sct                                                                       Inflammatory atypia
+ 7429002 http://snomed.info/sct                                                                               Glomangioma
+ 7643002 http://snomed.info/sct                                                                        Calcified hematoma
+ 7744000 http://snomed.info/sct                                                                    Congestive hypertrophy
+ 7796002 http://snomed.info/sct                                                                    Lipogenic pigmentation
+ 7828002 http://snomed.info/sct                                                                         Xanthine calculus
+ 7841003 http://snomed.info/sct                                                       Macrocytic normochromic erythrocyte
+ 7894007 http://snomed.info/sct                                                                      Karyotype morphology
+ 7905002 http://snomed.info/sct                                                                         Fracture, oblique
+ 7906001 http://snomed.info/sct                                                                          Open dislocation
+ 7939003 http://snomed.info/sct                                                                           Localized edema
+ 8005002 http://snomed.info/sct                                                                  Incomplete transposition
+ 8070006 http://snomed.info/sct                                                            Secretory alteration of vagina
+ 8097004 http://snomed.info/sct                                                                          Alveolar adenoma
+ 8120005 http://snomed.info/sct                                                                       Acentric chromosome
+ 8129006 http://snomed.info/sct                                                            Deposition of oxalate crystals
+ 8145008 http://snomed.info/sct                                                                    Mixed tumor, malignant
+ 8210009 http://snomed.info/sct                                                                          Corpora amylacea
+ 8241005 http://snomed.info/sct                                                                          Hemolymphangioma
+ 8276007 http://snomed.info/sct                                                                        Balloon cell nevus
+ 8309002 http://snomed.info/sct                                                         Moderate transitional cell atypia
+ 8360001 http://snomed.info/sct                                                                       Pleomorphic adenoma
+ 8566008 http://snomed.info/sct                                                            Autosomal chromosome mosaicism
+ 8573003 http://snomed.info/sct                                                                          Acute hemorrhage
+ 8664001 http://snomed.info/sct                                                                               Fibromyxoma
+ 8723003 http://snomed.info/sct                                                                   Segmental demyelination
+ 8734000 http://snomed.info/sct                                    Choriocarcinoma combined with other germ cell elements
+ 8804002 http://snomed.info/sct                                                                        Passive congestion
+ 8833001 http://snomed.info/sct                                                                Open dislocation, complete
+ 8855009 http://snomed.info/sct                                                                                 Mosaicism
+ 8934006 http://snomed.info/sct                                                                   Papillary syringadenoma
+ 8978002 http://snomed.info/sct                                                 Proliferative cyclic alteration of breast
+ 9001003 http://snomed.info/sct                                                                           Chondroblastoma
+ 9088006 http://snomed.info/sct                                                                             Lobar atrophy
+ 9098000 http://snomed.info/sct                                                                         Medullary adenoma
+ 9138001 http://snomed.info/sct                                                                 Mild columnar cell atypia
+ 9155002 http://snomed.info/sct                                                                Squamous odontogenic tumor
+ 9187004 http://snomed.info/sct                                                                            Leukokeratosis
+ 9196004 http://snomed.info/sct                                                                         Staghorn calculus
+ 9235006 http://snomed.info/sct                                                                     Eccentric hypertrophy
+ 9240003 http://snomed.info/sct                                                                         Niemann-Pick cell
+ 9266000 http://snomed.info/sct                                                                   Juxtacortical chondroma
+ 9287005 http://snomed.info/sct                                                                              Colloid cyst
+ 9294008 http://snomed.info/sct                                                                    Spermatocytic seminoma
+ 9324003 http://snomed.info/sct                                                                      Inactive endometrium
+ 9395006 http://snomed.info/sct                                                                              Sarcomatosis
+ 9435009 http://snomed.info/sct                                                                        Senile hyperplasia
+ 9436005 http://snomed.info/sct                                                                          Basophil adenoma
+ 9499001 http://snomed.info/sct                                                                           Multiple polyps
+ 9546005 http://snomed.info/sct                                                                                     Shift
+ 9550003 http://snomed.info/sct                                                                         Bronchogenic cyst
+ 9618003 http://snomed.info/sct                                                        Epithelial-myoepithelial carcinoma
+ 9656002 http://snomed.info/sct                                                                             Consolidation
+ 9671003 http://snomed.info/sct                                                                             Elastofibroma
+ 9688005 http://snomed.info/sct                                                                      Deposition of carbon
+ 9729005 http://snomed.info/sct                                                                                Blue edema
+ 9751002 http://snomed.info/sct                                                                          Wire loop lesion
+ 9767008 http://snomed.info/sct                                                                           Hyperchromatism
+ 9801004 http://snomed.info/sct                                                                      Spindle cell sarcoma
+ 9805008 http://snomed.info/sct                                                                                 Rice body
+ 9816001 http://snomed.info/sct                                                                                Leukoedema
+ 9831005 http://snomed.info/sct                                                                       Myxoid degeneration
+ 9903002 http://snomed.info/sct                                                                  Paraganglioma, malignant
+10060008 http://snomed.info/sct                                                                 Eccrine papillary adenoma
+10069009 http://snomed.info/sct                                                       Giant cell tumor of bone, malignant
+10122001 http://snomed.info/sct                                                                                 Accretion
+10146008 http://snomed.info/sct                                                                 Chief cell adenocarcinoma
+10219009 http://snomed.info/sct                                                                                 Xanthosis
+10288008 http://snomed.info/sct                                                     Squamous cell carcinoma, spindle cell
+10291008 http://snomed.info/sct                                                                     Giant pigmented nevus
+10376009 http://snomed.info/sct                                                               Papillary carcinoma in situ
+10403004 http://snomed.info/sct                                                                            Serous atrophy
+10438002 http://snomed.info/sct                                                                              Glomus tumor
+10505008 http://snomed.info/sct                                                                              Retroversion
+10636005 http://snomed.info/sct                                                                               Stomatocyte
+10637001 http://snomed.info/sct                                                                 Basophilic stain reaction
+10690002 http://snomed.info/sct                                                                      Atheromatous embolus
+10705005 http://snomed.info/sct                                                                     Mucinous adenofibroma
+10873006 http://snomed.info/sct                                                                 Micronodular regeneration
+11063000 http://snomed.info/sct                                                                      Ameloblastic fibroma
+11071001 http://snomed.info/sct                                                                       Racemose hemangioma
+11073003 http://snomed.info/sct                                                                         Mixed liposarcoma
+11080001 http://snomed.info/sct                                                                       Neuronal achromasia
+11099005 http://snomed.info/sct                                                                    Epithelioid cell nevus
+11108009 http://snomed.info/sct                                                                                Dehiscence
+11117009 http://snomed.info/sct                                                                               Dyskaryosis
+11182007 http://snomed.info/sct                                                                   Abnormally short growth
+11211003 http://snomed.info/sct                                                                    Interstitial emphysema
+11224003 http://snomed.info/sct                                                           Chronic membranous inflammation
+11284000 http://snomed.info/sct                                                            Closed dislocation, incomplete
+11467009 http://snomed.info/sct                                                                    Capillary lymphangioma
+11506001 http://snomed.info/sct                                                                          Hilus cell tumor
+11514007 http://snomed.info/sct                                                                              Algor mortis
+11528001 http://snomed.info/sct                                                                                 Mucinosis
+11556006 http://snomed.info/sct                                                                    Arteriovenous aneurysm
+11585000 http://snomed.info/sct                                                                                      Bubo
+11607000 http://snomed.info/sct                                                                            Gunpowder burn
+11639007 http://snomed.info/sct                                                                                  Puncture
+11650005 http://snomed.info/sct                                                                         Giant hypertrophy
+11671000 http://snomed.info/sct                                                                  Adenoid cystic carcinoma
+11704001 http://snomed.info/sct                                                                      Chromosome mosaicism
+11793003 http://snomed.info/sct                                                                      Mesoblastic nephroma
+11854003 http://snomed.info/sct                                                                            Fibrous nodule
+11858000 http://snomed.info/sct                                                                       Suture line of skin
+11889001 http://snomed.info/sct                                                                                Abiotrophy
+11908008 http://snomed.info/sct                                                                   Binucleated plasmablast
+12060004 http://snomed.info/sct                                                                       Ganglioneuromatosis
+12143007 http://snomed.info/sct                                                                            Embryonic cyst
+12167004 http://snomed.info/sct                                                                                Lymphocyst
+12169001 http://snomed.info/sct                                                                       Granular cell tumor
+12170000 http://snomed.info/sct                                                                                   Rosette
+12191008 http://snomed.info/sct                                                              Fracture, ununited, stellate
+12205003 http://snomed.info/sct                                                                        Chief cell adenoma
+12219003 http://snomed.info/sct                                                               Aleukemic lymphoid leukemia
+12222001 http://snomed.info/sct                                                                   Erythrocyte abnormality
+12302002 http://snomed.info/sct                                                                   Small cell osteosarcoma
+12323008 http://snomed.info/sct                                                                  Androblastoma, malignant
+12354007 http://snomed.info/sct                                                          Retinoblastoma, undifferentiated
+12393003 http://snomed.info/sct                                                                                   Purpura
+12400006 http://snomed.info/sct                                                     Papillary transitional cell carcinoma
+12402003 http://snomed.info/sct                                                                                      Scar
+12404002 http://snomed.info/sct                                                                          Trophic gangrene
+12478003 http://snomed.info/sct                                                    Squamous cell carcinoma, microinvasive
+12535006 http://snomed.info/sct                                                                          Acquired absence
+12540003 http://snomed.info/sct                                                             Muscle fiber atrophy, type II
+12560006 http://snomed.info/sct                                                                        Primary sequestrum
+12582004 http://snomed.info/sct                                                                          Internal fistula
+12583009 http://snomed.info/sct                                                                           Lobular adenoma
+12690005 http://snomed.info/sct                                                                 Fibroblastic osteosarcoma
+12747003 http://snomed.info/sct                                                                        Microcalcification
+12794006 http://snomed.info/sct                                                               Nonsuppurative inflammation
+12835000 http://snomed.info/sct                                                                         Multiple injuries
+12856003 http://snomed.info/sct                                                                                     Varix
+12933008 http://snomed.info/sct                                                                         Sweat gland tumor
+12943006 http://snomed.info/sct                                                                    Spongioblastoma polare
+12944000 http://snomed.info/sct                                                                        Acid chemical burn
+12973002 http://snomed.info/sct                                                               Dislocation, multiple, open
+13018008 http://snomed.info/sct                                                                        Neovascularization
+13062004 http://snomed.info/sct                                                                           Psammoma bodies
+13129009 http://snomed.info/sct                                                                Fracture, open, incomplete
+13136005 http://snomed.info/sct                                                                            Injection site
+13238004 http://snomed.info/sct                                                            Granular cell tumor, malignant
+13321001 http://snomed.info/sct                                                                      Fracture, comminuted
+13331008 http://snomed.info/sct                                                                                   Atrophy
+13467000 http://snomed.info/sct                                                                                Pseudocyst
+13485007 http://snomed.info/sct                                                                                    Pannus
+13583002 http://snomed.info/sct                                                                         Mast cell sarcoma
+13599008 http://snomed.info/sct                                                                    Gunshot wound, contact
+13705009 http://snomed.info/sct                                                                       Partial obstruction
+13713005 http://snomed.info/sct                                                                            Thromboembolus
+13875003 http://snomed.info/sct                                                                          Glomangiosarcoma
+13901007 http://snomed.info/sct                                                                      Fat-laden macrophage
+13924000 http://snomed.info/sct                                                                                     Wound
+14093007 http://snomed.info/sct                                                                           Decalcification
+14156004 http://snomed.info/sct                                                                         Racemose aneurysm
+14166007 http://snomed.info/sct                                                                               Koplik spot
+14212006 http://snomed.info/sct                                                                  Pseudopalisade formation
+14269005 http://snomed.info/sct                                                                Embryonal rhabdomyosarcoma
+14317002 http://snomed.info/sct                                                                           Erythroleukemia
+14350002 http://snomed.info/sct                                                                              Angiomatosis
+14391000 http://snomed.info/sct                                                                       Koilocytotic atypia
+14442007 http://snomed.info/sct                                                               Generalized keratoacanthoma
+14494009 http://snomed.info/sct                                                                    Meningeal sarcomatosis
+14696003 http://snomed.info/sct                                                                       Cystic degeneration
+14737000 http://snomed.info/sct                                                                                Jet lesion
+14797003 http://snomed.info/sct                                                          Fracture, delayed union, oblique
+14799000 http://snomed.info/sct                                                                      Neoplasm, metastatic
+14847005 http://snomed.info/sct                                                                                 Triploidy
+14889002 http://snomed.info/sct                                                                      Rasmussen's aneurysm
+14912003 http://snomed.info/sct                                                                      Vesiculobullous rash
+14962008 http://snomed.info/sct                                                                          Mutilating wound
+15074003 http://snomed.info/sct                                                                          Neurogenic ulcer
+15112009 http://snomed.info/sct                                                                        Inverted keratosis
+15176003 http://snomed.info/sct                                                   Adenocarcinoma with squamous metaplasia
+15304008 http://snomed.info/sct                                                                           Factitial ulcer
+15418000 http://snomed.info/sct                                                                   Spontaneous perforation
+15486006 http://snomed.info/sct                                                                                Hypoploidy
+15498001 http://snomed.info/sct                                                                         Superficial ulcer
+15503003 http://snomed.info/sct                                                                          Molluscum bodies
+15519005 http://snomed.info/sct                                                               Combined abnormal curvature
+15524008 http://snomed.info/sct                                                                              Obliteration
+15556001 http://snomed.info/sct                                                                             Ball thrombus
+15588009 http://snomed.info/sct                                                                            Microlithiasis
+15619004 http://snomed.info/sct                                                   Hepatocellular carcinoma, fibrolamellar
+15690004 http://snomed.info/sct                                                                                Tortuosity
+15702005 http://snomed.info/sct                                                              Fibrous mesothelioma, benign
+15897004 http://snomed.info/sct                                                                 Chromosomal translocation
+15904002 http://snomed.info/sct                                                                         Bridging necrosis
+15937000 http://snomed.info/sct                                                         Congenital vascular proliferation
+15949004 http://snomed.info/sct                                                                        Thymoma, malignant
+15960008 http://snomed.info/sct                                                             Reticulohistiocytic granuloma
+15967006 http://snomed.info/sct                                                              Hypersegmentation of nucleus
+16080000 http://snomed.info/sct                                                                         Fibrin deposition
+16090008 http://snomed.info/sct                                                                     Myxoid leiomyosarcoma
+16104005 http://snomed.info/sct                                                              Segmental glomerulosclerosis
+16163002 http://snomed.info/sct                                                                           Ossified nodule
+16190006 http://snomed.info/sct                                                                          Herring's bodies
+16216007 http://snomed.info/sct                                                                              Gaucher cell
+16255008 http://snomed.info/sct                                                                              Fenestration
+16277007 http://snomed.info/sct                                                                                  Collapse
+16479008 http://snomed.info/sct                                                  Inappropriate lobular activity of breast
+16483008 http://snomed.info/sct                                                                              Russell body
+16566002 http://snomed.info/sct                                                                   Phyllodes tumor, benign
+16578003 http://snomed.info/sct                                                                Posterior open dislocation
+16640008 http://snomed.info/sct                                                                                Separation
+16740003 http://snomed.info/sct                                                                                  Anasarca
+16741004 http://snomed.info/sct                                                                     Pleomorphic carcinoma
+16759001 http://snomed.info/sct                                                         Chronic eosinophilic inflammation
+16822006 http://snomed.info/sct                                                              Malignant carotid body tumor
+16893006 http://snomed.info/sct                                Hodgkin's disease, lymphocytic depletion, diffuse fibrosis
+16974005 http://snomed.info/sct                                                     Acral lentiginous melanoma, malignant
+16980002 http://snomed.info/sct                                                                                 Foam cell
+17015005 http://snomed.info/sct                                                                  Lateral open dislocation
+17201003 http://snomed.info/sct                                                                         Spillage of feces
+17264009 http://snomed.info/sct                                                          Carcinoma in pleomorphic adenoma
+17289003 http://snomed.info/sct                                                                               Fat embolus
+17302008 http://snomed.info/sct                                                                        Cerebellar sarcoma
+17307002 http://snomed.info/sct                                                                                Transudate
+17351006 http://snomed.info/sct                                                                   Congenital non-rotation
+17372009 http://snomed.info/sct                                                                      Granuloma pyogenicum
+17474009 http://snomed.info/sct                                                            Atypical glandular hyperplasia
+17569003 http://snomed.info/sct                                                                        Emphysematous bleb
+17665002 http://snomed.info/sct                                                                                Metaplasia
+17672001 http://snomed.info/sct                                                                     Accumulation of fluid
+17684004 http://snomed.info/sct                                                                              Protein cast
+17734002 http://snomed.info/sct                                                                      Chediak-Higashi cell
+17781001 http://snomed.info/sct                                                                        Curvilinear bodies
+17815009 http://snomed.info/sct                                                               Sudanophilic stain reaction
+17930004 http://snomed.info/sct                                                                                Neuronevus
+17941002 http://snomed.info/sct                                                                        Arteriolosclerosis
+17968002 http://snomed.info/sct                                                                     Mucinous degeneration
+18016009 http://snomed.info/sct                                                                           Phlebosclerosis
+18048008 http://snomed.info/sct                                                     Squamous cell carcinoma, keratinizing
+18064000 http://snomed.info/sct                                                                                Achromasia
+18072003 http://snomed.info/sct                                                                              Micronucleus
+18105004 http://snomed.info/sct                                                      Endometrioid adenofibroma, malignant
+18115005 http://snomed.info/sct                                                                  Pathologic calcification
+18126004 http://snomed.info/sct                                                                            Diverticulitis
+18130001 http://snomed.info/sct                                                                       Gunshot wound, exit
+18174004 http://snomed.info/sct                                                                               Brown edema
+18189008 http://snomed.info/sct                                                                          Gudden's atrophy
+18203003 http://snomed.info/sct                                           Non-communicating cerebrospinal fluid retention
+18295000 http://snomed.info/sct                                                                          Double structure
+18334002 http://snomed.info/sct                                                                        Fracture, stellate
+18348002 http://snomed.info/sct                                                                   Queyrat's erythroplasia
+18450009 http://snomed.info/sct                                              Malignant melanoma in precancerous melanosis
+18465005 http://snomed.info/sct                                                                  Anomalous origin of vein
+18498000 http://snomed.info/sct                                                             Acute membranous inflammation
+18568009 http://snomed.info/sct                                                                   Anastomosis, end to end
+18588008 http://snomed.info/sct                                                                Synovial sarcoma, biphasic
+18655006 http://snomed.info/sct                                                                            Depigmentation
+18680006 http://snomed.info/sct                                       Intraductal carcinoma and lobular carcinoma in situ
+18695008 http://snomed.info/sct                                                                              Hyaline body
+18727002 http://snomed.info/sct                                                                              C cell tumor
+18765009 http://snomed.info/sct                                                                  Sclerosing lipogranuloma
+18799007 http://snomed.info/sct                                                                Invasive hydatidiform mole
+18802003 http://snomed.info/sct                                                                          External fistula
+18854008 http://snomed.info/sct                                                                  Struma ovarii, malignant
+18861007 http://snomed.info/sct                                                           Granulosa cell tumor, malignant
+18915006 http://snomed.info/sct                                                                             Dense tubules
+18958005 http://snomed.info/sct                                                                           Councilman body
+18977007 http://snomed.info/sct                                                      Adrenal cortical adenoma, clear cell
+19010006 http://snomed.info/sct                                                                      Hyaline degeneration
+19071004 http://snomed.info/sct                                                                     Epithelioid leiomyoma
+19128006 http://snomed.info/sct                                                                       Hyperorthokeratosis
+19134004 http://snomed.info/sct                                                                      Fascial fibrosarcoma
+19137006 http://snomed.info/sct                                                                         Marantic thrombus
+19227008 http://snomed.info/sct                                                                              Foreign body
+19316008 http://snomed.info/sct                                                                               Cytoid body
+19329008 http://snomed.info/sct                                                Adrenal cortical adenoma, glomerulosa cell
+19340000 http://snomed.info/sct                                                     Malignant lymphoma, lymphoplasmacytic
+19365003 http://snomed.info/sct                                                                             Acute empyema
+19380009 http://snomed.info/sct                                   Sclerosing segmental glomerulosclerosis with hyalinosis
+19436005 http://snomed.info/sct                                                                            Stain reaction
+19438006 http://snomed.info/sct                                                                     Feathery degeneration
+19504001 http://snomed.info/sct                                                                    Serofibrinous effusion
+19561006 http://snomed.info/sct                                                                   Congenital levorotation
+19571008 http://snomed.info/sct                                                                      Multiple open wounds
+19607003 http://snomed.info/sct                                                                         Endoreduplication
+19614001 http://snomed.info/sct                                                                            Lightning burn
+19633006 http://snomed.info/sct                                                                               Mucous cyst
+19643009 http://snomed.info/sct                                                                              Pyogranuloma
+19651007 http://snomed.info/sct                                                                           Micromyeloblast
+19668006 http://snomed.info/sct                                                               Parabasal cells predominate
+19669003 http://snomed.info/sct                                                                 Erythrocyte agglutination
+19672005 http://snomed.info/sct                                                                                 Condyloma
+19685008 http://snomed.info/sct                                                                                    Stasis
+19756007 http://snomed.info/sct                                                                     Gastrinoma, malignant
+19795008 http://snomed.info/sct                                                                                Brain sand
+19836000 http://snomed.info/sct                                                                        Deforming fibrosis
+19897006 http://snomed.info/sct                                                              Melanotic psammomatous MPNST
+19906005 http://snomed.info/sct                                                                            Retinoblastoma
+19909003 http://snomed.info/sct                                                                        Complement deposit
+19921004 http://snomed.info/sct                                                                        Compression injury
+19928005 http://snomed.info/sct                                                                              Fibromatosis
+19929002 http://snomed.info/sct                                                                            Angiomyolipoma
+19940005 http://snomed.info/sct                                                                           Lichenification
+19952003 http://snomed.info/sct                                                                Elastic vascular sclerosis
+19988008 http://snomed.info/sct                                                                              Pseudoainhum
+20012006 http://snomed.info/sct                                                                          Major open wound
+20108002 http://snomed.info/sct                                                                     Intramural hemorrhage
+20131002 http://snomed.info/sct                                                                          Chronic necrosis
+20182004 http://snomed.info/sct                                                                              Myocytolysis
+20194008 http://snomed.info/sct                                                                    Hyperplastic dystrophy
+20256001 http://snomed.info/sct                                                                   Glandular proliferation
+20351009 http://snomed.info/sct                                                                             Adnexal nevus
+20365006 http://snomed.info/sct                                             Cervical intraepithelial neoplasia, grade III
+20369000 http://snomed.info/sct                                                               Chronic mucous inflammation
+20380000 http://snomed.info/sct                                                                Ameloblastic odontosarcoma
+20456003 http://snomed.info/sct                                                                                Loose body
+20462008 http://snomed.info/sct                                                                             Ameloblastoma
+20464009 http://snomed.info/sct                                                                   Perforated diverticulum
+20473001 http://snomed.info/sct                                                                       Stellate laceration
+20589000 http://snomed.info/sct                                               Pappenheimer body (morphologic abnormality)
+20601007 http://snomed.info/sct                                                                      Flattening deformity
+20667008 http://snomed.info/sct                                                                                Myosarcoma
+20700001 http://snomed.info/sct                                                                 Fracture, closed, oblique
+20717008 http://snomed.info/sct                                                            Atherosclerotic fibrous plaque
+20741006 http://snomed.info/sct                                                                                   Hydrops
+20774006 http://snomed.info/sct                                                                      Re-epithelialization
+20776008 http://snomed.info/sct                                                                             Adenolymphoma
+20810002 http://snomed.info/sct                                                                               Myelolipoma
+20829008 http://snomed.info/sct                                                                 Endometrioid adenofibroma
+20893004 http://snomed.info/sct                                                                      Polypoid hyperplasia
+20894005 http://snomed.info/sct                                                                            Mallory bodies
+20946005 http://snomed.info/sct                                                                          Fracture, closed
+20955008 http://snomed.info/sct                                                                     Insulinoma, malignant
+20985003 http://snomed.info/sct                                                            Verrucous keratotic hemangioma
+21008007 http://snomed.info/sct                                                                        Cystadenocarcinoma
+21046000 http://snomed.info/sct                                                                        Dalen-Fuchs nodule
+21103001 http://snomed.info/sct                                                                            Acute fibrosis
+21135001 http://snomed.info/sct                                                             Multiple superficial injuries
+21139007 http://snomed.info/sct                                                                              Organization
+21181001 http://snomed.info/sct                                                                           Thymoma, benign
+21326004 http://snomed.info/sct                                                           Small cell-large cell carcinoma
+21386001 http://snomed.info/sct                                                                   Foreign body giant cell
+21396005 http://snomed.info/sct                                                                        Pleomorphic lipoma
+21444008 http://snomed.info/sct                                                                        Microglial nodules
+21453001 http://snomed.info/sct                                                                          Massive necrosis
+21465002 http://snomed.info/sct                                                         Abnormally short and broad growth
+21589007 http://snomed.info/sct                                                                    Ependymoma, anaplastic
+21718009 http://snomed.info/sct                                                                                      Cast
+21720007 http://snomed.info/sct                                                                           Electrical burn
+21912003 http://snomed.info/sct                                                          Malignant teratoma, intermediate
+21925006 http://snomed.info/sct                                                                     Neuroglial-lined cyst
+21930005 http://snomed.info/sct                                                                        Trabecular adenoma
+21947006 http://snomed.info/sct                                                                      Compression fracture
+21968007 http://snomed.info/sct                                                   Papillary carcinoma, follicular variant
+21971004 http://snomed.info/sct                                                                     Plasma cell granuloma
+21980004 http://snomed.info/sct                                                                    Prestenotic dilatation
+21997005 http://snomed.info/sct                                                                        Massive disruption
+22024005 http://snomed.info/sct                                                                               Lipoadenoma
+22036004 http://snomed.info/sct                                                                            Pseudoaneurysm
+22039006 http://snomed.info/sct                                                                         Ruptured aneurysm
+22084008 http://snomed.info/sct                                                                     Postmortem blood clot
+22116003 http://snomed.info/sct                                                              Papillary serous cystadenoma
+22197008 http://snomed.info/sct                                                                   Burkitt's cell leukemia
+22217002 http://snomed.info/sct                                                                              Mixed glioma
+22222002 http://snomed.info/sct                                                          Muscle fiber small group atrophy
+22257004 http://snomed.info/sct                                                                         Fibrous hamartoma
+22287005 http://snomed.info/sct                                                               Eosinophilic stain reaction
+22303008 http://snomed.info/sct                                                                                   Version
+22331004 http://snomed.info/sct                                                                  Acute monocytic leukemia
+22333001 http://snomed.info/sct                                                                         Uric acid infarct
+22341001 http://snomed.info/sct                                                                        Thrombosed varices
+22427006 http://snomed.info/sct                                                                     Elastoid degeneration
+22483007 http://snomed.info/sct                                                        Radiation injury with inflammation
+22517003 http://snomed.info/sct                                                                      Subependymal gliosis
+22524002 http://snomed.info/sct                                                                         Warty dyskeratoma
+22640007 http://snomed.info/sct                                                                       Pathologic fracture
+22641006 http://snomed.info/sct                                                                           Serous effusion
+22687000 http://snomed.info/sct                                                                      Large cell carcinoma
+22694002 http://snomed.info/sct                                                   Adenocarcinoma with apocrine metaplasia
+22725004 http://snomed.info/sct                                                High-grade squamous intraepithelial lesion
+22858003 http://snomed.info/sct                                                                   Connective tissue nevus
+22984005 http://snomed.info/sct                                                             Moderate columnar cell atypia
+22995004 http://snomed.info/sct                                                                 Focal nodular hyperplasia
+23041001 http://snomed.info/sct                                                                       Sinus histiocytosis
+23048007 http://snomed.info/sct                                                                            Marinesco body
+23108001 http://snomed.info/sct                                                                 Mild squamous cell atypia
+23109009 http://snomed.info/sct                                                               Pseudosarcomatous carcinoma
+23255001 http://snomed.info/sct                                                                   Cementoblastoma, benign
+23280001 http://snomed.info/sct                                                                Isochromosome for long arm
+23286007 http://snomed.info/sct                                                       Fracture, delayed union, incomplete
+23290009 http://snomed.info/sct                                                                     Glandular hyperplasia
+23305007 http://snomed.info/sct                                                       Macrocytic hyperchromic erythrocyte
+23345003 http://snomed.info/sct                                                                           Ring chromosome
+23382007 http://snomed.info/sct                                                                           Stress fracture
+23444003 http://snomed.info/sct                                                        Mixed acidophil-basophil carcinoma
+23482006 http://snomed.info/sct                                                                         Avulsion fracture
+23521003 http://snomed.info/sct                                                                       Glycogen deposition
+23539007 http://snomed.info/sct                                                                       Organizing hematoma
+23604003 http://snomed.info/sct                                                                   Cartilaginous hamartoma
+23620008 http://snomed.info/sct                                                                                Acanthosis
+23839001 http://snomed.info/sct                                                                          Chylous effusion
+23844008 http://snomed.info/sct                                                                     Fibrosiderotic nodule
+23870009 http://snomed.info/sct                                                    Hypersecretory gestational endometrium
+23990004 http://snomed.info/sct                                                            Fracture, ununited, comminuted
+24007003 http://snomed.info/sct                                                              Clear cell sarcoma of kidney
+24016004 http://snomed.info/sct                                                                   Corrected transposition
+24017008 http://snomed.info/sct                                                                         Meibomian adenoma
+24018003 http://snomed.info/sct                                                                         Enterogenous cyst
+24045002 http://snomed.info/sct                                                                      Intramuscular lipoma
+24072005 http://snomed.info/sct                                                                            Acute leukemia
+24183004 http://snomed.info/sct                                                                           Fibrinous polyp
+24216005 http://snomed.info/sct                                                                        Congenital absence
+24244006 http://snomed.info/sct                                                                             Brown atrophy
+24253004 http://snomed.info/sct                                                           Squamous intraepithelial lesion
+24283008 http://snomed.info/sct                                                                  Serosanguineous effusion
+24327009 http://snomed.info/sct                                                                             Struma ovarii
+24373006 http://snomed.info/sct                                                            Pregnancy alteration of vagina
+24389009 http://snomed.info/sct                                                                  Injection site granuloma
+24398007 http://snomed.info/sct                                                       Nuclear/cytoplasmic ratio decreased
+24421006 http://snomed.info/sct                                                                    Subcapsular hemorrhage
+24481008 http://snomed.info/sct                                                                  Hypersegmented leukocyte
+24482001 http://snomed.info/sct                                                                         Bronchial adenoma
+24505004 http://snomed.info/sct                                                                   Carcinoma, diffuse type
+24531002 http://snomed.info/sct                                                                            Complex caries
+24551003 http://snomed.info/sct                                                                Arteriovenous malformation
+24582004 http://snomed.info/sct                                                              Pseudohypertrophic dystrophy
+24604009 http://snomed.info/sct                                                                        Medullomyoblastoma
+24645001 http://snomed.info/sct                                                                          Guarnieri bodies
+24653009 http://snomed.info/sct                                                             Spindle cell melanoma, type A
+24762001 http://snomed.info/sct                                                                      Pilomatrix carcinoma
+24804006 http://snomed.info/sct                                                                        Wolffian duct rest
+24811005 http://snomed.info/sct                                                                       Serous inflammation
+24815001 http://snomed.info/sct                                                     Sertoli cell tumor with lipid storage
+24827003 http://snomed.info/sct                                                                 Abnormal white blood cell
+24887001 http://snomed.info/sct                                                                                Maceration
+25006003 http://snomed.info/sct                                                                            Navicular cell
+25063008 http://snomed.info/sct                                                                      Involutional atrophy
+25081006 http://snomed.info/sct                                                                            Nephroblastoma
+25088000 http://snomed.info/sct                                                                                    Dimple
+25154008 http://snomed.info/sct                                          Blister due to degeneration of the basement zone
+25190001 http://snomed.info/sct                                                           Adenocarcinoma, intestinal type
+25201003 http://snomed.info/sct                                                                           Epidermal nevus
+25239006 http://snomed.info/sct                                                                           Lymphangiomyoma
+25295002 http://snomed.info/sct                                                                               Phytobezoar
+25322007 http://snomed.info/sct                                                                                Dilatation
+25370001 http://snomed.info/sct                                                                  Hepatocellular carcinoma
+25371002 http://snomed.info/sct                                                        High level estrogen effect present
+25499005 http://snomed.info/sct                                                                      Seborrheic keratosis
+25603007 http://snomed.info/sct                                                                         Ossifying fibroma
+25624002 http://snomed.info/sct                                                                       Dysplastic platelet
+25659002 http://snomed.info/sct                                              Narrowed structure (morphologic abnormality)
+25694009 http://snomed.info/sct                                                                                    Papule
+25723000 http://snomed.info/sct                                                                                 Dysplasia
+25733008 http://snomed.info/sct                                                                 Burn injury with charring
+25774008 http://snomed.info/sct                                                             Anomalous arterial connection
+25840002 http://snomed.info/sct                                                                               Deep caries
+25845007 http://snomed.info/sct                                                                             Healing ulcer
+25874003 http://snomed.info/sct                                          Endometrioid adenofibroma, borderline malignancy
+25889007 http://snomed.info/sct                                                                      Fibrous histiocytoma
+25910003 http://snomed.info/sct                                                                       Papillary carcinoma
+25979007 http://snomed.info/sct                                                                 Acute mucous inflammation
+26019009 http://snomed.info/sct                                                            Retinoblastoma, differentiated
+26036001 http://snomed.info/sct                                                                               Obstruction
+26138003 http://snomed.info/sct                                                                       Gliomatosis cerebri
+26209007 http://snomed.info/sct                                                                              Giant comedo
+26211003 http://snomed.info/sct                                                              Juxtacortical chondrosarcoma
+26246006 http://snomed.info/sct                                                                  Plasma cell inflammation
+26269009 http://snomed.info/sct                                                                   Poststenotic dilatation
+26310004 http://snomed.info/sct                                                                                      Fold
+26317001 http://snomed.info/sct                                                                               Acute ulcer
+26325004 http://snomed.info/sct                                                                       Magnocellular nevus
+26344006 http://snomed.info/sct                                                                 Anomalous venous drainage
+26372004 http://snomed.info/sct                                                                                   Luteoma
+26396009 http://snomed.info/sct                                                                   Dislocation, incomplete
+26496005 http://snomed.info/sct                                                             Atypical fibrous histiocytoma
+26514007 http://snomed.info/sct                                                                            Draining wound
+26545006 http://snomed.info/sct                                                                   Macrofollicular adenoma
+26638004 http://snomed.info/sct                                                                  Water-clear cell adenoma
+26696002 http://snomed.info/sct                                                                             Chemical burn
+26713004 http://snomed.info/sct                                                                    Non-occlusive thrombus
+26727009 http://snomed.info/sct                                                                  Multiple thromboembolism
+26735007 http://snomed.info/sct                                                                          Gynandroblastoma
+26751004 http://snomed.info/sct                                                                   Organizing inflammation
+26759002 http://snomed.info/sct                                                                            Embryonal rest
+26810009 http://snomed.info/sct                                                                             Angiokeratoma
+26819005 http://snomed.info/sct                                                                                 Tart cell
+26860003 http://snomed.info/sct                                                                     Secondary hypertrophy
+26888009 http://snomed.info/sct                                                              Odontogenic tumor, malignant
+26927002 http://snomed.info/sct                                                                          Minor disruption
+26996000 http://snomed.info/sct                                                                            Hyperkeratosis
+27006004 http://snomed.info/sct                                                                           Vasculitic rash
+27058005 http://snomed.info/sct                                                    Necrotizing granulomatous inflammation
+27078002 http://snomed.info/sct                                                                    Papillary cystic tumor
+27090000 http://snomed.info/sct                                                               Transitional cell carcinoma
+27092008 http://snomed.info/sct                                                                 Ameloblastic fibrosarcoma
+27230006 http://snomed.info/sct                                                                        Basal cell adenoma
+27266007 http://snomed.info/sct                                                                        Pseudo-obstruction
+27313007 http://snomed.info/sct                                                                       Spindle cell lipoma
+27317008 http://snomed.info/sct                                                                    Complete transposition
+27325005 http://snomed.info/sct                                                               Atypical gastric metaplasia
+27329004 http://snomed.info/sct                                                                   Basophilic degeneration
+27367001 http://snomed.info/sct                                                                                   Wrinkle
+27391005 http://snomed.info/sct                                                                       Hamartomatous polyp
+27461004 http://snomed.info/sct                                              Immunoproliferative small intestinal disease
+27510006 http://snomed.info/sct                                                                  Fracture, open, stellate
+27515001 http://snomed.info/sct                                                                                  Avulsion
+27551008 http://snomed.info/sct                                                                                 Stricture
+27580004 http://snomed.info/sct                                                        Abnormal nuclear/cytoplasmic ratio
+27605001 http://snomed.info/sct                                                        Endometrial gestational alteration
+27721004 http://snomed.info/sct                                                                         Biliary hamartoma
+27799005 http://snomed.info/sct                                                         Postinflammatory hypopigmentation
+27809005 http://snomed.info/sct                                                                   Progressive obstruction
+27849002 http://snomed.info/sct                                                                        Myxoid liposarcoma
+27876002 http://snomed.info/sct                                                                         Multiple infarcts
+27881006 http://snomed.info/sct                                                                               Bony callus
+27890004 http://snomed.info/sct                                                              Cervical mucous arborization
+27925004 http://snomed.info/sct                                                                                    Nodule
+27952009 http://snomed.info/sct                                                                 Congenital multiseptation
+28047004 http://snomed.info/sct                                                                       Embryonal carcinoma
+28087009 http://snomed.info/sct                                                                   Fracture, delayed union
+28126000 http://snomed.info/sct                                                                Severe koilocytotic atypia
+28146005 http://snomed.info/sct                                                                  Lipochrome histiocytosis
+28173006 http://snomed.info/sct                                            Follicular adenocarcinoma, well differentiated
+28208008 http://snomed.info/sct                                                                         Edematous infarct
+28218003 http://snomed.info/sct                                                               Severe columnar cell atypia
+28237007 http://snomed.info/sct                                                                    Melanotic neurofibroma
+28307001 http://snomed.info/sct                                                                                 Germinoma
+28325008 http://snomed.info/sct                                                                              Polyembryoma
+28351005 http://snomed.info/sct                                                                               Myxosarcoma
+28543008 http://snomed.info/sct                                                                             Visceromegaly
+28558000 http://snomed.info/sct                                                                    Villous adenocarcinoma
+28569002 http://snomed.info/sct                                                                       Muscle fiber change
+28655007 http://snomed.info/sct                                                          Liposarcoma, well differentiated
+28727003 http://snomed.info/sct                                                                          Odontogenic cyst
+28733007 http://snomed.info/sct                                                                         Compound odontoma
+28781000 http://snomed.info/sct                                                                     Internal hyperostosis
+28789003 http://snomed.info/sct                                                                              Pancake cell
+28831000 http://snomed.info/sct                                                                    Gunshot contusion ring
+28836005 http://snomed.info/sct                                                                        Fracture, impacted
+28878004 http://snomed.info/sct                                                                           Fibrin thrombus
+28950004 http://snomed.info/sct                                                              Acute promyelocytic leukemia
+28953002 http://snomed.info/sct                                                                           Angiomyosarcoma
+28960008 http://snomed.info/sct                                                                          Arteriosclerosis
+29020002 http://snomed.info/sct                                                                          Complex odontoma
+29144003 http://snomed.info/sct                                                                             Central cores
+29185008 http://snomed.info/sct                                                                        Fatty degeneration
+29209006 http://snomed.info/sct                                                                    Alzheimer glial change
+29370006 http://snomed.info/sct                                                               Pheochromocytoma, malignant
+29463007 http://snomed.info/sct                                                                              Keratin plug
+29483008 http://snomed.info/sct                                                             Calcified atheromatous plaque
+29696001 http://snomed.info/sct                                                                                  Prolapse
+29771007 http://snomed.info/sct                                                                        Wolffian body rest
+29792007 http://snomed.info/sct                                                                 Trabecular adenocarcinoma
+29856000 http://snomed.info/sct                                                                       Chromosome fragment
+29996004 http://snomed.info/sct                                                                                 Tetrasomy
+30098003 http://snomed.info/sct                                                                                 Hyperemia
+30156004 http://snomed.info/sct                                                                      Cribriform carcinoma
+30213001 http://snomed.info/sct                                                                           Lymphatic edema
+30217000 http://snomed.info/sct                                                                             Proliferation
+30285000 http://snomed.info/sct                                                                                   Verruca
+30289006 http://snomed.info/sct                                                                    Endometrioid carcinoma
+30301008 http://snomed.info/sct                                                                   Microfollicular adenoma
+30321009 http://snomed.info/sct                                                                             Remyelination
+30383009 http://snomed.info/sct                                                         Mesothelioma, biphasic, malignant
+30386001 http://snomed.info/sct                                                            Radiation injury with necrosis
+30419000 http://snomed.info/sct                                                                               Leukostasis
+30425001 http://snomed.info/sct                                                                                Osteolysis
+30469008 http://snomed.info/sct                                                                                Buhot cell
+30494009 http://snomed.info/sct                                                                          Junctional nevus
+30543000 http://snomed.info/sct                                                                      Fracture, incomplete
+30546008 http://snomed.info/sct                                                                 Clear cell adenocarcinoma
+30566004 http://snomed.info/sct                                      Noninfiltrating intraductal papillary adenocarcinoma
+30649006 http://snomed.info/sct                                                                          Basal cell tumor
+30651005 http://snomed.info/sct                                                            Menstrual alteration of vagina
+30685006 http://snomed.info/sct                                                             Atypical lymphoid hyperplasia
+30691008 http://snomed.info/sct                                                                Anomalous origin of artery
+30699005 http://snomed.info/sct                                                                        Carotid body tumor
+30713000 http://snomed.info/sct                                                                       Hypernephroid tumor
+30727005 http://snomed.info/sct                                                                  Capillary telangiectasia
+30771009 http://snomed.info/sct                                                                  Heavy metal pigmentation
+30812002 http://snomed.info/sct                                                                     Overriding structures
+30867001 http://snomed.info/sct                                                                             Carnification
+30891005 http://snomed.info/sct                                                                             Mummification
+30902005 http://snomed.info/sct                                                                  Fracture, open, impacted
+30924005 http://snomed.info/sct                                                                          Rhabdomyosarcoma
+30938003 http://snomed.info/sct                                                                       Langhans giant cell
+30962008 http://snomed.info/sct                                                             Acute myelomonocytic leukemia
+31040001 http://snomed.info/sct                                              Linear circular atrophy of lower extremities
+31069005 http://snomed.info/sct                                                                     Fibroepithelial polyp
+31092005 http://snomed.info/sct                                                                            Zahn's infarct
+31098009 http://snomed.info/sct                                                                          Massive fibrosis
+31104000 http://snomed.info/sct                                                              Hemangioendothelioma, benign
+31113003 http://snomed.info/sct                                                                              Diverticulum
+31131002 http://snomed.info/sct                                                                         Vipoma, malignant
+31186001 http://snomed.info/sct                                                                                 Chondroma
+31279000 http://snomed.info/sct                                                         Fracture, delayed union, stellate
+31296004 http://snomed.info/sct                                                           Granulosa cell-theca cell tumor
+31313009 http://snomed.info/sct                                                                         Bridging fibrosis
+31390008 http://snomed.info/sct                                                                    Epithelial hyperplasia
+31396002 http://snomed.info/sct                                                                     Goblet cell carcinoid
+31470003 http://snomed.info/sct                                                                              Adenosarcoma
+31478005 http://snomed.info/sct                                                                                  Rhagades
+31511007 http://snomed.info/sct                                                                           Pseudoarthrosis
+31590009 http://snomed.info/sct                                                                Ferrocalcinotic deposition
+31593006 http://snomed.info/sct                                                                            Minimal lesion
+31653004 http://snomed.info/sct                                                                   Fibromuscular dysplasia
+31671006 http://snomed.info/sct                                                                             Pineoblastoma
+31739005 http://snomed.info/sct                                                                Lateral abnormal curvature
+31794002 http://snomed.info/sct                                                                 Sympathetic paraganglioma
+31807009 http://snomed.info/sct                                                            Persistent embryonic structure
+31830003 http://snomed.info/sct                                                        Ruptured epithelial inclusion cyst
+31883006 http://snomed.info/sct                                                                                    Fusion
+31980008 http://snomed.info/sct                                                                  Necrotizing inflammation
+32008003 http://snomed.info/sct                                                             Mild transitional cell atypia
+32037004 http://snomed.info/sct                                                                     Glomus jugulare tumor
+32071008 http://snomed.info/sct                                                                         Strumal carcinoid
+32140001 http://snomed.info/sct                                                                     Papillary cystadenoma
+32224006 http://snomed.info/sct                                                                      Coagulative necrosis
+32272007 http://snomed.info/sct                                                                Sweat gland adenocarcinoma
+32274008 http://snomed.info/sct                                                          Stellate spontaneous pseudoscars
+32288007 http://snomed.info/sct                                                                               Serous cyst
+32296002 http://snomed.info/sct                                                                Intraductal papillomatosis
+32322008 http://snomed.info/sct                                                                     Subchondral bone cyst
+32408007 http://snomed.info/sct                                                                        Piecemeal necrosis
+32416003 http://snomed.info/sct                                                                      Atypical hyperplasia
+32434004 http://snomed.info/sct                                                                    Pulmonary adenomatosis
+32456001 http://snomed.info/sct                                                              Desmoplastic medulloblastoma
+32512003 http://snomed.info/sct                                                    Extra-adrenal paraganglioma, malignant
+32651000 http://snomed.info/sct                                                Arteriolosclerosis with fibrinoid necrosis
+32693004 http://snomed.info/sct                                                                             Demyelination
+32837003 http://snomed.info/sct                                                                     Hemangioblastomatosis
+32844007 http://snomed.info/sct                                                                     Mixed germ cell tumor
+32884003 http://snomed.info/sct                                                                      Hematin pigmentation
+32913002 http://snomed.info/sct                                                                       Medullary carcinoma
+32915009 http://snomed.info/sct                                                                       Reed-Sternberg cell
+32968003 http://snomed.info/sct                                                                    Inflammatory carcinoma
+33059009 http://snomed.info/sct                                                                         Trichofolliculoma
+33080003 http://snomed.info/sct                                                                        Fracture, ununited
+33125008 http://snomed.info/sct                                                                   Hematoidin pigmentation
+33170000 http://snomed.info/sct                                                                          Mucinous adenoma
+33176006 http://snomed.info/sct                                                           Hemangioendothelioma, malignant
+33178007 http://snomed.info/sct                                                     Fracture, delayed union, longitudinal
+33196003 http://snomed.info/sct                                                                        Micromegakaryocyte
+33288004 http://snomed.info/sct                                                                 Mild epithelial dysplasia
+33377007 http://snomed.info/sct                                                                      Cavernous hemangioma
+33385003 http://snomed.info/sct                                                                     Generalized recession
+33387006 http://snomed.info/sct                                                                   Intracystic hyperplasia
+33408004 http://snomed.info/sct                                                             Fracture, ununited, segmental
+33429008 http://snomed.info/sct                                                            Menstrual involution of breast
+33475000 http://snomed.info/sct                                                                           Neuropil thread
+33560006 http://snomed.info/sct                                                                Subacute lymphoid leukemia
+33593002 http://snomed.info/sct                                                                Vascular wall degeneration
+33681003 http://snomed.info/sct                                                   Osteosarcoma in Paget's disease of bone
+33851008 http://snomed.info/sct                                                                         Subacute necrosis
+33872006 http://snomed.info/sct                                                                    Small non-cleaved cell
+33873001 http://snomed.info/sct                                                                           Convoluted cell
+33889003 http://snomed.info/sct                                                              Atypical lobular hyperplasia
+33929001 http://snomed.info/sct                                                                    Epithelioid hemangioma
+33940009 http://snomed.info/sct                                                                          Caseous necrosis
+34058006 http://snomed.info/sct                                                                          Bowing deformity
+34064004 http://snomed.info/sct                                                                              Karyorrhexis
+34081008 http://snomed.info/sct                                           Post-radiation cytologic changes with dysplasia
+34087007 http://snomed.info/sct                                                                               Hemiatrophy
+34110004 http://snomed.info/sct                                            Sertoli-Leydig cell tumor, well differentiated
+34277002 http://snomed.info/sct                                                                     Dislocation, multiple
+34305007 http://snomed.info/sct                                                                Fracture, multiple, closed
+34337008 http://snomed.info/sct                                                                              Prolactinoma
+34344004 http://snomed.info/sct                                                                    Concentric hypertrophy
+34360000 http://snomed.info/sct                                                           Fibrous histiocytoma, malignant
+34418003 http://snomed.info/sct                                                          Glandular necrotizing metaplasia
+34419006 http://snomed.info/sct                                                                       Decidual alteration
+34493008 http://snomed.info/sct                                                                Osmiophilic stain reaction
+34494002 http://snomed.info/sct                                               Communicating cerebrospinal fluid retention
+34550005 http://snomed.info/sct                                                                            Glomangiomyoma
+34603009 http://snomed.info/sct                                                                 Basal cell adenocarcinoma
+34636005 http://snomed.info/sct                                                                              Regeneration
+34717007 http://snomed.info/sct                                                                               Smudge cell
+34720004 http://snomed.info/sct                                                                     Menstrual endometrium
+34785007 http://snomed.info/sct                                                                                 Lipolysis
+34807008 http://snomed.info/sct                                                           Congenital incomplete expansion
+34823008 http://snomed.info/sct                                                                            Tumor necrosis
+34882000 http://snomed.info/sct                                                                        Giant fibroadenoma
+34941004 http://snomed.info/sct                                                                        Odontogenic myxoma
+35013009 http://snomed.info/sct                                                                        Purulent discharge
+35073002 http://snomed.info/sct                                                                  Inflammatory pseudotumor
+35232005 http://snomed.info/sct                                                   Infiltrating duct and lobular carcinoma
+35262004 http://snomed.info/sct                                                                               Gliosarcoma
+35287006 http://snomed.info/sct                                                                           Myeloid sarcoma
+35336005 http://snomed.info/sct                                                       Gunshot wound, entrance, close shot
+35453004 http://snomed.info/sct                                                                         Autophagic bodies
+35506000 http://snomed.info/sct                                                                           Sweat retention
+35562000 http://snomed.info/sct                                                           Waldenstrom's macroglobulinemia
+35566002 http://snomed.info/sct                                                                                  Hematoma
+35601003 http://snomed.info/sct                                                                     Monoclonal gammopathy
+35696001 http://snomed.info/sct                                                                          Ruptured infarct
+35701008 http://snomed.info/sct                                                                Hemangioblastic meningioma
+35714009 http://snomed.info/sct                                                                         Postmortem change
+35718007 http://snomed.info/sct                                      Squamous cell carcinoma, small cell, nonkeratinizing
+35787005 http://snomed.info/sct                                                                  Postinflammatory atrophy
+35813005 http://snomed.info/sct                                        Fibrocystic change, proliferative type with atypia
+35828005 http://snomed.info/sct                                                                                   Malacia
+35851005 http://snomed.info/sct                                                                           Chronic empyema
+35872008 http://snomed.info/sct                                                                     Secondary hyperplasia
+35933005 http://snomed.info/sct                                                                                Laceration
+35944002 http://snomed.info/sct                                                                           Radiation ulcer
+35992002 http://snomed.info/sct                                                                    Predecidual alteration
+36024000 http://snomed.info/sct                                                                                  Gangrene
+36087009 http://snomed.info/sct                                                         Adenocarcinoma in villous adenoma
+36161006 http://snomed.info/sct                                                                    Wallerian degeneration
+36191001 http://snomed.info/sct                                                                               Perforation
+36195005 http://snomed.info/sct                                                                       Nodular hyperplasia
+36207003 http://snomed.info/sct                                                                               Air embolus
+36223003 http://snomed.info/sct                                                  Fracture, delayed union, intra-articular
+36279001 http://snomed.info/sct                                                                             Lipogranuloma
+36310008 http://snomed.info/sct                                                                   Alveolar adenocarcinoma
+36318001 http://snomed.info/sct                                                                          Apocrine adenoma
+36373003 http://snomed.info/sct                                                         Muscle fiber hypertrophy, type II
+36390009 http://snomed.info/sct                                                          Chronic suppurative inflammation
+36425007 http://snomed.info/sct                                                                           Comedocarcinoma
+36468008 http://snomed.info/sct                                                              Surgically constructed organ
+36475009 http://snomed.info/sct                                                               Low-output external fistula
+36504009 http://snomed.info/sct                                                                                 Ankylosis
+36560003 http://snomed.info/sct                                                                            Cystic infarct
+36639000 http://snomed.info/sct                                                                         Psoriasiform rash
+36721002 http://snomed.info/sct                                                            Papillary mucinous cystadenoma
+36731009 http://snomed.info/sct                                                                               Sacculation
+36839003 http://snomed.info/sct                                                    Dislocation, multiple, closed and open
+36850000 http://snomed.info/sct                                                                                 Retention
+36949004 http://snomed.info/sct                                                              Focal epithelial hyperplasia
+37039006 http://snomed.info/sct                                                                       Chromophobe adenoma
+37058002 http://snomed.info/sct                                                         Foreign body giant cell granuloma
+37068007 http://snomed.info/sct                                                                      Lateral displacement
+37095002 http://snomed.info/sct                                                                               Lipomatosis
+37138001 http://snomed.info/sct                                                                 Epithelioid cell melanoma
+37159008 http://snomed.info/sct                                                        Glandular and muscular hyperplasia
+37205004 http://snomed.info/sct                                                                         Superficial wound
+37206003 http://snomed.info/sct                                                            Synovial sarcoma, spindle cell
+37257004 http://snomed.info/sct                                                            Decreased melanin pigmentation
+37258009 http://snomed.info/sct                                                                                 Cementoma
+37266000 http://snomed.info/sct                                                                     Secretory endometrium
+37279009 http://snomed.info/sct                                                                             Amyloid tumor
+37291000 http://snomed.info/sct                                                                               Eventration
+37302003 http://snomed.info/sct                                       Adrenal cortical adenoma, heavily pigmented variant
+37304002 http://snomed.info/sct                                                                    Basosquamous carcinoma
+37500005 http://snomed.info/sct                                                 Blister due to intracellular degeneration
+37585003 http://snomed.info/sct                                                          Chronic necrotizing inflammation
+37708001 http://snomed.info/sct                                                                            Gene mosaicism
+37719003 http://snomed.info/sct                                                                                    Milium
+37748009 http://snomed.info/sct                                                                            Bony sclerosis
+37771006 http://snomed.info/sct                                                                             Crypt abscess
+37778000 http://snomed.info/sct                                                                            Saddle embolus
+37782003 http://snomed.info/sct                                                                                    Damage
+37842001 http://snomed.info/sct                                                                     Antemortem blood clot
+37904008 http://snomed.info/sct                                                                    Chronic bleeding ulcer
+37995004 http://snomed.info/sct                                                                          Linitis plastica
+38022006 http://snomed.info/sct                                                             Congenital abnormal roundness
+38045000 http://snomed.info/sct                                                                               Cold injury
+38069001 http://snomed.info/sct                                                                Metaplastic keratinization
+38084005 http://snomed.info/sct                                                                       Stercoraceous ulcer
+38109001 http://snomed.info/sct                                                                        Osseous metaplasia
+38117009 http://snomed.info/sct                                                                        Deposition of gold
+38139006 http://snomed.info/sct                                                                           Septal fibrosis
+38392006 http://snomed.info/sct                                                             Congenital abnormal curvature
+38406003 http://snomed.info/sct                                                                      Mesenchymoma, benign
+38423007 http://snomed.info/sct                                                                      Honeycomb structures
+38431002 http://snomed.info/sct                                                                   Psammomatous meningioma
+38444007 http://snomed.info/sct                                                                  Blood vessel hyperplasia
+38493002 http://snomed.info/sct                                                           Fibrogranulomatous inflammation
+38542009 http://snomed.info/sct                                                                Nodular glomerulosclerosis
+38549000 http://snomed.info/sct                                                               Carcinoma, undifferentiated
+38551001 http://snomed.info/sct                                                                             Senile plaque
+38640009 http://snomed.info/sct                                                                            Anemic infarct
+38698001 http://snomed.info/sct                                                             Flexner-Wintersteiner rosette
+38716007 http://snomed.info/sct                                                                           Atherosclerosis
+38785003 http://snomed.info/sct                                                                               Air leakage
+38843008 http://snomed.info/sct                                                             Abnormal melanin pigmentation
+38931008 http://snomed.info/sct                                                                     Recent operative site
+38958001 http://snomed.info/sct                                                                 Mixed cell adenocarcinoma
+38969003 http://snomed.info/sct                                                                    Precancerous melanosis
+39000009 http://snomed.info/sct                                                                           Hemangiosarcoma
+39005004 http://snomed.info/sct                                                                        Medulloepithelioma
+39035006 http://snomed.info/sct                                         Atypical squamous cells of uncertain significance
+39037003 http://snomed.info/sct                                                                             Target fibers
+39056008 http://snomed.info/sct                                                         Papillary squamous cell carcinoma
+39063008 http://snomed.info/sct                                                        Fracture, delayed union, segmental
+39086001 http://snomed.info/sct                                      Hodgkin's disease, nodular sclerosis, cellular phase
+39143003 http://snomed.info/sct                                                                                    Myxoma
+39266006 http://snomed.info/sct                                                                             Abnormal cell
+39274007 http://snomed.info/sct                                                                     Balloon cell melanoma
+39332000 http://snomed.info/sct                                                   Intraepidermal epithelioma of Jadassohn
+39391009 http://snomed.info/sct                                                               Chronic serous inflammation
+39404008 http://snomed.info/sct                                                                              Microembolus
+39471001 http://snomed.info/sct                                                                         Bile duct adenoma
+39474009 http://snomed.info/sct                                                                       Sea-blue histiocyte
+39503004 http://snomed.info/sct                                                               Fracture, closed, segmental
+39553005 http://snomed.info/sct                                                                     Chondromyxoid fibroma
+39577004 http://snomed.info/sct                                        Tumor cells, uncertain whether benign or malignant
+39601009 http://snomed.info/sct                                                                           Resorbed tissue
+39718000 http://snomed.info/sct                                                             Congenital failure to migrate
+39720002 http://snomed.info/sct                                                      Adrenal cortical adenoma, mixed cell
+39781001 http://snomed.info/sct                                                           Primitive neuroectodermal tumor
+39820009 http://snomed.info/sct                                                               Abnormal number of nucleoli
+39850001 http://snomed.info/sct                                                                   Deposition of beryllium
+39870007 http://snomed.info/sct                                                    Ossifying epulis of periodontal origin
+39876001 http://snomed.info/sct                                                        Proliferative alteration of vagina
+39892006 http://snomed.info/sct                               Mucoepidermoid tumour uncertain whether benign or malignant
+39896009 http://snomed.info/sct                                                            Malignant melanoma, regressing
+39922000 http://snomed.info/sct                                                                               Folded cell
+39928001 http://snomed.info/sct                                                                          Excessive repair
+39935009 http://snomed.info/sct                                                                        Rouleaux formation
+39961008 http://snomed.info/sct                                                                     Bone fragment embolus
+39967007 http://snomed.info/sct                                                                              Acquired web
+39983007 http://snomed.info/sct                                                                          Fibrous adhesion
+40009002 http://snomed.info/sct                                                                         Craniopharyngioma
+40123003 http://snomed.info/sct                                                                         Fetal rhabdomyoma
+40215006 http://snomed.info/sct                                                              Muscle fiber atrophy, type I
+40225001 http://snomed.info/sct                                                                       Cystic lymphangioma
+40236008 http://snomed.info/sct                                                                           Rimmed vacuoles
+40244008 http://snomed.info/sct                                                             Spindle cell melanoma, type B
+40247001 http://snomed.info/sct                                                                         Zenker's necrosis
+40293003 http://snomed.info/sct                                                                                Adenomyoma
+40299004 http://snomed.info/sct                                                                   Pigmentary degeneration
+40302004 http://snomed.info/sct                                                                               Corps ronds
+40318005 http://snomed.info/sct                                                                        Adenomatous nodule
+40411000 http://snomed.info/sct                                                Malignant lymphoma, large cell, follicular
+40459000 http://snomed.info/sct                                                 Malignant mixed tumor, carcinomatous type
+40477005 http://snomed.info/sct                                                             Deep third degree burn injury
+40487009 http://snomed.info/sct                                                                     Cholesterol granuloma
+40518009 http://snomed.info/sct                                                                   Acute superficial ulcer
+40633007 http://snomed.info/sct                                                                      Homer Wright rosette
+40641007 http://snomed.info/sct                                                                            Folded nucleus
+40761005 http://snomed.info/sct                                                                 Lipid cell tumor of ovary
+40772000 http://snomed.info/sct                                                                            Fibrous plaque
+40829002 http://snomed.info/sct                                                                               Acute edema
+
+Table 3:
+         0                                                                                                                                                                                           1
+     Level A few code lists that FHIR defines are hierarchical - each code is assigned a level.  In this scheme, some codes are under other codes, and imply that the code they are under also applies
+    System                                                                                              The source of the definition of the code (when the value set draws in codes defined elsewhere)
+      Code                                                                                                                                        The code (used as the code in the resource instance)
+   Display                  The display (used in the display element of a Coding). If there is no display, implementers should not simply display the code, but map the concept into their application
+Definition                                                                                                                                                An explanation of the meaning of the concept
+  Comments                                                                                                                                                  Additional notes about how to use the code
+

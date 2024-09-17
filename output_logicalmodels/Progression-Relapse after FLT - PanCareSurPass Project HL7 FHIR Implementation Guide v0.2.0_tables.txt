@@ -1,0 +1,68 @@
+Title: Progression-Relapse after FLT - PanCareSurPass Project HL7 FHIR Implementation Guide v0.2.0
+
+Description: 
+
+                                                                           0                                                                            1                                                                            2                                                                            3                                4
+Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/RelapseAfterFLT Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/RelapseAfterFLT Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/RelapseAfterFLT Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/RelapseAfterFLT                  Version:  0.2.0
+                                                     Draft  as of 2024-05-27                                                      Draft  as of 2024-05-27                                                      Draft  as of 2024-05-27                                                      Draft  as of 2024-05-27 Computable Name: RelapseAfterFLT
+
+                         Name                         Flags                         Card.                          Type                                                                                    Description & Constraints
+              RelapseAfterFLT                           NaN                          0..*                          Base Progression-Relapse after FLT Instances of this logical model are not marked to be the target of a Reference
+                   identifier                           NaN                          0..1                    Identifier                                                                         Progression-relapse after FLT number
+             relatedDiagnosis                           NaN                          0..1                    Identifier                                                                              Progressive number of diagnosis
+                         date                           NaN                          0..1                          date                                                                                              date of relapse
+         relapseOrProgression                           NaN                          0..1               CodeableConcept                                                                                        relapse | progression
+                         type                           NaN                          0..1               CodeableConcept                                                                                   local | distant | combined
+                         site                           NaN                          0..1                        string                                                                               If distant, site of metastases
+Documentation for this format Documentation for this format Documentation for this format Documentation for this format                                                                                Documentation for this format
+
+                         Name                         Flags                         Card.                          Type                                                                                    Description & Constraints
+              RelapseAfterFLT                           NaN                          0..*                          Base Progression-Relapse after FLT Instances of this logical model are not marked to be the target of a Reference
+                   identifier                           NaN                          0..1                    Identifier                                                                         Progression-relapse after FLT number
+             relatedDiagnosis                           NaN                          0..1                    Identifier                                                                              Progressive number of diagnosis
+                         date                           NaN                          0..1                          date                                                                                              date of relapse
+         relapseOrProgression                           NaN                          0..1               CodeableConcept                                                                                        relapse | progression
+                         type                           NaN                          0..1               CodeableConcept                                                                                   local | distant | combined
+                         site                           NaN                          0..1                        string                                                                               If distant, site of metastases
+Documentation for this format Documentation for this format Documentation for this format Documentation for this format                                                                                Documentation for this format
+
+                         Name                         Flags                         Card.                          Type                                                                                    Description & Constraints
+              RelapseAfterFLT                           NaN                          0..*                          Base Progression-Relapse after FLT Instances of this logical model are not marked to be the target of a Reference
+                   identifier                           NaN                          0..1                    Identifier                                                                         Progression-relapse after FLT number
+             relatedDiagnosis                           NaN                          0..1                    Identifier                                                                              Progressive number of diagnosis
+                         date                           NaN                          0..1                          date                                                                                              date of relapse
+         relapseOrProgression                           NaN                          0..1               CodeableConcept                                                                                        relapse | progression
+                         type                           NaN                          0..1               CodeableConcept                                                                                   local | distant | combined
+                         site                           NaN                          0..1                        string                                                                               If distant, site of metastases
+Documentation for this format Documentation for this format Documentation for this format Documentation for this format                                                                                Documentation for this format
+
+                         Name                         Flags                         Card.                          Type                                                                                    Description & Constraints
+              RelapseAfterFLT                           NaN                          0..*                          Base Progression-Relapse after FLT Instances of this logical model are not marked to be the target of a Reference
+                   identifier                           NaN                          0..1                    Identifier                                                                         Progression-relapse after FLT number
+             relatedDiagnosis                           NaN                          0..1                    Identifier                                                                              Progressive number of diagnosis
+                         date                           NaN                          0..1                          date                                                                                              date of relapse
+         relapseOrProgression                           NaN                          0..1               CodeableConcept                                                                                        relapse | progression
+                         type                           NaN                          0..1               CodeableConcept                                                                                   local | distant | combined
+                         site                           NaN                          0..1                        string                                                                               If distant, site of metastases
+Documentation for this format Documentation for this format Documentation for this format Documentation for this format                                                                                Documentation for this format
+
+                         Name                         Flags                         Card.                          Type                                                                                    Description & Constraints
+              RelapseAfterFLT                           NaN                          0..*                          Base Progression-Relapse after FLT Instances of this logical model are not marked to be the target of a Reference
+                   identifier                           NaN                          0..1                    Identifier                                                                         Progression-relapse after FLT number
+             relatedDiagnosis                           NaN                          0..1                    Identifier                                                                              Progressive number of diagnosis
+                         date                           NaN                          0..1                          date                                                                                              date of relapse
+         relapseOrProgression                           NaN                          0..1               CodeableConcept                                                                                        relapse | progression
+                         type                           NaN                          0..1               CodeableConcept                                                                                   local | distant | combined
+                         site                           NaN                          0..1                        string                                                                               If distant, site of metastases
+Documentation for this format Documentation for this format Documentation for this format Documentation for this format                                                                                Documentation for this format
+
+                         Name                         Flags                         Card.                          Type                                                                                    Description & Constraints
+              RelapseAfterFLT                           NaN                          0..*                          Base Progression-Relapse after FLT Instances of this logical model are not marked to be the target of a Reference
+                   identifier                           NaN                          0..1                    Identifier                                                                         Progression-relapse after FLT number
+             relatedDiagnosis                           NaN                          0..1                    Identifier                                                                              Progressive number of diagnosis
+                         date                           NaN                          0..1                          date                                                                                              date of relapse
+         relapseOrProgression                           NaN                          0..1               CodeableConcept                                                                                        relapse | progression
+                         type                           NaN                          0..1               CodeableConcept                                                                                   local | distant | combined
+                         site                           NaN                          0..1                        string                                                                               If distant, site of metastases
+Documentation for this format Documentation for this format Documentation for this format Documentation for this format                                                                                Documentation for this format
+

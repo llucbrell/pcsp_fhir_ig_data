@@ -1,0 +1,80 @@
+Title: Observation: Cancer Stage Group - PanCareSurPass Project HL7 FHIR Implementation Guide v0.2.0
+
+Header Table:
+- 0 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/mcode-cancer-stage-group
+- 1 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/mcode-cancer-stage-group
+- 2 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/mcode-cancer-stage-group
+- 3 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/mcode-cancer-stage-group
+- 4 : Version:  0.2.0
+- 0 : Draft  as of 2024-05-27
+- 1 : Draft  as of 2024-05-27
+- 2 : Draft  as of 2024-05-27
+- 3 : Draft  as of 2024-05-27
+- 4 : Computable Name: CancerStageGroup
+
+
+Third Paragraph:
+The extent of the cancer in the body, according to a given cancer staging classification system, based on evidence such as physical examination, imaging, and/or biopsy or based on pathologic analysis of a specimen.
+
+Dict Table:
+                                                     0                                                                                                                                                                                               1
+                                        0. Observation                                                                                                                                                                                  0. Observation
+                                 2. Observation.status                                                                                                                                                                           2. Observation.status
+                                          Must Support                                                                                                                                                                                            true
+                                   4. Observation.code                                                                                                                                                                             4. Observation.code
+                                               Binding                               The codes SHALL be taken from Observation Codes for Stage Group Category (required to http://hl7.eu/fhir/ig/pcsp/ValueSet/mcode-observation-codes-stage-group-vs)
+                                          Must Support                                                                                                                                                                                            true
+                                6. Observation.subject                                                                                                                                                                          6. Observation.subject
+                                                  Type                                                                                                                                                                        Reference(Patient: PCSP)
+                                          Must Support                                                                                                                                                                                            true
+                                  8. Observation.focus                                                                                                                                                                            8. Observation.focus
+                                                  Type                                                                                                                                                            Reference(Condition: Primary Cancer)
+                                          Must Support                                                                                                                                                                                            true
+                          10. Observation.effective[x]                                                                                                                                                                    10. Observation.effective[x]
+                                              [x] Note                                                                                                                             SeeChoice of Data Typesfor further information about how to use [x]
+                                          Must Support                                                                                                                                                                                            true
+                              12. Observation.value[x]                                                                                                                                                                        12. Observation.value[x]
+                                               Binding                                                             The codes SHOULD be taken from Stage Group Value Set (preferred to http://hl7.eu/fhir/ig/pcsp/ValueSet/mcode-cancer-stage-group-vs)
+                                                  Type                                                                                          CodeableConcept, dateTime, boolean, string, SampledData, Quantity, Period, Ratio, integer, time, Range
+                                              [x] Note                                                                                                                             SeeChoice of Data Typesfor further information about how to use [x]
+                                          Must Support                                                                                                                                                                                            true
+                                14. Observation.method                                                                                                                                                                          14. Observation.method
+                                               Binding                         Unless not suitable, these codes SHALL be taken from Cancer Staging System Value Set (extensible to http://hl7.eu/fhir/ig/pcsp/ValueSet/mcode-cancer-staging-system-vs)
+                                          Must Support                                                                                                                                                                                            true
+                                16. Observation.device                                                                                                                                                                          16. Observation.device
+                                            Definition                                                                                                                                                                        Not used in this profile
+                                                 Short                                                                                                                                                                        Not used in this profile
+                        18. Observation.referenceRange                                                                                                                                                                  18. Observation.referenceRange
+                                            Definition                                                                                                                                                                        Not used in this profile
+                                                 Short                                                                                                                                                                        Not used in this profile
+                             20. Observation.hasMember                                                                                                                                                                       20. Observation.hasMember
+                                                  Type                                                                                                                                                                          Reference(Observation)
+                                          Must Support                                                                                                                                                                                            true
+                                               Slicing This element introduces a set of slices on Observation.hasMember. The slices areUnordered and Open, and can be differentiated using the following discriminators:pattern @ $this.resolve().code
+     22. Observation.hasMember:tnmPrimaryTumorCategory                                                                                                                                               22. Observation.hasMember:tnmPrimaryTumorCategory
+                                            Slice Name                                                                                                                                                                         tnmPrimaryTumorCategory
+                                            Definition                                                        Category of the primary tumor, based on its size and extent, and based on evidence such as physical examination, imaging, and/or biopsy.
+                                                 Short                                                                                                                                                                      TNM Primary Tumor Category
+                                              Comments                                                                                                           When using this element, the Observation must validate against the specified profile.
+                                               Control                                                                                                                                                                                            0..1
+                                                  Type                                                                                                                                              Reference(Observation: TNM Primary Tumor Category)
+                                          Must Support                                                                                                                                                                                            true
+    24. Observation.hasMember:tnmRegionalNodesCategory                                                                                                                                              24. Observation.hasMember:tnmRegionalNodesCategory
+                                            Slice Name                                                                                                                                                                        tnmRegionalNodesCategory
+                                            Definition                                              Category of the presence or absence of metastases in regional lymph nodes, based on evidence such as physical examination, imaging, and/or biopsy.
+                                                 Short                                                                                                                                                                     TNM Regional Nodes Category
+                                              Comments                                                                                                           When using this element, the Observation must validate against the specified profile.
+                                               Control                                                                                                                                                                                            0..1
+                                                  Type                                                                                                                                             Reference(Observation: TNM Regional Nodes Category)
+                                          Must Support                                                                                                                                                                                            true
+26. Observation.hasMember:tnmDistantMetastasesCategory                                                                                                                                          26. Observation.hasMember:tnmDistantMetastasesCategory
+                                            Slice Name                                                                                                                                                                    tnmDistantMetastasesCategory
+                                            Definition                               Category describing the presence or absence of metastases in remote anatomical locations, based on evidence such as physical examination, imaging, and/or biopsy.
+                                                 Short                                                                                                                                                                 TNM Distant Metastases Category
+                                              Comments                                                                                                           When using this element, the Observation must validate against the specified profile.
+                                               Control                                                                                                                                                                                            0..1
+                                                  Type                                                                                                                                         Reference(Observation: TNM Distant Metastases Category)
+                                          Must Support                                                                                                                                                                                            true
+                             28. Observation.component                                                                                                                                                                       28. Observation.component
+                                            Definition                                                                                                                                                                        Not used in this profile
+                                                 Short                                                                                                                                                                        Not used in this profile

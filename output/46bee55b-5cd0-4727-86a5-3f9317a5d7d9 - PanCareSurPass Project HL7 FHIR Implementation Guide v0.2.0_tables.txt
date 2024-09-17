@@ -1,0 +1,78 @@
+Title: 46bee55b-5cd0-4727-86a5-3f9317a5d7d9 - PanCareSurPass Project HL7 FHIR Implementation Guide v0.2.0
+
+            0               1
+   Identifier              15
+Date of birth 11 October 1990
+
+       0
+ Summary
+Stage ()
+
+                                      0
+                                Summary
+Grade 1 (PCSP Code System#Gvhd-acute-1)
+
+                                    0
+                              Summary
+Limited (PCSP Code System#Gvhd-chr-1)
+
+       0                            1                    2
+Language                         Data                Title
+      it (base64 data - 177008 bytes) passport-15_2.it.pdf
+
+       0                            1                    2
+Language                         Data                Title
+      lt (base64 data - 177109 bytes) passport-15_2.lt.pdf
+
+       0                            1                    2
+Language                         Data                Title
+      es (base64 data - 174916 bytes) passport-15_2.es.pdf
+
+       0                            1                    2
+Language                         Data                Title
+      en (base64 data - 175905 bytes) passport-15_2.en.pdf
+
+       0                            1                    2
+Language                         Data                Title
+      be (base64 data - 162922 bytes) passport-15_2.be.pdf
+
+       0                            1                    2
+Language                         Data                Title
+      it (base64 data - 184269 bytes) passport-15_1.it.pdf
+
+       0                            1                    2
+Language                         Data                Title
+      lt (base64 data - 184360 bytes) passport-15_1.lt.pdf
+
+       0                            1                    2
+Language                         Data                Title
+      es (base64 data - 182839 bytes) passport-15_1.es.pdf
+
+       0                            1                    2
+Language                         Data                Title
+      en (base64 data - 183275 bytes) passport-15_1.en.pdf
+
+       0                            1                    2
+Language                         Data                Title
+      be (base64 data - 171030 bytes) passport-15_1.be.pdf
+
+       0                            1                    2
+Language                         Data                Title
+      it (base64 data - 202067 bytes) passport-15_3.it.pdf
+
+       0                            1                    2
+Language                         Data                Title
+      lt (base64 data - 201471 bytes) passport-15_3.lt.pdf
+
+       0                            1                    2
+Language                         Data                Title
+      es (base64 data - 196576 bytes) passport-15_3.es.pdf
+
+       0                            1                    2
+Language                         Data                Title
+      en (base64 data - 201859 bytes) passport-15_3.en.pdf
+
+       0                            1                    2
+Language                         Data                Title
+      be (base64 data - 184810 bytes) passport-15_3.be.pdf
+

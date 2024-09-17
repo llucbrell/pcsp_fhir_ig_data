@@ -1,0 +1,95 @@
+Title: Procedure: Radiotherapy - PanCareSurPass Project HL7 FHIR Implementation Guide v0.2.0
+
+Header Table:
+- 0 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-radiotheraphy-eu-pcsp
+- 1 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-radiotheraphy-eu-pcsp
+- 2 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-radiotheraphy-eu-pcsp
+- 3 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-radiotheraphy-eu-pcsp
+- 4 : Version:  0.2.0
+- 0 : Draft  as of 2024-05-27
+- 1 : Draft  as of 2024-05-27
+- 2 : Draft  as of 2024-05-27
+- 3 : Draft  as of 2024-05-27
+- 4 : Computable Name: ProcedureRadiotherapyPcsp
+
+
+Third Paragraph:
+This profile defines how to represent Procedures in FHIR for describing a set of Radiotherapy data required by the PanCareSurPass algorithm to generate the care plan.
+
+Dict Table:
+                                                            0                                                                                                                                                                              1
+                                                 0. Procedure                                                                                                                                                                   0. Procedure
+                                       2. Procedure.extension                                                                                                                                                         2. Procedure.extension
+                                                      Slicing     This element introduces a set of slices on Procedure.extension. The slices areUnordered and Open, and can be differentiated using the following discriminators:value @ url
+                           4. Procedure.extension:relatedDose                                                                                                                                             4. Procedure.extension:relatedDose
+                                                   Slice Name                                                                                                                                                                    relatedDose
+                                                      Control                                                                                                                                                                           0..*
+                                                         Type                                                                                                  Extension(Resource related information) (Extension Type: Reference(Resource))
+                  6. Procedure.extension:relatedDose.value[x]                                                                                                                                    6. Procedure.extension:relatedDose.value[x]
+                                                         Type                                                                                                                           Reference(Observation: Radiotherapy Total Dose PCSP)
+                                                     [x] Note                                                                                                            SeeChoice of Data Typesfor further information about how to use [x]
+                       8. Procedure.extension:procedureMethod                                                                                                                                         8. Procedure.extension:procedureMethod
+                                                   Slice Name                                                                                                                                                                procedureMethod
+                                                      Control                                                                                                                                                                           0..1
+                                                         Type                                                                                                                  Extension(Procedure Method) (Extension Type: CodeableConcept)
+             10. Procedure.extension:procedureMethod.value[x]                                                                                                                               10. Procedure.extension:procedureMethod.value[x]
+                                                      Binding                                                The codes SHALL be taken from Brachytherapy Type (required to http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-brachytherapyType-eu-pcsp)
+                                                     [x] Note                                                                                                            SeeChoice of Data Typesfor further information about how to use [x]
+                      12. Procedure.extension:energyOrIsotope                                                                                                                                        12. Procedure.extension:energyOrIsotope
+                                                   Slice Name                                                                                                                                                                energyOrIsotope
+                                                      Control                                                                                                                                                                           0..*
+                                                         Type                                                               Extension(Radiotherapy Energy or Isotope) (Extension Type: Choice of: CodeableConcept, Quantity(SimpleQuantity))
+                      14. Procedure.extension:performedTiming                                                                                                                                        14. Procedure.extension:performedTiming
+                                                   Slice Name                                                                                                                                                                performedTiming
+                                                      Control                                                                                                                                                                           0..1
+                                                         Type                                                                                                                           Extension(Performed Timing) (Extension Type: Timing)
+             16. Procedure.extension:performedTiming.value[x]                                                                                                                               16. Procedure.extension:performedTiming.value[x]
+                                                     [x] Note                                                                                                            SeeChoice of Data Typesfor further information about how to use [x]
+      18. Procedure.extension:performedTiming.value[x].repeat                                                                                                                        18. Procedure.extension:performedTiming.value[x].repeat
+20. Procedure.extension:performedTiming.value[x].repeat.count                                                                                                                  20. Procedure.extension:performedTiming.value[x].repeat.count
+                                                        Short                                                                                                                                                          Number of repetitions
+                                     22. Procedure.identifier                                                                                                                                                       22. Procedure.identifier
+                                                        Short                                                                                                                             External Identifiers for this radiotherapy / boost
+                                                         Note                                                                                                      This is a business identifier, not a resource identifier (see discussion)
+                                         24. Procedure.status                                                                                                                                                           24. Procedure.status
+                                                        Short                                                                                                                                                               Procedure status
+                                       26. Procedure.category                                                                                                                                                         26. Procedure.category
+                                                      Control                                                                                                                                                                           1..?
+                                                Pattern Value                                                                {  "coding" : [{  "system" : "http://snomed.info/sct",  "code" : "108290001",  "display" : "Radiotherapy"  }] }
+                                           28. Procedure.code                                                                                                                                                             28. Procedure.code
+                                                      Control                                                                                                                                                                           1..?
+                                                      Binding                         Unless not suitable, these codes SHALL be taken from Radiotherapy Type (extensible to http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-radiotherapyType-eu-pcsp)
+                                        30. Procedure.subject                                                                                                                                                          30. Procedure.subject
+                                                         Type                                                                                                                                                       Reference(Patient: PCSP)
+                                   32. Procedure.performed[x]                                                                                                                                                     32. Procedure.performed[x]
+                                                      Control                                                                                                                                                                           1..?
+                                                     [x] Note                                                                                                            SeeChoice of Data Typesfor further information about how to use [x]
+                                                      Slicing This element introduces a set of slices on Procedure.performed[x]. The slices areUnordered and Open, and can be differentiated using the following discriminators:type @ $this
+                   34. Procedure.performed[x]:performedPeriod                                                                                                                                     34. Procedure.performed[x]:performedPeriod
+                                                   Slice Name                                                                                                                                                                performedPeriod
+                                                      Control                                                                                                                                                                           1..1
+                                                         Type                                                                                                                                                                         Period
+                                                     [x] Note                                                                                                            SeeChoice of Data Typesfor further information about how to use [x]
+                                       36. Procedure.location                                                                                                                                                         36. Procedure.location
+                                                         Type                                                                                                                                                      Reference(Location: PCSP)
+                                38. Procedure.reasonReference                                                                                                                                                  38. Procedure.reasonReference
+                                                      Control                                                                                                                                                                           1..?
+                                                         Type                                                                                                                                           Reference(Condition: Primary Cancer)
+                                       40. Procedure.bodySite                                                                                                                                                         40. Procedure.bodySite
+                                                        Short                                                                                                                                   required for Brachytherapy and External beam
+                                                      Binding                                                        The codes SHALL be taken from Radiotherapy sites (required to http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-radiotherapy-pcsp)
+           42. Procedure.bodySite.extension:locationQualifier                                                                                                                             42. Procedure.bodySite.extension:locationQualifier
+                                                   Slice Name                                                                                                                                                              locationQualifier
+                                                      Control                                                                                                                                                                           0..*
+                                                         Type                                                                                                           Extension(Body Location Qualifier) (Extension Type: CodeableConcept)
+  44. Procedure.bodySite.extension:locationQualifier.value[x]                                                                                                                    44. Procedure.bodySite.extension:locationQualifier.value[x]
+                                                      Binding                           The codes SHALL be taken from Body Location Qualifier Value Set (required to http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-fromToPosteriorAnterior-eu-pcsp)
+                                                     [x] Note                                                                                                            SeeChoice of Data Typesfor further information about how to use [x]
+         46. Procedure.bodySite.extension:lateralityQualifier                                                                                                                           46. Procedure.bodySite.extension:lateralityQualifier
+                                                   Slice Name                                                                                                                                                            lateralityQualifier
+                                                      Control                                                                                                                                                                           0..1
+                                                         Type                                                                                                              Extension(Laterality Qualifier) (Extension Type: CodeableConcept)
+                                           48. Procedure.note                                                                                                                                                             48. Procedure.note
+                                                        Short                                                                                                                                  Additional information about the Radiotherapy
+                                       50. Procedure.usedCode                                                                                                                                                         50. Procedure.usedCode
+                                                      Binding            Unless not suitable, these codes SHALL be taken from Radiotherapy Device Type (extensible to http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-radiotherapyDeviceType-eu-pcsp)

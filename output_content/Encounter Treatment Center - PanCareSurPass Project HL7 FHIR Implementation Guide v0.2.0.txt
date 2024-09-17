@@ -1,0 +1,37 @@
+Title: Encounter: Treatment Center - PanCareSurPass Project HL7 FHIR Implementation Guide v0.2.0
+
+Header Table:
+- 0 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Encounter-eu-pcsp
+- 1 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Encounter-eu-pcsp
+- 2 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Encounter-eu-pcsp
+- 3 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Encounter-eu-pcsp
+- 4 : Version:  0.2.0
+- 0 : Draft  as of 2024-05-27
+- 1 : Draft  as of 2024-05-27
+- 2 : Draft  as of 2024-05-27
+- 3 : Draft  as of 2024-05-27
+- 4 : Computable Name: EncounterPcsp
+
+
+Third Paragraph:
+This profile defines how to represent data of arrival to the center and Center information in FHIR for the purpose of the PanCareSurPass project.
+
+Dict Table:
+                                       0                                                                         1
+                            0. Encounter                                                              0. Encounter
+                     2. Encounter.status                                                       2. Encounter.status
+                            Must Support                                                                      true
+                      4. Encounter.class                                                        4. Encounter.class
+                            Must Support                                                                      true
+                     6. Encounter.period                                                       6. Encounter.period
+               8. Encounter.period.start                                                 8. Encounter.period.start
+                            Must Support                                                                      true
+           10. Encounter.serviceProvider                                             10. Encounter.serviceProvider
+                              Definition      Report here the institution in which most of the treatment was given
+                                   Short                                                  Primary treatment center
+                                    Type   Reference(Organization: Primary Treatment Center / Center of diagnosis)
+12. Encounter.serviceProvider.identifier                                  12. Encounter.serviceProvider.identifier
+                                   Short                       Business identifier of the Primary treatment center
+                                    Note This is a business identifier, not a resource identifier (see discussion)
+   14. Encounter.serviceProvider.display                                     14. Encounter.serviceProvider.display
+                                   Short                 Short textual description of the Primary treatment center

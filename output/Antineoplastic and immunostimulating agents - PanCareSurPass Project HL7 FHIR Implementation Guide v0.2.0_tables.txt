@@ -1,0 +1,610 @@
+Title: Antineoplastic and immunostimulating agents - PanCareSurPass Project HL7 FHIR Implementation Guide v0.2.0
+
+                                                                 0                                                                  1                                                                  2                                                                  3                               4
+Official URL: http://hl7.eu/fhir/ig/pcsp/ValueSet/drugsAtc-eu-pcsp Official URL: http://hl7.eu/fhir/ig/pcsp/ValueSet/drugsAtc-eu-pcsp Official URL: http://hl7.eu/fhir/ig/pcsp/ValueSet/drugsAtc-eu-pcsp Official URL: http://hl7.eu/fhir/ig/pcsp/ValueSet/drugsAtc-eu-pcsp                 Version:  0.2.0
+                                           Draft  as of 2024-05-27                                            Draft  as of 2024-05-27                                            Draft  as of 2024-05-27                                            Draft  as of 2024-05-27 Computable Name: VsPcspAtcCodes
+
+      0                                                1
+   Code                                          Display
+L01AA01                                 Cyclophosphamide
+L01AA02                                     Chlorambucil
+L01AA03                                        Melphalan
+L01AA05                                     Chlormethine
+L01AA06                                       Ifosfamide
+L01AA07                                     Trofosfamide
+L01AA08                                    Prednimustine
+L01AA09                                     Bendamustine
+L01AB01                                         Busulfan
+L01AB02                                       Treosulfan
+L01AB03                                      Mannosulfan
+L01AC01                                         Thiotepa
+L01AC02                                      Triaziquone
+L01AC03                                       Carboquone
+L01AD01                                       Carmustine
+L01AD02                                        Lomustine
+L01AD03                                        Semustine
+L01AD04                                     Streptozocin
+L01AD05                                      Fotemustine
+L01AD06                                        Nimustine
+L01AD07                                      Ranimustine
+L01AG01                                        Etoglucid
+  L01AX                                      Peptichemio
+L01AX01                                     Mitobronitol
+L01AX02                                       Pipobroman
+L01AX03                                     Temozolomide
+L01AX04                                      Dacarbazine
+L01BA01                                     Methotrexate
+L01BA03                                      Raltitrexed
+L01BA04                                       Pemetrexed
+L01BA05                                     Pralatrexate
+L01BB02                                   Mercaptopurine
+L01BB03                                      Thioguanine
+L01BB04                                       Cladribine
+L01BB05                                      Fludarabine
+L01BB06                                      Clofarabine
+L01BB07                                       Nelarabine
+L01BC01                                       Cytarabine
+L01BC02                                     Fluorouracil
+L01BC03                                          Tegafur
+L01BC04                                         Carmofur
+L01BC05                                      Gemcitabine
+L01BC06                                     Capecitabine
+L01BC07                                      Azacitidine
+L01BC08                                       Decitabine
+L01BC52                       Fluorouracil, combinations
+L01BC53                            Tegafur, combinations
+L01BC59                       Trifluridine, combinations
+L01CA01                                      Vinblastine
+L01CA02                                      Vincristine
+L01CA03                                        Vindesine
+L01CA04                                      Vinorelbine
+L01CA05                                       Vinflunine
+L01CA06                                      Vintafolide
+L01CB01                                        Etoposide
+L01CB02                                       Teniposide
+L01CC01                                      Demecolcine
+L01CD01                                       Paclitaxel
+L01CD02                                        Docetaxel
+L01CD03                            Paclitaxel poliglumex
+L01CD04                                      Cabazitaxel
+L01CX01                                      Trabectedin
+L01DA01                                     Dactinomycin
+L01DB01                                      Doxorubicin
+L01DB02                                     Daunorubicin
+L01DB03                                       Epirubicin
+L01DB04                                      Aclarubicin
+L01DB05                                        Zorubicin
+L01DB06                                       Idarubicin
+L01DB07                                     Mitoxantrone
+L01DB08                                      Pirarubicin
+L01DB09                                       Valrubicin
+L01DB10                                        Amrubicin
+L01DB11                                       Pixantrone
+L01DC01                                        Bleomycin
+L01DC02                                      Mithramycin
+L01DC03                                        Mitomycin
+L01DC04                                      Ixabepilone
+L01XA01                                        Cisplatin
+L01XA02                                      Carboplatin
+L01XA03                                      Oxaliplatin
+L01XA04                                      Satraplatin
+L01XA05                                    Polyplatillen
+L01XB01                                     Procarbazine
+L01XC01                                      Edrecolomab
+L01XC02                                        Rituximab
+L01XC03                                      Trastuzumab
+L01XC04                                      Alemtuzumab
+L01XC05                                       Gemtuzumab
+L01XC06                                        Cetuximab
+L01XC07                                      Bevacizumab
+L01XC08                                      Panitumumab
+L01XC09                                      Catumaxomab
+L01XC10                                       Ofatumumab
+L01XC11                                       Ipilimumab
+L01XC12                              Brentuximab vedotin
+L01XC13                                       Pertuzumab
+L01XC14                            Trastuzumab emtansine
+L01XC15                                     Obinutuzumab
+L01XC16                                      Dinutuximab
+L01XC17                                        Nivolumab
+L01XC18                                    Pembrolizumab
+L01XC19                                     Blinatumomab
+L01XC21                                      Ramucirumab
+L01XC22                                      Necitumumab
+L01XC23                                       Elotuzumab
+L01XC24                                      Daratumumab
+L01XC25                                    Mogamulizumab
+L01XC26                            Inotuzumab ozogamicin
+L01XC27                                       Olaratumab
+L01XD01                                  Porfimer sodium
+L01XD03                           Methyl aminolevulinate
+L01XD04                              Aminolevulinic acid
+L01XD05                                       Temoporfin
+L01XD06                                      Efaproxiral
+L01XE01                                         Imatinib
+L01XE02                                        Gefitinib
+L01XE03                                        Erlotinib
+L01XE04                                        Sunitinib
+L01XE05                                        Sorafenib
+L01XE06                                        Dasatinib
+L01XE07                                        Lapatinib
+L01XE08                                        Nilotinib
+L01XE09                                     Temsirolimus
+L01XE10                                       Everolimus
+L01XE11                                        Pazopanib
+L01XE12                                       Vandetanib
+L01XE13                                         Afatinib
+L01XE14                                        Bosutinib
+L01XE15                                      Vemurafenib
+L01XE16                                       Crizotinib
+L01XE17                                         Axitinib
+L01XE18                                      Ruxolitinib
+L01XE19                                    Ridaforolimus
+L01XE21                                      Regorafenib
+L01XE22                                        Masitinib
+L01XE23                                       Dabrafenib
+L01XE24                                        Ponatinib
+L01XE25                                       Trametinib
+L01XE26                                     Cabozantinib
+L01XE27                                        Ibrutinib
+L01XE28                                        Ceritinib
+L01XE29                                       Lenvatinib
+L01XE31                                       Nintedanib
+L01XE32                                        Cediranib
+L01XE33                                      Palbociclib
+L01XE34                                        Tivozanib
+L01XE35                                      Osimertinib
+L01XE36                                        Alectinib
+L01XE37                                      Rociletinib
+L01XE38                                      Cobimetinib
+L01XE39                                      Midostaurin
+L01XE40                                        Olmutinib
+  L01XX                       Other antineoplastic agent
+L01XX01                                        Amsacrine
+L01XX02                                     Asparaginase
+L01XX03                                      Altretamine
+L01XX05                                 Hydroxycarbamide
+L01XX07                                       Lonidamine
+L01XX08                                      Pentostatin
+L01XX09                                      Miltefosine
+L01XX10                                       Masoprocol
+L01XX11                                     Estramustine
+L01XX14                                        Tretinoin
+L01XX16                                      Mitoguazone
+L01XX17                                        Topotecan
+L01XX18                                      Tiazofurine
+L01XX19                                       Irinotecan
+L01XX22                                     Alitretinoin
+L01XX23                                         Mitotane
+L01XX24                                     Pegaspargase
+L01XX25                                       Bexarotene
+L01XX27                                 Arsenic trioxide
+L01XX29                              Denileukin diftitox
+L01XX32                                       Bortezomib
+L01XX33                                        Celecoxib
+L01XX35                                       Anagrelide
+L01XX36                                       Oblimersen
+L01XX37                           Sitimagene ceradenovec
+L01XX38                                       Vorinostat
+L01XX39                                       Romidepsin
+L01XX40                        Omacetaxine mepesuccinate
+L01XX41                                         Eribulin
+L01XX42                                     Panobinostat
+L01XX43                                       Vismodegib
+L01XX44                                      Aflibercept
+L01XX45                                      Carfilzomib
+L01XX46                                         Olaparib
+L01XX47                                       Idelalisib
+L01XX48                                        Sonidegib
+L01XX49                                       Belinostat
+L01XX50                                         Ixazomib
+L01XX51                         Talimogene laherparepvec
+L01XX52                                       Venetoclax
+L01XX53                                        Vosaroxin
+  L01XY             Combination of antineoplastic agents
+L02AA01                               Diethylstilbestrol
+L02AA02                          Polyestradiol phosphate
+L02AA03                                 Ethinylestradiol
+L02AA04                                       Fosfestrol
+L02AB01                                        Megestrol
+L02AB02                              Medroxyprogesterone
+L02AB03                                      Gestonorone
+L02AE01                                        Buserelin
+L02AE02                                      Leuprorelin
+L02AE03                                        Goserelin
+L02AE04                                      Triptorelin
+L02AE05                                        Histrelin
+L02BA01                                        Tamoxifen
+L02BA02                                       Toremifene
+L02BA03                                      Fulvestrant
+L02BB01                                        Flutamide
+L02BB02                                       Nilutamide
+L02BB03                                     Bicalutamide
+L02BB04                                     Enzalutamide
+L02BG01                                Aminogluthetimide
+L02BG02                                       Formestane
+L02BG03                                      Anastrozole
+L02BG04                                        Letrozole
+L02BG05                                         Vorozole
+L02BG06                                       Exemestane
+L02BX01                                         Abarelix
+L02BX02                                        Degarelix
+L02BX03                                      Abiraterone
+L03AA02                                       Filgrastim
+L03AA03                                     Molgramostim
+L03AA09                                     Sargramostim
+L03AA10                                      Lenograstim
+L03AA12                                         Ancestim
+L03AA13                                    Pegfilgrastim
+L03AA14                                  Lipegfilgrastim
+L03AA15                                      Balugrastim
+L03AA16                                  Empegfilgrastim
+L03AB01                          Interferon alfa natural
+L03AB02                          Interferon beta natural
+L03AB03                                 Interferon gamma
+L03AB04                               Interferon alfa-2a
+L03AB05                               Interferon alfa-2b
+L03AB06                               Interferon alfa-n1
+L03AB07                               Interferon beta-1a
+L03AB08                               Interferon beta-1b
+L03AB09                             Interferon alfacon-1
+L03AB10                            Peginterferon alfa-2b
+L03AB11                            Peginterferon alfa-2a
+L03AB12                            Albinterferon alfa-2b
+L03AB13                            Peginterferon beta-1a
+L03AB14                          Cepeginterferon alfa-2b
+L03AB60              Peginterferon alfa-2b, combinations
+L03AB61              Peginterferon alfa-2a, combinations
+L03AB90 Interferone ricombinante omega di origine felina
+L03AC01                                      Aldesleukin
+L03AC02                                       Oprelvekin
+L03AX01                                         Lentinan
+L03AX02                                       Roquinimex
+L03AX03                                      BCG vaccine
+L03AX04                                       Pegademase
+L03AX05                                        Pidotimod
+L03AX07                                         Poly I:C
+L03AX08                                        Poly ICLC
+L03AX09                                      Thymopentin
+L03AX10                                     Immunocyanin
+L03AX11                                       Tasonermin
+L03AX12                                 Melanoma vaccine
+L03AX13                               Glatiramer acetate
+L03AX14                        Histamine dihydrochloride
+L03AX15                                      Mifamurtide
+L03AX16                                       Plerixafor
+L03AX17                                     Sipuleucel-T
+L03AX18                                       Cridanimod
+L03AX19                                   Dasiprotimut-T
+L04AA02                                    Muromonab-CD3
+L04AA03            Antilymphocyte immunoglobulin (horse)
+L04AA04            Antithymocyte immunoglobulin (rabbit)
+L04AA06                                Mycophenolic acid
+L04AA10                                        Sirolimus
+L04AA13                                      Leflunomide
+L04AA15                                        Alefacept
+L04AA18                                       Everolimus
+L04AA19                                       Gusperimus
+L04AA21                                       Efalizumab
+L04AA22                                         Abetimus
+L04AA23                                      Natalizumab
+L04AA24                                        Abatacept
+L04AA25                                       Eculizumab
+L04AA26                                        Belimumab
+L04AA27                                       Fingolimod
+L04AA28                                       Belatacept
+L04AA29                                      Tofacitinib
+L04AA31                                    Teriflunomide
+L04AA32                                       Apremilast
+L04AA33                                      Vedolizumab
+L04AA34                                      Alemtuzumab
+L04AA35                                        Begelomab
+L04AA36                                      Ocrelizumab
+L04AA37                                      Baricitinib
+L04AB01                                       Etanercept
+L04AB02                                       Infliximab
+L04AB03                                       Afelimomab
+L04AB04                                       Adalimumab
+L04AB05                               Certolizumab pegol
+L04AB06                                        Golimumab
+L04AC01                                       Daclizumab
+L04AC02                                      Basiliximab
+L04AC03                                         Anakinra
+L04AC04                                       Rilonacept
+L04AC05                                      Ustekinumab
+L04AC06                                      Mepolizumab
+L04AC07                                      Tocilizumab
+L04AC08                                      Canakinumab
+L04AC09                                      Briakinumab
+L04AC10                                      Secukinumab
+L04AC11                                       Siltuximab
+L04AC12                                       Brodalumab
+L04AC13                                       Ixekizumab
+L04AC14                                        Sarilumab
+L04AD01                                      Ciclosporin
+L04AD02                                       Tacrolimus
+L04AD03                                      Voclosporin
+L04AX01                                     Azathioprine
+L04AX02                                      Thalidomide
+L04AX03                                     Methotrexate
+L04AX04                                     Lenalidomide
+L04AX05                                      Pirfenidone
+L04AX06                                     Pomalidomide
+
+      0                       1                                     2
+   Code                  System                               Display
+L01AA01 http://www.whocc.no/atc                      cyclophosphamide
+L01AA02 http://www.whocc.no/atc                          chlorambucil
+L01AA03 http://www.whocc.no/atc                             melphalan
+L01AA05 http://www.whocc.no/atc                          chlormethine
+L01AA06 http://www.whocc.no/atc                            ifosfamide
+L01AA07 http://www.whocc.no/atc                          trofosfamide
+L01AA08 http://www.whocc.no/atc                         prednimustine
+L01AA09 http://www.whocc.no/atc                          bendamustine
+L01AB01 http://www.whocc.no/atc                              busulfan
+L01AB02 http://www.whocc.no/atc                            treosulfan
+L01AB03 http://www.whocc.no/atc                           mannosulfan
+L01AC01 http://www.whocc.no/atc                              thiotepa
+L01AC02 http://www.whocc.no/atc                           triaziquone
+L01AC03 http://www.whocc.no/atc                            carboquone
+L01AD01 http://www.whocc.no/atc                            carmustine
+L01AD02 http://www.whocc.no/atc                             lomustine
+L01AD03 http://www.whocc.no/atc                             semustine
+L01AD04 http://www.whocc.no/atc                          streptozocin
+L01AD05 http://www.whocc.no/atc                           fotemustine
+L01AD06 http://www.whocc.no/atc                             nimustine
+L01AD07 http://www.whocc.no/atc                           ranimustine
+L01AG01 http://www.whocc.no/atc                             etoglucid
+  L01AX http://www.whocc.no/atc               Other alkylating agents
+L01AX01 http://www.whocc.no/atc                          mitobronitol
+L01AX02 http://www.whocc.no/atc                            pipobroman
+L01AX03 http://www.whocc.no/atc                          temozolomide
+L01AX04 http://www.whocc.no/atc                           dacarbazine
+L01BA01 http://www.whocc.no/atc                          methotrexate
+L01BA03 http://www.whocc.no/atc                           raltitrexed
+L01BA04 http://www.whocc.no/atc                            pemetrexed
+L01BA05 http://www.whocc.no/atc                          pralatrexate
+L01BB02 http://www.whocc.no/atc                        mercaptopurine
+L01BB03 http://www.whocc.no/atc                            tioguanine
+L01BB04 http://www.whocc.no/atc                            cladribine
+L01BB05 http://www.whocc.no/atc                           fludarabine
+L01BB06 http://www.whocc.no/atc                           clofarabine
+L01BB07 http://www.whocc.no/atc                            nelarabine
+L01BC01 http://www.whocc.no/atc                            cytarabine
+L01BC02 http://www.whocc.no/atc                          fluorouracil
+L01BC03 http://www.whocc.no/atc                               tegafur
+L01BC04 http://www.whocc.no/atc                              carmofur
+L01BC05 http://www.whocc.no/atc                           gemcitabine
+L01BC06 http://www.whocc.no/atc                          capecitabine
+L01BC07 http://www.whocc.no/atc                           azacitidine
+L01BC08 http://www.whocc.no/atc                            decitabine
+L01BC52 http://www.whocc.no/atc            fluorouracil, combinations
+L01BC53 http://www.whocc.no/atc                 tegafur, combinations
+L01BC59 http://www.whocc.no/atc            trifluridine, combinations
+L01CA01 http://www.whocc.no/atc                           vinblastine
+L01CA02 http://www.whocc.no/atc                           vincristine
+L01CA03 http://www.whocc.no/atc                             vindesine
+L01CA04 http://www.whocc.no/atc                           vinorelbine
+L01CA05 http://www.whocc.no/atc                            vinflunine
+L01CA06 http://www.whocc.no/atc                           vintafolide
+L01CB01 http://www.whocc.no/atc                             etoposide
+L01CB02 http://www.whocc.no/atc                            teniposide
+L01CC01 http://www.whocc.no/atc                           demecolcine
+L01CD01 http://www.whocc.no/atc                            paclitaxel
+L01CD02 http://www.whocc.no/atc                             docetaxel
+L01CD03 http://www.whocc.no/atc                 paclitaxel poliglumex
+L01CD04 http://www.whocc.no/atc                           cabazitaxel
+L01CX01 http://www.whocc.no/atc                           trabectedin
+L01DA01 http://www.whocc.no/atc                          dactinomycin
+L01DB01 http://www.whocc.no/atc                           doxorubicin
+L01DB02 http://www.whocc.no/atc                          daunorubicin
+L01DB03 http://www.whocc.no/atc                            epirubicin
+L01DB04 http://www.whocc.no/atc                           aclarubicin
+L01DB05 http://www.whocc.no/atc                             zorubicin
+L01DB06 http://www.whocc.no/atc                            idarubicin
+L01DB07 http://www.whocc.no/atc                          mitoxantrone
+L01DB08 http://www.whocc.no/atc                           pirarubicin
+L01DB09 http://www.whocc.no/atc                            valrubicin
+L01DB10 http://www.whocc.no/atc                             amrubicin
+L01DB11 http://www.whocc.no/atc                            pixantrone
+L01DC01 http://www.whocc.no/atc                             bleomycin
+L01DC02 http://www.whocc.no/atc                            plicamycin
+L01DC03 http://www.whocc.no/atc                             mitomycin
+L01DC04 http://www.whocc.no/atc                           ixabepilone
+L01XA01 http://www.whocc.no/atc                             cisplatin
+L01XA02 http://www.whocc.no/atc                           carboplatin
+L01XA03 http://www.whocc.no/atc                           oxaliplatin
+L01XA04 http://www.whocc.no/atc                           satraplatin
+L01XA05 http://www.whocc.no/atc                         polyplatillen
+L01XB01 http://www.whocc.no/atc                          procarbazine
+L01XC01 http://www.whocc.no/atc                           edrecolomab
+L01XC02 http://www.whocc.no/atc                             rituximab
+L01XC03 http://www.whocc.no/atc                           trastuzumab
+L01XC05 http://www.whocc.no/atc                 gemtuzumab ozogamicin
+L01XC06 http://www.whocc.no/atc                             cetuximab
+L01XC07 http://www.whocc.no/atc                           bevacizumab
+L01XC08 http://www.whocc.no/atc                           panitumumab
+L01XC09 http://www.whocc.no/atc                           catumaxomab
+L01XC10 http://www.whocc.no/atc                            ofatumumab
+L01XC11 http://www.whocc.no/atc                            ipilimumab
+L01XC12 http://www.whocc.no/atc                   brentuximab vedotin
+L01XC13 http://www.whocc.no/atc                            pertuzumab
+L01XC14 http://www.whocc.no/atc                 trastuzumab emtansine
+L01XC15 http://www.whocc.no/atc                          obinutuzumab
+L01XC16 http://www.whocc.no/atc                      dinutuximab beta
+L01XC17 http://www.whocc.no/atc                             nivolumab
+L01XC18 http://www.whocc.no/atc                         pembrolizumab
+L01XC19 http://www.whocc.no/atc                          blinatumomab
+L01XC21 http://www.whocc.no/atc                           ramucirumab
+L01XC22 http://www.whocc.no/atc                           necitumumab
+L01XC23 http://www.whocc.no/atc                            elotuzumab
+L01XC24 http://www.whocc.no/atc                           daratumumab
+L01XC25 http://www.whocc.no/atc                         mogamulizumab
+L01XC26 http://www.whocc.no/atc                 inotuzumab ozogamicin
+L01XC27 http://www.whocc.no/atc                            olaratumab
+L01XD01 http://www.whocc.no/atc                       porfimer sodium
+L01XD03 http://www.whocc.no/atc                methyl aminolevulinate
+L01XD04 http://www.whocc.no/atc                   aminolevulinic acid
+L01XD05 http://www.whocc.no/atc                            temoporfin
+L01XD06 http://www.whocc.no/atc                           efaproxiral
+  L01XX http://www.whocc.no/atc           Other antineoplastic agents
+L01XX01 http://www.whocc.no/atc                             amsacrine
+L01XX02 http://www.whocc.no/atc                          asparaginase
+L01XX03 http://www.whocc.no/atc                           altretamine
+L01XX05 http://www.whocc.no/atc                      hydroxycarbamide
+L01XX07 http://www.whocc.no/atc                            lonidamine
+L01XX08 http://www.whocc.no/atc                           pentostatin
+L01XX10 http://www.whocc.no/atc                            masoprocol
+L01XX11 http://www.whocc.no/atc                          estramustine
+L01XX16 http://www.whocc.no/atc                           mitoguazone
+L01XX18 http://www.whocc.no/atc                           tiazofurine
+L01XX23 http://www.whocc.no/atc                              mitotane
+L01XX24 http://www.whocc.no/atc                          pegaspargase
+L01XX27 http://www.whocc.no/atc                      arsenic trioxide
+L01XX29 http://www.whocc.no/atc                   denileukin diftitox
+L01XX33 http://www.whocc.no/atc                             celecoxib
+L01XX35 http://www.whocc.no/atc                            anagrelide
+L01XX36 http://www.whocc.no/atc                            oblimersen
+L01XX37 http://www.whocc.no/atc                sitimagene ceradenovec
+L01XX40 http://www.whocc.no/atc             omacetaxine mepesuccinate
+L01XX41 http://www.whocc.no/atc                              eribulin
+L01XX44 http://www.whocc.no/atc                           aflibercept
+L01XX51 http://www.whocc.no/atc              talimogene laherparepvec
+L01XX52 http://www.whocc.no/atc                            venetoclax
+L01XX53 http://www.whocc.no/atc                             vosaroxin
+  L01XY http://www.whocc.no/atc Combinations of antineoplastic agents
+L02AA01 http://www.whocc.no/atc                    diethylstilbestrol
+L02AA02 http://www.whocc.no/atc               polyestradiol phosphate
+L02AA03 http://www.whocc.no/atc                      ethinylestradiol
+L02AA04 http://www.whocc.no/atc                            fosfestrol
+L02AB01 http://www.whocc.no/atc                             megestrol
+L02AB02 http://www.whocc.no/atc                   medroxyprogesterone
+L02AB03 http://www.whocc.no/atc                           gestonorone
+L02AE01 http://www.whocc.no/atc                             buserelin
+L02AE02 http://www.whocc.no/atc                           leuprorelin
+L02AE03 http://www.whocc.no/atc                             goserelin
+L02AE04 http://www.whocc.no/atc                           triptorelin
+L02AE05 http://www.whocc.no/atc                             histrelin
+L02BA01 http://www.whocc.no/atc                             tamoxifen
+L02BA02 http://www.whocc.no/atc                            toremifene
+L02BA03 http://www.whocc.no/atc                           fulvestrant
+L02BB01 http://www.whocc.no/atc                             flutamide
+L02BB02 http://www.whocc.no/atc                            nilutamide
+L02BB03 http://www.whocc.no/atc                          bicalutamide
+L02BB04 http://www.whocc.no/atc                          enzalutamide
+L02BG01 http://www.whocc.no/atc                     aminoglutethimide
+L02BG02 http://www.whocc.no/atc                            formestane
+L02BG03 http://www.whocc.no/atc                           anastrozole
+L02BG04 http://www.whocc.no/atc                             letrozole
+L02BG05 http://www.whocc.no/atc                              vorozole
+L02BG06 http://www.whocc.no/atc                            exemestane
+L02BX01 http://www.whocc.no/atc                              abarelix
+L02BX02 http://www.whocc.no/atc                             degarelix
+L02BX03 http://www.whocc.no/atc                           abiraterone
+L03AA02 http://www.whocc.no/atc                            filgrastim
+L03AA03 http://www.whocc.no/atc                          molgramostim
+L03AA09 http://www.whocc.no/atc                          sargramostim
+L03AA10 http://www.whocc.no/atc                           lenograstim
+L03AA12 http://www.whocc.no/atc                              ancestim
+L03AA13 http://www.whocc.no/atc                         pegfilgrastim
+L03AA14 http://www.whocc.no/atc                       lipegfilgrastim
+L03AA15 http://www.whocc.no/atc                           balugrastim
+L03AA16 http://www.whocc.no/atc                       empegfilgrastim
+L03AB01 http://www.whocc.no/atc               interferon alfa natural
+L03AB02 http://www.whocc.no/atc               interferon beta natural
+L03AB03 http://www.whocc.no/atc                      interferon gamma
+L03AB04 http://www.whocc.no/atc                    interferon alfa-2a
+L03AB05 http://www.whocc.no/atc                    interferon alfa-2b
+L03AB06 http://www.whocc.no/atc                    interferon alfa-n1
+L03AB07 http://www.whocc.no/atc                    interferon beta-1a
+L03AB08 http://www.whocc.no/atc                    interferon beta-1b
+L03AB09 http://www.whocc.no/atc                  interferon alfacon-1
+L03AB10 http://www.whocc.no/atc                 peginterferon alfa-2b
+L03AB11 http://www.whocc.no/atc                 peginterferon alfa-2a
+L03AB12 http://www.whocc.no/atc                 albinterferon alfa-2b
+L03AB13 http://www.whocc.no/atc                 peginterferon beta-1a
+L03AB14 http://www.whocc.no/atc               cepeginterferon alfa-2b
+L03AB60 http://www.whocc.no/atc   peginterferon alfa-2b, combinations
+L03AB61 http://www.whocc.no/atc   peginterferon alfa-2a, combinations
+L03AC01 http://www.whocc.no/atc                           aldesleukin
+L03AC02 http://www.whocc.no/atc                            oprelvekin
+L03AX01 http://www.whocc.no/atc                              lentinan
+L03AX02 http://www.whocc.no/atc                            roquinimex
+L03AX03 http://www.whocc.no/atc                           BCG vaccine
+L03AX04 http://www.whocc.no/atc                            pegademase
+L03AX05 http://www.whocc.no/atc                             pidotimod
+L03AX07 http://www.whocc.no/atc                              poly I:C
+L03AX08 http://www.whocc.no/atc                             poly ICLC
+L03AX09 http://www.whocc.no/atc                           thymopentin
+L03AX10 http://www.whocc.no/atc                          immunocyanin
+L03AX11 http://www.whocc.no/atc                            tasonermin
+L03AX12 http://www.whocc.no/atc                      melanoma vaccine
+L03AX13 http://www.whocc.no/atc                    glatiramer acetate
+L03AX14 http://www.whocc.no/atc             histamine dihydrochloride
+L03AX15 http://www.whocc.no/atc                           mifamurtide
+L03AX16 http://www.whocc.no/atc                            plerixafor
+L03AX17 http://www.whocc.no/atc                          sipuleucel-T
+L03AX18 http://www.whocc.no/atc                            cridanimod
+L03AX19 http://www.whocc.no/atc                        dasiprotimut-T
+L04AA02 http://www.whocc.no/atc                         muromonab-CD3
+L04AA03 http://www.whocc.no/atc antilymphocyte immunoglobulin (horse)
+L04AA04 http://www.whocc.no/atc antithymocyte immunoglobulin (rabbit)
+L04AA06 http://www.whocc.no/atc                     mycophenolic acid
+L04AA10 http://www.whocc.no/atc                             sirolimus
+L04AA13 http://www.whocc.no/atc                           leflunomide
+L04AA15 http://www.whocc.no/atc                             alefacept
+L04AA18 http://www.whocc.no/atc                            everolimus
+L04AA19 http://www.whocc.no/atc                            gusperimus
+L04AA21 http://www.whocc.no/atc                            efalizumab
+L04AA22 http://www.whocc.no/atc                              abetimus
+L04AA23 http://www.whocc.no/atc                           natalizumab
+L04AA24 http://www.whocc.no/atc                             abatacept
+L04AA25 http://www.whocc.no/atc                            eculizumab
+L04AA26 http://www.whocc.no/atc                             belimumab
+L04AA27 http://www.whocc.no/atc                            fingolimod
+L04AA28 http://www.whocc.no/atc                            belatacept
+L04AA29 http://www.whocc.no/atc                           tofacitinib
+L04AA31 http://www.whocc.no/atc                         teriflunomide
+L04AA32 http://www.whocc.no/atc                            apremilast
+L04AA33 http://www.whocc.no/atc                           vedolizumab
+L04AA34 http://www.whocc.no/atc                           alemtuzumab
+L04AA35 http://www.whocc.no/atc                             begelomab
+L04AA36 http://www.whocc.no/atc                           ocrelizumab
+L04AA37 http://www.whocc.no/atc                           baricitinib
+L04AB01 http://www.whocc.no/atc                            etanercept
+L04AB02 http://www.whocc.no/atc                            infliximab
+L04AB03 http://www.whocc.no/atc                            afelimomab
+L04AB04 http://www.whocc.no/atc                            adalimumab
+L04AB05 http://www.whocc.no/atc                    certolizumab pegol
+L04AB06 http://www.whocc.no/atc                             golimumab
+L04AC01 http://www.whocc.no/atc                            daclizumab
+L04AC02 http://www.whocc.no/atc                           basiliximab
+L04AC03 http://www.whocc.no/atc                              anakinra
+L04AC04 http://www.whocc.no/atc                            rilonacept
+L04AC05 http://www.whocc.no/atc                           ustekinumab
+L04AC07 http://www.whocc.no/atc                           tocilizumab
+L04AC08 http://www.whocc.no/atc                           canakinumab
+L04AC09 http://www.whocc.no/atc                           briakinumab
+L04AC10 http://www.whocc.no/atc                           secukinumab
+L04AC11 http://www.whocc.no/atc                            siltuximab
+L04AC12 http://www.whocc.no/atc                            brodalumab
+L04AC13 http://www.whocc.no/atc                            ixekizumab
+L04AC14 http://www.whocc.no/atc                             sarilumab
+L04AD01 http://www.whocc.no/atc                           ciclosporin
+L04AD02 http://www.whocc.no/atc                            tacrolimus
+L04AD03 http://www.whocc.no/atc                           voclosporin
+L04AX01 http://www.whocc.no/atc                          azathioprine
+L04AX02 http://www.whocc.no/atc                           thalidomide
+L04AX03 http://www.whocc.no/atc                          methotrexate
+L04AX04 http://www.whocc.no/atc                          lenalidomide
+L04AX05 http://www.whocc.no/atc                           pirfenidone
+L04AX06 http://www.whocc.no/atc                          pomalidomide
+
+         0                                                                                                                                                                                           1
+     Level A few code lists that FHIR defines are hierarchical - each code is assigned a level.  In this scheme, some codes are under other codes, and imply that the code they are under also applies
+    System                                                                                              The source of the definition of the code (when the value set draws in codes defined elsewhere)
+      Code                                                                                                                                        The code (used as the code in the resource instance)
+   Display                  The display (used in the display element of a Coding). If there is no display, implementers should not simply display the code, but map the concept into their application
+Definition                                                                                                                                                An explanation of the meaning of the concept
+  Comments                                                                                                                                                  Additional notes about how to use the code
+

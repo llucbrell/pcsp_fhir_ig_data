@@ -1,0 +1,26 @@
+Title: Chemotherapy cumulative dose units - PanCareSurPass Project HL7 FHIR Implementation Guide v0.2.0
+
+                                                             0                                                              1                                                              2                                                              3                             4
+Official URL: http://hl7.eu/fhir/ig/pcsp/ValueSet/ChemoUnitsVs Official URL: http://hl7.eu/fhir/ig/pcsp/ValueSet/ChemoUnitsVs Official URL: http://hl7.eu/fhir/ig/pcsp/ValueSet/ChemoUnitsVs Official URL: http://hl7.eu/fhir/ig/pcsp/ValueSet/ChemoUnitsVs               Version:  0.2.0
+                                       Draft  as of 2024-05-27                                        Draft  as of 2024-05-27                                        Draft  as of 2024-05-27                                        Draft  as of 2024-05-27 Computable Name: ChemoUnitsVs
+
+      0       1
+   Code Display
+  mg/m2   mg/m2
+   g/m2    g/m2
+[iU]/m2 [iU]/m2
+
+      0                         1       2
+   Code                    System Display
+  mg/m2 http://unitsofmeasure.org   mg/m2
+   g/m2 http://unitsofmeasure.org    g/m2
+[iU]/m2 http://unitsofmeasure.org [iU]/m2
+
+         0                                                                                                                                                                                           1
+     Level A few code lists that FHIR defines are hierarchical - each code is assigned a level.  In this scheme, some codes are under other codes, and imply that the code they are under also applies
+    System                                                                                              The source of the definition of the code (when the value set draws in codes defined elsewhere)
+      Code                                                                                                                                        The code (used as the code in the resource instance)
+   Display                  The display (used in the display element of a Coding). If there is no display, implementers should not simply display the code, but map the concept into their application
+Definition                                                                                                                                                An explanation of the meaning of the concept
+  Comments                                                                                                                                                  Additional notes about how to use the code
+

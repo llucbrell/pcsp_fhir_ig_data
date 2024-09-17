@@ -1,0 +1,6 @@
+Title: Patient: Sample created on Mainz data (Zeisig) - PanCareSurPass Project HL7 FHIR Implementation Guide v0.2.0
+
+                  0                                1                                2                                3
+     Contact Detail sa.zei@online.deph: 0123 4567890 sa.zei@online.deph: 0123 4567890 sa.zei@online.deph: 0123 4567890
+Patient Birth Place                             Kiel                             Kiel                             Kiel
+

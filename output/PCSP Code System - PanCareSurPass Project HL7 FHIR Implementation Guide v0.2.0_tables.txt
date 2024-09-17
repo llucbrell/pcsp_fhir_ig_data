@@ -1,0 +1,59 @@
+Title: PCSP Code System - PanCareSurPass Project HL7 FHIR Implementation Guide v0.2.0
+
+                                                                     0                                                                      1                                                                      2                                                                      3                              4
+Official URL: http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp Official URL: http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp Official URL: http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp Official URL: http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp                Version:  0.2.0
+                                               Draft  as of 2024-05-27                                                Draft  as of 2024-05-27                                                Draft  as of 2024-05-27                                                Draft  as of 2024-05-27 Computable Name: CsGenericPcsp
+
+                          0                                                          1                                                                                                                        2
+                       Code                                                    Display                                                                                                               Definition
+                    surpass                         Childhood Cancer Survivor Passport                                                 Childhood Cancer Survivor Passport. Placeholder waiting for a LOINC code
+                section-sct                                  Stem Cell Transplantation                                                  Stem Cell Transplantation section. Placeholder waiting for a LOINC code
+                 section-rt                                               Radiotherapy                                                               Radiotherapy section. Placeholder waiting for a LOINC code
+         section-otherInfos                                  Other Medical Information                                                  Other Medical Information section. Placeholder waiting for a LOINC code
+         section-suggestion                                        Medical Suggestions                                                        Medical Suggestions section. Placeholder waiting for a LOINC code
+    section-otherConditions                                    Other Health Conditions                                                    Other Health Conditions section. Placeholder waiting for a LOINC code
+    section-relapseAfterEOT                                          Relapse After EOT                                             Relapse After End of Treatment section. Placeholder waiting for a LOINC code
+            nar-chronicCond                                         Chronic conditions                                                                                                       Chronic conditions
+              nar-planNotes                                                 Plan notes                                                                                                    Plan additional notes
+             cumulativeDose Cumulative dose received by a patient for a specific drug.                                                                                                                      NaN
+               orthovoltage                                               Orthovoltage                                                            Orthovoltage / kilovoltage usually 200 - 300kv X rays/photons
+                   linac-mv                                                   Linac MV                                                                       (Linear Accelerator) megavoltage MV X Rays/photons
+                   linac-el                                            Linac electrons                                                                                     Linac (Linear Accelerator) electrons
+                     cobalt                                                  Cobalt MV                                                                                         Cobalt - MV gamma rays / photons
+                proton-beam                                                Proton Beam                                                                                                              Proton Beam
+      surface-brachytherapy                                      Surface brachytherapy                                                                                                    Surface brachytherapy
+ interstitial-brachytherapy                                 Interstitial brachytherapy                                                                                               Interstitial brachytherapy
+        intra-brachytherapy                Intracavitary or intraluminal brachytherapy                                                                              Intracavitary or intraluminal brachytherapy
+          unk-brachytherapy                                      Unknown brachytherapy                                                                                                    Unknown brachytherapy
+               sht-47020004                                 Ventriculoperitoneal shunt                                                                                     Ventriculoperitoneal shunt procedure
+                sht-4579008                                    Ventriculo-atrial shunt                                                                                        Ventriculo-atrial shunt procedure
+              sht-280384000                                  Subdural-peritoneal shunt                                                                                      Subdural-peritoneal shunt procedure
+              sht-265218003                             Cisternostomy (III ventricule)                                                                                           Cisternostomy (III ventricule)
+                  sht-other                      Other cerebrovascular shunt procedure                                                                                    Other cerebrovascular shunt procedure
+             int-prosthesis                                        Internal Prosthesis                                                                                                      Internal Prosthesis
+             ext-prosthesis                                        External Prosthesis                                                                                                      External Prosthesis
+        sct-matched-related                                            matched related                                                                                  matched related, unknown or unspecified
+      sct-matched-unrelated                                          matched unrelated                                                                                                        matched unrelated
+       sct-mismatch-related                                           mismatch related                                                                                                         mismatch related
+     sct-mismatch-unrelated                                         mismatch unrelated                                                                                                       mismatch unrelated
+        sct-haplo-identical                                            haplo-identical                                                                                                          haplo-identical
+sct-matched-related–sibling                                  matched related – sibling                                                                                                matched related – sibling
+ sct-matched-related–parent                                   matched related – parent                                                                                                 matched related – parent
+  sct-matched-related–other                                    matched related – other                                                                                    matched related – other (e.g. cousin)
+                   sct-pbsc                                                       PBSC                                                                                                                     PBSC
+            sct-bone-marrow                                                Bone marrow                                                                                                              Bone marrow
+                   sct-cord                                                       Cord                                                                                                                     Cord
+                   Gvhd-unk                                               Gvhd Unknown                                                                             It is not known if this patient suffers Gvhd
+               Gvhd-acute-1                                                    Grade 1                                                                                                      Acute Gvhd: grade 1
+               Gvhd-acute-2                                                    Grade 2                                                                                                      Acute Gvhd: grade 2
+               Gvhd-acute-3                                                    Grade 3                                                                                                      Acute Gvhd: grade 3
+               Gvhd-acute-4                                                    Grade 4                                                                                                      Acute Gvhd: grade 4
+                 Gvhd-chr-1                                                    Limited                                                                                            Chronic Gvhd: grade 1 limited
+                 Gvhd-chr-2                                                  Extensive                                                                                          Chronic Gvhd: grade 2 extensive
+           before-procedure                                           Before procedure                                                                                                         Before procedure
+            after-procedure                                            After procedure                                                                                                          After procedure
+          personalized-plan                                               Personalized                                                                                                        Personalized Plan
+            guidelines-plan                                                 Guidelines                                                                                                 Plan based on guidelines
+               to-structure                                               To-Structure                                                                                                             To-Structure
+            other-treatment                               Other oncological treatments Any other treatment (not included in the chemotherapy, surgery or radiotherapy sections) was adminstered to the survivor
+

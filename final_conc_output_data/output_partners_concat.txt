@@ -1,0 +1,167 @@
+Title: A.Li.Sa – PanCareSurPass
+
+Dr. Domenico Gallo is A.Li.Sa.’s Director of the Health Information System, and manages IT projects related to the regional health system, with the goal to maximize service effectiveness and minimize costs in the regional public health.
+Dr. Igor Zamberlan is an IT analyst at Liguria Digitale S.p.A working on the implementation and development of the regional Fascicolo Sanitario Elettronico (FSE). In this role, he has been participating in national working groups on the FSE.
+A.Li.Sa will work towards the incorporation of a dedicated SurPass document into the electronic health folder of every childhood cancer survivor of the Liguria Region in Italy.
+Title: AIT – PanCareSurPass
+
+Univ.-Doz. DI Dr. Günter Schreier is Senior Scientist and Thematic Coordinator of the Predictive Healthcare Information Systems research program of the AIT. His areas of expertise and research interests are: Biomedical Informatics, the Internet of Things for Personalised Health and Predictive Analytics in Healthcare.
+Dr. Dieter Hayn is Senior Scientist at the AIT. His research interests include European IT research infrastructures, data sciences, predictive modelling in health and care, risk prediction algorithms, and disease management programs. He is head of the working group for Biomedical Data Analytics at the Austrian Society of Biomedical Engineering.
+Günter and and Dieter will participate in the Implementation Strategy development and development of the SurPass v2.0, providing insight into the national Electronic Health Record system in Austria and the EUropean Patient IDentity (EUPID) Services.
+Title: CCI Europe – PanCareSurPass
+
+Anita Kienesberger is the the Chair of CCI Europe Committee and a former Managing Director of the Austrian Childhood Cancer Organisation, with nearly 20 years experience working with childhood cancer organizations. Since 2012, she has been the coordinator of the Childhood Cancer International Europe Regional Committee. She is a member of the European Cancer Organization – Patient Advisory Committee and the European Cancer Concord, as well as a European Patient Advocacy Group representative for the ERN PaedCan.
+Carina Schneider is a psychologist, Managing Director of CCI Europe and a former project manager at the Austrian Childhood Cancer Organisation, focusing on the development and implementation of structures for long-term follow-up care of now adult childhood cancer survivors. At the age of 17 she was diagnosed with Ewing’s Sarcoma and has been active as a patient advocate at a national level since 2009. Carina has been involved in national efforts to implement the SurPass in Austria since 2016.
+Hannah Gsell, MSc, is a psychologist and survivors-representative. As such, she is particularly concerned with integrating childhood cancer survivors into their own medical treatment in order to enable them to live self-determined lives with the consequences of the disease. She was diagnosed with acute lymphoblastic leukemia at the age of 14 and has been a patient advocate at the national level since 2011 and co-founded a regional, active survivors group in Austria. There Hannah played a major role in the implementation and further development of the so-called “Mentoring Project”, in which survivors accompany and support currently affected children or young people and their families with their own experiences. Since 2019, she has been leading the Austrian survivors group. Since the end of 2020 Hannah is co-founder and chair of the first independent survivors organisation in Austria. Since 2020, she has been a project manager at CCI Europe. As such and as a Survivors Representative, she is active in the PanCareFollowUp and PanCareSurPass project.
+Hannah, Anita and Carina oversee the involvement of survivors across all activities of the project and plays a significant role in the communications activities, working in close collaboration with SIOP Europe and the PanCare network to make sure survivors and other key stakeholders are well informed.
+Title: CCRI – PanCareSurPass
+
+Prof. Dr. Ruth Ladenstein
+is Head of the Studies and Statistics Department at the CCRI. She is also Deputy-Director of the Children’s Cancer Research Institute, senior consultant in the St. Anna Children’s Hospital and Advisor to the European Commission on the Cancer Mission Board and is Coordinator of the ERN PaedCan (
+European Reference Network for Paediatric Cancer
+).
+Ruth Ladenstein leads the Implementation Strategy development and leads the clinical work in the multi-country SurPass implementation study in Austria.
+Dr. Edit Bardi is affiliated with the St. Anna Children’s Hospital and the Kepler University Clinic Med Campus IV, where she is the leader of the young adult long term follow up clinic.
+Edit participates in the SurPass multi-country implementation study in Austria.
+Prof. Kager is heading the Outpatient and Follow-up Haemato-Oncological Care Unit of the St. Anna Children’s Cancer Hospital and is responsible for the transition processes for patients over the age of 18 and with more than 5 years of follow up to a specialised Adult follow-up clinic called IONA in Vienna.
+Leo participates in the SurPass multi-country implementation study in Austria.
+Vanessa Düster, MSc, cPMA studied biology and zoology at the RWTH Aachen and the University of Vienna. She holds a certification as IPMA® certified Project Management Associate and is part of the Research Management Office at CCRI.
+Vanessa will support the actions planned under the PanCareSurPass project for CCRI.
+Title: CINECA – PanCareSurPass
+
+Chiara Dellacasa Senior Project Manager (PMP
+®
+) in the “Data Management and Data Analytics” division of High Performance Computing department at CINECA. Technical project manager of several European projects related to e-health and clinical research.
+Giulia Stabile is a Senior Project Manager (PMP
+®
+) and member of PMO in the University and Research Department in CINECA. She is responsible for planning and coordinating national and international projects on e-health and clinical research including the SurPass IT Platform. She is responsible for the IT infrastructure dedicated to the Italian Association for Paediatric Haematology and Oncology (AIEOP).
+Carlo Contino is a Senior IT Architect and Iteroperability expert, responsible for the design, development and management of AxMR technologies and services.
+Davide Saraceno is a Senior Software Analyst in CINECA. He is the developer of the Clinical Research platform used in several national and international projects, of the Italian Association for Paediatric Haematology and Oncology (AIEOP) dedicated platform and of the SurPass platform.
+Alessandra Berti is a Statistician and Project Consultant in the University and Research Department of CINECA. She is an expert in data management and analysis related to e-health and clinical research.
+CINECA will deliver SurPass v2.0 for implementation in six countries as part of the multi-country implementation study.
+Title: Contact Us – PanCareSurPass
+
+
+Title: GÖG – PanCareSurPass
+
+©R. Ettl
+Dr. Gerald Gredinger is a researcher in the department Health Economics and Health System Analysis at GÖG. His expertise covers the topics health care research and evaluation using quantitative and qualitative methods.
+Gerald leads development of the Prediction Model for healthcare decision-makers and supports the ELSE work on the PanCareSurPass.
+©R. Ettl
+Dr. Alexander Degelsegger-Márquez is responsible for Digital Health and Innovation at GÖG. His expertise covers the topics digital health, health policy, research and innovation policy, sociology of science and innovation, research management and evaluation. He is heavily involved in EU-level activities (such as the eHAction joint action supporting the eHealth Network,) as well as national eHealth-related policy-making.
+©R. Ettl
+Dr. Florian Trauner is a researcher at the department of Health Economics and Health System Analysis at Gesundheit Österreich GmbH. He holds a medical degree and a Master in Public Health and is involved in both national and international cancer-related projects and is responsible for health economic evaluations and health system performance assessment.”
+©R. Ettl
+Dipl.-Ing. (FH) Kathrin Trunner, MSc, obtained two academic degrees from the University of Applies Sciences Technikum Wien in Vienna and is currently responsible for the management of national and EU-funded projects in the field of health telematics / eHealth at the Austrian National Public Health Institute Gesundheit Österreich GmbH.
+Title: HL7 Europe – PanCareSurPass
+
+Catherine Chronaki is Secretary General at the HL7 Europe Foundation and the EFMI Vice President for Working Groups (2018-2020). Catherine has engaged in eHealth projects since the early 1990’s when she joined FORTH-ICS to engage in the design, implementation, and evaluation of a system for the retrieval of medical images by content. Since then she has played a key role within National and European eHealth projects, addressing the wider scope of eHealth: health Information Infrastructures employing interoperability standards for integrated Electronic Health Records (EHRs).
+Catherine leads the development of SurPass v2.0 in close collaboration with CINECA, focusing on standardisation and interoperability.
+Giorgio Cangioli is a Senior Consultant of ICT in Health and Social Care. He provides coaching and learning services about modelling, methodologies, and standards applied to the Health and Social Care. Giorgio has been responsible of the Clinical and Semantic Experts Group in epSOS and been a work package leader in several eHealth EU projects.
+Giorgio participates in the development of SurPass v2.0.
+Title: HULAFE – PanCareSurPass
+
+Dr. Adela Cañete Nieto is a Paediatric Oncologist and Head of the Paediatric Oncology Unit of University Hospital La Fe since 2014. She is also Vice-Chairman of the Neuroblastoma group of SEHOP (Spanish Society of Paediatric Oncology-Haematology), member of the Cancer clinical research institute and the Molecular Paediatric Tumour Board of La Fe, and. Associated Professor of Paediatrics at the University of Valencia.
+Adela leads the clinical work in the SurPass multi-country implementation study in Spain.
+Dr. Julia Balaguer is a Consultant Paediatric Oncologist in the Paediatric Oncology Unit at the Hospital Universitario y Politécnico La Fe since 2005. She is responsible for implementation of the regional program on Survivorship in paediatric cancer since 2020.
+Julia is involved in the clinical work in the SurPass multi-country implementation study in Spain.
+María Piquer works at the La Fe Health Research Institute as a research nurse attached at the Paediatric Oncology Unit.
+María is involved in the clinical work in the SurPass multi-country implementation study in Spain.
+Teresa Tormo works at the La Fe Health Research Institute as a young oncologist pediatrician.
+Teresa is involved in the clinical work in the SurPass multi-country implementation study in Spain.
+Antonio Orduña is Head of Security and Quality of Information Systems at the Hospital La Fe Valencia since 2015. He is also Technical Secretary of the Local Committee of Information Security of the Hospital, Technical Secretary of the Information Management Committee of the Hospital La Fe,  and Member of the Ethics Committee of the Hospital La Fe in the role of data protection specialist.
+Antonio is involved in the IT activities related to the SurPass multi-country implementation study in Spain.
+Marisa Correcher is Head of the health applications service since 2015. Her previous roles include CIO of the Regional Health Authority in the Government of the Valencian Community (2013-2015), CIO at the Hospital La Fe (1995-2012), Software Engineer at the Hospital La Fe (1990-1994) and Associate Professor at the Polytechnic University of Valencia (1989-1992).
+Marisa is involved in the IT activities related to the SurPass multi-country implementation study in Spain.
+Vicente Pons has worked in HUPLaFe Valencia IT department since 2006. He has fifteen years of experience in hospital information systems and related technologies.
+Vicente is involved in the IT activities related to the SurPass multi-country implementation study in Spain.
+Title: IGG – PanCareSurPass
+
+Istituto Giannina Gaslini
+Dr. Riccardo Haupt
+is a pediatric oncologist with expertise in clinical epidemiology, a founding member of the PanCare network and member of the PanCare board. Since 2015, he has been a board member of the Italian Association of Pediatric Hematology and Oncology and coordinates the activities of the Italian OTR.
+Riccardo leads the multi-country implementation study in PanCareSurPass, and serves as Research Manager, supporting the Coordinator with oversight of the project.
+Dr Monica Muraca is a paediatric endocrinologist who runs the DOPO clinic at IGG and coordinates the work to include experts from the adult general hospital in Genova where survivors are referred for screening programs. She has also been involved in guideline development within the IGHG and PanCareSurFup consortium. Dr. Muraca has delivered more than 200 SurPass to as many survivors and coordinated a study to evaluate the practical and emotional impact of the SurPass delivery on childhood cancer survivors.
+Monica participates in the SurPass multi-country implementation study in Italy.
+Title: KU Leuven – PanCareSurPass
+
+Dr. Anne Uyttebroeck
+(KU Leuven) is an associate professor at KU Leuven and an experienced pediatric hemato-oncologist at the University Hospitals Leuven. She is Head of the Pediatric Hemato-oncology Unit, expert centre for pediatric hemato-oncology and partner of the ERN PaedCan, as well as Chair of the Belgian Society of Pediatric Hematology and Oncology (BSPHO).
+Anne leads the clinical work in the SurPass multi-country implementation study in Belgium.
+Dr. Marleen Renard is an experienced paediatric haemato-oncologist at the University Hospitals Leuven. She is JACIE director of the paediatric stem cell transplantation program, and is in charge of the long-term follow-up clinic in Leuven.
+Marleen is involved in the clinical work in the SurPass multi-country implementation study in Belgium.
+Title: Media – PanCareSurPass
+
+
+Title: News – PanCareSurPass
+
+
+Title: PanCare – PanCareSurPass
+
+Dr. Helena van der Pal (PanCare, PMC) is Chair of the PanCare network since May 2017. She is one of the members of the PanCare network and member of the PanCare board since 2011. She is a medical oncologist and leads the Outpatient Clinic for adult survivors of childhood cancer in the Emma Children’s Hospital/Academic Medical Centre, and is also a member of the International Guidelines Harmonisation Group.
+Jeroen te Dorsthorst is the Administrative and Communication Manager at PanCare. He has worked for the Netherlands Cancer Institute and is a long-time volunteer with VOX, the network of Dutch survivors of childhood cancer, where he focuses on dissemination of information to survivors and the societal consequences of childhood cancer.
+Jaap den Hartogh is a Board Member of PanCare, since May 2015, providing his time as a volunteer with PanCare. His focus is on survivor issues and advocacy, representing survivors at international congresses (e.g. SIOP Annual Conferences) and participating in scientific work, where survivors’ feedback is essential.
+Helena, Jaap and Jeroen leverage PanCare’s extensive network of healthcare professionals, researchers, survivors and families to effectively communicate and disseminate the project, working in close collaboration with SIOP Europe and Childhood Cancer International Europe.
+Title: PanCareSurPass – Implementing the digital Survivorship Passport to improve Person-Centered Survivorship Care
+
+
+Title: Partners – PanCareSurPass
+
+
+Title: Pintail – PanCareSurPass
+
+Dr. Kylie O’Brien is a senior consultant focused entirely on EU-funded projects. She has extensive experience in management and administration, having led Pintail’s EU support for a broad range of projects from childhood cancer survivorship to obesity and behavioural change to materials science.
+Kylie provides administrative support to the Coordinator and all partners, ensuring the project runs smoothly and delivers all planned activities on time. She also provides support to PanCare, SIOP Europe and CCI Europe in their communications and dissemination activities, leveraging experience from other EU-funded projects.
+Title: PMC – PanCareSurPass
+
+Prof. Leontien Kremer
+(PMC) is the leader of clinical late effect research and epidemiology for pediatric oncology in PMC. Her focus is on childhood cancer survivorship research and evidence-based pediatric oncology care.
+Leontien leads the pre-implementation study, which includes engagement with stakeholders via online surveys and ‘Open Space’ workshops. She will also lead activities to develop recommendations for survivorship care for survivors who are less than 5 years from the end of their treatment.
+Dr. Helena van der Pal is a medical oncologist. Since 2016, she has been a senior staff member of the LATER Expertise Centre for adult survivors of childhood cancer in PMC. She has a PhD in late effects after treatment for childhood cancer and has participated in the Dutch LATER consortium from its inception.
+Helena participates in the pre-implementation research looking at barriers and facilitators for SurPass implementation.
+Dr. Saskia Pluijm is a senior scientist in the Princess Máxima Centre. Her current research focuses on lifestyle, physical activity and aging in children with cancer and survivors of childhood cancer.
+Saskia participates in the pre-implementation research looking at barriers and facilitators for SurPass implementation.
+Ismay de Beijer is a PhD-student with a background in Pedagogical- and Behavioral Sciences. Her PhD-project focuses specifically on uncovering barriers and facilitators related to the implementation of the
+SurPass v2.0
+. To ensure that all stakeholders are heard and to further explore the contextual factors, Ismay coordinates the organization of Open Space meetings in the six participating European centers. In these Open Space meetings, the participants (e.g. survivors and healthcare professionals) are encouraged to determine for themselves what the discussion will be about and to take responsibility for guiding the sessions. Furthermore, Ismay works on developing guidelines for the delivery of survivorship care for childhood cancer survivors less than five years from the end of treatment
+Title: Publications – PanCareSurPass
+
+
+Title: SIOP Europe – PanCareSurPass
+
+Samira Essiaf
+is the Chief Executive Officer of SIOP Europe, the European organisation representing pediatric oncologists. She has national and international experience working for multinational companies and educational institutes, as well as various international placements in Ireland, Morocco and Singapore.
+William Sciberras
+is a
+Grants and EU
+Project Coordinator at SIOP Europe, working on the
+PRIMAGE
+Project, the Survivorship Passport and the
+ERN PaedCan
+, and coordinating the
+submission of IME Grants
+.
+Samira and William leverage SIOP Europe’s extensive networks to effectively communicate and disseminate the project to a broad range of target audiences, working in close collaboration with the PanCare network and survivor organisation Childhood Cancer International Europe.
+Title: UMC-Mainz – PanCareSurPass
+
+Dr. Desiree Grabow is Deputy Head of the German Childhood Cancer Registry (GCCR). With more than 66,000 registered patients the GCCR is the most comprehensive childhood cancer registry worldwide. At the GCCR, Desiree is responsible for Long-term Surveillance.
+Desiree is the Coordinator of PanCareSurPass, with overall responsibility for running the project. She will also lead the data centre for the multi-country implementation study, overseeing data collection, quality assurance and analysis of the study data.
+Anna-Liesa Filbert is an epidemiologist who works as a junior researcher at the Division of Childhood Cancer Epidemiology, German Childhood Cancer Registry at the Institute of Medical Biostatistics, Epidemiology and Informatics (IMBEI) situated at University Medical Center of the Johannes Gutenberg University Mainz in Germany.
+In addition to her involvement in a national SurPass multi-center implementation study in Germany, Anna-Liesa assists the coordinator in project management, setting up structures to meet the ethical requirements, as well as in conducting and analysing the multi-country implementation study in PanCareSurPass.
+Dorothea Niehoff is trained in Medical Documentation. She is a Senior Data manager at the Institute of Medical Biostatistics, Epidemiology and Informatics (IMBEI) situated at University Medical Centre of the Johannes Gutenberg University Mainz in Germany. In a national SurPass multi-center implementation study in Germany, Dorothea is responsible for constructing the database and merging the data from the different sources.
+In PanCareSurPass, she will be responsible for the data collection activities in the implementation study.
+Diana is a computer scientist at the Institute of Medical Biostatistics, Epidemiology and Informatics (IMBEI) situated at University Medical Centre of the Johannes Gutenberg University Mainz in Germany.
+Diana sets up the local infrastructure and is working on the local installation of the PanCareSurPass application in Germany. Also, she programs a database application to the needs of the national SurPass implementation and a binding to the FHIR interface for the PanCareSurPass multi-country implementation study.
+Title: UzL – PanCareSurPass
+
+Prof. Dr. Thorsten Langer is a Paediatric Oncologist. He is involved in running interdisciplinary late effects clinics for survivors of cancer during childhood, adolescence and young adulthood, and linking these to national and international late effects clinics. He is member of I-BFM-SG ELTEC since 1995, study chairman of “late effects” since 2008 in Germany, and has participated in national and international studies on late effects, in particular, genetic causes of cardio- and ototoxicity.
+Thorsten leads the multi-country implementation study of the SurPass in Germany.
+Title: VULSK – PanCareSurPass
+
+Ass. Prof. Jelena Rascon is Head of the Centre of Paediatric Oncology and Haematology at VULSK, and principal investigator in a number of retrospective analyses to assess survival rates of children treated at VULSK for acute myeloid leukaemia, neuroblastoma, Ewing sarcoma. She is a co-investigator in the international clinical trial European Low and Intermediate Risk Neuroblastoma LINES, and national coordinator in the multicentre randomised phase III clinical trial EWING 2008.
+Jelena leads the clinical work in the SurPass multi-country implementation study in Lithuania.
+Dr. Justas Trinkūnas is the information systems project manager in Informatics and Development Centre at Vilnius University Hospital Santariskiu Klinikos. He is responsible for the development of the Hospital Information System.
+Justus participates in the IT side of implementation of the SurPass for the multi-country implementation study in Lithuania.
+Title: What is PanCareSurPass? – PanCareSurPass
+
+

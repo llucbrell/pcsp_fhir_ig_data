@@ -1,0 +1,85 @@
+Title: Care Plan - PanCareSurPass Project HL7 FHIR Implementation Guide v0.2.0
+
+Header Table:
+- 0 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/PlanOfCare
+- 1 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/PlanOfCare
+- 2 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/PlanOfCare
+- 3 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/PlanOfCare
+- 4 : Version:  0.2.0
+- 0 : Draft  as of 2024-05-27
+- 1 : Draft  as of 2024-05-27
+- 2 : Draft  as of 2024-05-27
+- 3 : Draft  as of 2024-05-27
+- 4 : Computable Name: PlanOfCare
+
+
+Third Paragraph:
+Care Plan
+Maturity Level: 0 - Draft
+
+Dict Table:
+                                            0                                                                              1
+                                0. PlanOfCare                                                                  0. PlanOfCare
+                                   Definition                                            Care Plan Maturity Level: 0 - Draft
+                                        Short                                                                      Care Plan
+                                Logical Model Instances of this logical model are not marked to be the target of a Reference
+                     2. PlanOfCare.identifier                                                       2. PlanOfCare.identifier
+                                   Definition                                                  Care plan business identifier
+                                        Short                                                           Care plan Identifier
+                                         Note      This is a business identifier, not a resource identifier (see discussion)
+                                      Control                                                                           1..*
+                                         Type                                                                     Identifier
+               4. PlanOfCare.addressedProblem                                                 4. PlanOfCare.addressedProblem
+                                   Definition                          Problems (e.g. primary cancer) addressed by this plan
+                                        Short                                                Problems addressed by this plan
+                                      Control                                                                           0..*
+                                         Type                                                                     Identifier
+                         6. PlanOfCare.author                                                           6. PlanOfCare.author
+                                   Definition                                                                         Author
+                                        Short                                                                         Author
+                                      Control                                                                           0..1
+                                         Type                                                                BackboneElement
+                   8. PlanOfCare.creationTime                                                     8. PlanOfCare.creationTime
+                                   Definition                                                      Date the plan was created
+                                        Short                                                      Date the plan was created
+                                      Control                                                                           0..1
+                                         Type                                                                       dateTime
+                              Primitive Value  This primitive element may be present, or absent, or replaced by an extension
+                          10. PlanOfCare.note                                                            10. PlanOfCare.note
+                                   Definition                                                                      Plan note
+                                        Short                                                                      Plan note
+                                      Control                                                                           0..1
+                                         Type                                                                         string
+                              Primitive Value  This primitive element may be present, or absent, or replaced by an extension
+             12. PlanOfCare.chronicConditions                                               12. PlanOfCare.chronicConditions
+                                   Definition                                                              Chronic condition
+                                        Short                                                              Chronic condition
+                                      Control                                                                           0..1
+                                         Type                                                                         string
+                              Primitive Value  This primitive element may be present, or absent, or replaced by an extension
+                14. PlanOfCare.reccomandation                                                  14. PlanOfCare.reccomandation
+                                   Definition                                                                 Reccomandation
+                                        Short                                                                 Reccomandation
+                                      Control                                                                           1..*
+                                         Type                                                                BackboneElement
+     16. PlanOfCare.reccomandation.riskFactor                                       16. PlanOfCare.reccomandation.riskFactor
+                                   Definition                          Risk factors considered for generating this care plan
+                                        Short                                                                   Risk factors
+                                      Control                                                                           0..*
+                                         Type                                                                CodeableConcept
+18. PlanOfCare.reccomandation.conditionAtRisk                                  18. PlanOfCare.reccomandation.conditionAtRisk
+                                   Definition                                                             Conditions at risk
+                                        Short                                                             Conditions at risk
+                                      Control                                                                           0..*
+                                         Type                                                                CodeableConcept
+ 20. PlanOfCare.reccomandation.reccomandation                                   20. PlanOfCare.reccomandation.reccomandation
+                                   Definition                                      Reccomandation suggested by the algorithm
+                                        Short                                                       Suggested reccomandation
+                                      Control                                                                           0..1
+                                         Type                                                                CodeableConcept
+           22. PlanOfCare.reccomandation.note                                             22. PlanOfCare.reccomandation.note
+                                   Definition                                                                           Note
+                                        Short                                                                           Note
+                                      Control                                                                           0..1
+                                         Type                                                                         string
+                              Primitive Value  This primitive element may be present, or absent, or replaced by an extension

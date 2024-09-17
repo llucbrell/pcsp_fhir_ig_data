@@ -1,0 +1,38 @@
+Title: Body Location Qualifier Value Set - PanCareSurPass Project HL7 FHIR Implementation Guide v0.2.0
+
+Description: 
+
+Table 1:
+                                                                                   0                                                                                    1                                                                                    2                                                                                    3                                          4
+Official URL: http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-fromToPosteriorAnterior-eu-pcsp Official URL: http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-fromToPosteriorAnterior-eu-pcsp Official URL: http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-fromToPosteriorAnterior-eu-pcsp Official URL: http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-fromToPosteriorAnterior-eu-pcsp                            Version:  0.2.0
+                                                             Draft  as of 2024-05-27                                                              Draft  as of 2024-05-27                                                              Draft  as of 2024-05-27                                                              Draft  as of 2024-05-27 Computable Name: FromToPosteriorAnteriorVs
+
+Table 2:
+           0            1            2
+        Code      Display   Definition
+to-structure To-structure To-Structure
+
+Table 3:
+        0              1
+     Code        Display
+272488003 From-structure
+255549009       Anterior
+255551008      Posterior
+
+Table 4:
+           0                                                        1              2            3
+        Code                                                   System        Display   Definition
+to-structure http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp   To-structure To-Structure
+   272488003                                   http://snomed.info/sct From-structure          NaN
+   255549009                                   http://snomed.info/sct       Front of          NaN
+   255551008                                   http://snomed.info/sct      Posterior          NaN
+
+Table 5:
+         0                                                                                                                                                                                           1
+     Level A few code lists that FHIR defines are hierarchical - each code is assigned a level.  In this scheme, some codes are under other codes, and imply that the code they are under also applies
+    System                                                                                              The source of the definition of the code (when the value set draws in codes defined elsewhere)
+      Code                                                                                                                                        The code (used as the code in the resource instance)
+   Display                  The display (used in the display element of a Coding). If there is no display, implementers should not simply display the code, but map the concept into their application
+Definition                                                                                                                                                An explanation of the meaning of the concept
+  Comments                                                                                                                                                  Additional notes about how to use the code
+

@@ -1,0 +1,6 @@
+Title: 21987 - PanCareSurPass Project HL7 FHIR Implementation Guide v0.2.0
+
+                                     0
+                                Action
+Removal - action (SNOMED CT#129303008)
+

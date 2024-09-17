@@ -1,0 +1,6 @@
+Title: Patient: Sample from Hulafe - PanCareSurPass Project HL7 FHIR Implementation Guide v0.2.0
+
+                  0                                       1                                       2                                       3
+            Parent: tattedblackchick@gmail.comph: 990778314 tattedblackchick@gmail.comph: 990778314 tattedblackchick@gmail.comph: 990778314
+Patient Birth Place                 Abrantes 46181 Portugal                 Abrantes 46181 Portugal                 Abrantes 46181 Portugal
+

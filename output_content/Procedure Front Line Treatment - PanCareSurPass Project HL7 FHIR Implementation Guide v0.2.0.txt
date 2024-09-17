@@ -1,0 +1,52 @@
+Title: Procedure: Front Line Treatment - PanCareSurPass Project HL7 FHIR Implementation Guide v0.2.0
+
+Header Table:
+- 0 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-flt-eu-pcsp
+- 1 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-flt-eu-pcsp
+- 2 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-flt-eu-pcsp
+- 3 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-flt-eu-pcsp
+- 4 : Version:  0.2.0
+- 0 : Draft  as of 2024-05-27
+- 1 : Draft  as of 2024-05-27
+- 2 : Draft  as of 2024-05-27
+- 3 : Draft  as of 2024-05-27
+- 4 : Computable Name: ProcedureFltPcsp
+
+
+Third Paragraph:
+This profile defines how to provide Front Line Treatment data in FHIR for the scope of the PanCareSurPass project.
+
+Dict Table:
+                                         0                                                                                                                                                                              1
+                              0. Procedure                                                                                                                                                                   0. Procedure
+                   2. Procedure.identifier                                                                                                                                                        2. Procedure.identifier
+                                     Short                                                                                                                                              External Identifiers for this FLT
+                                      Note                                                                                                      This is a business identifier, not a resource identifier (see discussion)
+        4. Procedure.instantiatesCanonical                                                                                                                                             4. Procedure.instantiatesCanonical
+                                   Control                                                                                                                                                                           1..?
+                                      Type                                                                                                                                canonical(PlanDefinition: Front Line Treatment)
+                           Primitive Value                                                                                                  This primitive element may be present, or absent, or replaced by an extension
+                       6. Procedure.status                                                                                                                                                            6. Procedure.status
+                                   Example                                                                                                                                                <br/><b>Completed</b>:completed
+                     8. Procedure.category                                                                                                                                                          8. Procedure.category
+                                   Control                                                                                                                                                                           1..?
+                             Pattern Value                                                        {  "coding" : [{  "system" : "http://snomed.info/sct",  "code" : "708255002",  "display" : "First line treatment"  }] }
+                     10. Procedure.subject                                                                                                                                                          10. Procedure.subject
+                                      Type                                                                                                                                                       Reference(Patient: PCSP)
+                12. Procedure.performed[x]                                                                                                                                                     12. Procedure.performed[x]
+                                  [x] Note                                                                                                            SeeChoice of Data Typesfor further information about how to use [x]
+                                   Slicing This element introduces a set of slices on Procedure.performed[x]. The slices areUnordered and Open, and can be differentiated using the following discriminators:type @ $this
+14. Procedure.performed[x]:performedPeriod                                                                                                                                     14. Procedure.performed[x]:performedPeriod
+                                Slice Name                                                                                                                                                                performedPeriod
+                                   Control                                                                                                                                                                           0..1
+                                      Type                                                                                                                                                                         Period
+                                  [x] Note                                                                                                            SeeChoice of Data Typesfor further information about how to use [x]
+             16. Procedure.reasonReference                                                                                                                                                  16. Procedure.reasonReference
+                                   Control                                                                                                                                                                           1..?
+                                      Type                                                                                                                                           Reference(Condition: Primary Cancer)
+                     18. Procedure.outcome                                                                                                                                                          18. Procedure.outcome
+              20. Procedure.outcome.coding                                                                                                                                                   20. Procedure.outcome.coding
+                                     Short                                                                                                                                                    Complete remission (Yes/No)
+                                   Binding                              Unless not suitable, these codes SHALL be taken from ConditionClinicalStatusCodes (extensible to http://hl7.org/fhir/ValueSet/condition-clinical)
+                22. Procedure.outcome.text                                                                                                                                                     22. Procedure.outcome.text
+                                     Short                                                                                                                                    Textual description in case of no remission

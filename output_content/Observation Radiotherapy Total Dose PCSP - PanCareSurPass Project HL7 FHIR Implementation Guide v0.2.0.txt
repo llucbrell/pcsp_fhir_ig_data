@@ -1,0 +1,79 @@
+Title: Observation: Radiotherapy Total Dose PCSP - PanCareSurPass Project HL7 FHIR Implementation Guide v0.2.0
+
+Header Table:
+- 0 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Observation-totalDoseRad-eu-pcsp
+- 1 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Observation-totalDoseRad-eu-pcsp
+- 2 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Observation-totalDoseRad-eu-pcsp
+- 3 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Observation-totalDoseRad-eu-pcsp
+- 4 : Version:  0.2.0
+- 0 : Draft  as of 2024-05-27
+- 1 : Draft  as of 2024-05-27
+- 2 : Draft  as of 2024-05-27
+- 3 : Draft  as of 2024-05-27
+- 4 : Computable Name: TotalDoseRadObsPcsp
+
+
+Third Paragraph:
+This profile defines how to represent Radiotherapy Total Dose in FHIR for the purpose of the PanCareSurPass project.
+
+Dict Table:
+                                                            0                                                                                                                                                                            1
+                                               0. Observation                                                                                                                                                               0. Observation
+                                        2. Observation.status                                                                                                                                                        2. Observation.status
+                                                 Must Support                                                                                                                                                                         true
+                                      4. Observation.category                                                                                                                                                      4. Observation.category
+                                                      Control                                                                                                                                                                         1..?
+                                                 Must Support                                                                                                                                                                         true
+                                                Pattern Value                                                       {  "coding" : [{  "system" : "http://terminology.hl7.org/CodeSystem/observation-category",  "code" : "procedure"  }] }
+                                          6. Observation.code                                                                                                                                                          6. Observation.code
+                                                      Binding                                       The codes SHALL be taken from Radiotherapy Dose Type (required to http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-radiotherapyDoseType-eu-pcsp)
+                                                 Must Support                                                                                                                                                                         true
+                                       8. Observation.subject                                                                                                                                                       8. Observation.subject
+                                                      Control                                                                                                                                                                         1..?
+                                                         Type                                                                                                                                                     Reference(Patient: PCSP)
+                                                 Must Support                                                                                                                                                                         true
+                                     10. Observation.value[x]                                                                                                                                                     10. Observation.value[x]
+                                                      Control                                                                                                                                                                         1..?
+                                                         Type                                                            Choice of: Quantity, CodeableConcept, dateTime, boolean, string, SampledData, Period, Ratio, integer, time, Range
+                                                     [x] Note                                                                                                          SeeChoice of Data Typesfor further information about how to use [x]
+                                                 Must Support                                                                                                                                                                         true
+                                           Must Support Types                                                                                                                     No must-support rules about the choice of types/profiles
+                                                      Slicing This element introduces a set of slices on Observation.value[x]. The slices areUnordered and Open, and can be differentiated using the following discriminators:type @ $this
+                       12. Observation.value[x]:valueQuantity                                                                                                                                       12. Observation.value[x]:valueQuantity
+                                                   Slice Name                                                                                                                                                                valueQuantity
+                                                      Control                                                                                                                                                                         0..1
+                                                         Type                                                                                                                                                                     Quantity
+                                                     [x] Note                                                                                                          SeeChoice of Data Typesfor further information about how to use [x]
+                                                 Must Support                                                                                                                                                                         true
+                 14. Observation.value[x]:valueQuantity.value                                                                                                                                 14. Observation.value[x]:valueQuantity.value
+                                                      Control                                                                                                                                                                         1..?
+                                                 Must Support                                                                                                                                                                         true
+                  16. Observation.value[x]:valueQuantity.unit                                                                                                                                  16. Observation.value[x]:valueQuantity.unit
+                                                 Must Support                                                                                                                                                                         true
+                18. Observation.value[x]:valueQuantity.system                                                                                                                                18. Observation.value[x]:valueQuantity.system
+                                                      Control                                                                                                                                                                         1..?
+                                                 Must Support                                                                                                                                                                         true
+                                                Pattern Value                                                                                                                                                    http://unitsofmeasure.org
+                  20. Observation.value[x]:valueQuantity.code                                                                                                                                  20. Observation.value[x]:valueQuantity.code
+                                                      Control                                                                                                                                                                         1..?
+                                                 Must Support                                                                                                                                                                         true
+                22. Observation.value[x]:valueCodeableConcept                                                                                                                                22. Observation.value[x]:valueCodeableConcept
+                                                   Slice Name                                                                                                                                                         valueCodeableConcept
+                                                      Control                                                                                                                                                                         0..1
+                                                         Type                                                                                                                                                              CodeableConcept
+                                                     [x] Note                                                                                                          SeeChoice of Data Typesfor further information about how to use [x]
+                                                Pattern Value                                   {  "coding" : [{  "system" : "http://terminology.hl7.org/CodeSystem/data-absent-reason",  "code" : "unknown",  "display" : "Unknown"  }] }
+                                     24. Observation.bodySite                                                                                                                                                     24. Observation.bodySite
+                                                        Short                                                                                                                                 required for Brachytherapy and External beam
+                                                      Binding                                                      The codes SHALL be taken from Radiotherapy sites (required to http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-radiotherapy-pcsp)
+         26. Observation.bodySite.extension:locationQualifier                                                                                                                         26. Observation.bodySite.extension:locationQualifier
+                                                   Slice Name                                                                                                                                                            locationQualifier
+                                                      Control                                                                                                                                                                         0..*
+                                                         Type                                                                                                         Extension(Body Location Qualifier) (Extension Type: CodeableConcept)
+28. Observation.bodySite.extension:locationQualifier.value[x]                                                                                                                28. Observation.bodySite.extension:locationQualifier.value[x]
+                                                      Binding                         The codes SHALL be taken from Body Location Qualifier Value Set (required to http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-fromToPosteriorAnterior-eu-pcsp)
+                                                     [x] Note                                                                                                          SeeChoice of Data Typesfor further information about how to use [x]
+       30. Observation.bodySite.extension:lateralityQualifier                                                                                                                       30. Observation.bodySite.extension:lateralityQualifier
+                                                   Slice Name                                                                                                                                                          lateralityQualifier
+                                                      Control                                                                                                                                                                         0..1
+                                                         Type                                                                                                            Extension(Laterality Qualifier) (Extension Type: CodeableConcept)

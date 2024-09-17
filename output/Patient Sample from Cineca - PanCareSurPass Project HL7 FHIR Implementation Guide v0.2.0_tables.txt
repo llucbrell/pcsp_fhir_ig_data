@@ -1,0 +1,6 @@
+Title: Patient: Sample from Cineca - PanCareSurPass Project HL7 FHIR Implementation Guide v0.2.0
+
+                  0                              1                              2                              3
+            Parent: d.saraceno@cineca.itph: 398593 d.saraceno@cineca.itph: 398593 d.saraceno@cineca.itph: 398593
+Patient Birth Place            ROSIGNANO MARITTIMO            ROSIGNANO MARITTIMO            ROSIGNANO MARITTIMO
+

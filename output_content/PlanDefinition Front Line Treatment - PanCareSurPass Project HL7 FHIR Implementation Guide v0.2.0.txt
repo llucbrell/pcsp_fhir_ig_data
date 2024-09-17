@@ -1,0 +1,36 @@
+Title: PlanDefinition: Front Line Treatment - PanCareSurPass Project HL7 FHIR Implementation Guide v0.2.0
+
+Header Table:
+- 0 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/PlanDefinition-flt-eu-pcsp
+- 1 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/PlanDefinition-flt-eu-pcsp
+- 2 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/PlanDefinition-flt-eu-pcsp
+- 3 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/PlanDefinition-flt-eu-pcsp
+- 4 : Version:  0.2.0
+- 0 : Draft  as of 2024-05-27
+- 1 : Draft  as of 2024-05-27
+- 2 : Draft  as of 2024-05-27
+- 3 : Draft  as of 2024-05-27
+- 4 : Computable Name: PlanDefinitionFltPcsp
+
+
+Third Paragraph:
+This profile defines how to provide Front Line Treatment protocol infos in FHIR for the scope of the PanCareSurPass project.
+
+Dict Table:
+                                 0                                                                                                                                                                               1
+                 0. PlanDefinition                                                                                                                                                               0. PlanDefinition
+       2. PlanDefinition.extension                                                                                                                                                     2. PlanDefinition.extension
+                           Slicing This element introduces a set of slices on PlanDefinition.extension. The slices areUnordered and Open, and can be differentiated using the following discriminators:value @ url
+4. PlanDefinition.extension:fltArm                                                                                                                                              4. PlanDefinition.extension:fltArm
+                        Slice Name                                                                                                                                                                          fltArm
+                             Short                                                                                                                                                   Randomization arm description
+                           Control                                                                                                                                                                            0..1
+                              Type                                                                                                                 Extension(Randomization arm for trial) (Extension Type: string)
+            6. PlanDefinition.name                                                                                                                                                          6. PlanDefinition.name
+                             Short                                                                                                                                      Name for this FLT plan (computer friendly)
+           8. PlanDefinition.title                                                                                                                                                         8. PlanDefinition.title
+                             Short                                                                                                                                         Name for this FLT plan (human friendly)
+           10. PlanDefinition.type                                                                                                                                                         10. PlanDefinition.type
+                           Binding                                                          The codes SHALL be taken from FLT Plan Type (required to http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-flt-plan-type-eu-pcsp)
+    12. PlanDefinition.description                                                                                                                                                  12. PlanDefinition.description
+                             Short                                                                                                                                                     description of the FLT plan

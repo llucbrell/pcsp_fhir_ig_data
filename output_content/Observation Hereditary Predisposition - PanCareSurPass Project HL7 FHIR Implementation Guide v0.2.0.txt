@@ -1,0 +1,49 @@
+Title: Observation: Hereditary Predisposition - PanCareSurPass Project HL7 FHIR Implementation Guide v0.2.0
+
+Header Table:
+- 0 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Observation-predisposition-eu-pcsp
+- 1 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Observation-predisposition-eu-pcsp
+- 2 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Observation-predisposition-eu-pcsp
+- 3 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Observation-predisposition-eu-pcsp
+- 4 : Version:  0.2.0
+- 0 : Draft  as of 2024-05-27
+- 1 : Draft  as of 2024-05-27
+- 2 : Draft  as of 2024-05-27
+- 3 : Draft  as of 2024-05-27
+- 4 : Computable Name: ObservationHereditaryPredispositionPcsp
+
+
+Third Paragraph:
+This profile defines how to represent Hereditary Predispositions in HL7 FHIR for the purpose of the PanCareSurPass project.
+
+Dict Table:
+                                                         0                                                                                                                                                                                      1
+                                            0. Observation                                                                                                                                                                         0. Observation
+                                       2. Observation.code                                                                                                                                                                    2. Observation.code
+                                             Pattern Value                                                               {  "coding" : [{  "system" : "http://snomed.info/sct",  "code" : "47708004",  "display" : "Genetic predisposition"  }] }
+                                    4. Observation.subject                                                                                                                                                                 4. Observation.subject
+                                                   Control                                                                                                                                                                                   1..?
+                                                      Type                                                                                                                                                               Reference(Patient: PCSP)
+                                   6. Observation.value[x]                                                                                                                                                                6. Observation.value[x]
+                                                   Control                                                                                                                                                                                   1..?
+                                                  [x] Note                                                                                                                    SeeChoice of Data Typesfor further information about how to use [x]
+                                                   Slicing           This element introduces a set of slices on Observation.value[x]. The slices areUnordered and Open, and can be differentiated using the following discriminators:type @ $this
+              8. Observation.value[x]:valueCodeableConcept                                                                                                                                           8. Observation.value[x]:valueCodeableConcept
+                                                Slice Name                                                                                                                                                                   valueCodeableConcept
+                                                   Control                                                                                                                                                                                   1..1
+                                                      Type                                                                                                                                                                        CodeableConcept
+                                                  [x] Note                                                                                                                    SeeChoice of Data Typesfor further information about how to use [x]
+      10. Observation.value[x]:valueCodeableConcept.coding                                                                                                                                   10. Observation.value[x]:valueCodeableConcept.coding
+                                                   Slicing This element introduces a set of slices on Observation.value[x].coding. The slices areUnordered and Open, and can be differentiated using the following discriminators:pattern @ $this
+12. Observation.value[x]:valueCodeableConcept.coding:orpha                                                                                                                             12. Observation.value[x]:valueCodeableConcept.coding:orpha
+                                                Slice Name                                                                                                                                                                                  orpha
+                                                   Control                                                                                                                                                                                   0..1
+                                                   Binding                                 The codes SHALL be taken from Hereditary Predispositions (Orphacode) (required to http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-orpha-predisposition-eu-pcsp)
+                                              Must Support                                                                                                                                                                                   true
+14. Observation.value[x]:valueCodeableConcept.coding:icd10                                                                                                                             14. Observation.value[x]:valueCodeableConcept.coding:icd10
+                                                Slice Name                                                                                                                                                                                  icd10
+                                                   Control                                                                                                                                                                                   0..1
+                                                   Binding                                     The codes SHALL be taken from Hereditary Predispositions (ICD10) (required to http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-icd10-predisposition-eu-pcsp)
+                                              Must Support                                                                                                                                                                                   true
+                                 16. Observation.component                                                                                                                                                              16. Observation.component
+                                                   Control                                                                                                                                                                                   0..0

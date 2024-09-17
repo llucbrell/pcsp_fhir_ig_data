@@ -1,0 +1,898 @@
+Title: Body Location Qualifier Value Set - PanCareSurPass Project HL7 FHIR Implementation Guide v0.2.0
+
+                                                                                                                                                                                                                                                                                           0                                                                                                                                                                                                                                                                                            1                                                                                                                                                                                                                                                                                            2                                                                                                                                                                                                                                                                                            3                                                                                                                                                                                                                                                                                            4
+                                                                                                                                                                                                          Official URL: http://hl7.eu/fhir/ig/pcsp/ValueSet/mcode-body-location-qualifier-vs                                                                                                                                                                                                           Official URL: http://hl7.eu/fhir/ig/pcsp/ValueSet/mcode-body-location-qualifier-vs                                                                                                                                                                                                           Official URL: http://hl7.eu/fhir/ig/pcsp/ValueSet/mcode-body-location-qualifier-vs                                                                                                                                                                                                           Official URL: http://hl7.eu/fhir/ig/pcsp/ValueSet/mcode-body-location-qualifier-vs                                                                                                                                                                                                                                                                              Version:  0.2.0
+                                                                                                                                                                                                                                                                     Draft  as of 2024-05-27                                                                                                                                                                                                                                                                      Draft  as of 2024-05-27                                                                                                                                                                                                                                                                      Draft  as of 2024-05-27                                                                                                                                                                                                                                                                      Draft  as of 2024-05-27                                                                                                                                                                                                                                                     Computable Name: BodyLocationQualifierVS
+Copyright/Legal: This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement Copyright/Legal: This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement Copyright/Legal: This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement Copyright/Legal: This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement Copyright/Legal: This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement
+
+        0                        1
+     Code                  Display
+255503000 Entire (qualifier value)
+
+           0                      1                                                                               2
+        Code                 System                                                 Display - English (English, en)
+   106233006 http://snomed.info/sct                                                          Topographical modifier
+      795002 http://snomed.info/sct                                                                            Deep
+     1146002 http://snomed.info/sct                                                                         Arcuate
+     1483009 http://snomed.info/sct                                                                         Angular
+     5686001 http://snomed.info/sct                                                                          Remote
+    11070000 http://snomed.info/sct                                                                        Capsular
+    11896004 http://snomed.info/sct                                                                    Intermediate
+    14414005 http://snomed.info/sct                                                                      Peripheral
+    18769003 http://snomed.info/sct                                                                     Juxta-posed
+    21006006 http://snomed.info/sct                                                                     Hemispheric
+    21481007 http://snomed.info/sct                                                                            Over
+    24020000 http://snomed.info/sct                                                                      Horizontal
+    24422004 http://snomed.info/sct                                                                           Axial
+    26216008 http://snomed.info/sct                                                                         Central
+    26283006 http://snomed.info/sct                                                                     Superficial
+    27237009 http://snomed.info/sct                                                                      Triangular
+    28241006 http://snomed.info/sct                                                                        Rhomboid
+    28947002 http://snomed.info/sct                                                                     Right curve
+    30730003 http://snomed.info/sct                                                                        Sagittal
+    30899007 http://snomed.info/sct                                                                    Quadrangular
+    32381004 http://snomed.info/sct                                                                          Portal
+    32400000 http://snomed.info/sct                                                                        Preaxial
+    33096000 http://snomed.info/sct                                                                        Vertical
+    33843005 http://snomed.info/sct                                                                        Efferent
+    37197008 http://snomed.info/sct                                                                   Anterolateral
+    38717003 http://snomed.info/sct                                                                    Longitudinal
+    39187007 http://snomed.info/sct                                                                            Bent
+    40415009 http://snomed.info/sct                                                                        Proximal
+    42798000 http://snomed.info/sct                                                                            Area
+    43674008 http://snomed.info/sct                                                                          Apical
+    45226003 http://snomed.info/sct                                                                     Cylindrical
+    46053002 http://snomed.info/sct                                                                          Distal
+    47021000 http://snomed.info/sct                                                                      Left curve
+    49370004 http://snomed.info/sct                                                                         Lateral
+    49530007 http://snomed.info/sct                                                                        Afferent
+    50009006 http://snomed.info/sct                                                                          Linear
+    50362007 http://snomed.info/sct                                                                        Stellate
+    50974003 http://snomed.info/sct                                                                      Junctional
+    56924007 http://snomed.info/sct                                                                          Square
+    57183005 http://snomed.info/sct                                                                      Along edge
+    57195005 http://snomed.info/sct                                                                           Basal
+    59410002 http://snomed.info/sct                                                                     Rectangular
+    60301000 http://snomed.info/sct                                                                          Curved
+    60583000 http://snomed.info/sct                                                                       Postaxial
+    61397002 http://snomed.info/sct                                                                     Subcapsular
+    62083003 http://snomed.info/sct                                                                       Sectional
+    62372003 http://snomed.info/sct                                                                       Segmental
+    62824007 http://snomed.info/sct                                                                      Transverse
+    66787007 http://snomed.info/sct                                                                        Cephalic
+    68493006 http://snomed.info/sct                                                                          Gutter
+    69320009 http://snomed.info/sct                                                                   Extracellular
+    69389007 http://snomed.info/sct                                                                        Saccular
+    81654009 http://snomed.info/sct                                                                         Coronal
+    83167003 http://snomed.info/sct                                                                   Intracellular
+    84177009 http://snomed.info/sct                                                                      Straddling
+    87687004 http://snomed.info/sct                                                                 Extra-articular
+    90069004 http://snomed.info/sct                                                                  Posterolateral
+   103339001 http://snomed.info/sct                                                                       Long axis
+   103340004 http://snomed.info/sct                                                                      Short axis
+   103341000 http://snomed.info/sct                                                                        Off axis
+   103342007 http://snomed.info/sct                                                                Mid-longitudinal
+   103343002 http://snomed.info/sct                                                                    Parasagittal
+   103344008 http://snomed.info/sct                                                                    Transvesical
+   103345009 http://snomed.info/sct                                                                     Transthecal
+   103346005 http://snomed.info/sct                                                                    Transsplenic
+   103347001 http://snomed.info/sct                                                                      Transrenal
+   103348006 http://snomed.info/sct                                                                    Transpleural
+   103349003 http://snomed.info/sct                                                                 Transpancreatic
+   103350003 http://snomed.info/sct                                                                   Transtemporal
+   103353001 http://snomed.info/sct                                                                    Transgastric
+   103354007 http://snomed.info/sct                                                                      Transmural
+   131183008 http://snomed.info/sct                                                                 Intra-articular
+   131184002 http://snomed.info/sct                                                          Area of defined region
+   131185001 http://snomed.info/sct                                                              Vertical long axis
+   131186000 http://snomed.info/sct                                                            Horizontal long axis
+   131187009 http://snomed.info/sct                                                                      Major Axis
+   131188004 http://snomed.info/sct                                                                      Minor Axis
+   131189007 http://snomed.info/sct                                                              Perpendicular axis
+   131190003 http://snomed.info/sct                                                                          Radius
+   131191004 http://snomed.info/sct                                                                       Perimeter
+   255527003 http://snomed.info/sct                                                            Horizontal - 3 and 9
+   255528008 http://snomed.info/sct                                                         Horizontal and vertical
+   261129000 http://snomed.info/sct                                                                    Mediolateral
+   263687007 http://snomed.info/sct                                                            Bony extra-articular
+   263688002 http://snomed.info/sct                                                            Bony intra-articular
+   264731004 http://snomed.info/sct                                                             Lateral to the left
+   264732006 http://snomed.info/sct                                                            Lateral to the right
+   264733001 http://snomed.info/sct                                                             Linear longitudinal
+   264737000 http://snomed.info/sct                                                               Linear transverse
+   264741001 http://snomed.info/sct                                                      Posterolateral to the left
+   264742008 http://snomed.info/sct                                                     Posterolateral to the right
+   264839005 http://snomed.info/sct                                                             Horizontal cleavage
+   350722008 http://snomed.info/sct                                                                          Behind
+   351726001 http://snomed.info/sct                                                                         Beneath
+   352730000 http://snomed.info/sct                                                                           Above
+   353734004 http://snomed.info/sct                                                                          Upward
+   354652004 http://snomed.info/sct                                                                        Circular
+   355648006 http://snomed.info/sct                                                                     Surrounding
+   410674003 http://snomed.info/sct                                                      Regional (qualifier value)
+   410679008 http://snomed.info/sct                                                       Surface (qualifier value)
+   710097009 http://snomed.info/sct                                                       Incisal (qualifier value)
+   710098004 http://snomed.info/sct                                                      Occlusal (qualifier value)
+   710099007 http://snomed.info/sct                                                        Mesial (qualifier value)
+  1217011006 http://snomed.info/sct                                                  Non-adjacent (qualifier value)
+   272424004 http://snomed.info/sct                                                                  Relative sites
+     3583002 http://snomed.info/sct                                                                          Caudal
+    65424008 http://snomed.info/sct                                                                      Contiguous
+    66459002 http://snomed.info/sct                                                                      Unilateral
+    72906007 http://snomed.info/sct                                                                          Common
+   112233002 http://snomed.info/sct                                                                        Marginal
+   128590009 http://snomed.info/sct                                      Anatomical reference point of right atrium
+   182353008 http://snomed.info/sct                                                                            Side
+   225770002 http://snomed.info/sct                                                                         Enteral
+   225780003 http://snomed.info/sct                                                                      Sublingual
+   229801003 http://snomed.info/sct                                                                  Intra-arterial
+   255208005 http://snomed.info/sct                                                                     Ipsilateral
+   255209002 http://snomed.info/sct                                                                   Contralateral
+   255348000 http://snomed.info/sct                                                                    Inframammary
+   255472009 http://snomed.info/sct                                                                      Panretinal
+   255482005 http://snomed.info/sct                                                              Left upper segment
+   255486008 http://snomed.info/sct                                                                   Lower segment
+   255496004 http://snomed.info/sct                                                             Right lower segment
+   255499006 http://snomed.info/sct                                                             Right upper segment
+   255501003 http://snomed.info/sct                                                                   Upper segment
+   255546002 http://snomed.info/sct                                                                        Underlay
+   255547006 http://snomed.info/sct                                                                         Overlay
+   255548001 http://snomed.info/sct                                                                  Sandwich graft
+   255549009 http://snomed.info/sct                                                                        Front of
+   255550009 http://snomed.info/sct                                                          Anterior to epiglottis
+   255551008 http://snomed.info/sct                                                                       Posterior
+   255552001 http://snomed.info/sct                                                         Posterior to epiglottis
+   255554000 http://snomed.info/sct                                                                          Dorsal
+   255557007 http://snomed.info/sct                                                                   Intracerebral
+   255558002 http://snomed.info/sct                                                                    Intragastric
+   255559005 http://snomed.info/sct                                                              IM - Intramuscular
+   255560000 http://snomed.info/sct                                                                     Intravenous
+   255561001 http://snomed.info/sct                                                                          Medial
+   255562008 http://snomed.info/sct                                                                             Mid
+   255563003 http://snomed.info/sct                                                                        Mid-zone
+   255564009 http://snomed.info/sct                                                                    Perivascular
+   255565005 http://snomed.info/sct                                                                   Peripapillary
+   255567002 http://snomed.info/sct                                                                   Postauricular
+   255568007 http://snomed.info/sct                                                                    Retrosternal
+   255569004 http://snomed.info/sct                                                                    Suprasternal
+   255570003 http://snomed.info/sct                                                                        Temporal
+   255573001 http://snomed.info/sct                                                                       Glabellar
+   255575008 http://snomed.info/sct                                                                        Inguinal
+   255577000 http://snomed.info/sct                                                                          Nuchal
+   255578005 http://snomed.info/sct                                                                Oblique inguinal
+   255579002 http://snomed.info/sct                                                                 Palatal-lingual
+   255580004 http://snomed.info/sct                                                                       Popliteal
+   255582007 http://snomed.info/sct                                                                          Rectal
+   255584008 http://snomed.info/sct                                                                          Septal
+   255690001 http://snomed.info/sct                                                       Drug in contact with skin
+   256886009 http://snomed.info/sct                                                                     Whole liver
+   258186003 http://snomed.info/sct                                                                 Via collaterals
+   258187007 http://snomed.info/sct                                              Via native vessel - graft impaired
+   258188002 http://snomed.info/sct                                              Via native vessel - graft occluded
+   258189005 http://snomed.info/sct                                                                  Via skip graft
+   258329003 http://snomed.info/sct                                                                  Supratentorial
+   258330008 http://snomed.info/sct                                                                  Infratentorial
+   260235002 http://snomed.info/sct                                                                            Core
+   260240005 http://snomed.info/sct                                                                     Interdental
+   260318004 http://snomed.info/sct                                                              1 o'clock position
+   260319007 http://snomed.info/sct                                                           1.30 o'clock position
+   260322009 http://snomed.info/sct                                                             10 o'clock position
+   260323004 http://snomed.info/sct                                                          10.30 o'clock position
+   260324005 http://snomed.info/sct                                                             11 o'clock position
+   260325006 http://snomed.info/sct                                                          11.30 o'clock position
+   260326007 http://snomed.info/sct                                                             12 o'clock position
+   260327003 http://snomed.info/sct                                                          12.30 o'clock position
+   260328008 http://snomed.info/sct                                                              2 o'clock position
+   260329000 http://snomed.info/sct                                                           2.30 o'clock position
+   260330005 http://snomed.info/sct                                                              3 o'clock position
+   260331009 http://snomed.info/sct                                                           3.30 o'clock position
+   260333007 http://snomed.info/sct                                                              4 o'clock position
+   260334001 http://snomed.info/sct                                                           4.30 o'clock position
+   260335000 http://snomed.info/sct                                                              5 o'clock position
+   260336004 http://snomed.info/sct                                                           5.30 o'clock position
+   260337008 http://snomed.info/sct                                                              6 o'clock position
+   260338003 http://snomed.info/sct                                                           6.30 o'clock position
+   260339006 http://snomed.info/sct                                                              7 o'clock position
+   260340008 http://snomed.info/sct                                                           7.30 o'clock position
+   260341007 http://snomed.info/sct                                                              8 o'clock position
+   260342000 http://snomed.info/sct                                                           8.30 o'clock position
+   260343005 http://snomed.info/sct                                                              9 o'clock position
+   260344004 http://snomed.info/sct                                                           9.30 o'clock position
+   260419006 http://snomed.info/sct                                                                      Projection
+   260421001 http://snomed.info/sct                                                            Left lateral oblique
+   260422008 http://snomed.info/sct                                                              C1-C2 left oblique
+   260424009 http://snomed.info/sct                                                           Right lateral oblique
+   260425005 http://snomed.info/sct                                                             C1-C2 right oblique
+   260426006 http://snomed.info/sct                                                                  Medial oblique
+   260427002 http://snomed.info/sct                                                                 Oblique lateral
+   260428007 http://snomed.info/sct                                                Mandible X-ray - lateral oblique
+   260430009 http://snomed.info/sct                                          Anteroposterior left lateral decubitus
+   260431008 http://snomed.info/sct                                                              C1-C2 left lateral
+   260432001 http://snomed.info/sct                                                               Left true lateral
+   260434000 http://snomed.info/sct                                         Anteroposterior right lateral decubitus
+   260435004 http://snomed.info/sct                                                             C1-C2 right lateral
+   260436003 http://snomed.info/sct                                                              Right true lateral
+   260437007 http://snomed.info/sct                                                           Lateral vertical beam
+   260438002 http://snomed.info/sct                                                         Lateral horizontal beam
+   260439005 http://snomed.info/sct                                                                Lateral inverted
+   260440007 http://snomed.info/sct                                                        True lateral of mandible
+   260441006 http://snomed.info/sct                                                                    Frog lateral
+   260442004 http://snomed.info/sct                                                                   Erect lateral
+   260443009 http://snomed.info/sct                                                        Anteroposterior inverted
+   260444003 http://snomed.info/sct                                                    PA - Rotated posteroanterior
+   260445002 http://snomed.info/sct                                                       Posteroanterior 20 degree
+   260446001 http://snomed.info/sct                                              Posteroanterior in ulnar deviation
+   260447005 http://snomed.info/sct                                                      Penetrated posteroanterior
+   260450008 http://snomed.info/sct                                                             Lordotic projection
+   260451007 http://snomed.info/sct                                                                Supine decubitus
+   260452000 http://snomed.info/sct                                                                       Decubitus
+   260453005 http://snomed.info/sct                                                      Internal/external rotation
+   260454004 http://snomed.info/sct                                                            45 degree projection
+   260455003 http://snomed.info/sct                                                        Head and neck projection
+   260458001 http://snomed.info/sct                                                            Slit anteroposterior
+   260459009 http://snomed.info/sct                                                                 Reverse Towne's
+   260460004 http://snomed.info/sct                                                 Slit 35 degree fronto-occipital
+   260461000 http://snomed.info/sct                                                               Vertex projection
+   260463002 http://snomed.info/sct                                                                  Left Stenver's
+   260464008 http://snomed.info/sct                                                                 Right Stenver's
+   260465009 http://snomed.info/sct                                                      Occipitofrontal projection
+   260466005 http://snomed.info/sct                                                       Occipitomental projection
+   260467001 http://snomed.info/sct                                                          Occipitomental - erect
+   260468006 http://snomed.info/sct                                                         Occipitomental - tilted
+   260469003 http://snomed.info/sct                                                          Occipitomental - prone
+   260470002 http://snomed.info/sct                                                      Occipitomental - 15 degree
+   260471003 http://snomed.info/sct                                                      Occipitomental - 30 degree
+   260472005 http://snomed.info/sct                                                      Occipitomental - 45 degree
+   260473000 http://snomed.info/sct                                Waters - 35 degree tilt to radiographic baseline
+   260475007 http://snomed.info/sct                          Submentovertical reduced exposure for zygomatic arches
+   260476008 http://snomed.info/sct                                                                        Slit SMV
+   260477004 http://snomed.info/sct                                                          Dental/oral projection
+   260478009 http://snomed.info/sct                                                                    Body - molar
+   260479001 http://snomed.info/sct                                                                 Body - premolar
+   260481004 http://snomed.info/sct                                                                Ramus projection
+   260482006 http://snomed.info/sct                                                              Bimolar projection
+   260483001 http://snomed.info/sct                                                               Toller projection
+   260484007 http://snomed.info/sct                                                       Transmaxillary projection
+   260485008 http://snomed.info/sct                                                 Temporomandibular joint setting
+   260486009 http://snomed.info/sct                                                         Maxillary sinus setting
+   260487000 http://snomed.info/sct                                                                Dental panoramic
+   260489002 http://snomed.info/sct                                                      Implant setting projection
+   260490006 http://snomed.info/sct                                                               Segmental setting
+   260491005 http://snomed.info/sct                                                   Axial view for sesamoid bones
+   260492003 http://snomed.info/sct                                                          Brewerton's projection
+   260493008 http://snomed.info/sct                                                   Harris Beath axial projection
+   260494002 http://snomed.info/sct                                                               Tunnel projection
+   260496000 http://snomed.info/sct                                                                Judet projection
+   260497009 http://snomed.info/sct                                                              Mortice projection
+   260499007 http://snomed.info/sct                                                             Occlusal projection
+   260500003 http://snomed.info/sct                                                      Projected oblique occlusal
+   260501004 http://snomed.info/sct                                                             Lower true occlusal
+   260502006 http://snomed.info/sct                                                               Power grip series
+   260503001 http://snomed.info/sct                                                          Radial head projection
+   260504007 http://snomed.info/sct                                                              Skyline projection
+   260506009 http://snomed.info/sct                                                            Van Rosen projection
+   260514003 http://snomed.info/sct                                                         Via body reference line
+   260520002 http://snomed.info/sct                                                                  Extracorporeal
+   260521003 http://snomed.info/sct                                                                           Inner
+   260528009 http://snomed.info/sct                                                                          Middle
+   260529001 http://snomed.info/sct                                                                         Vectors
+   260530006 http://snomed.info/sct                                                                 Via body region
+   260532003 http://snomed.info/sct                                                                Thoracoabdominal
+   260535001 http://snomed.info/sct                                                            Lateral extrapleural
+   260540009 http://snomed.info/sct                                                                           Nasal
+   260541008 http://snomed.info/sct                                                                  Nasopancreatic
+   260544000 http://snomed.info/sct                                                                   Endobronchial
+   260548002 http://snomed.info/sct                                                                            Oral
+   260549005 http://snomed.info/sct                                                                      Orogastric
+   260568008 http://snomed.info/sct                                                       Via cardiovascular system
+   260602004 http://snomed.info/sct                                                      Via superficialized vessel
+   260620008 http://snomed.info/sct                                                                       Postaural
+   260637001 http://snomed.info/sct                                                           Sublabial transseptal
+   260641002 http://snomed.info/sct                                                                 Extraperitoneal
+   260642009 http://snomed.info/sct                                                                 Retroperitoneal
+   260668002 http://snomed.info/sct                                                                      Venovenous
+   261044001 http://snomed.info/sct                                                               Anterior axillary
+   261045000 http://snomed.info/sct                                                                 Anterior dorsal
+   261051005 http://snomed.info/sct                                                                          Aortic
+   261052003 http://snomed.info/sct                                                                   Aortocoronary
+   261054002 http://snomed.info/sct                                                           AA - Arterio-arterial
+   261055001 http://snomed.info/sct                                                                   Arteriovenous
+   261057009 http://snomed.info/sct                                                        Between intestinal loops
+   261058004 http://snomed.info/sct                                                                         Bicaval
+   261059007 http://snomed.info/sct                                                                       Bicoronal
+   261061003 http://snomed.info/sct                                                                       Bronchial
+   261062005 http://snomed.info/sct                                                                          Buccal
+   261064006 http://snomed.info/sct                                                                        Cervical
+   261065007 http://snomed.info/sct                                                                   Circumareolar
+   261067004 http://snomed.info/sct                                                                     Dorsal part
+   261073003 http://snomed.info/sct                                                                      Epicardial
+   261074009 http://snomed.info/sct                                                                        External
+   261075005 http://snomed.info/sct                                                                  Extra-amniotic
+   261076006 http://snomed.info/sct                                                                    Extracoronal
+   261078007 http://snomed.info/sct                                                                         Fascial
+   261080001 http://snomed.info/sct                                                                         Femoral
+   261089000 http://snomed.info/sct                                                                        Inferior
+   261093006 http://snomed.info/sct                                                                      Intestinal
+   261094000 http://snomed.info/sct                                                                    Into bladder
+   261095004 http://snomed.info/sct                                                                     Into ureter
+   261097007 http://snomed.info/sct                                                                    Intracoronal
+   261100002 http://snomed.info/sct                                                                 Intraperitoneal
+   261101003 http://snomed.info/sct                                                                   Intravascular
+   261103000 http://snomed.info/sct                                                                         Jejunal
+   261114002 http://snomed.info/sct                                                                          Labial
+   261115001 http://snomed.info/sct                                                                       Laryngeal
+   261117009 http://snomed.info/sct                                                                 Laryngotracheal
+   261119007 http://snomed.info/sct                                                                    Lateral part
+   261121002 http://snomed.info/sct                                                                         Lingual
+   261122009 http://snomed.info/sct                                                                           Lower
+   261123004 http://snomed.info/sct                                                                  Lower anterior
+   261128008 http://snomed.info/sct                                                                     Medial part
+   261130005 http://snomed.info/sct                                                                      Mesenteric
+   261131009 http://snomed.info/sct                                                                     Midaxillary
+   261132002 http://snomed.info/sct                                                                   Midclavicular
+   261133007 http://snomed.info/sct                                                                    Middle third
+   261136004 http://snomed.info/sct                                                                           Mural
+   261137008 http://snomed.info/sct                                                                Musculocutaneous
+   261139006 http://snomed.info/sct                                                                        Myotomal
+   261142000 http://snomed.info/sct                                                                         Omental
+   261145003 http://snomed.info/sct                                                                         Palatal
+   261146002 http://snomed.info/sct                                                                     Para-aortic
+   261147006 http://snomed.info/sct                                                                       Paracolic
+   261148001 http://snomed.info/sct                                                                      Paraspinal
+   261149009 http://snomed.info/sct                                                                     Parasternal
+   261154000 http://snomed.info/sct                                                          Penis and bladder neck
+   261156003 http://snomed.info/sct                                                                     Periadrenal
+   261157007 http://snomed.info/sct                                                                        Perineal
+   261158002 http://snomed.info/sct                                                                      Periosteal
+   261159005 http://snomed.info/sct                                                              Posterior axillary
+   261165005 http://snomed.info/sct                                                                Posterior dorsal
+   261172006 http://snomed.info/sct                                                                  Proximal third
+   261173001 http://snomed.info/sct                                                                          Radial
+   261174007 http://snomed.info/sct                                                                      Retrocecal
+   261175008 http://snomed.info/sct                                                                   Retroduodenal
+   261179002 http://snomed.info/sct                                                                        Thoracic
+   261180004 http://snomed.info/sct                                                                        Tracheal
+   261181000 http://snomed.info/sct                                                                Tracheobronchial
+   261182007 http://snomed.info/sct                                                                           Ulnar
+   261183002 http://snomed.info/sct                                                                           Upper
+   261184008 http://snomed.info/sct                                                                  Upper anterior
+   261185009 http://snomed.info/sct                                                                    Venoarterial
+   261186005 http://snomed.info/sct                                                                    Ventral part
+   261188006 http://snomed.info/sct                                                                      Whole body
+   261189003 http://snomed.info/sct                                                                  Whole skeleton
+   261411001 http://snomed.info/sct                                                                    Distal third
+   261446009 http://snomed.info/sct                                                          Transpulmonary annulus
+   261466000 http://snomed.info/sct                                                 Via intrapulmonary trunk tunnel
+   261469007 http://snomed.info/sct                                                                  Via orbitotomy
+   261760007 http://snomed.info/sct                                                        Deep to rectus abdominis
+   261788001 http://snomed.info/sct                                                                    Exteriorized
+   261799004 http://snomed.info/sct                                          From existing graft to coronary artery
+   261847009 http://snomed.info/sct                                                                   Intracervical
+   261851006 http://snomed.info/sct                                                           Internally to bladder
+   261945002 http://snomed.info/sct                                               Mixed venoarterial and venovenous
+   261964008 http://snomed.info/sct                                                              Muscle fibers only
+   261980003 http://snomed.info/sct                                                     Neuromuscular junction only
+   262347001 http://snomed.info/sct                                                                       Bifrontal
+   262351004 http://snomed.info/sct                                                                      Bitemporal
+   262355008 http://snomed.info/sct                                                                        Brachial
+   262379005 http://snomed.info/sct                                                                   Dominant side
+   262458006 http://snomed.info/sct                                                               Non-dominant side
+   263672002 http://snomed.info/sct                                                                    Anocutaneous
+   263674001 http://snomed.info/sct                                                                   Anovestibular
+   263734003 http://snomed.info/sct                                                                   Diaphragmatic
+   263759007 http://snomed.info/sct                                                                       Foraminal
+   263767004 http://snomed.info/sct                                                                         Genital
+   263794000 http://snomed.info/sct                                                               Left side-by-side
+   263795004 http://snomed.info/sct                                                                      Left sided
+   263802001 http://snomed.info/sct                                                                          Limbal
+   263816006 http://snomed.info/sct                                                                        Muscular
+   263826004 http://snomed.info/sct                                                                         Orbital
+   263830001 http://snomed.info/sct                                                                       Panacinar
+   263831002 http://snomed.info/sct                                                                      Panlobular
+   263832009 http://snomed.info/sct                                                                        Parietal
+   263838008 http://snomed.info/sct                                                                      Periacinar
+   263846009 http://snomed.info/sct                                                                     Prevascular
+   263847000 http://snomed.info/sct                                                                       Prostatic
+   263848005 http://snomed.info/sct                                                                 Proximal acinar
+   263864002 http://snomed.info/sct                                                                        Salivary
+   263869007 http://snomed.info/sct                                                                        Separate
+   263871007 http://snomed.info/sct                                                                      Sinusoidal
+   263887005 http://snomed.info/sct                                                                    Subcutaneous
+   263925004 http://snomed.info/sct                                                                          Venous
+   263928002 http://snomed.info/sct                                                                        Visceral
+   263929005 http://snomed.info/sct                                                                           Volar
+   263938007 http://snomed.info/sct                                                          Above middle turbinate
+   263939004 http://snomed.info/sct                                                                            Anal
+   263942005 http://snomed.info/sct                                                                Anterior segment
+   263943000 http://snomed.info/sct                                                                   Anterior wall
+   263952009 http://snomed.info/sct                                                                     Periorbital
+   263953004 http://snomed.info/sct                                                                    Around mouth
+   263954005 http://snomed.info/sct                                                                        Arterial
+   263955006 http://snomed.info/sct                                                                    Atlantoaxial
+   263957003 http://snomed.info/sct                                                                        Axillary
+   263958008 http://snomed.info/sct                        Between left common carotid and brachiocephalic arteries
+   263959000 http://snomed.info/sct                             Between left subclavian and common carotid arteries
+   263965000 http://snomed.info/sct                                                                Bronchocutaneous
+   263966004 http://snomed.info/sct                                                                  Bronchopleural
+   263968003 http://snomed.info/sct                                                                  Central venous
+   263969006 http://snomed.info/sct                                                                    Centriacinar
+   263970007 http://snomed.info/sct                                                                   Centrilobular
+   263974003 http://snomed.info/sct                                                                 Cervicothoracic
+   263975002 http://snomed.info/sct                                                            Cervicothoracolumbar
+   263977005 http://snomed.info/sct                                                                         Colonic
+   263981005 http://snomed.info/sct                                                Distal to left subclavian artery
+   263989007 http://snomed.info/sct                                                                        Duodenal
+   263990003 http://snomed.info/sct                                                                 Duodenoduodenal
+   263991004 http://snomed.info/sct                                                                  Duodenojejunal
+   263996009 http://snomed.info/sct                                                                     Extrafoveal
+   263997000 http://snomed.info/sct                                                                   Extraureteric
+   263998005 http://snomed.info/sct                                                                    Extravaginal
+   263999002 http://snomed.info/sct                        From anterosuperior-superior bridging leaflet commissure
+   264000000 http://snomed.info/sct                          From left inferior bridging leaflet-lateral commissure
+   264001001 http://snomed.info/sct                                                     From left septal commissure
+   264002008 http://snomed.info/sct                          From left superior bridging leaflet-lateral commissure
+   264004009 http://snomed.info/sct                                                 From left ventricular component
+   264005005 http://snomed.info/sct                                   From right anterosuperior-inferior commissure
+   264006006 http://snomed.info/sct                        From right inferior bridging leaflet-inferior commissure
+   264007002 http://snomed.info/sct                                                    From right septal commissure
+   264008007 http://snomed.info/sct                                                From right ventricular component
+   264010009 http://snomed.info/sct                                                                         Gastric
+   264011008 http://snomed.info/sct                                                                  Gastroduodenal
+   264012001 http://snomed.info/sct                                                                   Gastrogastric
+   264015004 http://snomed.info/sct                                                                   Hepatopleural
+   264023002 http://snomed.info/sct                                                                       Ileocecal
+   264024008 http://snomed.info/sct                                                                       Ileocolic
+   264025009 http://snomed.info/sct                                                           Iliofemoral vein zone
+   264026005 http://snomed.info/sct                                                                      Ileo-ileal
+   264027001 http://snomed.info/sct                                                                      Ileorectal
+   264030008 http://snomed.info/sct                                                                        In joint
+   264031007 http://snomed.info/sct                                                                         In situ
+   264034004 http://snomed.info/sct                                                                    Infracardiac
+   264035003 http://snomed.info/sct                                                                    Infravesical
+   264040006 http://snomed.info/sct                                                                    Interchordal
+   264041005 http://snomed.info/sct                                                                    Interdigital
+   264042003 http://snomed.info/sct                                                                  Intervertebral
+   264043008 http://snomed.info/sct                                                                Intraligamentous
+   264044002 http://snomed.info/sct                                                                    Intracardiac
+   264045001 http://snomed.info/sct                                                                    Intraluminal
+   264046000 http://snomed.info/sct                                                                    Intramammary
+   264047009 http://snomed.info/sct                                                                  Intrapulmonary
+   264049007 http://snomed.info/sct                                                                    Intravaginal
+   264056001 http://snomed.info/sct                                                                  Lateral column
+   264060003 http://snomed.info/sct                                                                 Lateral segment
+   264065008 http://snomed.info/sct                                                                   Left anterior
+   264067000 http://snomed.info/sct                                                               Left lateral wall
+   264068005 http://snomed.info/sct                                                              Left lower segment
+   264076007 http://snomed.info/sct                                                          Lower left parasternal
+   264081003 http://snomed.info/sct                                                                     Lower third
+   264082005 http://snomed.info/sct                                                                          Lumbar
+   264083000 http://snomed.info/sct                                                                     Lumbosacral
+   264084006 http://snomed.info/sct                                                                 Lymphoreticular
+   264096004 http://snomed.info/sct                                                                  Medial segment
+   264099006 http://snomed.info/sct                                                                     Mediastinal
+   264103001 http://snomed.info/sct                                                                       Midtarsal
+   264105008 http://snomed.info/sct                                                                  Nasopharyngeal
+   264107000 http://snomed.info/sct                                                                   Paravertebral
+   264110007 http://snomed.info/sct                                                                 Esophagocolonic
+   264111006 http://snomed.info/sct                                                                 Esophagogastric
+   264112004 http://snomed.info/sct                                                                 Esophagojejunal
+   264114003 http://snomed.info/sct                                                                          Ostium
+   264117005 http://snomed.info/sct                                                                  Paraesophageal
+   264118000 http://snomed.info/sct                                                                    Paraduodenal
+   264119008 http://snomed.info/sct                                                                      Parafoveal
+   264121003 http://snomed.info/sct                                                                     Paramacular
+   264123000 http://snomed.info/sct                                                                      Paraseptal
+   264124006 http://snomed.info/sct                                                                   Paraumbilical
+   264126008 http://snomed.info/sct                                                                    Paravascular
+   264127004 http://snomed.info/sct                                                                     Paraovarian
+   264128009 http://snomed.info/sct                                                                    Paratracheal
+   264131005 http://snomed.info/sct                                                                 Peri-intestinal
+   264133008 http://snomed.info/sct                                                                        Perianal
+   264135001 http://snomed.info/sct                                                                     Pericardial
+   264136000 http://snomed.info/sct                                                                     Perihepatic
+   264137009 http://snomed.info/sct                                                                     Perinephric
+   264139007 http://snomed.info/sct                                                                  Peripancreatic
+   264142001 http://snomed.info/sct                                                                     Perisplenic
+   264143006 http://snomed.info/sct                                                                      Peritoneal
+   264144000 http://snomed.info/sct                                                                        Peroneal
+   264147007 http://snomed.info/sct                                                                         Plantar
+   264148002 http://snomed.info/sct                                                                         Pleural
+   264153007 http://snomed.info/sct                                                                  Posterior pole
+   264154001 http://snomed.info/sct                                                               Posterior segment
+   264159006 http://snomed.info/sct                                                                  Posterior wall
+   264164005 http://snomed.info/sct                                                                       Pulmonary
+   264168008 http://snomed.info/sct                                                                    Rectocloacal
+   264169000 http://snomed.info/sct                                                                  Rectocutaneous
+   264170004 http://snomed.info/sct                                                                   Rectourethral
+   264171000 http://snomed.info/sct                                                                    Rectovaginal
+   264172007 http://snomed.info/sct                                                                    Rectovesical
+   264173002 http://snomed.info/sct                                                                     Rectovulval
+   264174008 http://snomed.info/sct                                                                    Retromammary
+   264175009 http://snomed.info/sct                                                                 Retrocolumellar
+   264176005 http://snomed.info/sct                                                                  Right anterior
+   264178006 http://snomed.info/sct                                                              Right lateral wall
+   264179003 http://snomed.info/sct                                                              Right side-by-side
+   264180000 http://snomed.info/sct                                                                     Right sided
+   264185005 http://snomed.info/sct                                                                      Sacroiliac
+   264191007 http://snomed.info/sct                                                                         Scrotal
+   264193005 http://snomed.info/sct                                                                         Segment
+   264196002 http://snomed.info/sct                                                                Small intestinal
+   264201006 http://snomed.info/sct                                                                    Sternocostal
+   264202004 http://snomed.info/sct                                                                       Subaortic
+   264205002 http://snomed.info/sct                                                                      Subareolar
+   264206001 http://snomed.info/sct                                                                 Subconjunctival
+   264208000 http://snomed.info/sct                                                                       Subcostal
+   264209008 http://snomed.info/sct                                                                       Subfoveal
+   264215008 http://snomed.info/sct                                                          Superficial sphenoidal
+   264216009 http://snomed.info/sct                                                 Superficial to rectus abdominis
+   264217000 http://snomed.info/sct                                                                        Superior
+   264221007 http://snomed.info/sct                                                                  Supraumbilical
+   264222000 http://snomed.info/sct                                                                    Supracardiac
+   264224004 http://snomed.info/sct                                                                    Supraglottic
+   264225003 http://snomed.info/sct                                                                    Suprahepatic
+   264227006 http://snomed.info/sct                                                                 Tarsometatarsal
+   264232007 http://snomed.info/sct                                                                   Thoracolumbar
+   264245006 http://snomed.info/sct                                                          Upper left parasternal
+   264246007 http://snomed.info/sct                                                                    Upper limbal
+   264253003 http://snomed.info/sct                                                                     Upper third
+   264254009 http://snomed.info/sct                                                                        Ureteric
+   264255005 http://snomed.info/sct                                                                        Urethral
+   264260009 http://snomed.info/sct                                                                  Whole forefoot
+   264261008 http://snomed.info/sct                                                              Cholecystoduodenal
+   264262001 http://snomed.info/sct                                              Cholecystenteric (qualifier value)
+   264263006 http://snomed.info/sct                                                               Cholecystogastric
+   264264000 http://snomed.info/sct                                                              Choledochoduodenal
+   264265004 http://snomed.info/sct                                                                        Chondral
+   264266003 http://snomed.info/sct                                                                       Colocolic
+   264267007 http://snomed.info/sct                                                                      Colorectal
+   264463009 http://snomed.info/sct                                                                    Epitrochlear
+   264940008 http://snomed.info/sct                                                 Under inferior bridging leaflet
+   264941007 http://snomed.info/sct                                                 Under superior bridging leaflet
+   272288000 http://snomed.info/sct                                                                           Onlay
+   272425003 http://snomed.info/sct                                                         General site descriptor
+   272426002 http://snomed.info/sct                                                        Specific site descriptor
+   272427006 http://snomed.info/sct                                                      Anatomical part descriptor
+   272428001 http://snomed.info/sct                                                                Anatomical third
+   272429009 http://snomed.info/sct                                                                  Part structure
+   272430004 http://snomed.info/sct                                                                Column structure
+   272431000 http://snomed.info/sct                                                               Segment structure
+   272432007 http://snomed.info/sct                                                                  Wall structure
+   272434008 http://snomed.info/sct                                              Anatomical relationship descriptor
+   272435009 http://snomed.info/sct                                                                 Centri-location
+   272436005 http://snomed.info/sct                                                                 Circum-location
+   272437001 http://snomed.info/sct                                                                  Extra-location
+   272438006 http://snomed.info/sct                                                                    Extrapleural
+   272439003 http://snomed.info/sct                                                                  Infra-location
+   272440001 http://snomed.info/sct                                                                  Inter-location
+   272441002 http://snomed.info/sct                                                                  Intra-location
+   272442009 http://snomed.info/sct                                                                    Mid-location
+   272443004 http://snomed.info/sct                                                                    Pan-location
+   272444005 http://snomed.info/sct                                                                   Para-location
+   272446007 http://snomed.info/sct                                                                    Per-location
+   272447003 http://snomed.info/sct                                                                   Peri-location
+   272448008 http://snomed.info/sct                                                                   Post-location
+   272449000 http://snomed.info/sct                                                                    Pre-location
+   272450000 http://snomed.info/sct                                                                  Retro-location
+   272451001 http://snomed.info/sct                                                                    Sub-location
+   272452008 http://snomed.info/sct                                                                  Supra-location
+   272455005 http://snomed.info/sct                                                       Inferosuperior projection
+   272456006 http://snomed.info/sct                                                               Apical projection
+   272457002 http://snomed.info/sct                                                             Vertical projection
+   272458007 http://snomed.info/sct                                                                Prone projection
+   272459004 http://snomed.info/sct                                                               Supine projection
+   272460009 http://snomed.info/sct                                                             Anterior projection
+   272461008 http://snomed.info/sct                                                      Right posterior projection
+   272462001 http://snomed.info/sct                                                       Left posterior projection
+   272464000 http://snomed.info/sct                                                           Perorbital projection
+   272465004 http://snomed.info/sct                                              Temporomandibular joint projection
+   272466003 http://snomed.info/sct                                                        Optic foramen projection
+   272467007 http://snomed.info/sct                                              Lateral facial skeleton projection
+   272468002 http://snomed.info/sct                                                                  Ear projection
+   272469005 http://snomed.info/sct                                                             Mid face projection
+   272470006 http://snomed.info/sct                                                       Cervical spine projection
+   272472003 http://snomed.info/sct                                                                Macro projection
+   272473008 http://snomed.info/sct                                                               Outlet projection
+   272474002 http://snomed.info/sct                                                            Swimmer's projection
+   272475001 http://snomed.info/sct                                                    Tibial tuberosity projection
+   272476000 http://snomed.info/sct                                                        Transthoracic projection
+   272478004 http://snomed.info/sct                                                         Transcranial projection
+   272479007 http://snomed.info/sct                                                      Posteroanterior projection
+   272480005 http://snomed.info/sct                                                           Horizontal projection
+   272481009 http://snomed.info/sct                                                                Erect projection
+   272482002 http://snomed.info/sct                                                            Adduction projection
+   272483007 http://snomed.info/sct                                                                 True projection
+   272484001 http://snomed.info/sct                                                        Contralateral projection
+   272485000 http://snomed.info/sct                                                              Clockface position
+   272486004 http://snomed.info/sct                                                                 Trans-direction
+   272487008 http://snomed.info/sct                                                                  Into-structure
+   272488003 http://snomed.info/sct                                                                  From-structure
+   272489006 http://snomed.info/sct                                                                      Via values
+   272496008 http://snomed.info/sct                                                                    Via incision
+   276179002 http://snomed.info/sct                                                                    Male genital
+   276749003 http://snomed.info/sct                                                                    Epi-location
+   276787006 http://snomed.info/sct                                                                      Sphenoidal
+   276825009 http://snomed.info/sct                                                               Overlapping sites
+   276979001 http://snomed.info/sct                                                                      Aortoiliac
+   277112006 http://snomed.info/sct                                                                       Abdominal
+   277113001 http://snomed.info/sct                                                                          Pelvic
+   277292000 http://snomed.info/sct                                                                   Endo-location
+   277296002 http://snomed.info/sct                                                           Whole body structures
+   277407002 http://snomed.info/sct                                                                  Deep locations
+   277409004 http://snomed.info/sct                                                           Superficial locations
+   277410009 http://snomed.info/sct                                                              Anterior locations
+   277411008 http://snomed.info/sct                                                             Posterior locations
+   277412001 http://snomed.info/sct                                                              Proximal locations
+   277413006 http://snomed.info/sct                                                                Distal locations
+   277414000 http://snomed.info/sct                                                               Between locations
+   277415004 http://snomed.info/sct                                                                 Above locations
+   277593009 http://snomed.info/sct                                                                 Right posterior
+   277594003 http://snomed.info/sct                                                                  Left posterior
+   277681008 http://snomed.info/sct                                                                     Intrastomal
+   277685004 http://snomed.info/sct                                                                    Tubo-ovarian
+   277686003 http://snomed.info/sct                                                                     Peritubular
+   277806003 http://snomed.info/sct                                                                       Sidedness
+   277912007 http://snomed.info/sct                                                                    Whole breast
+   278227002 http://snomed.info/sct                                                              Limited structures
+   278255003 http://snomed.info/sct                                                            Posterior projection
+   278267001 http://snomed.info/sct                                                            Abduction projection
+   278318001 http://snomed.info/sct                                                               Zimmer projection
+   278701003 http://snomed.info/sct                                                                   Periumbilical
+   278702005 http://snomed.info/sct                                                                  Transumbilical
+   285418008 http://snomed.info/sct                                                                    Subcuticular
+   298107004 http://snomed.info/sct                                                                      Orthotopic
+   298108009 http://snomed.info/sct                                                                     Heterotopic
+   298109001 http://snomed.info/sct                                                                         Ectopic
+   303218009 http://snomed.info/sct                                                                      Subfascial
+   303231004 http://snomed.info/sct                                                                    Intracranial
+   303232006 http://snomed.info/sct                                                                    Extracranial
+   303483009 http://snomed.info/sct                                                                      Subcranial
+   304047000 http://snomed.info/sct                                                                    Transannular
+   304059001 http://snomed.info/sct                                                                     Endocardial
+   306766009 http://snomed.info/sct                                                           Low - site descriptor
+   306767000 http://snomed.info/sct                                                          High - site descriptor
+   312206004 http://snomed.info/sct                                                                      Periapical
+   313268005 http://snomed.info/sct                                                                         Mucosal
+   314801004 http://snomed.info/sct                                                        Skeletal site descriptor
+   314804007 http://snomed.info/sct                                                  Cardiovascular site descriptor
+   314805008 http://snomed.info/sct                                                       Digestive site descriptor
+   314806009 http://snomed.info/sct                                                     Respiratory site descriptor
+   314807000 http://snomed.info/sct                                                        Regional site descriptor
+   314808005 http://snomed.info/sct                                                            Oral site descriptor
+   314809002 http://snomed.info/sct                                                         Urinary site descriptor
+   314810007 http://snomed.info/sct                                                         Histological descriptor
+   314812004 http://snomed.info/sct                                                         Genital site descriptor
+   314813009 http://snomed.info/sct                                                             Eye site descriptor
+   314814003 http://snomed.info/sct                                                             Ear site descriptor
+   314815002 http://snomed.info/sct                                                             Cellular descriptor
+   314816001 http://snomed.info/sct                                                       Endocrine site descriptor
+   314817005 http://snomed.info/sct                                                   Developmental site descriptor
+   314822005 http://snomed.info/sct                                                       Nervous system descriptor
+   371008006 http://snomed.info/sct                                                    Subfrontal (qualifier value)
+   373863008 http://snomed.info/sct                                                 Intracavitary (qualifier value)
+   397406000 http://snomed.info/sct                                   Collateral branch of vessel (qualifier value)
+   397421006 http://snomed.info/sct                                                 Vessel origin (qualifier value)
+   398236008 http://snomed.info/sct                                                  Intrauterine (qualifier value)
+   398994001 http://snomed.info/sct                                             Five chamber view (qualifier value)
+   398996004 http://snomed.info/sct                                     Leonard-George projection (qualifier value)
+   398998003 http://snomed.info/sct                           Right ventricular inflow tract view (qualifier value)
+   399000008 http://snomed.info/sct                                              Mayer projection (qualifier value)
+   399001007 http://snomed.info/sct                                 Posterior emissive projection (qualifier value)
+   399002000 http://snomed.info/sct                                              Nolke projection (qualifier value)
+   399003005 http://snomed.info/sct                                           Hughston projection (qualifier value)
+   399004004 http://snomed.info/sct                                      Oblique axial projection (qualifier value)
+   399005003 http://snomed.info/sct                                             Miller projection (qualifier value)
+   399006002 http://snomed.info/sct                             Left posterior oblique projection (qualifier value)
+   399011000 http://snomed.info/sct                                Axillary tail mammography view (qualifier value)
+   399012007 http://snomed.info/sct                            Medial-lateral emissive projection (qualifier value)
+   399013002 http://snomed.info/sct                                     Chassard-Lapin projection (qualifier value)
+   399022001 http://snomed.info/sct                                              Pirie projection (qualifier value)
+   399024000 http://snomed.info/sct                                                May projection (qualifier value)
+   399025004 http://snomed.info/sct                                         Ischerwood projection (qualifier value)
+   399026003 http://snomed.info/sct                                            Zanelli projection (qualifier value)
+   399028002 http://snomed.info/sct                                           Clements projection (qualifier value)
+   399033003 http://snomed.info/sct                                            Frontal projection (qualifier value)
+   399036006 http://snomed.info/sct         Parasternal short axis view at the mitral valve level (qualifier value)
+   399037002 http://snomed.info/sct                                              Lewis projection (qualifier value)
+   399038007 http://snomed.info/sct                            Right posterior oblique projection (qualifier value)
+   399043000 http://snomed.info/sct                                         Cardiac imaging views (qualifier value)
+   399059000 http://snomed.info/sct                           Postero-anterior oblique projection (qualifier value)
+   399061009 http://snomed.info/sct                                              Axial projection (qualifier value)
+   399065000 http://snomed.info/sct                                            Causton projection (qualifier value)
+   399067008 http://snomed.info/sct                                            Lateral projection (qualifier value)
+   399071006 http://snomed.info/sct                                       Plantodorsal projection (qualifier value)
+   399073009 http://snomed.info/sct                                              Fuchs projection (qualifier value)
+   399074003 http://snomed.info/sct                     Left anterior oblique emissive projection (qualifier value)
+   399075002 http://snomed.info/sct                   Right posterior oblique emissive projection (qualifier value)
+   399080006 http://snomed.info/sct                                         Kuchendorf projection (qualifier value)
+   399082003 http://snomed.info/sct                                        Gaynor-Hart projection (qualifier value)
+   399083008 http://snomed.info/sct                                              Hsieh projection (qualifier value)
+   399089007 http://snomed.info/sct                             Oblique axial emissive projection (qualifier value)
+   399098005 http://snomed.info/sct                                            Staunig projection (qualifier value)
+   399099002 http://snomed.info/sct                              Latero-medial oblique projection (qualifier value)
+   399101009 http://snomed.info/sct                 Cranio-caudal projection exaggerated medially (qualifier value)
+   399103007 http://snomed.info/sct                                           Friedman projection (qualifier value)
+   399106004 http://snomed.info/sct                                   Suprasternal long axis view (qualifier value)
+   399108003 http://snomed.info/sct                    Right anterior oblique emissive projection (qualifier value)
+   399110001 http://snomed.info/sct                                         Tangential projection (qualifier value)
+   399113004 http://snomed.info/sct                                          Eponymous projection (qualifier value)
+   399118008 http://snomed.info/sct                              Left lateral emissive projection (qualifier value)
+   399125001 http://snomed.info/sct                                            Twining projection (qualifier value)
+   399127009 http://snomed.info/sct                                             Teufel projection (qualifier value)
+   399129007 http://snomed.info/sct                                              Holly projection (qualifier value)
+   399130002 http://snomed.info/sct                                         West Point projection (qualifier value)
+   399132005 http://snomed.info/sct                              Frontal-oblique axial projection (qualifier value)
+   399135007 http://snomed.info/sct                              Left anterior oblique projection (qualifier value)
+   399136008 http://snomed.info/sct                    Left posterior oblique emissive projection (qualifier value)
+   399138009 http://snomed.info/sct                                             Penner projection (qualifier value)
+   399139001 http://snomed.info/sct                                    Parasternal long axis view (qualifier value)
+   399142007 http://snomed.info/sct                                   Albers-Schönberg projection (qualifier value)
+   399145009 http://snomed.info/sct                                  Suprasternal short axis view (qualifier value)
+   399146005 http://snomed.info/sct                                            Grashey projection (qualifier value)
+   399148006 http://snomed.info/sct                                        Chamberlain projection (qualifier value)
+   399152006 http://snomed.info/sct                                             Kandel projection (qualifier value)
+   399156009 http://snomed.info/sct                               Laquerriere-Pierquin projection (qualifier value)
+   399157000 http://snomed.info/sct                                         Norgaard's projection (qualifier value)
+   399159002 http://snomed.info/sct                     Latero-medial oblique emissive projection (qualifier value)
+   399160007 http://snomed.info/sct                                    Frontal oblique projection (qualifier value)
+   399161006 http://snomed.info/sct                                     Cleavage mammography view (qualifier value)
+   399162004 http://snomed.info/sct                                      Cranio-caudal projection (qualifier value)
+   399163009 http://snomed.info/sct                                          Magnified projection (qualifier value)
+   399168000 http://snomed.info/sct                                              Hough projection (qualifier value)
+   399169008 http://snomed.info/sct                                         Lauenstein projection (qualifier value)
+   399171008 http://snomed.info/sct                                          Ottonello projection (qualifier value)
+   399173006 http://snomed.info/sct                                       Left lateral projection (qualifier value)
+   399179005 http://snomed.info/sct                                           Lawrence projection (qualifier value)
+   399181007 http://snomed.info/sct                                             Pawlow projection (qualifier value)
+   399182000 http://snomed.info/sct                                            Oblique projection (qualifier value)
+   399184004 http://snomed.info/sct                                       Left oblique projection (qualifier value)
+   399188001 http://snomed.info/sct              Superolateral to inferomedial oblique projection (qualifier value)
+   399192008 http://snomed.info/sct                Cranio-caudal projection exaggerated laterally (qualifier value)
+   399195005 http://snomed.info/sct                          Right ventricular outflow tract view (qualifier value)
+   399196006 http://snomed.info/sct                                      Caudo-cranial projection (qualifier value)
+   399198007 http://snomed.info/sct                                      Right lateral projection (qualifier value)
+   399199004 http://snomed.info/sct                                           Henschen projection (qualifier value)
+   399200001 http://snomed.info/sct                                     Subcostal short axis view (qualifier value)
+   399201002 http://snomed.info/sct                                               Judd projection (qualifier value)
+   399206007 http://snomed.info/sct                                                Law projection (qualifier value)
+   399212002 http://snomed.info/sct                                      Camp-Coventry projection (qualifier value)
+   399214001 http://snomed.info/sct                                      Apical four chamber view (qualifier value)
+   399215000 http://snomed.info/sct                                       Wigby-Taylor projection (qualifier value)
+   399218003 http://snomed.info/sct                                            Arcelin projection (qualifier value)
+   399225005 http://snomed.info/sct                              Oblique caudo-cranial projection (qualifier value)
+   399227002 http://snomed.info/sct                                        Kemp Harper projection (qualifier value)
+   399232001 http://snomed.info/sct                                       Apical two chamber view (qualifier value)
+   399234000 http://snomed.info/sct                                              Rhese projection (qualifier value)
+   399236003 http://snomed.info/sct                                      Right oblique projection (qualifier value)
+   399237007 http://snomed.info/sct                                          Alexander projection (qualifier value)
+   399239005 http://snomed.info/sct         Parasternal short axis view at the aortic valve level (qualifier value)
+   399241006 http://snomed.info/sct                                       Titterington projection (qualifier value)
+   399242004 http://snomed.info/sct                                   Acanthioparietal projection (qualifier value)
+   399243009 http://snomed.info/sct                                          Settegast projection (qualifier value)
+   399245002 http://snomed.info/sct                                            Cleaves projection (qualifier value)
+   399246001 http://snomed.info/sct                                     Blackett-Healy projection (qualifier value)
+   399247005 http://snomed.info/sct                                            Tarrant projection (qualifier value)
+   399251007 http://snomed.info/sct                                             Lorenz projection (qualifier value)
+   399255003 http://snomed.info/sct                                   Submentovertical projection (qualifier value)
+   399260004 http://snomed.info/sct                                                       Medial-lateral projection
+   399263002 http://snomed.info/sct                                            Beclere projection (qualifier value)
+   399265009 http://snomed.info/sct                          Exaggerated cranio-caudal projection (qualifier value)
+   399268006 http://snomed.info/sct                     Medio-lateral oblique emissive projection (qualifier value)
+   399270002 http://snomed.info/sct                                            Towne's projection (qualifier value)
+   399271003 http://snomed.info/sct     Parasternal short axis view at the papillary muscle level (qualifier value)
+   399272005 http://snomed.info/sct                                   Parietoacanthial projection (qualifier value)
+   399273000 http://snomed.info/sct                    Sagittal-oblique axial emissive projection (qualifier value)
+   399277004 http://snomed.info/sct                                             Hickey projection (qualifier value)
+   399278009 http://snomed.info/sct                                             Cahoon projection (qualifier value)
+   399280003 http://snomed.info/sct                                           Kasabach projection (qualifier value)
+   399281004 http://snomed.info/sct                                         Fleischner projection (qualifier value)
+   399284007 http://snomed.info/sct                                           Merchant projection (qualifier value)
+   399285008 http://snomed.info/sct                                           Holmblad projection (qualifier value)
+   399288005 http://snomed.info/sct                              Oblique cranio-caudal projection (qualifier value)
+   399290006 http://snomed.info/sct                                                             Schuller projection
+   399292003 http://snomed.info/sct                                            Stecher projection (qualifier value)
+   399296000 http://snomed.info/sct                                             Taylor projection (qualifier value)
+   399297009 http://snomed.info/sct                             Right lateral emissive projection (qualifier value)
+   399300004 http://snomed.info/sct                            Lateral-medial emissive projection (qualifier value)
+   399303002 http://snomed.info/sct                                             Dunlap projection (qualifier value)
+   399306005 http://snomed.info/sct                                   Parasternal short axis view (qualifier value)
+   399308006 http://snomed.info/sct                                           Lindblom projection (qualifier value)
+   399310008 http://snomed.info/sct                                      Subcostal long axis view (qualifier value)
+   399311007 http://snomed.info/sct                                             Grandy projection (qualifier value)
+   399312000 http://snomed.info/sct                           Antero-posterior oblique projection (qualifier value)
+   399313005 http://snomed.info/sct                                            Swanson projection (qualifier value)
+   399316002 http://snomed.info/sct                                    Parieto-orbital projection (qualifier value)
+   399318001 http://snomed.info/sct                                             Kovacs projection (qualifier value)
+   399320003 http://snomed.info/sct                                  Clements-Nakayama projection (qualifier value)
+   399321004 http://snomed.info/sct                                  Anterior emissive projection (qualifier value)
+   399325008 http://snomed.info/sct                             Sagittal-oblique axial projection (qualifier value)
+   399327000 http://snomed.info/sct                                           Low-Beer projection (qualifier value)
+   399330007 http://snomed.info/sct                                            Valdini projection (qualifier value)
+   399332004 http://snomed.info/sct                                          Kurzbauer projection (qualifier value)
+   399335002 http://snomed.info/sct                                       Dorsoplantar projection (qualifier value)
+   399339008 http://snomed.info/sct                                              Apical long axis (qualifier value)
+   399341009 http://snomed.info/sct                                               Haas projection (qualifier value)
+   399342002 http://snomed.info/sct                                         Lilienfeld projection (qualifier value)
+   399344001 http://snomed.info/sct                                             Broden projection (qualifier value)
+   399348003 http://snomed.info/sct                                   Antero-posterior projection (qualifier value)
+   399349006 http://snomed.info/sct                                          Stenver's projection (qualifier value)
+   399351005 http://snomed.info/sct                                    Orbito-parietal projection (qualifier value)
+   399352003 http://snomed.info/sct                                     Lateral-medial projection (qualifier value)
+   399355001 http://snomed.info/sct                                            Chausse projection (qualifier value)
+   399356000 http://snomed.info/sct                             Right anterior oblique projection (qualifier value)
+   399358004 http://snomed.info/sct                                           Caldwell projection (qualifier value)
+   399360002 http://snomed.info/sct                                   Verticosubmental projection (qualifier value)
+   399361003 http://snomed.info/sct                                   Nuclear medicine projection (qualifier value)
+   399362005 http://snomed.info/sct                                             Bertel projection (qualifier value)
+   399365007 http://snomed.info/sct                                            Pearson projection (qualifier value)
+   399368009 http://snomed.info/sct                              Medio-lateral oblique projection (qualifier value)
+   399370000 http://snomed.info/sct                                            Lysholm projection (qualifier value)
+   399371001 http://snomed.info/sct Parasternal short axis view at the level of the mitral chords (qualifier value)
+   399372008 http://snomed.info/sct                                           Ferguson projection (qualifier value)
+   408723005 http://snomed.info/sct                      Cranial left anterior oblique projection (qualifier value)
+   408724004 http://snomed.info/sct                       Caudal left anterior oblique projection (qualifier value)
+   408725003 http://snomed.info/sct                     Cranial right anterior oblique projection (qualifier value)
+   408726002 http://snomed.info/sct                      Caudal right anterior oblique projection (qualifier value)
+   409970008 http://snomed.info/sct                                                Female genital (qualifier value)
+   421610009 http://snomed.info/sct                                                        Bottom (qualifier value)
+   421812003 http://snomed.info/sct                                                           Top (qualifier value)
+   422534007 http://snomed.info/sct                                        Rafert-Long projection (qualifier value)
+   422568001 http://snomed.info/sct                                              Moore projection (qualifier value)
+   422670003 http://snomed.info/sct                                              Apple projection (qualifier value)
+   422795009 http://snomed.info/sct                                               Neer projection (qualifier value)
+   422861003 http://snomed.info/sct                                             Burman projection (qualifier value)
+   422954003 http://snomed.info/sct                                            Stryker projection (qualifier value)
+   422996004 http://snomed.info/sct                                               Wolf projection (qualifier value)
+   423091003 http://snomed.info/sct                                    Colcher-Sussman projection (qualifier value)
+   423720000 http://snomed.info/sct                                              Rafer projection (qualifier value)
+   424086005 http://snomed.info/sct                                 Hirtz Modification projection (qualifier value)
+   424655003 http://snomed.info/sct                                 Eraso Modification projection (qualifier value)
+   424811006 http://snomed.info/sct                                    Danelius-Miller projection (qualifier value)
+   424962005 http://snomed.info/sct                                               Fisk projection (qualifier value)
+   425030002 http://snomed.info/sct                                               Kite projection (qualifier value)
+   425035007 http://snomed.info/sct                                             Robert projection (qualifier value)
+   425042007 http://snomed.info/sct                                          Rosenberg projection (qualifier value)
+   425157002 http://snomed.info/sct                                              Folio projection (qualifier value)
+   425188003 http://snomed.info/sct                                              Garth projection (qualifier value)
+   441505008 http://snomed.info/sct                                                          Dorsopalmar projection
+   441555000 http://snomed.info/sct                                      Inferomedial to superolateral oblique view
+   441672003 http://snomed.info/sct                                                        Dorso-ventral projection
+   441753009 http://snomed.info/sct                                                                Mammography view
+   442361004 http://snomed.info/sct                                                               Stereoscopic view
+   442441009 http://snomed.info/sct                                                        Ventro-dorsal projection
+   442580003 http://snomed.info/sct                                                Axillary tissue mammography view
+   442581004 http://snomed.info/sct                                              Nipple in profile mammography view
+   442593008 http://snomed.info/sct                                             Infra-mammary fold mammography view
+   442594002 http://snomed.info/sct                                                         Right stereoscopic view
+   442640004 http://snomed.info/sct                                                          Left stereoscopic view
+   442653001 http://snomed.info/sct                                     Stereoscopic view incremented from baseline
+   442667005 http://snomed.info/sct                                     Stereoscopic view decremented from baseline
+   443082005 http://snomed.info/sct  Parasternal long axis view of right ventricular inflow tract (qualifier value)
+   443083000 http://snomed.info/sct Parasternal long axis view of right ventricular outflow tract (qualifier value)
+   443100003 http://snomed.info/sct         Subcostal view of cardiac outlets directed anteriorly (qualifier value)
+   443160001 http://snomed.info/sct           Subcostal short axis view at papillary muscle level (qualifier value)
+   443162009 http://snomed.info/sct                                     Suprasternal coronal view (qualifier value)
+   443163004 http://snomed.info/sct                                    Suprasternal sagittal view (qualifier value)
+   443293000 http://snomed.info/sct                                  Transgastric short axis view (qualifier value)
+   443459002 http://snomed.info/sct                                                Intramedullary (qualifier value)
+   443499004 http://snomed.info/sct               Subcostal short axis view at mitral valve level (qualifier value)
+   443500008 http://snomed.info/sct              Subcostal short axis view at venous inflow level (qualifier value)
+   443562002 http://snomed.info/sct                    Suprasternal long axis view of aortic arch (qualifier value)
+   443609003 http://snomed.info/sct               Subcostal short axis view at aortic valve level (qualifier value)
+   443640005 http://snomed.info/sct                                Subcostal oblique coronal view (qualifier value)
+   443662005 http://snomed.info/sct                             Transesophageal four chamber view (qualifier value)
+   443698002 http://snomed.info/sct                               Transesophageal short axis view (qualifier value)
+  1197041002 http://snomed.info/sct                                                   Intercostal (qualifier value)
+741000124103 http://snomed.info/sct                                                  Dorsoventral (qualifier value)
+761000124104 http://snomed.info/sct                                                  Dorsolateral (qualifier value)
+771000124106 http://snomed.info/sct                                                 Ventrolateral (qualifier value)
+781000124109 http://snomed.info/sct                                                        Palmar (qualifier value)
+   255503000 http://snomed.info/sct                                                        Entire (qualifier value)
+
+         0                                                                                                                                                                                           1
+     Level A few code lists that FHIR defines are hierarchical - each code is assigned a level.  In this scheme, some codes are under other codes, and imply that the code they are under also applies
+    System                                                                                              The source of the definition of the code (when the value set draws in codes defined elsewhere)
+      Code                                                                                                                                        The code (used as the code in the resource instance)
+   Display                  The display (used in the display element of a Coding). If there is no display, implementers should not simply display the code, but map the concept into their application
+Definition                                                                                                                                                An explanation of the meaning of the concept
+  Comments                                                                                                                                                  Additional notes about how to use the code
+

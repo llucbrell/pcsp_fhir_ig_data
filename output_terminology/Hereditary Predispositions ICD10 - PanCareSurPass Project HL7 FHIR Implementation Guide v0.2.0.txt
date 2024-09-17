@@ -1,0 +1,64 @@
+Title: Hereditary Predispositions (ICD10) - PanCareSurPass Project HL7 FHIR Implementation Guide v0.2.0
+
+Description: 
+
+Table 1:
+                                                                                0                                                                                 1                                                                                 2                                                                                 3                                              4
+Official URL: http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-icd10-predisposition-eu-pcsp Official URL: http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-icd10-predisposition-eu-pcsp Official URL: http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-icd10-predisposition-eu-pcsp Official URL: http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-icd10-predisposition-eu-pcsp                                Version:  0.2.0
+                                                          Draft  as of 2024-05-27                                                           Draft  as of 2024-05-27                                                           Draft  as of 2024-05-27                                                           Draft  as of 2024-05-27 Computable Name: ICD10HereditaryPredisposition
+
+Table 2:
+             0              1                                                                                  2
+          Code        Display                                                                         Definition
+not-applicable Not Applicable There is no proper value for this element (e.g. last menstrual period for a male).
+
+Table 3:
+    0                                                                              1
+ Code                                                                        Display
+D61.0                                                 Constitutional aplastic anemia
+D82.0                                                       Wiskott-Aldrich syndrome
+D82.3 Immunodeficiency following hereditary defective response to Epstein-Barr virus
+E34.8                                            Other specified endocrine disorders
+G11.3                                    Cerebellar ataxia with defective DNA repair
+K86.1                                                     Other chronic pancreatitis
+L72.8                     Other follicular cysts of the skin and subcutaneous tissue
+Q78.6                                                  Multiple congenital exostoses
+Q82.1                                                          Xeroderma pigmentosum
+Q82.2                                              Congenital cutaneous mastocytosis
+Q82.8                               Other specified congenital malformations of skin
+Q85.0                                               Neurofibromatosis (nonmalignant)
+Q85.1                                                             Tuberous sclerosis
+Q85.8                                   Other phakomatoses, not elsewhere classified
+Q87.3                   Congenital malformation syndromes involving early overgrowth
+Q87.8    Other specified congenital malformation syndromes, not elsewhere classified
+
+Table 4:
+             0                                                        1                                                                              2                                                                                  3
+          Code                                                   System                                                                        Display                                                                         Definition
+not-applicable http://terminology.hl7.org/CodeSystem/data-absent-reason                                                                 Not Applicable There is no proper value for this element (e.g. last menstrual period for a male).
+         D61.0                           http://hl7.org/fhir/sid/icd-10                                                Constitutional aplastic anaemia                                                                                NaN
+         D82.0                           http://hl7.org/fhir/sid/icd-10                                                       Wiskott-Aldrich syndrome                                                                                NaN
+         D82.3                           http://hl7.org/fhir/sid/icd-10 Immunodeficiency following hereditary defective response to Epstein-Barr virus                                                                                NaN
+         E34.8                           http://hl7.org/fhir/sid/icd-10                                            Other specified endocrine disorders                                                                                NaN
+         G11.3                           http://hl7.org/fhir/sid/icd-10                                    Cerebellar ataxia with defective DNA repair                                                                                NaN
+         K86.1                           http://hl7.org/fhir/sid/icd-10                                                     Other chronic pancreatitis                                                                                NaN
+         L72.8                           http://hl7.org/fhir/sid/icd-10                         Other follicular cysts of skin and subcutaneous tissue                                                                                NaN
+         Q78.6                           http://hl7.org/fhir/sid/icd-10                                                  Multiple congenital exostoses                                                                                NaN
+         Q82.1                           http://hl7.org/fhir/sid/icd-10                                                          Xeroderma pigmentosum                                                                                NaN
+         Q82.2                           http://hl7.org/fhir/sid/icd-10                                                                   Mastocytosis                                                                                NaN
+         Q82.8                           http://hl7.org/fhir/sid/icd-10                               Other specified congenital malformations of skin                                                                                NaN
+         Q85.0                           http://hl7.org/fhir/sid/icd-10                                               Neurofibromatosis (nonmalignant)                                                                                NaN
+         Q85.1                           http://hl7.org/fhir/sid/icd-10                                                             Tuberous sclerosis                                                                                NaN
+         Q85.8                           http://hl7.org/fhir/sid/icd-10                                   Other phakomatoses, not elsewhere classified                                                                                NaN
+         Q87.3                           http://hl7.org/fhir/sid/icd-10                   Congenital malformation syndromes involving early overgrowth                                                                                NaN
+         Q87.8                           http://hl7.org/fhir/sid/icd-10    Other specified congenital malformation syndromes, not elsewhere classified                                                                                NaN
+
+Table 5:
+         0                                                                                                                                                                                           1
+     Level A few code lists that FHIR defines are hierarchical - each code is assigned a level.  In this scheme, some codes are under other codes, and imply that the code they are under also applies
+    System                                                                                              The source of the definition of the code (when the value set draws in codes defined elsewhere)
+      Code                                                                                                                                        The code (used as the code in the resource instance)
+   Display                  The display (used in the display element of a Coding). If there is no display, implementers should not simply display the code, but map the concept into their application
+Definition                                                                                                                                                An explanation of the meaning of the concept
+  Comments                                                                                                                                                  Additional notes about how to use the code
+

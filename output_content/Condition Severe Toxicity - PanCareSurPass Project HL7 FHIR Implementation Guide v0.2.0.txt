@@ -1,0 +1,57 @@
+Title: Condition: Severe Toxicity - PanCareSurPass Project HL7 FHIR Implementation Guide v0.2.0
+
+Header Table:
+- 0 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Condition-toxicity-eu-pcsp
+- 1 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Condition-toxicity-eu-pcsp
+- 2 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Condition-toxicity-eu-pcsp
+- 3 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Condition-toxicity-eu-pcsp
+- 4 : Version:  0.2.0
+- 0 : Draft  as of 2024-05-27
+- 1 : Draft  as of 2024-05-27
+- 2 : Draft  as of 2024-05-27
+- 3 : Draft  as of 2024-05-27
+- 4 : Computable Name: ConditionToxicityPcsp
+
+
+Third Paragraph:
+This profile defines how to describe a Severe Toxicity event in HL7 FHIR for the purpose of the PanCareSurPass project.
+
+Dict Table:
+                                                            0                                                                                                                                                                          1
+                                                 0. Condition                                                                                                                                                               0. Condition
+                                       2. Condition.extension                                                                                                                                                     2. Condition.extension
+                                                      Control                                                                                                                                                                       1..?
+                                                      Slicing This element introduces a set of slices on Condition.extension. The slices areUnordered and Open, and can be differentiated using the following discriminators:value @ url
+         4. Condition.extension:relatedPrimaryCancerCondition                                                                                                                       4. Condition.extension:relatedPrimaryCancerCondition
+                                                   Slice Name                                                                                                                                              relatedPrimaryCancerCondition
+                                                   Definition                                                                                               A reference to the cancer condition that provides context for this resource.
+                                                        Short                                                                                                                                                   Related Cancer Condition
+                                                      Control                                                                                                                                                                       1..1
+                                                         Type                                                                                                        Extension(Condition Related) (Extension Type: Reference(Condition))
+6. Condition.extension:relatedPrimaryCancerCondition.value[x]                                                                                                              6. Condition.extension:relatedPrimaryCancerCondition.value[x]
+                                                         Type                                                                                                                                       Reference(Condition: Primary Cancer)
+                                                     [x] Note                                                                                                        SeeChoice of Data Typesfor further information about how to use [x]
+                                  8. Condition.clinicalStatus                                                                                                                                                8. Condition.clinicalStatus
+                                                        Short                                                                                                                                          Element omitted if status unknown
+                                                      Binding                                   The codes SHALL be taken from Active or resolved Condition (required to http://hl7.eu/fhir/ig/pcsp/ValueSet/activeResolved-condition-vs)
+                             10. Condition.verificationStatus                                                                                                                                           10. Condition.verificationStatus
+                                                        Short                                                                                                                                                        Verification status
+                                       12. Condition.severity                                                                                                                                                     12. Condition.severity
+                                                      Binding                                                      The codes SHALL be taken from Toxicity Severity (required to http://hl7.eu/fhir/ig/pcsp/ValueSet/toxicityseverity-vs)
+                                           14. Condition.code                                                                                                                                                         14. Condition.code
+                                                      Control                                                                                                                                                                       1..?
+                                                Pattern Value                                                                 {  "coding" : [{  "system" : "http://snomed.info/sct",  "code" : "75478009",  "display" : "Toxicity"  }] }
+                                        16. Condition.subject                                                                                                                                                      16. Condition.subject
+                                                         Type                                                                                                                                                   Reference(Patient: PCSP)
+                                       18. Condition.onset[x]                                                                                                                                                     18. Condition.onset[x]
+                                                     [x] Note                                                                                                        SeeChoice of Data Typesfor further information about how to use [x]
+                                                      Slicing This element introduces a set of slices on Condition.onset[x]. The slices areUnordered and Open, and can be differentiated using the following discriminators:type @ $this
+                         20. Condition.onset[x]:onsetDateTime                                                                                                                                       20. Condition.onset[x]:onsetDateTime
+                                                   Slice Name                                                                                                                                                              onsetDateTime
+                                                        Short                                                                                                                                             onset date, omitted if unknown
+                                                      Control                                                                                                                                                                       0..1
+                                                         Type                                                                                                                                                                   dateTime
+                                                     [x] Note                                                                                                        SeeChoice of Data Typesfor further information about how to use [x]
+                                              Primitive Value                                                                                              This primitive element may be present, or absent, or replaced by an extension
+                                           22. Condition.note                                                                                                                                                         22. Condition.note
+                                                        Short                                                                                                                                                                      Notes

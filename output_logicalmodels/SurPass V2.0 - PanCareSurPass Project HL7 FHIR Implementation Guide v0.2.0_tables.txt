@@ -1,0 +1,44 @@
+Title: SurPass V2.0 - PanCareSurPass Project HL7 FHIR Implementation Guide v0.2.0
+
+Description: 
+
+                                                                   0                                                                    1                                                                    2                                                                    3                        4
+Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/SurPass Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/SurPass Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/SurPass Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/SurPass          Version:  0.2.0
+                                             Draft  as of 2024-05-27                                              Draft  as of 2024-05-27                                              Draft  as of 2024-05-27                                              Draft  as of 2024-05-27 Computable Name: SurPass
+
+                         Name                         Flags                         Card.                          Type                                                                   Description & Constraints
+                      SurPass                           NaN                          0..*                          Base SurPass V2.0 Instances of this logical model are not marked to be the target of a Reference
+             treatmentSummary                           NaN                          1..1              TreatmentSummary                                                                           Treatment Summary
+                     carePlan                           NaN                          0..*                    PlanOfCare                                                                                   Care plan
+Documentation for this format Documentation for this format Documentation for this format Documentation for this format                                                               Documentation for this format
+
+                         Name                         Flags                         Card.                          Type                                                                   Description & Constraints
+                      SurPass                           NaN                          0..*                          Base SurPass V2.0 Instances of this logical model are not marked to be the target of a Reference
+             treatmentSummary                           NaN                          1..1              TreatmentSummary                                                                           Treatment Summary
+                     carePlan                           NaN                          0..*                    PlanOfCare                                                                                   Care plan
+Documentation for this format Documentation for this format Documentation for this format Documentation for this format                                                               Documentation for this format
+
+                         Name                         Flags                         Card.                          Type                                                                   Description & Constraints
+                      SurPass                           NaN                          0..*                          Base SurPass V2.0 Instances of this logical model are not marked to be the target of a Reference
+             treatmentSummary                           NaN                          1..1              TreatmentSummary                                                                           Treatment Summary
+                     carePlan                           NaN                          0..*                    PlanOfCare                                                                                   Care plan
+Documentation for this format Documentation for this format Documentation for this format Documentation for this format                                                               Documentation for this format
+
+                         Name                         Flags                         Card.                          Type                                                                   Description & Constraints
+                      SurPass                           NaN                          0..*                          Base SurPass V2.0 Instances of this logical model are not marked to be the target of a Reference
+             treatmentSummary                           NaN                          1..1              TreatmentSummary                                                                           Treatment Summary
+                     carePlan                           NaN                          0..*                    PlanOfCare                                                                                   Care plan
+Documentation for this format Documentation for this format Documentation for this format Documentation for this format                                                               Documentation for this format
+
+                         Name                         Flags                         Card.                          Type                                                                   Description & Constraints
+                      SurPass                           NaN                          0..*                          Base SurPass V2.0 Instances of this logical model are not marked to be the target of a Reference
+             treatmentSummary                           NaN                          1..1              TreatmentSummary                                                                           Treatment Summary
+                     carePlan                           NaN                          0..*                    PlanOfCare                                                                                   Care plan
+Documentation for this format Documentation for this format Documentation for this format Documentation for this format                                                               Documentation for this format
+
+                         Name                         Flags                         Card.                          Type                                                                   Description & Constraints
+                      SurPass                           NaN                          0..*                          Base SurPass V2.0 Instances of this logical model are not marked to be the target of a Reference
+             treatmentSummary                           NaN                          1..1              TreatmentSummary                                                                           Treatment Summary
+                     carePlan                           NaN                          0..*                    PlanOfCare                                                                                   Care plan
+Documentation for this format Documentation for this format Documentation for this format Documentation for this format                                                               Documentation for this format
+

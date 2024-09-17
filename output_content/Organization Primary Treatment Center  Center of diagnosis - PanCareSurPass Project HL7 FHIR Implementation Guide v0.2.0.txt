@@ -1,0 +1,31 @@
+Title: Organization: Primary Treatment Center / Center of diagnosis - PanCareSurPass Project HL7 FHIR Implementation Guide v0.2.0
+
+Header Table:
+- 0 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Organization-center-eu-pcsp
+- 1 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Organization-center-eu-pcsp
+- 2 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Organization-center-eu-pcsp
+- 3 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Organization-center-eu-pcsp
+- 4 : Version:  0.2.0
+- 0 : Draft  as of 2024-05-27
+- 1 : Draft  as of 2024-05-27
+- 2 : Draft  as of 2024-05-27
+- 3 : Draft  as of 2024-05-27
+- 4 : Computable Name: OrganizationCenterPcsp
+
+
+Third Paragraph:
+This profile defines how to represent the Primary Treatment Center or the Center of diagnosis in FHIR for the purpose of the PanCareSurPass project.
+
+Dict Table:
+                               0                                                                         1
+                 0. Organization                                                           0. Organization
+      2. Organization.identifier                                                2. Organization.identifier
+                           Short                                                  Identifier of the center
+                            Note This is a business identifier, not a resource identifier (see discussion)
+            4. Organization.name                                                      4. Organization.name
+                           Short                                                        Name of the Center
+         6. Organization.address                                                   6. Organization.address
+    8. Organization.address.city                                              8. Organization.address.city
+                           Short                                                      Center address: city
+10. Organization.address.country                                          10. Organization.address.country
+                           Short                                                   Center address: country

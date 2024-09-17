@@ -1,0 +1,42 @@
+Title: BiologicallyDerivedProduct: Stem Cell - PanCareSurPass Project HL7 FHIR Implementation Guide v0.2.0
+
+Header Table:
+- 0 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/BiologicallyDerivedProduct-sct-eu-pcsp
+- 1 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/BiologicallyDerivedProduct-sct-eu-pcsp
+- 2 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/BiologicallyDerivedProduct-sct-eu-pcsp
+- 3 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/BiologicallyDerivedProduct-sct-eu-pcsp
+- 4 : Version:  0.2.0
+- 0 : Draft  as of 2024-05-27
+- 1 : Draft  as of 2024-05-27
+- 2 : Draft  as of 2024-05-27
+- 3 : Draft  as of 2024-05-27
+- 4 : Computable Name: BiologicallyDerivedProductSctPcsp
+
+
+Third Paragraph:
+This profile defines how to represent Stem Cell in FHIR for describing a Stem Cell Transplantation data required by the PanCareSurPass algorithm to generate the care plan.
+
+Dict Table:
+                                                              0                                                                                                                                                                                           1
+                                  0. BiologicallyDerivedProduct                                                                                                                                                               0. BiologicallyDerivedProduct
+                        2. BiologicallyDerivedProduct.extension                                                                                                                                                     2. BiologicallyDerivedProduct.extension
+                                                        Slicing This element introduces a set of slices on BiologicallyDerivedProduct.extension. The slices areUnordered and Open, and can be differentiated using the following discriminators:value @ url
+           4. BiologicallyDerivedProduct.extension:sctDonorType                                                                                                                                        4. BiologicallyDerivedProduct.extension:sctDonorType
+                                                     Slice Name                                                                                                                                                                                sctDonorType
+                                                        Control                                                                                                                                                                                        0..1
+                                                           Type                                                                                                                           Extension(Stem Cell Donor Type) (Extension Type: CodeableConcept)
+  6. BiologicallyDerivedProduct.extension:sctDonorType.value[x]                                                                                                                               6. BiologicallyDerivedProduct.extension:sctDonorType.value[x]
+                                                        Binding                                                               The codes SHALL be taken from Stem Cell Donor type (required to http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-sct-donorType-eu-pcsp)
+                                                       [x] Note                                                                                                                         SeeChoice of Data Typesfor further information about how to use [x]
+          8. BiologicallyDerivedProduct.extension:sctSourceType                                                                                                                                       8. BiologicallyDerivedProduct.extension:sctSourceType
+                                                     Slice Name                                                                                                                                                                               sctSourceType
+                                                        Control                                                                                                                                                                                        0..1
+                                                           Type                                                                                                                          Extension(Stem Cell Source Type) (Extension Type: CodeableConcept)
+10. BiologicallyDerivedProduct.extension:sctSourceType.value[x]                                                                                                                             10. BiologicallyDerivedProduct.extension:sctSourceType.value[x]
+                                                        Binding                                                             The codes SHALL be taken from Stem Cell Source type (required to http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-sct-sourceType-eu-pcsp)
+                                                       [x] Note                                                                                                                         SeeChoice of Data Typesfor further information about how to use [x]
+                 12. BiologicallyDerivedProduct.productCategory                                                                                                                                              12. BiologicallyDerivedProduct.productCategory
+                                                  Pattern Value                                                                                                                                                                                       cells
+                      14. BiologicallyDerivedProduct.collection                                                                                                                                                   14. BiologicallyDerivedProduct.collection
+               16. BiologicallyDerivedProduct.collection.source                                                                                                                                            16. BiologicallyDerivedProduct.collection.source
+                                                          Short                                                                                                                                                             The patient providing the cells

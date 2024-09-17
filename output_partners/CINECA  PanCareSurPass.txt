@@ -1,0 +1,12 @@
+Title: CINECA – PanCareSurPass
+
+Chiara Dellacasa Senior Project Manager (PMP
+®
+) in the “Data Management and Data Analytics” division of High Performance Computing department at CINECA. Technical project manager of several European projects related to e-health and clinical research.
+Giulia Stabile is a Senior Project Manager (PMP
+®
+) and member of PMO in the University and Research Department in CINECA. She is responsible for planning and coordinating national and international projects on e-health and clinical research including the SurPass IT Platform. She is responsible for the IT infrastructure dedicated to the Italian Association for Paediatric Haematology and Oncology (AIEOP).
+Carlo Contino is a Senior IT Architect and Iteroperability expert, responsible for the design, development and management of AxMR technologies and services.
+Davide Saraceno is a Senior Software Analyst in CINECA. He is the developer of the Clinical Research platform used in several national and international projects, of the Italian Association for Paediatric Haematology and Oncology (AIEOP) dedicated platform and of the SurPass platform.
+Alessandra Berti is a Statistician and Project Consultant in the University and Research Department of CINECA. She is an expert in data management and analysis related to e-health and clinical research.
+CINECA will deliver SurPass v2.0 for implementation in six countries as part of the multi-country implementation study.

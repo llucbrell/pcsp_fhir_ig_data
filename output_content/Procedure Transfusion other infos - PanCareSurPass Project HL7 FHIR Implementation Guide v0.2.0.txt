@@ -1,0 +1,49 @@
+Title: Procedure: Transfusion other infos - PanCareSurPass Project HL7 FHIR Implementation Guide v0.2.0
+
+Header Table:
+- 0 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-transfusion-otherinfos-eu-pcsp
+- 1 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-transfusion-otherinfos-eu-pcsp
+- 2 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-transfusion-otherinfos-eu-pcsp
+- 3 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-transfusion-otherinfos-eu-pcsp
+- 4 : Version:  0.2.0
+- 0 : Draft  as of 2024-05-27
+- 1 : Draft  as of 2024-05-27
+- 2 : Draft  as of 2024-05-27
+- 3 : Draft  as of 2024-05-27
+- 4 : Computable Name: ProcedureTransfusionOtherInfosPcsp
+
+
+Third Paragraph:
+This profile defines how to describe the Transfusion Procedure in HL7 FHIR for the purpose of the PanCareSurPass project.
+
+Dict Table:
+                                                                                0                                                                                                                                                                                                     1
+                                                                     0. Procedure                                                                                                                                                                                          0. Procedure
+                                                           2. Procedure.extension                                                                                                                                                                                2. Procedure.extension
+                                                                          Slicing                            This element introduces a set of slices on Procedure.extension. The slices areUnordered and Open, and can be differentiated using the following discriminators:value @ url
+                                           4. Procedure.extension:performedTiming                                                                                                                                                                4. Procedure.extension:performedTiming
+                                                                       Slice Name                                                                                                                                                                                       performedTiming
+                                                                          Control                                                                                                                                                                                                  0..1
+                                                                             Type                                                                                                                                                  Extension(Performed Timing) (Extension Type: Timing)
+                                  6. Procedure.extension:performedTiming.value[x]                                                                                                                                                       6. Procedure.extension:performedTiming.value[x]
+                                                                         [x] Note                                                                                                                                   SeeChoice of Data Typesfor further information about how to use [x]
+                           8. Procedure.extension:performedTiming.value[x].repeat                                                                                                                                                8. Procedure.extension:performedTiming.value[x].repeat
+                10. Procedure.extension:performedTiming.value[x].repeat.bounds[x]                                                                                                                                     10. Procedure.extension:performedTiming.value[x].repeat.bounds[x]
+                                                                         [x] Note                                                                                                                                   SeeChoice of Data Typesfor further information about how to use [x]
+                                                                          Slicing This element introduces a set of slices on Procedure.extension.value[x].repeat.bounds[x]. The slices areUnordered and Open, and can be differentiated using the following discriminators:type @ $this
+    12. Procedure.extension:performedTiming.value[x].repeat.bounds[x]:boundsRange                                                                                                                         12. Procedure.extension:performedTiming.value[x].repeat.bounds[x]:boundsRange
+                                                                       Slice Name                                                                                                                                                                                           boundsRange
+                                                                          Control                                                                                                                                                                                                  0..1
+                                                                             Type                                                                                                                                                                                                 Range
+                                                                         [x] Note                                                                                                                                   SeeChoice of Data Typesfor further information about how to use [x]
+14. Procedure.extension:performedTiming.value[x].repeat.bounds[x]:boundsRange.low                                                                                                                     14. Procedure.extension:performedTiming.value[x].repeat.bounds[x]:boundsRange.low
+                                                                            Short                                                                                                                                                                        Minimal Number of transfusions
+                    16. Procedure.extension:performedTiming.value[x].repeat.count                                                                                                                                         16. Procedure.extension:performedTiming.value[x].repeat.count
+                                                                            Short                                                                                                                                                                                Number of transfusions
+                                                               18. Procedure.code                                                                                                                                                                                    18. Procedure.code
+                                                                    Pattern Value                                                                                          {  "coding" : [{  "system" : "http://snomed.info/sct",  "code" : "5447007",  "display" : "Transfusion"  }] }
+                                                            20. Procedure.subject                                                                                                                                                                                 20. Procedure.subject
+                                                                             Type                                                                                                                                                                              Reference(Patient: PCSP)
+                                                    22. Procedure.reasonReference                                                                                                                                                                         22. Procedure.reasonReference
+                                                                          Control                                                                                                                                                                                                  1..?
+                                                                             Type                                                                                                                                                                  Reference(Condition: Primary Cancer)

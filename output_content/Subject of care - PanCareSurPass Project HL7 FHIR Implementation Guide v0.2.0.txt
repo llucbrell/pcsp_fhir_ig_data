@@ -1,0 +1,98 @@
+Title: Subject of care - PanCareSurPass Project HL7 FHIR Implementation Guide v0.2.0
+
+Header Table:
+- 0 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Subject
+- 1 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Subject
+- 2 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Subject
+- 3 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Subject
+- 4 : Version:  0.2.0
+- 0 : Draft  as of 2024-05-27
+- 1 : Draft  as of 2024-05-27
+- 2 : Draft  as of 2024-05-27
+- 3 : Draft  as of 2024-05-27
+- 4 : Computable Name: Subject
+
+
+Third Paragraph:
+Subject of care
+Maturity Level: 2 - Ready for Review
+
+Dict Table:
+                               0                                                                              1
+                      0. Subject                                                                     0. Subject
+                      Definition                           Subject of care Maturity Level: 2 - Ready for Review
+                           Short                                                                Subject of care
+                   Logical Model Instances of this logical model are not marked to be the target of a Reference
+           2. Subject.identifier                                                          2. Subject.identifier
+                      Definition                                                                             ID
+                           Short                                                                             ID
+                            Note      This is a business identifier, not a resource identifier (see discussion)
+                         Control                                                                           1..*
+                            Type                                                                     Identifier
+                 4. Subject.name                                                                4. Subject.name
+                      Definition                                                                   Subject Name
+                           Short                                                                   Subject Name
+                         Control                                                                           1..*
+                            Type                                                                BackboneElement
+        6. Subject.name.lastname                                                       6. Subject.name.lastname
+                      Definition                                                                       Lastname
+                           Short                                                                       Lastname
+                         Control                                                                           1..*
+                            Type                                                                         string
+                 Primitive Value  This primitive element may be present, or absent, or replaced by an extension
+      8. Subject.name.middleName                                                     8. Subject.name.middleName
+                      Definition                                                                     Middlename
+                           Short                                                                     Middlename
+                         Control                                                                           0..*
+                            Type                                                                         string
+                 Primitive Value  This primitive element may be present, or absent, or replaced by an extension
+      10. Subject.name.firstName                                                     10. Subject.name.firstName
+                      Definition                                                                      Firstname
+                           Short                                                                      Firstname
+                         Control                                                                           1..*
+                            Type                                                                         string
+                 Primitive Value  This primitive element may be present, or absent, or replaced by an extension
+ 12. Subject.lastnameAtDiagnosis                                                12. Subject.lastnameAtDiagnosis
+                      Definition                       Lastname at diagnosis (if different from the actual one)
+                           Short                       Lastname at diagnosis (if different from the actual one)
+                         Control                                                                           0..*
+                            Type                                                                         string
+                 Primitive Value  This primitive element may be present, or absent, or replaced by an extension
+              14. Subject.gender                                                             14. Subject.gender
+                      Definition                                                                     Gender/Sex
+                           Short                                                                     Gender/Sex
+                         Control                                                                           1..*
+                            Type                                                                CodeableConcept
+         16. Subject.dateOfBirth                                                        16. Subject.dateOfBirth
+                      Definition                                                                  Date of birth
+                           Short                                                                  Date of birth
+                         Control                                                                           0..*
+                            Type                                                                       dateTime
+                 Primitive Value  This primitive element may be present, or absent, or replaced by an extension
+        18. Subject.placeOfBirth                                                       18. Subject.placeOfBirth
+                      Definition                                                                 Place of birth
+                           Short                                                                 Place of birth
+                         Control                                                                           0..*
+                            Type                                                                        Address
+             20. Subject.contact                                                            20. Subject.contact
+                      Definition                                             Contact - receiver of the passport
+                           Short                                             Contact - receiver of the passport
+                         Control                                                                           0..*
+                            Type                                                                BackboneElement
+       22. Subject.contact.email                                                      22. Subject.contact.email
+                      Definition                                                                         E-mail
+                           Short                                                                         E-mail
+                         Control                                                                           0..*
+                            Type                                                                            uri
+                 Primitive Value  This primitive element may be present, or absent, or replaced by an extension
+      24. Subject.contact.mobile                                                     24. Subject.contact.mobile
+                      Definition                                                                   Mobile phone
+                           Short                                                                   Mobile phone
+                         Control                                                                           0..*
+                            Type                                                                            uri
+                 Primitive Value  This primitive element may be present, or absent, or replaced by an extension
+26. Subject.contact.relationship                                               26. Subject.contact.relationship
+                      Definition                                                  Relationship with the subject
+                           Short                                                  Relationship with the subject
+                         Control                                                                           0..1
+                            Type                                                                CodeableConcept

@@ -1,0 +1,32 @@
+Title: Location: PCSP - PanCareSurPass Project HL7 FHIR Implementation Guide v0.2.0
+
+Header Table:
+- 0 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Location-eu-pcsp
+- 1 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Location-eu-pcsp
+- 2 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Location-eu-pcsp
+- 3 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Location-eu-pcsp
+- 4 : Version:  0.2.0
+- 0 : Draft  as of 2024-05-27
+- 1 : Draft  as of 2024-05-27
+- 2 : Draft  as of 2024-05-27
+- 3 : Draft  as of 2024-05-27
+- 4 : Computable Name: LocationPcsp
+
+
+Third Paragraph:
+This profile defines how to represent FHIR Location for the purpose of the PanCareSurPass project.
+
+Dict Table:
+                           0                            1
+                 0. Location                  0. Location
+            2. Location.name             2. Location.name
+                       Short      Name of the Institution
+                     Control                         1..?
+                Must Support                         true
+     4. Location.description      4. Location.description
+                       Short      Institution description
+         6. Location.address          6. Location.address
+    8. Location.address.city     8. Location.address.city
+                       Short             Institution city
+10. Location.address.country 10. Location.address.country
+                       Short          Institution country

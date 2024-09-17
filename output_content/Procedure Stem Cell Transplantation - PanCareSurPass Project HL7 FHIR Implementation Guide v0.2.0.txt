@@ -1,0 +1,52 @@
+Title: Procedure: Stem Cell Transplantation - PanCareSurPass Project HL7 FHIR Implementation Guide v0.2.0
+
+Header Table:
+- 0 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-sct-eu-pcsp
+- 1 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-sct-eu-pcsp
+- 2 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-sct-eu-pcsp
+- 3 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-sct-eu-pcsp
+- 4 : Version:  0.2.0
+- 0 : Draft  as of 2024-05-27
+- 1 : Draft  as of 2024-05-27
+- 2 : Draft  as of 2024-05-27
+- 3 : Draft  as of 2024-05-27
+- 4 : Computable Name: ProcedureSctPcsp
+
+
+Third Paragraph:
+This profile defines how to represent Procedures in FHIR for describing a set of Stem Cell Transplantation data required by the PanCareSurPass algorithm to generate the care plan.
+
+Dict Table:
+                                            0                                                                                                                                                                          1
+                                 0. Procedure                                                                                                                                                               0. Procedure
+                       2. Procedure.extension                                                                                                                                                     2. Procedure.extension
+                                      Slicing This element introduces a set of slices on Procedure.extension. The slices areUnordered and Open, and can be differentiated using the following discriminators:value @ url
+         4. Procedure.extension:usedReference                                                                                                                                       4. Procedure.extension:usedReference
+                                   Slice Name                                                                                                                                                              usedReference
+                                      Control                                                                                                                                                                       0..1
+                                         Type                                                                                                            Extension(Procedure Used Reference) (Extension Type: Reference)
+6. Procedure.extension:usedReference.value[x]                                                                                                                              6. Procedure.extension:usedReference.value[x]
+                                         Type                                                                                                                           Reference(BiologicallyDerivedProduct: Stem Cell)
+                                     [x] Note                                                                                                        SeeChoice of Data Typesfor further information about how to use [x]
+                      8. Procedure.identifier                                                                                                                                                    8. Procedure.identifier
+                                        Short                                                                                                                    External Identifiers for this Stem Cell Transplantation
+                                         Note                                                                                                  This is a business identifier, not a resource identifier (see discussion)
+                         10. Procedure.status                                                                                                                                                       10. Procedure.status
+                                 Must Support                                                                                                                                                                       true
+                       12. Procedure.category                                                                                                                                                     12. Procedure.category
+                                      Control                                                                                                                                                                       1..?
+                                Pattern Value                                              {  "coding" : [{  "system" : "http://snomed.info/sct",  "code" : "77465005",  "display" : "Transplantation (procedure)"  }] }
+                           14. Procedure.code                                                                                                                                                         14. Procedure.code
+                                        Short                                                                                                                                           Identification of the procedure.
+                                      Binding                                         The codes SHALL be taken from Stem Cell Transplantation type (required to http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-sct-type-eu-pcsp)
+                        16. Procedure.subject                                                                                                                                                      16. Procedure.subject
+                                         Type                                                                                                                                                   Reference(Patient: PCSP)
+                   18. Procedure.performed[x]                                                                                                                                                 18. Procedure.performed[x]
+                                        Short                                                                                                                                      Date of the Stem Cell Transplantation
+                                      Control                                                                                                                                                                       1..?
+                                         Type                                                                                                                                       dateTime, string, Period, Range, Age
+                                     [x] Note                                                                                                        SeeChoice of Data Typesfor further information about how to use [x]
+                              Primitive Value                                                                                              This primitive element may be present, or absent, or replaced by an extension
+                20. Procedure.reasonReference                                                                                                                                              20. Procedure.reasonReference
+                                      Control                                                                                                                                                                       1..?
+                                         Type                                                                                                                                       Reference(Condition: Primary Cancer)

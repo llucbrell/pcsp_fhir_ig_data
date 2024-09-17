@@ -1,0 +1,66 @@
+Title: Observation: Risk Factor - PanCareSurPass Project HL7 FHIR Implementation Guide v0.2.0
+
+Header Table:
+- 0 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Observation-riskfactor-eu-pcsp
+- 1 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Observation-riskfactor-eu-pcsp
+- 2 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Observation-riskfactor-eu-pcsp
+- 3 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Observation-riskfactor-eu-pcsp
+- 4 : Version:  0.2.0
+- 0 : Draft  as of 2024-05-27
+- 1 : Draft  as of 2024-05-27
+- 2 : Draft  as of 2024-05-27
+- 3 : Draft  as of 2024-05-27
+- 4 : Computable Name: ObservationRiskFactor
+
+
+Third Paragraph:
+This profile defines how to represent a Risk Factor in HL7 FHIR as determined by the PCSP platoform.
+
+Dict Table:
+                                                 0                                                                                                                                                                                1
+                                    0. Observation                                                                                                                                                                   0. Observation
+                            2. Observation.basedOn                                                                                                                                                           2. Observation.basedOn
+                                           Control                                                                                                                                                                             0..0
+                             4. Observation.partOf                                                                                                                                                            4. Observation.partOf
+                                           Control                                                                                                                                                                             0..0
+                             6. Observation.status                                                                                                                                                            6. Observation.status
+                                     Pattern Value                                                                                                                                                                            final
+                               8. Observation.code                                                                                                                                                              8. Observation.code
+                                     Pattern Value                                                                    {  "coding" : [{  "system" : "http://snomed.info/sct",  "code" : "80943009",  "display" : "Risk factor"  }] }
+                           10. Observation.subject                                                                                                                                                          10. Observation.subject
+                                           Control                                                                                                                                                                             1..?
+                                              Type                                                                                                                                                         Reference(Patient: PCSP)
+                             12. Observation.focus                                                                                                                                                            12. Observation.focus
+                                           Control                                                                                                                                                                             0..0
+                      14. Observation.effective[x]                                                                                                                                                     14. Observation.effective[x]
+                                          [x] Note                                                                                                              SeeChoice of Data Typesfor further information about how to use [x]
+                                           Slicing This element introduces a set of slices on Observation.effective[x]. The slices areUnordered and Open, and can be differentiated using the following discriminators:type @ $this
+      16. Observation.effective[x]:effectivePeriod                                                                                                                                     16. Observation.effective[x]:effectivePeriod
+                                        Slice Name                                                                                                                                                                  effectivePeriod
+                                           Control                                                                                                                                                                             0..1
+                                              Type                                                                                                                                                                           Period
+                                          [x] Note                                                                                                              SeeChoice of Data Typesfor further information about how to use [x]
+18. Observation.effective[x]:effectivePeriod.start                                                                                                                               18. Observation.effective[x]:effectivePeriod.start
+                                           Control                                                                                                                                                                             1..?
+  20. Observation.effective[x]:effectivePeriod.end                                                                                                                                 20. Observation.effective[x]:effectivePeriod.end
+                                             Short                                                                                                                                                       required if no more active
+                          22. Observation.value[x]                                                                                                                                                         22. Observation.value[x]
+                                           Control                                                                                                                                                                             1..?
+                                          [x] Note                                                                                                              SeeChoice of Data Typesfor further information about how to use [x]
+                                           Slicing     This element introduces a set of slices on Observation.value[x]. The slices areUnordered and Open, and can be differentiated using the following discriminators:type @ $this
+     24. Observation.value[x]:valueCodeableConcept                                                                                                                                    24. Observation.value[x]:valueCodeableConcept
+                                        Slice Name                                                                                                                                                             valueCodeableConcept
+                                           Control                                                                                                                                                                             1..1
+                                           Binding                                      Unless not suitable, these codes SHALL be taken from Risk Factors (extensible to http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-riskfactor-eu-pcsp)
+                                              Type                                                                                                                                                                  CodeableConcept
+                                          [x] Note                                                                                                              SeeChoice of Data Typesfor further information about how to use [x]
+                  26. Observation.dataAbsentReason                                                                                                                                                 26. Observation.dataAbsentReason
+                                           Control                                                                                                                                                                             0..0
+                    28. Observation.interpretation                                                                                                                                                   28. Observation.interpretation
+                                           Control                                                                                                                                                                             0..0
+                          30. Observation.specimen                                                                                                                                                         30. Observation.specimen
+                                           Control                                                                                                                                                                             0..0
+                            32. Observation.device                                                                                                                                                           32. Observation.device
+                                           Control                                                                                                                                                                             0..0
+                    34. Observation.referenceRange                                                                                                                                                   34. Observation.referenceRange
+                                           Control                                                                                                                                                                             0..0

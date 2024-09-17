@@ -1,0 +1,5 @@
+Title: Patient: Sample created on Mainz data (Fischer) - PanCareSurPass Project HL7 FHIR Implementation Guide v0.2.0
+
+                  0       1       2       3
+Patient Birth Place HAMBURG HAMBURG HAMBURG
+

@@ -1,0 +1,78 @@
+Title: Observation: Chemotherapy Cumulative Dose - PanCareSurPass Project HL7 FHIR Implementation Guide v0.2.0
+
+Header Table:
+- 0 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Observation-cumulativeDoseChemo-eu-pcsp
+- 1 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Observation-cumulativeDoseChemo-eu-pcsp
+- 2 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Observation-cumulativeDoseChemo-eu-pcsp
+- 3 : Official URL: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Observation-cumulativeDoseChemo-eu-pcsp
+- 4 : Version:  0.2.0
+- 0 : Draft  as of 2024-05-27
+- 1 : Draft  as of 2024-05-27
+- 2 : Draft  as of 2024-05-27
+- 3 : Draft  as of 2024-05-27
+- 4 : Computable Name: CumulativeDoseChemoObsPcsp
+
+
+Third Paragraph:
+This profile defines how to represent Chemotherapy Cumulative Dose in FHIR for the purpose of the PanCareSurPass project.
+
+Dict Table:
+                                            0                                                                                                                                                                            1
+                               0. Observation                                                                                                                                                               0. Observation
+                     2. Observation.extension                                                                                                                                                     2. Observation.extension
+                                      Slicing This element introduces a set of slices on Observation.extension. The slices areUnordered and Open, and can be differentiated using the following discriminators:value @ url
+        4. Observation.extension:statusReason                                                                                                                                        4. Observation.extension:statusReason
+                                   Slice Name                                                                                                                                                                 statusReason
+                                      Control                                                                                                                                                                         0..1
+                                         Type                                                                                                             Extension(Event status reason) (Extension Type: CodeableConcept)
+                        6. Observation.status                                                                                                                                                        6. Observation.status
+                                        Short                                                                                                                                                            Completion status
+                                 Must Support                                                                                                                                                                         true
+                      8. Observation.category                                                                                                                                                      8. Observation.category
+                                 Must Support                                                                                                                                                                         true
+                                Pattern Value                                                       {  "coding" : [{  "system" : "http://terminology.hl7.org/CodeSystem/observation-category",  "code" : "procedure"  }] }
+                         10. Observation.code                                                                                                                                                         10. Observation.code
+                                 Must Support                                                                                                                                                                         true
+                                Pattern Value                                                    {  "coding" : [{  "system" : "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp",  "code" : "cumulativeDose"  }] }
+                      12. Observation.subject                                                                                                                                                      12. Observation.subject
+                                      Control                                                                                                                                                                         1..?
+                                         Type                                                                                                                                                     Reference(Patient: PCSP)
+                                 Must Support                                                                                                                                                                         true
+                     14. Observation.value[x]                                                                                                                                                     14. Observation.value[x]
+                                      Control                                                                                                                                                                         1..?
+                                         Type                                                            Choice of: Quantity, CodeableConcept, dateTime, boolean, string, SampledData, Period, Ratio, integer, time, Range
+                                     [x] Note                                                                                                          SeeChoice of Data Typesfor further information about how to use [x]
+                                 Must Support                                                                                                                                                                         true
+                           Must Support Types                                                                                                                     No must-support rules about the choice of types/profiles
+                                      Slicing This element introduces a set of slices on Observation.value[x]. The slices areUnordered and Open, and can be differentiated using the following discriminators:type @ $this
+       16. Observation.value[x]:valueQuantity                                                                                                                                       16. Observation.value[x]:valueQuantity
+                                   Slice Name                                                                                                                                                                valueQuantity
+                                        Short                                                                                                                                                 Chemotherapy Cumulative Dose
+                                      Control                                                                                                                                                                         0..1
+                                         Type                                                                                                                                                                     Quantity
+                                     [x] Note                                                                                                          SeeChoice of Data Typesfor further information about how to use [x]
+                                 Must Support                                                                                                                                                                         true
+ 18. Observation.value[x]:valueQuantity.value                                                                                                                                 18. Observation.value[x]:valueQuantity.value
+                                      Control                                                                                                                                                                         1..?
+                                 Must Support                                                                                                                                                                         true
+  20. Observation.value[x]:valueQuantity.unit                                                                                                                                  20. Observation.value[x]:valueQuantity.unit
+                                 Must Support                                                                                                                                                                         true
+22. Observation.value[x]:valueQuantity.system                                                                                                                                22. Observation.value[x]:valueQuantity.system
+                                      Control                                                                                                                                                                         1..?
+                                 Must Support                                                                                                                                                                         true
+                                Pattern Value                                                                                                                                                    http://unitsofmeasure.org
+  24. Observation.value[x]:valueQuantity.code                                                                                                                                  24. Observation.value[x]:valueQuantity.code
+                                      Control                                                                                                                                                                         1..?
+                                      Binding                                              The codes SHALL be taken from Chemotherapy cumulative dose units (required to http://hl7.eu/fhir/ig/pcsp/ValueSet/ChemoUnitsVs)
+                                 Must Support                                                                                                                                                                         true
+26. Observation.value[x]:valueCodeableConcept                                                                                                                                26. Observation.value[x]:valueCodeableConcept
+                                   Slice Name                                                                                                                                                         valueCodeableConcept
+                                      Control                                                                                                                                                                         0..1
+                                         Type                                                                                                                                                              CodeableConcept
+                                     [x] Note                                                                                                          SeeChoice of Data Typesfor further information about how to use [x]
+                                Pattern Value                                   {  "coding" : [{  "system" : "http://terminology.hl7.org/CodeSystem/data-absent-reason",  "code" : "unknown",  "display" : "Unknown"  }] }
+             28. Observation.dataAbsentReason                                                                                                                                             28. Observation.dataAbsentReason
+                                        Short                                                                                                                                             Not calculated or not known dose
+                                      Binding                                                       The codes SHALL be taken from Not Performed|Unknown (required to http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-npunk-eu-pcsp)
+                       30. Observation.method                                                                                                                                                       30. Observation.method
+                                      Binding                                                      The codes SHALL be taken from Calculated|Estimated (required to http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-calcest-eu-pcsp)

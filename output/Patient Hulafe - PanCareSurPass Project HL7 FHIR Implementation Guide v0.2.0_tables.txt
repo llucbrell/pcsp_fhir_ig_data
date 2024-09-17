@@ -1,0 +1,8 @@
+Title: Patient: Hulafe - PanCareSurPass Project HL7 FHIR Implementation Guide v0.2.0
+
+                           0                                      1                                      2                                      3
+              Contact Detail               belensmicorr@gggmail.com               belensmicorr@gggmail.com               belensmicorr@gggmail.com
+                   Language:                        Spanish (Spain)                        Spanish (Spain)                        Spanish (Spain)
+Patient Mother's Maiden Name                              APELLIDO2                              APELLIDO2                              APELLIDO2
+         Patient Birth Place CALLEFALSA123 Valencia Valencia España CALLEFALSA123 Valencia Valencia España CALLEFALSA123 Valencia Valencia España
+
